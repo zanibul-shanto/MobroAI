@@ -10,14 +10,14 @@ public static class TodoEndpoints
         var group = app.MapGroup("/todoitems");
 
         // --- CRUD Operations ---
-        group.MapGet("/", GetAllTodos);                 // GET /todoitems
-        group.MapGet("/{id}", GetTodoById);             // GET /todoitems/{id}
+        group.MapGet("/", GetAllTodos);                 // GET  /todoitems
+        group.MapGet("/{id}", GetTodoById);             // GET  /todoitems/{id}
         group.MapPost("/", CreateTodo);                 // POST /todoitems
-        group.MapPut("/{id}", UpdateTodo);              // PUT /todoitems/{id}
+        group.MapPut("/{id}", UpdateTodo);              // PUT  /todoitems/{id}
         group.MapDelete("/{id}", DeleteTodo);           // DELETE /todoitems/{id}
 
         // --- Other Operations ---
-        group.MapGet("/complete", GetCompleteTodos);    // GET /todoitems/complete
+        group.MapGet("/complete", GetCompleteTodos);    // GET  /todoitems/complete
     }
 
     // --- Handler Implementations ---
