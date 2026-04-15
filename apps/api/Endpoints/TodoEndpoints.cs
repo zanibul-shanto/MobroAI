@@ -1,0 +1,75 @@
+using Microsoft.EntityFrameworkCore;
+using MorboLensAI.Models;
+using MorboLensAI.Repository;
+
+namespace MorboLensAI.Endpoints;
+
+public static class TodoEndpoints
+{
+    public static void MapTodoEndpoints(this IEndpointRouteBuilder app)
+    {
+        var group = app.MapGroup("/todoitems");
+
+        // --- CRUD Operations ---
+        group.MapGet("/", GetAllTodos);
+        group.MapGet("/{id}", GetTodoById);
+        group.MapPost("/", CreateTodo);
+        group.MapPut("/{id}", UpdateTodo);
+        group.MapDelete("/{id}", DeleteTodo);
+
+        // --- Other Operations ---
+        group.MapGet("/complete", GetCompleteTodos);
+    }
+
+    // --- Handler Implementations ---
+
+    private static async Task<IResult> GetAllTodos(TodoDb db)
+    {
+        return Results.Ok(await db.Todos.ToListAsync());
+    }
+
+    private static async Task<IResult> GetTodoById(int id, TodoDb db)
+    {
+        return await db.Todos.FindAsync(id) is Todo todo
+            ? Results.Ok(todo)
+            : Results.NotFound();
+    }
+
+    private static async Task<IResult> CreateTodo(Todo todo, TodoDb db)
+    {
+        db.Todos.Add(todo);
+        await db.SaveChangesAsync();
+        return Results.Created($"/todoitems/{todo.Id}", todo);
+    }
+
+    private static async Task<IResult> UpdateTodo(int id, Todo inputTodo, TodoDb db)
+    {
+        var todo = await db.Todos.FindAsync(id);
+
+        if (todo is null) return Results.NotFound();
+
+        todo.Name = inputTodo.Name;
+        todo.IsComplete = inputTodo.IsComplete;
+
+        await db.SaveChangesAsync();
+
+        return Results.NoContent();
+    }
+
+    private static async Task<IResult> DeleteTodo(int id, TodoDb db)
+    {
+        if (await db.Todos.FindAsync(id) is Todo todo)
+        {
+            db.Todos.Remove(todo);
+            await db.SaveChangesAsync();
+            return Results.NoContent();
+        }
+
+        return Results.NotFound();
+    }
+
+    private static async Task<IResult> GetCompleteTodos(TodoDb db)
+    {
+        return Results.Ok(await db.Todos.Where(t => t.IsComplete).ToListAsync());
+    }
+}
