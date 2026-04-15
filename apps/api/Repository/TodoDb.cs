@@ -1,9 +1,9 @@
-using System;
 using Microsoft.EntityFrameworkCore;
+using MorboLensAI.Models;
 
-namespace MorboLensAI;
+namespace MorboLensAI.Repository;
 
-class TodoDb : DbContext
+public class TodoDb : DbContext
 {
     public TodoDb(DbContextOptions<TodoDb> options) : base(options) { }
 
