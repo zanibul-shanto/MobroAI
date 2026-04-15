@@ -9,39 +9,29 @@ public static class TodoEndpoints
     {
         var group = app.MapGroup("/todoitems");
 
-        // --- CRUD Operations ---
-        group.MapGet("/", GetAllTodos);                 // GET  /todoitems
-        group.MapGet("/{id}", GetTodoById);             // GET  /todoitems/{id}
-        group.MapPost("/", CreateTodo);                 // POST /todoitems
-        group.MapPut("/{id}", UpdateTodo);              // PUT  /todoitems/{id}
-        group.MapDelete("/{id}", DeleteTodo);           // DELETE /todoitems/{id}
+        // --- Write Operations ---
+        group.MapPost("/", Create);                 // POST   /todoitems
+        group.MapPut("/{id}", Update);              // PUT    /todoitems/{id}
+        group.MapDelete("/{id}", Delete);           // DELETE /todoitems/{id}
+
+        // --- Read Operations ---
+        group.MapGet("/{id}", GetById);             // GET    /todoitems/{id}
+        group.MapGet("/", GetAll);                  // GET    /todoitems
 
         // --- Other Operations ---
-        group.MapGet("/complete", GetCompleteTodos);    // GET  /todoitems/complete
+        group.MapGet("/complete", GetComplete);     // GET    /todoitems/complete
     }
 
     // --- Handler Implementations ---
 
-    private static async Task<IResult> GetAllTodos(AppDbContext db)
-    {
-        return Results.Ok(await db.Todos.ToListAsync());
-    }
-
-    private static async Task<IResult> GetTodoById(int id, AppDbContext db)
-    {
-        return await db.Todos.FindAsync(id) is Todo todo
-            ? Results.Ok(todo)
-            : Results.NotFound();
-    }
-
-    private static async Task<IResult> CreateTodo(Todo todo, AppDbContext db)
+    private static async Task<IResult> Create(Todo todo, AppDbContext db)
     {
         db.Todos.Add(todo);
         await db.SaveChangesAsync();
         return Results.Created($"/todoitems/{todo.Id}", todo);
     }
 
-    private static async Task<IResult> UpdateTodo(int id, Todo inputTodo, AppDbContext db)
+    private static async Task<IResult> Update(int id, Todo inputTodo, AppDbContext db)
     {
         var todo = await db.Todos.FindAsync(id);
 
@@ -55,19 +45,31 @@ public static class TodoEndpoints
         return Results.NoContent();
     }
 
-    private static async Task<IResult> DeleteTodo(int id, AppDbContext db)
+    private static async Task<IResult> Delete(int id, AppDbContext db)
     {
-        if (await db.Todos.FindAsync(id) is Todo todo)
-        {
-            db.Todos.Remove(todo);
-            await db.SaveChangesAsync();
-            return Results.NoContent();
-        }
+        var todo = await db.Todos.FindAsync(id);
 
-        return Results.NotFound();
+        if (todo is null) return Results.NotFound();
+
+        db.Todos.Remove(todo);
+        await db.SaveChangesAsync();
+
+        return Results.NoContent();
     }
 
-    private static async Task<IResult> GetCompleteTodos(AppDbContext db)
+    private static async Task<IResult> GetById(int id, AppDbContext db)
+    {
+        var todo = await db.Todos.FindAsync(id);
+        return todo is null ? Results.NotFound() : Results.Ok(todo);
+    }
+
+    private static async Task<IResult> GetAll(AppDbContext db)
+    {
+        return Results.Ok(await db.Todos.ToListAsync());
+    }
+
+    // --- Other Handler Implementations ---
+    private static async Task<IResult> GetComplete(AppDbContext db)
     {
         return Results.Ok(await db.Todos.Where(t => t.IsComplete).ToListAsync());
     }
