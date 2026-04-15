@@ -59,3 +59,4 @@ Thumbs.db
 project.lock.json
 .core/
 Migrations/*
+Properties/launchSettings.json
