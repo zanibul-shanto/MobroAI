@@ -8,7 +8,6 @@ public static class TodoEndpoints
     public static void MapTodoEndpoints(this IEndpointRouteBuilder app)
     {
         var group = app.MapGroup("/todoitems");
-        //var group = app.MapGroup("/todoitems").RequireAuthorization();
 
         // --- Write Operations ---
         group.MapPost("/", Create);                 // POST   /todoitems

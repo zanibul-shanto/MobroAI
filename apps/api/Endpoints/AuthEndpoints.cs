@@ -10,31 +10,34 @@ public static class AuthEndpoints
     {
         var group = app.MapGroup("/auth");
 
-        group.MapPost("/register", async (RegisterRequest request, AppDbContext db) =>
+        group.MapPost("/register", Register);
+        group.MapPost("/login", Login);
+    }
+
+    private static async Task<IResult> Register(RegisterRequest request, AppDbContext db)
+    {
+        if (await db.Users.AnyAsync(u => u.Username == request.Username))
+            return Results.BadRequest("Username already exists.");
+
+        var user = new User
         {
-            if (await db.Users.AnyAsync(u => u.Username == request.Username))
-                return Results.BadRequest("Username already exists.");
+            Username = request.Username,
+            PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password)
+        };
 
-            var user = new User
-            {
-                Username = request.Username,
-                PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password)
-            };
+        db.Users.Add(user);
+        await db.SaveChangesAsync();
+        return Results.Ok("User registered successfully.");
+    }
 
-            db.Users.Add(user);
-            await db.SaveChangesAsync();
-            return Results.Ok("User registered successfully.");
-        });
+    private static async Task<IResult> Login(LoginRequest request, AppDbContext db, ITokenService tokenService)
+    {
+        var user = await db.Users.FirstOrDefaultAsync(u => u.Username == request.Username);
+        if (user == null || !BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash))
+            return Results.Unauthorized();
 
-        group.MapPost("/login", async (LoginRequest request, AppDbContext db, ITokenService tokenService) =>
-        {
-            var user = await db.Users.FirstOrDefaultAsync(u => u.Username == request.Username);
-            if (user == null || !BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash))
-                return Results.Unauthorized();
+        var accessToken = tokenService.GenerateAccessToken(user);
 
-            var accessToken = tokenService.GenerateAccessToken(user);
-
-            return Results.Ok(new AuthResponse(accessToken));
-        });
+        return Results.Ok(new AuthResponse(accessToken));
     }
 }
