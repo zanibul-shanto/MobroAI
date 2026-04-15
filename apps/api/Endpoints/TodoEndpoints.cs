@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using MorboLensAI.Models;
-using MorboLensAI.Repository;
 
 namespace MorboLensAI.Endpoints;
 
@@ -23,26 +22,26 @@ public static class TodoEndpoints
 
     // --- Handler Implementations ---
 
-    private static async Task<IResult> GetAllTodos(TodoDb db)
+    private static async Task<IResult> GetAllTodos(AppDbContext db)
     {
         return Results.Ok(await db.Todos.ToListAsync());
     }
 
-    private static async Task<IResult> GetTodoById(int id, TodoDb db)
+    private static async Task<IResult> GetTodoById(int id, AppDbContext db)
     {
         return await db.Todos.FindAsync(id) is Todo todo
             ? Results.Ok(todo)
             : Results.NotFound();
     }
 
-    private static async Task<IResult> CreateTodo(Todo todo, TodoDb db)
+    private static async Task<IResult> CreateTodo(Todo todo, AppDbContext db)
     {
         db.Todos.Add(todo);
         await db.SaveChangesAsync();
         return Results.Created($"/todoitems/{todo.Id}", todo);
     }
 
-    private static async Task<IResult> UpdateTodo(int id, Todo inputTodo, TodoDb db)
+    private static async Task<IResult> UpdateTodo(int id, Todo inputTodo, AppDbContext db)
     {
         var todo = await db.Todos.FindAsync(id);
 
@@ -56,7 +55,7 @@ public static class TodoEndpoints
         return Results.NoContent();
     }
 
-    private static async Task<IResult> DeleteTodo(int id, TodoDb db)
+    private static async Task<IResult> DeleteTodo(int id, AppDbContext db)
     {
         if (await db.Todos.FindAsync(id) is Todo todo)
         {
@@ -68,7 +67,7 @@ public static class TodoEndpoints
         return Results.NotFound();
     }
 
-    private static async Task<IResult> GetCompleteTodos(TodoDb db)
+    private static async Task<IResult> GetCompleteTodos(AppDbContext db)
     {
         return Results.Ok(await db.Todos.Where(t => t.IsComplete).ToListAsync());
     }
