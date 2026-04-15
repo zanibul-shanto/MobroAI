@@ -33,6 +33,7 @@ builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
+// Auth
 app.UseAuthentication();
 app.UseAuthorization();
 
