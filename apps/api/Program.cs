@@ -1,9 +1,10 @@
 using Microsoft.EntityFrameworkCore;
-using MorboLensAI;
+using MorboLensAI.Repository;
+using MorboLensAI.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<TodoDb>(opt => opt.UseInMemoryDatabase("TodoList"));
-builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+builder.Services.AddDbContext<TodoDb>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 var app = builder.Build();
 
 
