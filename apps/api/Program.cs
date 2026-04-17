@@ -12,6 +12,8 @@ var app = builder.Build();
 
 //APIs
 app.MapTodoEndpoints();
+app.MapUserEndpoints();
+
 
 
 //Start the project
