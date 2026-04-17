@@ -19,4 +19,6 @@ public class User
     public long? MobileNo { get; set; }
     public long? NID { get; set; }
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    public string Username { get; set; } = string.Empty;
+    public string PasswordHash { get; set; } = string.Empty;
 }
