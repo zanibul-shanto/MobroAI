@@ -7,19 +7,19 @@ public static class TodoEndpoints
 {
     public static void MapTodoEndpoints(this IEndpointRouteBuilder app)
     {
-        var group = app.MapGroup("/todoitems");
+        var group = app.MapGroup("/todoitems").RequireAuthorization();
 
         // --- Write Operations ---
-        group.MapPost("/", Create);                 // POST   /todoitems
-        group.MapPut("/{id}", Update);              // PUT    /todoitems/{id}
-        group.MapDelete("/{id}", Delete);           // DELETE /todoitems/{id}
+        group.MapPost("/", Create);
+        group.MapPut("/{id}", Update);
+        group.MapDelete("/{id}", Delete).RequireAuthorization(p => p.RequireRole("Admin"));
 
         // --- Read Operations ---
-        group.MapGet("/{id}", GetById);             // GET    /todoitems/{id}
-        group.MapGet("/", GetAll);                  // GET    /todoitems
+        group.MapGet("/{id}", GetById);
+        group.MapGet("/", GetAll);
 
         // --- Other Operations ---
-        group.MapGet("/complete", GetComplete);     // GET    /todoitems/complete
+        group.MapGet("/complete", GetComplete);
     }
 
     // --- Handler Implementations ---

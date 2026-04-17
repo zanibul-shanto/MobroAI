@@ -22,7 +22,8 @@ public static class AuthEndpoints
         var user = new User
         {
             Username = request.Username,
-            PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password)
+            PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password),
+            Role = request.Role
         };
 
         db.Users.Add(user);
