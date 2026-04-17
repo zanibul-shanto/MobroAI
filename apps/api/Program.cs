@@ -39,6 +39,8 @@ app.UseAuthorization();
 
 // APIs
 app.MapTodoEndpoints();
+app.MapUserEndpoints();
+
 app.MapAuthEndpoints();
 
 
