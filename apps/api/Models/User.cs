@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MorboLensAI.Models;
 
-public class User
+public class User : BaseEntity
 {
     public int Id { get; set; }
     
@@ -15,11 +15,7 @@ public class User
     public string? FirstName { get; set; }
     public string? LastName { get; set; }
     public string? Location { get; set; }
-    public string? UserType { get; set;}
+    public Role Role { get; set; } = Role.User;
     public long? MobileNo { get; set; }
     public long? NID { get; set; }
-    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-    public string Username { get; set; } = string.Empty;
-    public string PasswordHash { get; set; } = string.Empty;
-    public string Role { get; set; } = "User";
 }

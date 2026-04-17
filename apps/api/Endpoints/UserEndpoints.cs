@@ -23,6 +23,7 @@ public static class UserEndpoints
 
     private static async Task<IResult> Create(User user, AppDbContext db)
     {
+        user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
         db.Users.Add(user);
         await db.SaveChangesAsync();
         return Results.Created($"/users/{user.Id}", user);
@@ -39,7 +40,7 @@ public static class UserEndpoints
         user.FirstName = inputUser.FirstName;
         user.LastName = inputUser.LastName;
         user.Location = inputUser.Location;
-        user.UserType = inputUser.UserType;
+        user.Role = inputUser.Role;
         user.MobileNo = inputUser.MobileNo;
         user.NID = inputUser.NID;
 

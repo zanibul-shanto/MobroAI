@@ -1,6 +1,6 @@
 namespace MorboLensAI.Models;
 
-public class Todo
+public class Todo : BaseEntity
 {
     public int Id { get; set; }
     public string? Name { get; set; }

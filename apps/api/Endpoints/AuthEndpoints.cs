@@ -16,13 +16,13 @@ public static class AuthEndpoints
 
     private static async Task<IResult> Register(RegisterRequest request, AppDbContext db)
     {
-        if (await db.Users.AnyAsync(u => u.Username == request.Username))
-            return Results.BadRequest("Username already exists.");
+        if (await db.Users.AnyAsync(u => u.Email == request.Email))
+            return Results.BadRequest("Email already exists.");
 
         var user = new User
         {
-            Username = request.Username,
-            PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password),
+            Email = request.Email,
+            Password = BCrypt.Net.BCrypt.HashPassword(request.Password),
             Role = request.Role
         };
 
@@ -33,8 +33,8 @@ public static class AuthEndpoints
 
     private static async Task<IResult> Login(LoginRequest request, AppDbContext db, ITokenService tokenService)
     {
-        var user = await db.Users.FirstOrDefaultAsync(u => u.Username == request.Username);
-        if (user == null || !BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash))
+        var user = await db.Users.FirstOrDefaultAsync(u => u.Email == request.Email);
+        if (user == null || !BCrypt.Net.BCrypt.Verify(request.Password, user.Password))
             return Results.Unauthorized();
 
         var accessToken = tokenService.GenerateAccessToken(user);
