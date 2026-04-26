@@ -3,13 +3,14 @@ import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 import { useRouter } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/context/LanguageContext';
+import { commonStyles } from '@/constants/styles';
 
 export default function HomeScreen() {
   const router = useRouter();
   const { t, language, setLanguage } = useLanguage();
 
   return (
-    <View style={styles.container}>
+    <View style={[commonStyles.container, { paddingHorizontal: 30 }]}>
       <View style={styles.langToggle}>
         <TouchableOpacity 
           onPress={() => setLanguage(language === 'en' ? 'bn' : 'en')}
@@ -23,23 +24,23 @@ export default function HomeScreen() {
       <View style={styles.content}>
         <View style={styles.logoContainer}>
           <Ionicons name="scan-outline" size={80} color="#007AFF" />
-          <Text style={styles.appName}>{t('appName')}</Text>
-          <Text style={styles.tagline}>{t('tagline')}</Text>
+          <Text style={[commonStyles.title, { marginTop: 20 }]}>{t('appName')}</Text>
+          <Text style={[commonStyles.subtitle, { marginTop: 8 }]}>{t('tagline')}</Text>
         </View>
 
         <View style={styles.buttonContainer}>
           <TouchableOpacity 
-            style={styles.primaryButton}
+            style={commonStyles.primaryButton}
             onPress={() => router.push('/signup')}
           >
-            <Text style={styles.buttonText}>{t('getStarted')}</Text>
+            <Text style={commonStyles.buttonText}>{t('getStarted')}</Text>
           </TouchableOpacity>
 
           <TouchableOpacity 
-            style={styles.secondaryButton}
+            style={commonStyles.secondaryButton}
             onPress={() => console.log('Login pressed')}
           >
-            <Text style={styles.secondaryButtonText}>{t('signIn')}</Text>
+            <Text style={commonStyles.secondaryButtonText}>{t('signIn')}</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -48,11 +49,6 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    paddingHorizontal: 30,
-  },
   langToggle: {
     alignItems: 'flex-end',
     marginTop: 60,
@@ -81,41 +77,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 80,
   },
-  appName: {
-    fontSize: 32,
-    fontWeight: 'bold',
-    color: '#333',
-    marginTop: 20,
-  },
-  tagline: {
-    fontSize: 16,
-    color: '#666',
-    marginTop: 8,
-  },
   buttonContainer: {
     width: '100%',
-  },
-  primaryButton: {
-    backgroundColor: '#007AFF',
-    height: 55,
-    borderRadius: 10,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: 15,
-  },
-  buttonText: {
-    color: '#fff',
-    fontSize: 18,
-    fontWeight: '600',
-  },
-  secondaryButton: {
-    height: 55,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  secondaryButtonText: {
-    color: '#007AFF',
-    fontSize: 16,
-    fontWeight: '500',
   },
 });
