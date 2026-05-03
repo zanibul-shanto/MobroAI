@@ -4,18 +4,20 @@ namespace MorboLensAI.Models;
 
 public class User : BaseEntity
 {
-    public int Id { get; set; }
+    [Key]
+    public Guid Id { get; set; } = Guid.NewGuid();
     
+    [Required]
     [EmailAddress]
-    public string? Email { get; set; }
+    public string Email { get; set; } = string.Empty;
 
     [Required]
-    public string? Password { get; set; }
+    public string PasswordHash { get; set; } = string.Empty;
 
-    public string? FirstName { get; set; }
-    public string? LastName { get; set; }
-    public string? Location { get; set; }
-    public Role Role { get; set; } = Role.User;
-    public long? MobileNo { get; set; }
-    public long? NID { get; set; }
+    [Required]
+    public string FullName { get; set; } = string.Empty;
+
+    public string? PhoneNumber { get; set; }
+
+    public Role Role { get; set; } = Role.Parent;
 }

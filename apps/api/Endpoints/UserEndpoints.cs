@@ -23,32 +23,36 @@ public static class UserEndpoints
 
     private static async Task<IResult> Create(User user, AppDbContext db)
     {
-        user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
+        if (!string.IsNullOrEmpty(user.PasswordHash))
+        {
+            user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(user.PasswordHash);
+        }
         db.Users.Add(user);
         await db.SaveChangesAsync();
         return Results.Created($"/users/{user.Id}", user);
     }
 
-    private static async Task<IResult> Update(int id, User inputUser, AppDbContext db)
+    private static async Task<IResult> Update(Guid id, User inputUser, AppDbContext db)
     {
         var user = await db.Users.FindAsync(id);
 
         if (user is null) return Results.NotFound();
 
         user.Email = inputUser.Email;
-        user.Password = inputUser.Password;
-        user.FirstName = inputUser.FirstName;
-        user.LastName = inputUser.LastName;
-        user.Location = inputUser.Location;
+        if (!string.IsNullOrEmpty(inputUser.PasswordHash))
+        {
+            user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(inputUser.PasswordHash);
+        }
+        user.FullName = inputUser.FullName;
+        user.PhoneNumber = inputUser.PhoneNumber;
         user.Role = inputUser.Role;
-        user.MobileNo = inputUser.MobileNo;
-        user.NID = inputUser.NID;
+        user.UpdatedAt = DateTime.UtcNow;
 
         await db.SaveChangesAsync();
         return Results.NoContent();
     }
 
-    private static async Task<IResult> Delete(int id, AppDbContext db)
+    private static async Task<IResult> Delete(Guid id, AppDbContext db)
     {
         var user = await db.Users.FindAsync(id);
 
@@ -59,7 +63,7 @@ public static class UserEndpoints
         return Results.NoContent();
     }
 
-    private static async Task<IResult> GetById(int id, AppDbContext db)
+    private static async Task<IResult> GetById(Guid id, AppDbContext db)
     {
         var user = await db.Users.FindAsync(id);
         return user is null ? Results.NotFound() : Results.Ok(user);

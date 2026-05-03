@@ -22,7 +22,8 @@ public static class AuthEndpoints
         var user = new User
         {
             Email = request.Email,
-            Password = BCrypt.Net.BCrypt.HashPassword(request.Password),
+            PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password),
+            FullName = request.FullName,
             Role = request.Role
         };
 
@@ -34,7 +35,7 @@ public static class AuthEndpoints
     private static async Task<IResult> Login(LoginRequest request, AppDbContext db, ITokenService tokenService)
     {
         var user = await db.Users.FirstOrDefaultAsync(u => u.Email == request.Email);
-        if (user == null || !BCrypt.Net.BCrypt.Verify(request.Password, user.Password))
+        if (user == null || !BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash))
             return Results.Unauthorized();
 
         var accessToken = tokenService.GenerateAccessToken(user);
