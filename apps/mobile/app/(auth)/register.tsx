@@ -1,24 +1,24 @@
-import React, { useState } from 'react';
-import { 
-  View, 
-  Text, 
-  StyleSheet, 
-  KeyboardAvoidingView, 
-  Platform, 
-  ScrollView, 
-  Alert,
-  TouchableOpacity
-} from 'react-native';
-import { useRouter, Link } from 'expo-router';
-import { useForm, Controller } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import * as z from 'zod';
-import { Input } from '@/components/ui/Input';
+import { api } from '@/api/api';
 import { Button } from '@/components/ui/Button';
+import { Input } from '@/components/ui/Input';
 import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
-import { api } from '@/api/api';
-import Animated, { FadeInUp, FadeInDown } from 'react-native-reanimated';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { Link, useRouter } from 'expo-router';
+import React, { useState } from 'react';
+import { Controller, useForm } from 'react-hook-form';
+import {
+  Alert,
+  KeyboardAvoidingView,
+  Platform,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View
+} from 'react-native';
+import Animated, { FadeInDown, FadeInUp } from 'react-native-reanimated';
+import * as z from 'zod';
 
 const registerSchema = z.object({
   fullName: z.string().min(2, 'Full Name is required'),
@@ -31,7 +31,7 @@ const registerSchema = z.object({
 type RegisterForm = z.infer<typeof registerSchema>;
 
 const ROLES = [
-  { label: 'Health Care Officer', value: 1 },
+  { label: 'Medical Officer', value: 1 },
   { label: 'Parent', value: 2 },
 ];
 
@@ -66,7 +66,7 @@ export default function RegisterScreen() {
   };
 
   return (
-    <KeyboardAvoidingView 
+    <KeyboardAvoidingView
       behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
       style={[styles.container, { backgroundColor: colors.background }]}
     >
@@ -152,7 +152,7 @@ export default function RegisterScreen() {
                   onPress={() => setValue('role', role.value as any)}
                   style={[
                     styles.roleChip,
-                    { 
+                    {
                       backgroundColor: selectedRole === role.value ? colors.primary : colors.surface,
                       borderColor: colors.border
                     }
@@ -170,9 +170,9 @@ export default function RegisterScreen() {
             {errors.role && <Text style={[styles.error, { color: colors.error }]}>{errors.role.message}</Text>}
           </View>
 
-          <Button 
-            title="Sign Up" 
-            onPress={handleSubmit(onRegister)} 
+          <Button
+            title="Sign Up"
+            onPress={handleSubmit(onRegister)}
             loading={loading}
             style={styles.registerButton}
           />
