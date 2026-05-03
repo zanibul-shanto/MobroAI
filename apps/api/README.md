@@ -29,3 +29,64 @@
 
 ## 🔒 Privacy First
 MorboLens is built with security at its core. The system features comprehensive role-based access control (RBAC) and audit logging to track exactly who accesses or modifies medical records, protecting sensitive data at every step.
+
+---
+
+## 📊 Database Schema
+
+```mermaid
+erDiagram
+    USER ||--o{ CHILD : "has (as Parent)"
+    USER ||--o{ MEASLES_SCAN : "uploads (Parent/Officer)"
+    USER ||--o{ LOCATION_LOG : "tracks"
+    CHILD ||--o{ MEASLES_SCAN : "undergoes"
+    MEASLES_SCAN ||--o{ SCAN_PHOTO : "contains"
+
+    USER {
+        guid Id PK
+        string Email "Unique"
+        string PasswordHash
+        enum Role "Admin, HealthCareOfficer, Parent"
+        string FullName
+        string PhoneNumber "Nullable"
+        datetime CreatedAt
+        datetime UpdatedAt
+    }
+
+    CHILD {
+        guid Id PK
+        guid ParentId FK "Ref: USER.Id"
+        string FirstName
+        string LastName
+        date DateOfBirth
+        string Gender
+        datetime CreatedAt
+    }
+
+    MEASLES_SCAN {
+        guid Id PK
+        guid ChildId FK "Ref: CHILD.Id"
+        guid UploadedById FK "Ref: USER.Id"
+        string AnalysisResultJson "JSONB"
+        decimal ConfidenceScore
+        decimal Latitude "Nullable"
+        decimal Longitude "Nullable"
+        enum ScanStatus "Pending, AI_Confirmed, Officer_Verified, Cleared"
+        datetime CreatedAt
+    }
+
+    SCAN_PHOTO {
+        guid Id PK
+        guid ScanId FK "Ref: MEASLES_SCAN.Id"
+        blob ImageData "VARBINARY(MAX)"
+        datetime CreatedAt
+    }
+
+    LOCATION_LOG {
+        guid Id PK
+        guid UserId FK "Ref: USER.Id"
+        decimal Latitude
+        decimal Longitude
+        datetime Timestamp
+    }
+```
