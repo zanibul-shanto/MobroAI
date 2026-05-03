@@ -4,10 +4,12 @@ import { useRouter } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { useLanguage } from '@/context/LanguageContext';
 import { commonStyles } from '@/constants/styles';
+import { useAuthStore } from '@/store/authStore';
 
 export default function HomeScreen() {
   const router = useRouter();
   const { t, language, setLanguage } = useLanguage();
+  const user = useAuthStore((state) => state.user);
 
   return (
     <View style={[commonStyles.container, { paddingHorizontal: 30 }]}>
@@ -26,22 +28,29 @@ export default function HomeScreen() {
           <Ionicons name="scan-outline" size={80} color="#007AFF" />
           <Text style={[commonStyles.title, { marginTop: 20 }]}>{t('appName')}</Text>
           <Text style={[commonStyles.subtitle, { marginTop: 8 }]}>{t('tagline')}</Text>
+          {user && (
+            <Text style={{ marginTop: 10, color: '#007AFF', fontWeight: '600' }}>
+              Welcome, {user.fullName}
+            </Text>
+          )}
         </View>
 
         <View style={styles.buttonContainer}>
           <TouchableOpacity 
             style={commonStyles.primaryButton}
-            onPress={() => router.push('/signup')}
+            onPress={() => console.log('Start scanning')}
           >
             <Text style={commonStyles.buttonText}>{t('getStarted')}</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity 
-            style={commonStyles.secondaryButton}
-            onPress={() => console.log('Login pressed')}
-          >
-            <Text style={commonStyles.secondaryButtonText}>{t('signIn')}</Text>
-          </TouchableOpacity>
+          {!user && (
+            <TouchableOpacity 
+              style={commonStyles.secondaryButton}
+              onPress={() => router.push('/(auth)/login')}
+            >
+              <Text style={commonStyles.secondaryButtonText}>{t('signIn')}</Text>
+            </TouchableOpacity>
+          )}
         </View>
       </View>
     </View>
