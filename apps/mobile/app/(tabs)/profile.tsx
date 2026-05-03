@@ -74,6 +74,15 @@ export default function ProfileScreen() {
     );
   };
 
+  const getRoleLabel = (role: number) => {
+    switch (role) {
+      case 0: return 'Admin';
+      case 1: return 'Health Care Officer';
+      case 2: return 'Parent';
+      default: return 'User';
+    }
+  };
+
   if (!user) return null;
 
   return (
@@ -86,7 +95,7 @@ export default function ProfileScreen() {
           <Text style={[styles.userName, { color: colors.text }]}>{user.fullName}</Text>
           <View style={[styles.roleBadge, { backgroundColor: colors.primary + '20' }]}>
             <Shield size={14} color={colors.primary} />
-            <Text style={[styles.roleText, { color: colors.primary }]}>{user.role}</Text>
+            <Text style={[styles.roleText, { color: colors.primary }]}>{getRoleLabel(user.role)}</Text>
           </View>
         </Animated.View>
 

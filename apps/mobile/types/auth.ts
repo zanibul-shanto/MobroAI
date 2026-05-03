@@ -3,7 +3,7 @@ export interface User {
   email: string;
   fullName: string;
   phoneNumber: string;
-  role: 'Parent' | 'HealthCareOfficer' | 'Admin';
+  role: 0 | 1 | 2; // 0: Admin, 1: HealthCareOfficer, 2: Parent
 }
 
 export interface AuthState {

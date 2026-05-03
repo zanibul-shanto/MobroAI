@@ -25,12 +25,15 @@ const registerSchema = z.object({
   email: z.string().email('Invalid email address'),
   phoneNumber: z.string().min(10, 'Phone number must be at least 10 digits'),
   password: z.string().min(6, 'Password must be at least 6 characters'),
-  role: z.enum(['Parent', 'HealthCareOfficer', 'Admin']),
+  role: z.union([z.literal(1), z.literal(2)]),
 });
 
 type RegisterForm = z.infer<typeof registerSchema>;
 
-const ROLES = ['Parent', 'HealthCareOfficer', 'Admin'];
+const ROLES = [
+  { label: 'Health Care Officer', value: 1 },
+  { label: 'Parent', value: 2 },
+];
 
 export default function RegisterScreen() {
   const router = useRouter();
@@ -41,7 +44,7 @@ export default function RegisterScreen() {
   const { control, handleSubmit, setValue, watch, formState: { errors } } = useForm<RegisterForm>({
     resolver: zodResolver(registerSchema),
     defaultValues: {
-      role: 'Parent',
+      role: 2,
     }
   });
 
@@ -145,21 +148,21 @@ export default function RegisterScreen() {
             <View style={styles.rolesRow}>
               {ROLES.map((role) => (
                 <TouchableOpacity
-                  key={role}
-                  onPress={() => setValue('role', role as any)}
+                  key={role.value}
+                  onPress={() => setValue('role', role.value as any)}
                   style={[
                     styles.roleChip,
                     { 
-                      backgroundColor: selectedRole === role ? colors.primary : colors.surface,
+                      backgroundColor: selectedRole === role.value ? colors.primary : colors.surface,
                       borderColor: colors.border
                     }
                   ]}
                 >
                   <Text style={[
                     styles.roleText,
-                    { color: selectedRole === role ? '#FFFFFF' : colors.text }
+                    { color: selectedRole === role.value ? '#FFFFFF' : colors.text }
                   ]}>
-                    {role}
+                    {role.label}
                   </Text>
                 </TouchableOpacity>
               ))}
@@ -222,14 +225,15 @@ const styles = StyleSheet.create({
   },
   rolesRow: {
     flexDirection: 'row',
-    flexWrap: 'wrap',
     gap: 8,
   },
   roleChip: {
-    paddingHorizontal: 16,
+    flex: 1,
     paddingVertical: 10,
     borderRadius: 20,
     borderWidth: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   roleText: {
     fontSize: 14,
