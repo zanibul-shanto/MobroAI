@@ -11,14 +11,8 @@ public class MeaslesScan : BaseEntity
     [Required]
     public Guid ChildId { get; set; }
 
-    [ForeignKey("ChildId")]
-    public Child? Child { get; set; }
-
     [Required]
     public Guid UploadedById { get; set; }
-
-    [ForeignKey("UploadedById")]
-    public User? UploadedBy { get; set; }
 
     public string? AnalysisResultJson { get; set; }
 

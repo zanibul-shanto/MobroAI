@@ -11,9 +11,6 @@ public class LocationLog : BaseEntity
     [Required]
     public Guid UserId { get; set; }
 
-    [ForeignKey("UserId")]
-    public User? User { get; set; }
-
     [Required]
     [Column(TypeName = "decimal(18, 10)")]
     public decimal Latitude { get; set; }
