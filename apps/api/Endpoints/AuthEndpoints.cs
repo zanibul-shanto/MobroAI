@@ -1,7 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using MorboLensAI.Models;
 using MorboLensAI.Services;
-using System.Security.Claims;
 
 namespace MorboLensAI.Endpoints;
 
