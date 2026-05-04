@@ -66,11 +66,17 @@ public static class UserEndpoints
     private static async Task<IResult> GetById(Guid id, AppDbContext db)
     {
         var user = await db.Users.FindAsync(id);
-        return user is null ? Results.NotFound() : Results.Ok(user);
+        if (user is null) return Results.NotFound();
+        
+        var userDto = new UserDto(user.Id, user.Email, user.FullName, user.PhoneNumber, user.Role);
+        return Results.Ok(userDto);
     }
 
     private static async Task<IResult> GetAll(AppDbContext db)
     {
-        return Results.Ok(await db.Users.ToListAsync());
+        var users = await db.Users
+            .Select(user => new UserDto(user.Id, user.Email, user.FullName, user.PhoneNumber, user.Role))
+            .ToListAsync();
+        return Results.Ok(users);
     }
 }
