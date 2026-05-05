@@ -50,7 +50,7 @@ export default function LoginScreen() {
       setToken(accessToken);
       setUser(user);
 
-      router.replace('/dashboard');
+      router.replace('/(tabs)');
     } catch (error: any) {
       const message = error.response?.data?.message || 'Invalid credentials. Please try again.';
       Alert.alert('Login Failed', message);

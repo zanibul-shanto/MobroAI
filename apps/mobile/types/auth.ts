@@ -13,6 +13,7 @@ export interface AuthState {
   isLoading: boolean;
   setUser: (user: User | null) => void;
   setToken: (token: string | null) => void;
+  updateUser: (user: User) => Promise<void>;
   logout: () => Promise<void>;
   initialize: () => Promise<void>;
 }

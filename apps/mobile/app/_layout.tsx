@@ -30,8 +30,8 @@ function InitialLayout() {
       // Redirect to login if not authenticated and not in auth group
       router.replace('/(auth)/login');
     } else if (isAuthenticated && inAuthGroup) {
-      // Redirect to dashboard if authenticated and trying to access auth group
-      router.replace('/dashboard');
+      // Redirect to tabs if authenticated and trying to access auth group
+      router.replace('/(tabs)');
     }
   }, [isAuthenticated, segments, isLoading]);
 
@@ -39,7 +39,6 @@ function InitialLayout() {
     <Stack>
       <Stack.Screen name="(auth)" options={{ headerShown: false }} />
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-      <Stack.Screen name="dashboard" options={{ headerShown: false }} />
     </Stack>
   );
 }

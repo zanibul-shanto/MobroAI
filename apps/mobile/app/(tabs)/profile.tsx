@@ -7,7 +7,8 @@ import {
   Alert, 
   Modal,
   TouchableOpacity,
-  SafeAreaView
+  SafeAreaView,
+  Platform
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useForm, Controller } from 'react-hook-form';
@@ -19,37 +20,89 @@ import { useColorScheme } from '@/hooks/use-color-scheme';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { api } from '@/api/api';
-import { User, LogOut, Lock, Mail, Phone, Shield } from 'lucide-react-native';
-import Animated, { FadeIn } from 'react-native-reanimated';
+import { User as UserIcon, LogOut, Lock, Mail, Phone, Shield, Edit3, ChevronRight } from 'lucide-react-native';
+import Animated, { FadeIn, FadeInDown, Layout } from 'react-native-reanimated';
+import { LinearGradient } from 'expo-linear-gradient';
 
 const changePasswordSchema = z.object({
-  currentPassword: z.string().min(1, 'Current password is required'),
   newPassword: z.string().min(6, 'New password must be at least 6 characters'),
+  confirmPassword: z.string().min(6, 'Confirm password must be at least 6 characters'),
+}).refine((data) => data.newPassword === data.confirmPassword, {
+  message: "Passwords don't match",
+  path: ["confirmPassword"],
+});
+
+const editProfileSchema = z.object({
+  fullName: z.string().min(2, 'Name is too short'),
+  email: z.string().email('Invalid email address'),
+  phoneNumber: z.string().min(10, 'Invalid phone number'),
+  role: z.number(),
 });
 
 type ChangePasswordForm = z.infer<typeof changePasswordSchema>;
+type EditProfileForm = z.infer<typeof editProfileSchema>;
 
 export default function ProfileScreen() {
   const router = useRouter();
   const colorScheme = useColorScheme() ?? 'light';
   const colors = Colors[colorScheme];
-  const { user, logout } = useAuthStore();
-  const [modalVisible, setModalVisible] = useState(false);
+  const { user, logout, updateUser } = useAuthStore();
+  const [passwordModalVisible, setPasswordModalVisible] = useState(false);
+  const [profileModalVisible, setProfileModalVisible] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const { control, handleSubmit, reset, formState: { errors } } = useForm<ChangePasswordForm>({
+  const { 
+    control: passwordControl, 
+    handleSubmit: handlePasswordSubmit, 
+    reset: resetPassword, 
+    formState: { errors: passwordErrors } 
+  } = useForm<ChangePasswordForm>({
     resolver: zodResolver(changePasswordSchema),
+  });
+
+  const { 
+    control: profileControl, 
+    handleSubmit: handleProfileSubmit, 
+    reset: resetProfile,
+    formState: { errors: profileErrors } 
+  } = useForm<EditProfileForm>({
+    resolver: zodResolver(editProfileSchema),
+    defaultValues: {
+      fullName: user?.fullName || '',
+      email: user?.email || '',
+      phoneNumber: user?.phoneNumber || '',
+      role: user?.role || 1,
+    }
   });
 
   const onChangePassword = async (data: ChangePasswordForm) => {
     setLoading(true);
     try {
-      await api.post('/auth/change-password', data);
+      await api.post('/users/change-password', {
+        newPassword: data.newPassword,
+        confirmPassword: data.confirmPassword
+      });
       Alert.alert('Success', 'Password changed successfully');
-      setModalVisible(false);
-      reset();
+      setPasswordModalVisible(false);
+      resetPassword();
     } catch (error: any) {
       const message = error.response?.data?.message || 'Failed to change password';
+      Alert.alert('Error', message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const onUpdateProfile = async (data: EditProfileForm) => {
+    setLoading(true);
+    try {
+      await api.put(`/users/${user?.id}`, data);
+      const updatedUser = { ...user, ...data } as any;
+      await updateUser(updatedUser);
+      Alert.alert('Success', 'Profile updated successfully');
+      setProfileModalVisible(false);
+    } catch (error: any) {
+      const message = error.response?.data?.message || 'Failed to update profile';
       Alert.alert('Error', message);
     } finally {
       setLoading(false);
@@ -87,88 +140,155 @@ export default function ProfileScreen() {
 
   return (
     <SafeAreaView style={[styles.container, { backgroundColor: colors.background }]}>
-      <ScrollView contentContainerStyle={styles.scrollContent}>
-        <Animated.View entering={FadeIn.duration(800)} style={styles.profileHeader}>
-          <View style={[styles.avatarContainer, { backgroundColor: colors.surface }]}>
-            <User size={40} color={colors.primary} />
-          </View>
+      <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
+        <Animated.View entering={FadeInDown.delay(200).duration(800)} style={styles.header}>
+          <LinearGradient
+            colors={[colors.primary, colors.primary + 'CC']}
+            style={styles.avatarGradient}
+          >
+            <UserIcon size={48} color="#FFFFFF" />
+          </LinearGradient>
           <Text style={[styles.userName, { color: colors.text }]}>{user.fullName}</Text>
-          <View style={[styles.roleBadge, { backgroundColor: colors.primary + '20' }]}>
+          <View style={[styles.roleBadge, { backgroundColor: colors.primary + '15' }]}>
             <Shield size={14} color={colors.primary} />
             <Text style={[styles.roleText, { color: colors.primary }]}>{getRoleLabel(user.role)}</Text>
           </View>
         </Animated.View>
 
-        <View style={styles.infoSection}>
-          <View style={[styles.infoCard, { backgroundColor: colors.surface }]}>
-            <View style={styles.infoRow}>
-              <Mail size={20} color={colors.icon} />
-              <View style={styles.infoTextContainer}>
-                <Text style={[styles.infoLabel, { color: colors.textSecondary }]}>Email</Text>
-                <Text style={[styles.infoValue, { color: colors.text }]}>{user.email}</Text>
-              </View>
-            </View>
+        <Animated.View entering={FadeInDown.delay(400).duration(800)} style={styles.section}>
+          <Text style={[styles.sectionTitle, { color: colors.textSecondary }]}>Account Information</Text>
+          <View style={[styles.card, { backgroundColor: colors.surface }]}>
+            <InfoRow icon={<Mail size={20} color={colors.primary} />} label="Email" value={user.email} colors={colors} />
             <View style={[styles.divider, { backgroundColor: colors.border }]} />
-            <View style={styles.infoRow}>
-              <Phone size={20} color={colors.icon} />
-              <View style={styles.infoTextContainer}>
-                <Text style={[styles.infoLabel, { color: colors.textSecondary }]}>Phone</Text>
-                <Text style={[styles.infoValue, { color: colors.text }]}>{user.phoneNumber}</Text>
-              </View>
-            </View>
+            <InfoRow icon={<Phone size={20} color={colors.primary} />} label="Phone" value={user.phoneNumber} colors={colors} />
           </View>
-        </View>
+        </Animated.View>
 
-        <View style={styles.actionSection}>
-          <Button 
-            title="Change Password" 
-            variant="outline" 
-            onPress={() => setModalVisible(true)}
-            style={styles.actionButton}
-          />
-          <Button 
-            title="Logout" 
-            variant="ghost" 
+        <Animated.View entering={FadeInDown.delay(600).duration(800)} style={styles.section}>
+          <Text style={[styles.sectionTitle, { color: colors.textSecondary }]}>Settings</Text>
+          <View style={[styles.card, { backgroundColor: colors.surface }]}>
+            <ActionRow 
+              icon={<Edit3 size={20} color={colors.primary} />} 
+              label="Edit Profile" 
+              onPress={() => setProfileModalVisible(true)} 
+              colors={colors} 
+            />
+            <View style={[styles.divider, { backgroundColor: colors.border }]} />
+            <ActionRow 
+              icon={<Lock size={20} color={colors.primary} />} 
+              label="Change Password" 
+              onPress={() => setPasswordModalVisible(true)} 
+              colors={colors} 
+            />
+          </View>
+        </Animated.View>
+
+        <Animated.View entering={FadeInDown.delay(800).duration(800)} style={styles.footer}>
+          <TouchableOpacity 
+            style={[styles.logoutButton, { borderColor: colors.error + '40' }]} 
             onPress={handleLogout}
-            textStyle={{ color: colors.error }}
-            style={styles.actionButton}
-          />
-        </View>
+          >
+            <LogOut size={20} color={colors.error} />
+            <Text style={[styles.logoutText, { color: colors.error }]}>Log Out</Text>
+          </TouchableOpacity>
+          <Text style={[styles.versionText, { color: colors.textSecondary }]}>Version 1.0.0</Text>
+        </Animated.View>
       </ScrollView>
 
+      {/* Edit Profile Modal */}
       <Modal
         animationType="slide"
         transparent={true}
-        visible={modalVisible}
-        onRequestClose={() => setModalVisible(false)}
+        visible={profileModalVisible}
+        onRequestClose={() => setProfileModalVisible(false)}
       >
         <View style={styles.modalOverlay}>
-          <View style={[styles.modalContent, { backgroundColor: colors.background }]}>
+          <Animated.View entering={FadeInDown} style={[styles.modalContent, { backgroundColor: colors.surface }]}>
+            <View style={styles.modalHeader}>
+              <Text style={[styles.modalTitle, { color: colors.text }]}>Edit Profile</Text>
+              <TouchableOpacity onPress={() => setProfileModalVisible(false)}>
+                <Text style={{ color: colors.primary, fontWeight: '600' }}>Cancel</Text>
+              </TouchableOpacity>
+            </View>
+
+            <ScrollView showsVerticalScrollIndicator={false}>
+              <Controller
+                control={profileControl}
+                name="fullName"
+                render={({ field: { onChange, onBlur, value } }) => (
+                  <Input
+                    label="Full Name"
+                    placeholder="John Doe"
+                    onBlur={onBlur}
+                    onChangeText={onChange}
+                    value={value}
+                    error={profileErrors.fullName?.message}
+                  />
+                )}
+              />
+
+              <Controller
+                control={profileControl}
+                name="email"
+                render={({ field: { onChange, onBlur, value } }) => (
+                  <Input
+                    label="Email Address"
+                    placeholder="john@example.com"
+                    onBlur={onBlur}
+                    onChangeText={onChange}
+                    value={value}
+                    keyboardType="email-address"
+                    autoCapitalize="none"
+                    error={profileErrors.email?.message}
+                  />
+                )}
+              />
+
+              <Controller
+                control={profileControl}
+                name="phoneNumber"
+                render={({ field: { onChange, onBlur, value } }) => (
+                  <Input
+                    label="Phone Number"
+                    placeholder="01800000000"
+                    onBlur={onBlur}
+                    onChangeText={onChange}
+                    value={value}
+                    keyboardType="phone-pad"
+                    error={profileErrors.phoneNumber?.message}
+                  />
+                )}
+              />
+
+              <Button 
+                title="Save Changes" 
+                onPress={handleProfileSubmit(onUpdateProfile)} 
+                loading={loading}
+                style={{ marginTop: 16 }}
+              />
+            </ScrollView>
+          </Animated.View>
+        </View>
+      </Modal>
+
+      {/* Change Password Modal */}
+      <Modal
+        animationType="slide"
+        transparent={true}
+        visible={passwordModalVisible}
+        onRequestClose={() => setPasswordModalVisible(false)}
+      >
+        <View style={styles.modalOverlay}>
+          <Animated.View entering={FadeInDown} style={[styles.modalContent, { backgroundColor: colors.surface }]}>
             <View style={styles.modalHeader}>
               <Text style={[styles.modalTitle, { color: colors.text }]}>Change Password</Text>
-              <TouchableOpacity onPress={() => setModalVisible(false)}>
-                <Text style={{ color: colors.primary }}>Cancel</Text>
+              <TouchableOpacity onPress={() => setPasswordModalVisible(false)}>
+                <Text style={{ color: colors.primary, fontWeight: '600' }}>Cancel</Text>
               </TouchableOpacity>
             </View>
 
             <Controller
-              control={control}
-              name="currentPassword"
-              render={({ field: { onChange, onBlur, value } }) => (
-                <Input
-                  label="Current Password"
-                  placeholder="••••••••"
-                  onBlur={onBlur}
-                  onChangeText={onChange}
-                  value={value}
-                  error={errors.currentPassword?.message}
-                  isPassword
-                />
-              )}
-            />
-
-            <Controller
-              control={control}
+              control={passwordControl}
               name="newPassword"
               render={({ field: { onChange, onBlur, value } }) => (
                 <Input
@@ -177,7 +297,23 @@ export default function ProfileScreen() {
                   onBlur={onBlur}
                   onChangeText={onChange}
                   value={value}
-                  error={errors.newPassword?.message}
+                  error={passwordErrors.newPassword?.message}
+                  isPassword
+                />
+              )}
+            />
+
+            <Controller
+              control={passwordControl}
+              name="confirmPassword"
+              render={({ field: { onChange, onBlur, value } }) => (
+                <Input
+                  label="Confirm Password"
+                  placeholder="••••••••"
+                  onBlur={onBlur}
+                  onChangeText={onChange}
+                  value={value}
+                  error={passwordErrors.confirmPassword?.message}
                   isPassword
                 />
               )}
@@ -185,14 +321,40 @@ export default function ProfileScreen() {
 
             <Button 
               title="Update Password" 
-              onPress={handleSubmit(onChangePassword)} 
+              onPress={handlePasswordSubmit(onChangePassword)} 
               loading={loading}
               style={{ marginTop: 16 }}
             />
-          </View>
+          </Animated.View>
         </View>
       </Modal>
     </SafeAreaView>
+  );
+}
+
+function InfoRow({ icon, label, value, colors }: any) {
+  return (
+    <View style={styles.infoRow}>
+      <View style={[styles.iconContainer, { backgroundColor: colors.primary + '10' }]}>
+        {icon}
+      </View>
+      <View style={styles.infoTextContainer}>
+        <Text style={[styles.infoLabel, { color: colors.textSecondary }]}>{label}</Text>
+        <Text style={[styles.infoValue, { color: colors.text }]}>{value}</Text>
+      </View>
+    </View>
+  );
+}
+
+function ActionRow({ icon, label, onPress, colors }: any) {
+  return (
+    <TouchableOpacity style={styles.actionRow} onPress={onPress}>
+      <View style={[styles.iconContainer, { backgroundColor: colors.primary + '10' }]}>
+        {icon}
+      </View>
+      <Text style={[styles.actionLabel, { color: colors.text }]}>{label}</Text>
+      <ChevronRight size={20} color={colors.textSecondary} />
+    </TouchableOpacity>
   );
 }
 
@@ -201,50 +363,97 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   scrollContent: {
-    padding: 24,
+    padding: 20,
+    paddingBottom: 40,
   },
-  profileHeader: {
+  header: {
     alignItems: 'center',
-    marginTop: 40,
+    marginTop: 20,
     marginBottom: 32,
   },
-  avatarContainer: {
+  avatarGradient: {
     width: 100,
     height: 100,
     borderRadius: 50,
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 16,
+    ...Platform.select({
+      ios: {
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.2,
+        shadowRadius: 8,
+      },
+      android: {
+        elevation: 8,
+      },
+    }),
   },
   userName: {
-    fontSize: 24,
-    fontWeight: '700',
+    fontSize: 26,
+    fontWeight: '800',
     marginBottom: 8,
+    letterSpacing: -0.5,
   },
   roleBadge: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: 12,
+    paddingHorizontal: 14,
     paddingVertical: 6,
     borderRadius: 20,
     gap: 6,
   },
   roleText: {
+    fontSize: 13,
+    fontWeight: '700',
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
+  },
+  section: {
+    marginBottom: 24,
+  },
+  sectionTitle: {
     fontSize: 14,
-    fontWeight: '600',
-    textTransform: 'capitalize',
+    fontWeight: '700',
+    marginBottom: 12,
+    marginLeft: 4,
+    textTransform: 'uppercase',
+    letterSpacing: 1,
   },
-  infoSection: {
-    marginBottom: 32,
-  },
-  infoCard: {
-    borderRadius: 20,
-    padding: 20,
+  card: {
+    borderRadius: 24,
+    padding: 8,
+    ...Platform.select({
+      ios: {
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.05,
+        shadowRadius: 10,
+      },
+      android: {
+        elevation: 2,
+      },
+    }),
   },
   infoRow: {
     flexDirection: 'row',
     alignItems: 'center',
+    padding: 12,
     gap: 16,
+  },
+  actionRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 12,
+    gap: 16,
+  },
+  iconContainer: {
+    width: 44,
+    height: 44,
+    borderRadius: 14,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   infoTextContainer: {
     flex: 1,
@@ -258,26 +467,50 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '600',
   },
+  actionLabel: {
+    flex: 1,
+    fontSize: 16,
+    fontWeight: '600',
+  },
   divider: {
     height: 1,
-    marginVertical: 16,
+    marginHorizontal: 12,
   },
-  actionSection: {
-    gap: 12,
+  footer: {
+    alignItems: 'center',
+    marginTop: 20,
+    gap: 16,
   },
-  actionButton: {
+  logoutButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 8,
+    paddingVertical: 14,
+    paddingHorizontal: 32,
+    borderRadius: 16,
+    borderWidth: 1.5,
     width: '100%',
+  },
+  logoutText: {
+    fontSize: 16,
+    fontWeight: '700',
+  },
+  versionText: {
+    fontSize: 12,
+    fontWeight: '500',
   },
   modalOverlay: {
     flex: 1,
-    backgroundColor: 'rgba(0,0,0,0.5)',
+    backgroundColor: 'rgba(0,0,0,0.6)',
     justifyContent: 'flex-end',
   },
   modalContent: {
-    borderTopLeftRadius: 32,
-    borderTopRightRadius: 32,
+    borderTopLeftRadius: 36,
+    borderTopRightRadius: 36,
     padding: 24,
-    paddingBottom: 40,
+    paddingBottom: Platform.OS === 'ios' ? 40 : 24,
+    maxHeight: '80%',
   },
   modalHeader: {
     flexDirection: 'row',
@@ -286,7 +519,9 @@ const styles = StyleSheet.create({
     marginBottom: 24,
   },
   modalTitle: {
-    fontSize: 20,
-    fontWeight: '700',
+    fontSize: 22,
+    fontWeight: '800',
+    letterSpacing: -0.5,
   },
 });
+

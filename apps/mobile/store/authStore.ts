@@ -14,6 +14,12 @@ export const useAuthStore = create<AuthState>((set) => ({
   setUser: (user) => set({ user, isAuthenticated: !!user }),
   setToken: (token) => set({ token }),
 
+  updateUser: async (updatedUser) => {
+    const userJson = JSON.stringify(updatedUser);
+    await SecureStore.setItemAsync(USER_KEY, userJson);
+    set({ user: updatedUser });
+  },
+
   logout: async () => {
     await SecureStore.deleteItemAsync(TOKEN_KEY);
     await SecureStore.deleteItemAsync(USER_KEY);
