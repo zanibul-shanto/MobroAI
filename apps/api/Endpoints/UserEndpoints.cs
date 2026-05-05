@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 using MorboLensAI.Models;
 
 namespace MorboLensAI.Endpoints;
@@ -10,13 +11,14 @@ public static class UserEndpoints
         var group = app.MapGroup("/users");
 
         // --- Write Operations ---
-        group.MapPost("/", Create);                 // POST   /users
-        group.MapPut("/{id}", Update);              // PUT    /users/{id}
-        group.MapDelete("/{id}", Delete);           // DELETE /users/{id}
+        group.MapPost("/", Create);
+        group.MapPut("/{id}", Update).RequireAuthorization();
+        group.MapDelete("/{id}", Delete).RequireAuthorization();
+        group.MapPost("/change-password", ChangePassword).RequireAuthorization();
 
         // --- Read Operations ---
-        group.MapGet("/{id}", GetById);             // GET    /users/{id}
-        group.MapGet("/", GetAll);                  // GET    /users
+        group.MapGet("/{id}", GetById);
+        group.MapGet("/", GetAll);
     }
 
     // --- Handler Implementations ---
@@ -39,10 +41,6 @@ public static class UserEndpoints
         if (user is null) return Results.NotFound();
 
         user.Email = inputUser.Email;
-        if (!string.IsNullOrEmpty(inputUser.PasswordHash))
-        {
-            user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(inputUser.PasswordHash);
-        }
         user.FullName = inputUser.FullName;
         user.PhoneNumber = inputUser.PhoneNumber;
         user.Role = inputUser.Role;
@@ -78,5 +76,28 @@ public static class UserEndpoints
             .Select(user => new UserDto(user.Id, user.Email, user.FullName, user.PhoneNumber, user.Role))
             .ToListAsync();
         return Results.Ok(users);
+    }
+
+    private static async Task<IResult> ChangePassword(ChangePasswordRequest request, ClaimsPrincipal userClaims, AppDbContext db)
+    {
+        var userIdString = userClaims.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        if (userIdString == null || !Guid.TryParse(userIdString, out var userId))
+        {
+            return Results.Unauthorized();
+        }
+
+        var user = await db.Users.FindAsync(userId);
+        if (user == null) return Results.NotFound("User not found.");
+
+        if (request.NewPassword != request.ConfirmPassword)
+        {
+            return Results.BadRequest(new { message = "Passwords do not match." });
+        }
+
+        user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.NewPassword);
+        user.UpdatedAt = DateTime.UtcNow;
+
+        await db.SaveChangesAsync();
+        return Results.Ok(new { message = "Password changed successfully." });
     }
 }
