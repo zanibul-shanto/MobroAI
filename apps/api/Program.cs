@@ -53,6 +53,7 @@ app.MapTodoEndpoints();
 app.MapUserEndpoints();
 app.MapAuthEndpoints();
 app.MapChildEndpoints();
+app.MapLocationLogEndpoints();
 
 
 //Start the project
