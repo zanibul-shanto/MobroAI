@@ -18,5 +18,7 @@ public class LocationLog : BaseEntity
     [Required]
     [Column(TypeName = "decimal(18, 10)")]
     public decimal Longitude { get; set; }
+
+    public bool WithChild { get; set; } = false;
 }
 
