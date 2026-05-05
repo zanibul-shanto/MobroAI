@@ -5,16 +5,10 @@ import {
   StyleSheet, 
   ActivityIndicator, 
   ViewStyle, 
-  TextStyle,
-  Pressable
+  TextStyle
 } from 'react-native';
 import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
-import Animated, { 
-  useAnimatedStyle, 
-  useSharedValue, 
-  withSpring 
-} from 'react-native-reanimated';
 
 interface ButtonProps {
   onPress: () => void;
@@ -25,8 +19,6 @@ interface ButtonProps {
   textStyle?: TextStyle;
   disabled?: boolean;
 }
-
-const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 
 export const Button: React.FC<ButtonProps> = ({ 
   onPress, 
@@ -39,19 +31,6 @@ export const Button: React.FC<ButtonProps> = ({
 }) => {
   const colorScheme = useColorScheme() ?? 'light';
   const colors = Colors[colorScheme];
-  const scale = useSharedValue(1);
-
-  const animatedStyle = useAnimatedStyle(() => ({
-    transform: [{ scale: scale.value }],
-  }));
-
-  const handlePressIn = () => {
-    scale.value = withSpring(0.96);
-  };
-
-  const handlePressOut = () => {
-    scale.value = withSpring(1);
-  };
 
   const getVariantStyles = () => {
     switch (variant) {
@@ -81,11 +60,10 @@ export const Button: React.FC<ButtonProps> = ({
   const variantStyles = getVariantStyles();
 
   return (
-    <AnimatedPressable
+    <TouchableOpacity
       onPress={onPress}
-      onPressIn={handlePressIn}
-      onPressOut={handlePressOut}
       disabled={disabled || loading}
+      activeOpacity={0.7}
       style={[
         styles.button,
         variantStyles.container,
@@ -98,7 +76,7 @@ export const Button: React.FC<ButtonProps> = ({
       ) : (
         <Text style={[styles.text, variantStyles.text, textStyle]}>{title}</Text>
       )}
-    </AnimatedPressable>
+    </TouchableOpacity>
   );
 };
 
@@ -118,6 +96,5 @@ const styles = StyleSheet.create({
   },
   disabled: {
     opacity: 0.5,
-    backgroundColor: '#CCCCCC',
   },
 });

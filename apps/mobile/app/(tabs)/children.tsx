@@ -21,11 +21,9 @@ import { Child } from '@/types/child';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { Plus, Edit2, Trash2, Baby, Calendar, User, ChevronRight } from 'lucide-react-native';
-import Animated, { FadeInDown, FadeInRight, Layout } from 'react-native-reanimated';
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
-import { LinearGradient } from 'expo-linear-gradient';
 
 const childSchema = z.object({
   fullName: z.string().min(2, 'Name is too short'),
@@ -159,9 +157,7 @@ export default function ChildrenScreen() {
   };
 
   const renderChildItem = ({ item, index }: { item: Child, index: number }) => (
-    <Animated.View 
-      entering={FadeInDown.delay(index * 100).duration(600)}
-      layout={Layout.springify()}
+    <View 
       style={[styles.childCard, { backgroundColor: colors.surface }]}
     >
       <View style={[styles.avatarContainer, { backgroundColor: item.gender === 0 ? '#E3F2FD' : (item.gender === 1 ? '#FCE4EC' : '#F5F5F5') }]}>
@@ -184,7 +180,7 @@ export default function ChildrenScreen() {
           <Trash2 size={18} color={colors.error} />
         </TouchableOpacity>
       </View>
-    </Animated.View>
+    </View>
   );
 
   if (!user) return null;
@@ -199,12 +195,11 @@ export default function ChildrenScreen() {
           </Text>
         </View>
         <TouchableOpacity onPress={openAddModal}>
-          <LinearGradient
-            colors={[colors.primary, colors.primary + 'CC']}
-            style={styles.addButton}
+          <View
+            style={[styles.addButton, { backgroundColor: colors.primary }]}
           >
             <Plus size={24} color="#FFFFFF" />
-          </LinearGradient>
+          </View>
         </TouchableOpacity>
       </View>
 
@@ -238,13 +233,13 @@ export default function ChildrenScreen() {
       )}
 
       <Modal
-        animationType="slide"
+        animationType="none"
         transparent={true}
         visible={modalVisible}
         onRequestClose={() => setModalVisible(false)}
       >
         <View style={styles.modalOverlay}>
-          <Animated.View entering={FadeInDown} style={[styles.modalContent, { backgroundColor: colors.surface }]}>
+          <View style={[styles.modalContent, { backgroundColor: colors.surface }]}>
             <View style={styles.modalHeader}>
               <Text style={[styles.modalTitle, { color: colors.text }]}>
                 {editingChild ? 'Edit Child' : 'Add New Child'}
@@ -324,7 +319,7 @@ export default function ChildrenScreen() {
                 style={{ marginTop: 24 }}
               />
             </ScrollView>
-          </Animated.View>
+          </View>
         </View>
       </Modal>
     </SafeAreaView>

@@ -18,7 +18,6 @@ import {
   TouchableOpacity,
   View
 } from 'react-native';
-import Animated, { FadeInDown, FadeInUp } from 'react-native-reanimated';
 import * as z from 'zod';
 
 const loginSchema = z.object({
@@ -65,14 +64,14 @@ export default function LoginScreen() {
       style={[styles.container, { backgroundColor: colors.background }]}
     >
       <ScrollView contentContainerStyle={styles.scrollContent}>
-        <Animated.View entering={FadeInDown.delay(200).duration(1000)} style={styles.header}>
+        <View style={styles.header}>
           <Text style={[styles.title, { color: colors.text }]}>Welcome to MorboAiLens</Text>
           <Text style={[styles.subtitle, { color: colors.textSecondary }]}>
             Sign in to your account to continue
           </Text>
-        </Animated.View>
+        </View>
 
-        <Animated.View entering={FadeInUp.delay(400).duration(1000)} style={styles.form}>
+        <View style={styles.form}>
           <Controller
             control={control}
             name="identifier"
@@ -129,7 +128,7 @@ export default function LoginScreen() {
               </TouchableOpacity>
             </Link>
           </View>
-        </Animated.View>
+        </View>
       </ScrollView>
     </KeyboardAvoidingView>
   );

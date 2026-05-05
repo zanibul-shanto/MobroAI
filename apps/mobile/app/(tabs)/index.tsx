@@ -13,8 +13,6 @@ import { Ionicons } from '@expo/vector-icons';
 import { useAuthStore } from '@/store/authStore';
 import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
-import Animated, { FadeInDown, FadeInRight } from 'react-native-reanimated';
-import { LinearGradient } from 'expo-linear-gradient';
 
 export default function DashboardScreen() {
   const router = useRouter();
@@ -26,10 +24,10 @@ export default function DashboardScreen() {
     <SafeAreaView style={[styles.container, { backgroundColor: colors.background }]}>
       <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
         <View style={styles.header}>
-          <Animated.View entering={FadeInDown.delay(200).duration(800)}>
+          <View>
             <Text style={[styles.greeting, { color: colors.textSecondary }]}>Welcome to MorboAiLens</Text>
             <Text style={[styles.userName, { color: colors.text }]}>{user?.fullName || 'User'}</Text>
-          </Animated.View>
+          </View>
           <TouchableOpacity 
             onPress={() => router.push('/(tabs)/profile')} 
             style={[styles.profileButton, { backgroundColor: colors.primary + '10' }]}
@@ -38,26 +36,24 @@ export default function DashboardScreen() {
           </TouchableOpacity>
         </View>
 
-        <Animated.View entering={FadeInDown.delay(400).duration(800)} style={styles.statsContainer}>
-          <LinearGradient
-            colors={['#4facfe', '#00f2fe']}
-            style={styles.statCard}
+        <View style={styles.statsContainer}>
+          <View
+            style={[styles.statCard, { backgroundColor: '#4facfe' }]}
           >
             <Ionicons name="analytics" size={32} color="#FFFFFF" />
             <Text style={styles.statValue}>12</Text>
             <Text style={styles.statLabel}>Scan Reports</Text>
-          </LinearGradient>
-          <LinearGradient
-            colors={['#fa709a', '#fee140']}
-            style={styles.statCard}
+          </View>
+          <View
+            style={[styles.statCard, { backgroundColor: '#fa709a' }]}
           >
             <Ionicons name="notifications" size={32} color="#FFFFFF" />
             <Text style={styles.statValue}>3</Text>
             <Text style={styles.statLabel}>Alerts</Text>
-          </LinearGradient>
-        </Animated.View>
+          </View>
+        </View>
 
-        <Animated.View entering={FadeInDown.delay(600).duration(800)} style={styles.section}>
+        <View style={styles.section}>
           <Text style={[styles.sectionTitle, { color: colors.text }]}>Quick Actions</Text>
           <View style={styles.actionGrid}>
             <ActionItem 
@@ -90,9 +86,9 @@ export default function DashboardScreen() {
               colors={colors} 
             />
           </View>
-        </Animated.View>
+        </View>
 
-        <Animated.View entering={FadeInRight.delay(800).duration(800)} style={styles.section}>
+        <View style={styles.section}>
           <Text style={[styles.sectionTitle, { color: colors.text }]}>Recent Activity</Text>
           {[1, 2, 3].map((i) => (
             <TouchableOpacity key={i} style={[styles.activityItem, { backgroundColor: colors.surface }]}>
@@ -106,7 +102,7 @@ export default function DashboardScreen() {
               <Ionicons name="chevron-forward" size={18} color={colors.textSecondary} />
             </TouchableOpacity>
           ))}
-        </Animated.View>
+        </View>
       </ScrollView>
     </SafeAreaView>
   );

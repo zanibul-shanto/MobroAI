@@ -17,7 +17,6 @@ import { Input } from '@/components/ui/Input';
 import { Button } from '@/components/ui/Button';
 import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
-import Animated, { FadeInUp, FadeInDown } from 'react-native-reanimated';
 import { Ionicons } from '@expo/vector-icons';
 
 const forgotPasswordSchema = z.object({
@@ -54,7 +53,7 @@ export default function ForgotPasswordScreen() {
   if (submitted) {
     return (
       <View style={[styles.container, { backgroundColor: colors.background, justifyContent: 'center', alignItems: 'center', padding: 24 }]}>
-        <Animated.View entering={FadeInDown.duration(800)} style={{ alignItems: 'center' }}>
+        <View style={{ alignItems: 'center' }}>
           <View style={[styles.iconContainer, { backgroundColor: colors.primary + '15' }]}>
             <Ionicons name="mail-open-outline" size={64} color={colors.primary} />
           </View>
@@ -67,7 +66,7 @@ export default function ForgotPasswordScreen() {
             onPress={() => router.replace('/(auth)/login')} 
             style={{ marginTop: 32, width: '100%' }}
           />
-        </Animated.View>
+        </View>
       </View>
     );
   }
@@ -85,14 +84,14 @@ export default function ForgotPasswordScreen() {
           <Ionicons name="arrow-back" size={24} color={colors.text} />
         </TouchableOpacity>
 
-        <Animated.View entering={FadeInDown.delay(200).duration(1000)} style={styles.header}>
+        <View style={styles.header}>
           <Text style={[styles.title, { color: colors.text }]}>Forgot Password?</Text>
           <Text style={[styles.subtitle, { color: colors.textSecondary }]}>
             Enter your email address and we&apos;ll send you a link to reset your password.
           </Text>
-        </Animated.View>
+        </View>
 
-        <Animated.View entering={FadeInUp.delay(400).duration(1000)} style={styles.form}>
+        <View style={styles.form}>
           <Controller
             control={control}
             name="email"
@@ -123,7 +122,7 @@ export default function ForgotPasswordScreen() {
               <Text style={{ color: colors.primary, fontWeight: 'bold' }}>Login</Text>
             </TouchableOpacity>
           </View>
-        </Animated.View>
+        </View>
       </ScrollView>
     </KeyboardAvoidingView>
   );

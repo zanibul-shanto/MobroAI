@@ -17,7 +17,6 @@ import {
   TouchableOpacity,
   View
 } from 'react-native';
-import Animated, { FadeInDown, FadeInUp } from 'react-native-reanimated';
 import * as z from 'zod';
 
 const registerSchema = z.object({
@@ -71,14 +70,14 @@ export default function RegisterScreen() {
       style={[styles.container, { backgroundColor: colors.background }]}
     >
       <ScrollView contentContainerStyle={styles.scrollContent}>
-        <Animated.View entering={FadeInDown.delay(200).duration(1000)} style={styles.header}>
+        <View style={styles.header}>
           <Text style={[styles.title, { color: colors.text }]}>Create Account</Text>
           <Text style={[styles.subtitle, { color: colors.textSecondary }]}>
             Join us to start managing your health data
           </Text>
-        </Animated.View>
+        </View>
 
-        <Animated.View entering={FadeInUp.delay(400).duration(1000)} style={styles.form}>
+        <View style={styles.form}>
           <Controller
             control={control}
             name="fullName"
@@ -185,7 +184,7 @@ export default function RegisterScreen() {
               </TouchableOpacity>
             </Link>
           </View>
-        </Animated.View>
+        </View>
       </ScrollView>
     </KeyboardAvoidingView>
   );

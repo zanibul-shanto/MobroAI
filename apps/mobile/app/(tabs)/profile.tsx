@@ -21,8 +21,6 @@ import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { api } from '@/api/api';
 import { User as UserIcon, LogOut, Lock, Mail, Phone, Shield, Edit3, ChevronRight } from 'lucide-react-native';
-import Animated, { FadeIn, FadeInDown, Layout } from 'react-native-reanimated';
-import { LinearGradient } from 'expo-linear-gradient';
 
 const changePasswordSchema = z.object({
   newPassword: z.string().min(6, 'New password must be at least 6 characters'),
@@ -141,30 +139,29 @@ export default function ProfileScreen() {
   return (
     <SafeAreaView style={[styles.container, { backgroundColor: colors.background }]}>
       <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
-        <Animated.View entering={FadeInDown.delay(200).duration(800)} style={styles.header}>
-          <LinearGradient
-            colors={[colors.primary, colors.primary + 'CC']}
-            style={styles.avatarGradient}
+        <View style={styles.header}>
+          <View
+            style={[styles.avatarGradient, { backgroundColor: colors.primary }]}
           >
             <UserIcon size={48} color="#FFFFFF" />
-          </LinearGradient>
+          </View>
           <Text style={[styles.userName, { color: colors.text }]}>{user.fullName}</Text>
           <View style={[styles.roleBadge, { backgroundColor: colors.primary + '15' }]}>
             <Shield size={14} color={colors.primary} />
             <Text style={[styles.roleText, { color: colors.primary }]}>{getRoleLabel(user.role)}</Text>
           </View>
-        </Animated.View>
+        </View>
 
-        <Animated.View entering={FadeInDown.delay(400).duration(800)} style={styles.section}>
+        <View style={styles.section}>
           <Text style={[styles.sectionTitle, { color: colors.textSecondary }]}>Account Information</Text>
           <View style={[styles.card, { backgroundColor: colors.surface }]}>
             <InfoRow icon={<Mail size={20} color={colors.primary} />} label="Email" value={user.email} colors={colors} />
             <View style={[styles.divider, { backgroundColor: colors.border }]} />
             <InfoRow icon={<Phone size={20} color={colors.primary} />} label="Phone" value={user.phoneNumber} colors={colors} />
           </View>
-        </Animated.View>
+        </View>
 
-        <Animated.View entering={FadeInDown.delay(600).duration(800)} style={styles.section}>
+        <View style={styles.section}>
           <Text style={[styles.sectionTitle, { color: colors.textSecondary }]}>Settings</Text>
           <View style={[styles.card, { backgroundColor: colors.surface }]}>
             <ActionRow 
@@ -181,9 +178,9 @@ export default function ProfileScreen() {
               colors={colors} 
             />
           </View>
-        </Animated.View>
+        </View>
 
-        <Animated.View entering={FadeInDown.delay(800).duration(800)} style={styles.footer}>
+        <View style={styles.footer}>
           <TouchableOpacity 
             style={[styles.logoutButton, { borderColor: colors.error + '40' }]} 
             onPress={handleLogout}
@@ -192,18 +189,18 @@ export default function ProfileScreen() {
             <Text style={[styles.logoutText, { color: colors.error }]}>Log Out</Text>
           </TouchableOpacity>
           <Text style={[styles.versionText, { color: colors.textSecondary }]}>Version 1.0.0</Text>
-        </Animated.View>
+        </View>
       </ScrollView>
 
       {/* Edit Profile Modal */}
       <Modal
-        animationType="slide"
+        animationType="none"
         transparent={true}
         visible={profileModalVisible}
         onRequestClose={() => setProfileModalVisible(false)}
       >
         <View style={styles.modalOverlay}>
-          <Animated.View entering={FadeInDown} style={[styles.modalContent, { backgroundColor: colors.surface }]}>
+          <View style={[styles.modalContent, { backgroundColor: colors.surface }]}>
             <View style={styles.modalHeader}>
               <Text style={[styles.modalTitle, { color: colors.text }]}>Edit Profile</Text>
               <TouchableOpacity onPress={() => setProfileModalVisible(false)}>
@@ -267,19 +264,19 @@ export default function ProfileScreen() {
                 style={{ marginTop: 16 }}
               />
             </ScrollView>
-          </Animated.View>
+          </View>
         </View>
       </Modal>
 
       {/* Change Password Modal */}
       <Modal
-        animationType="slide"
+        animationType="none"
         transparent={true}
         visible={passwordModalVisible}
         onRequestClose={() => setPasswordModalVisible(false)}
       >
         <View style={styles.modalOverlay}>
-          <Animated.View entering={FadeInDown} style={[styles.modalContent, { backgroundColor: colors.surface }]}>
+          <View style={[styles.modalContent, { backgroundColor: colors.surface }]}>
             <View style={styles.modalHeader}>
               <Text style={[styles.modalTitle, { color: colors.text }]}>Change Password</Text>
               <TouchableOpacity onPress={() => setPasswordModalVisible(false)}>
@@ -325,7 +322,7 @@ export default function ProfileScreen() {
               loading={loading}
               style={{ marginTop: 16 }}
             />
-          </Animated.View>
+          </View>
         </View>
       </Modal>
     </SafeAreaView>
