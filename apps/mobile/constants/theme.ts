@@ -24,6 +24,7 @@ export const Colors = {
     tabIconSelected: tintColorLight,
     error: '#FF3B30',
     success: '#34C759',
+    card: '#FFFFFF',
   },
   dark: {
     text: '#FFFFFF',
@@ -40,6 +41,7 @@ export const Colors = {
     tabIconSelected: tintColorDark,
     error: '#EF4444',
     success: '#22C55E',
+    card: '#18181B',
   },
 };
 

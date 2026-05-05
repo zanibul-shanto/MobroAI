@@ -3,7 +3,7 @@ import * as SecureStore from 'expo-secure-store';
 
 // IMPORTANT: Replace with your actual backend server IP address.
 // If using Android Emulator, use 10.0.2.2. If using physical device, use your machine's IP.
-const API_BASE_URL = 'http://192.168.1.100:5009'; 
+const API_BASE_URL = 'https://r5qlwmlw-5000.inc1.devtunnels.ms'; 
 
 export const api = axios.create({
   baseURL: API_BASE_URL,
