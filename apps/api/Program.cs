@@ -54,6 +54,7 @@ app.MapUserEndpoints();
 app.MapAuthEndpoints();
 app.MapChildEndpoints();
 app.MapLocationLogEndpoints();
+app.MapMeaslesScanEndpoints();
 
 
 //Start the project
