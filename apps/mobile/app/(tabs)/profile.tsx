@@ -61,7 +61,6 @@ export default function ProfileScreen() {
   const { 
     control: profileControl, 
     handleSubmit: handleProfileSubmit, 
-    reset: resetProfile,
     formState: { errors: profileErrors } 
   } = useForm<EditProfileForm>({
     resolver: zodResolver(editProfileSchema),

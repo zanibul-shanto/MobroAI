@@ -18,7 +18,7 @@ function InitialLayout() {
 
   useEffect(() => {
     initialize();
-  }, []);
+  }, [initialize]);
 
   useEffect(() => {
     if (isLoading) return;
@@ -32,7 +32,7 @@ function InitialLayout() {
       // Redirect to tabs if authenticated and trying to access auth group
       router.replace('/(tabs)');
     }
-  }, [isAuthenticated, segments, isLoading]);
+  }, [isAuthenticated, segments, isLoading, router]);
 
   return (
     <Stack screenOptions={{ animation: 'none' }}>

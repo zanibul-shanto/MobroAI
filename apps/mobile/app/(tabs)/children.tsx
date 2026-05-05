@@ -20,7 +20,7 @@ import { api } from '@/api/api';
 import { Child } from '@/types/child';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
-import { Plus, Edit2, Trash2, Baby, Calendar, User, ChevronRight } from 'lucide-react-native';
+import { Plus, Edit2, Trash2, Baby, Calendar } from 'lucide-react-native';
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
@@ -129,7 +129,7 @@ export default function ChildrenScreen() {
             try {
               await api.delete(`/children/${id}`);
               fetchChildren();
-            } catch (error) {
+            } catch {
               Alert.alert('Error', 'Failed to delete');
             }
           }
@@ -151,7 +151,7 @@ export default function ChildrenScreen() {
   const formatDate = (dateString: string) => {
     try {
       return new Date(dateString).toLocaleDateString();
-    } catch (e) {
+    } catch {
       return 'N/A';
     }
   };
