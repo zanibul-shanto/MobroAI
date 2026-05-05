@@ -1,25 +1,25 @@
-import React, { useState } from 'react';
-import { 
-  View, 
-  Text, 
-  StyleSheet, 
-  KeyboardAvoidingView, 
-  Platform, 
-  ScrollView, 
-  Alert,
-  TouchableOpacity
-} from 'react-native';
-import { useRouter, Link } from 'expo-router';
-import { useForm, Controller } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import * as z from 'zod';
-import { Input } from '@/components/ui/Input';
+import { api } from '@/api/api';
 import { Button } from '@/components/ui/Button';
+import { Input } from '@/components/ui/Input';
 import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
-import { useAuthStore, saveAuthData } from '@/store/authStore';
-import { api } from '@/api/api';
-import Animated, { FadeInUp, FadeInDown } from 'react-native-reanimated';
+import { saveAuthData, useAuthStore } from '@/store/authStore';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { Link, useRouter } from 'expo-router';
+import React, { useState } from 'react';
+import { Controller, useForm } from 'react-hook-form';
+import {
+  Alert,
+  KeyboardAvoidingView,
+  Platform,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View
+} from 'react-native';
+import Animated, { FadeInDown, FadeInUp } from 'react-native-reanimated';
+import * as z from 'zod';
 
 const loginSchema = z.object({
   identifier: z.string().min(1, 'Email or Phone Number is required'),
@@ -45,11 +45,11 @@ export default function LoginScreen() {
     try {
       const response = await api.post('/auth/login', data);
       const { accessToken, user } = response.data;
-      
+
       await saveAuthData(accessToken, user);
       setToken(accessToken);
       setUser(user);
-      
+
       router.replace('/dashboard');
     } catch (error: any) {
       const message = error.response?.data?.message || 'Invalid credentials. Please try again.';
@@ -60,13 +60,13 @@ export default function LoginScreen() {
   };
 
   return (
-    <KeyboardAvoidingView 
+    <KeyboardAvoidingView
       behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
       style={[styles.container, { backgroundColor: colors.background }]}
     >
       <ScrollView contentContainerStyle={styles.scrollContent}>
         <Animated.View entering={FadeInDown.delay(200).duration(1000)} style={styles.header}>
-          <Text style={[styles.title, { color: colors.text }]}>Welcome Back</Text>
+          <Text style={[styles.title, { color: colors.text }]}>Welcome to MorboAiLens</Text>
           <Text style={[styles.subtitle, { color: colors.textSecondary }]}>
             Sign in to your account to continue
           </Text>
@@ -105,14 +105,14 @@ export default function LoginScreen() {
             )}
           />
 
-          <Button 
-            title="Login" 
-            onPress={handleSubmit(onLogin)} 
+          <Button
+            title="Login"
+            onPress={handleSubmit(onLogin)}
             loading={loading}
             style={styles.loginButton}
           />
 
-          <TouchableOpacity 
+          <TouchableOpacity
             onPress={() => router.push('/(auth)/forgot-password')}
             style={styles.forgotPassword}
           >

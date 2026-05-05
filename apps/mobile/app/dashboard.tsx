@@ -1,10 +1,10 @@
-import React from 'react';
-import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native';
-import { useRouter } from 'expo-router';
-import { Ionicons } from '@expo/vector-icons';
-import { useAuthStore } from '@/store/authStore';
 import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
+import { useAuthStore } from '@/store/authStore';
+import { Ionicons } from '@expo/vector-icons';
+import { useRouter } from 'expo-router';
+import React from 'react';
+import { SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Animated, { FadeInDown, FadeInRight } from 'react-native-reanimated';
 
 export default function DashboardScreen() {
@@ -26,7 +26,7 @@ export default function DashboardScreen() {
       <ScrollView contentContainerStyle={styles.scrollContent}>
         <View style={styles.header}>
           <Animated.View entering={FadeInDown.delay(200)}>
-            <Text style={[styles.greeting, { color: colors.textSecondary }]}>Welcome back,</Text>
+            <Text style={[styles.greeting, { color: colors.textSecondary }]}>Welcome to MorboAiLens</Text>
             <Text style={[styles.userName, { color: colors.text }]}>{user?.fullName || 'User'}</Text>
           </Animated.View>
           <TouchableOpacity onPress={handleLogout} style={styles.logoutButton}>
