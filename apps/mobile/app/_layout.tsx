@@ -6,6 +6,8 @@ import { StatusBar } from 'expo-status-bar';
 import { useColorScheme } from '@/hooks/use-color-scheme';
 import { LanguageProvider } from '@/context/LanguageContext';
 import { useAuthStore } from '@/store/authStore';
+import { useLocationTracking } from '@/hooks/useLocationTracking';
+import '@/services/locationService'; // Ensure background task is registered
 
 export const unstable_settings = {
   anchor: '(tabs)',
@@ -16,9 +18,17 @@ function InitialLayout() {
   const segments = useSegments();
   const router = useRouter();
 
+  const { startTracking } = useLocationTracking();
+
   useEffect(() => {
     initialize();
   }, [initialize]);
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      startTracking();
+    }
+  }, [isAuthenticated, startTracking]);
 
   useEffect(() => {
     if (isLoading) return;
