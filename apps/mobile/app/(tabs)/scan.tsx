@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import {
   View,
   Text,
@@ -13,6 +13,7 @@ import {
   Platform,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { useFocusEffect } from 'expo-router';
 import * as ImagePicker from 'expo-image-picker';
 import * as Location from 'expo-location';
 import { useAuthStore } from '@/store/authStore';
@@ -48,9 +49,11 @@ export default function ScanScreen() {
     }
   }, [user]);
 
-  useEffect(() => {
-    fetchChildren();
-  }, [fetchChildren]);
+  useFocusEffect(
+    useCallback(() => {
+      fetchChildren();
+    }, [fetchChildren])
+  );
 
   async function pickFromGallery() {
     const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync();

@@ -18,7 +18,7 @@ export default function DashboardScreen() {
   const router = useRouter();
   const colorScheme = useColorScheme() ?? 'light';
   const colors = Colors[colorScheme];
-  const { user } = useAuthStore();
+  const { user, logout } = useAuthStore();
 
   return (
     <SafeAreaView style={[styles.container, { backgroundColor: colors.background }]}>
@@ -28,11 +28,11 @@ export default function DashboardScreen() {
             <Text style={[styles.greeting, { color: colors.textSecondary }]}>Welcome to MorboAiLens</Text>
             <Text style={[styles.userName, { color: colors.text }]}>{user?.fullName || 'User'}</Text>
           </View>
-          <TouchableOpacity 
-            onPress={() => router.push('/(tabs)/profile')} 
+          <TouchableOpacity
+            onPress={logout}
             style={[styles.profileButton, { backgroundColor: colors.primary + '10' }]}
           >
-            <Ionicons name="person-outline" size={24} color={colors.primary} />
+            <Ionicons name="log-out-outline" size={24} color={colors.primary} />
           </TouchableOpacity>
         </View>
 
