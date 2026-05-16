@@ -4,7 +4,8 @@
       "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\zanib\\\\source\\\\repos\\\\MorboLensAI\" -Force)",
       "Bash(Select-Object Name, PSIsContainer)",
       "Bash(grep -v \"\\\\\\\\.git\")",
-      "Bash(grep -v \"\\\\\\\\.vs\")"
+      "Bash(grep -v \"\\\\\\\\.vs\")",
+      "Bash(dotnet build *)"
     ]
   }
 }
