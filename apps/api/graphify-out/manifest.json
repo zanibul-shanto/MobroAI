@@ -1,0 +1,307 @@
+{
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\AppDbContext.cs": {
+    "mtime": 1778734620.0976715,
+    "ast_hash": "b216f13d7235cea8674635a78872a780",
+    "semantic_hash": "b216f13d7235cea8674635a78872a780"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\appsettings.Development.json": {
+    "mtime": 1776236932.4196365,
+    "ast_hash": "804b473502a4c415cf75db61c56c32aa",
+    "semantic_hash": "804b473502a4c415cf75db61c56c32aa"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\appsettings.json": {
+    "mtime": 1778735194.0118904,
+    "ast_hash": "9b35035d5567b1d4284b2e304ec4e138",
+    "semantic_hash": "9b35035d5567b1d4284b2e304ec4e138"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\Program.cs": {
+    "mtime": 1778734620.1180184,
+    "ast_hash": "eb917462ac0c1a096034544e9408161d",
+    "semantic_hash": "eb917462ac0c1a096034544e9408161d"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\.claude\\settings.local.json": {
+    "mtime": 1778900526.5779097,
+    "ast_hash": "ef0355d8edda9b090dd2cd985ca24bb0",
+    "semantic_hash": "ef0355d8edda9b090dd2cd985ca24bb0"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\.vs\\VSWorkspaceState.json": {
+    "mtime": 1778734706.6010163,
+    "ast_hash": "c9e9faa8f3d920bee73201e052c886a6",
+    "semantic_hash": "c9e9faa8f3d920bee73201e052c886a6"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\.vs\\MorboLensAI\\v18\\DocumentLayout.backup.json": {
+    "mtime": 1778745912.7129827,
+    "ast_hash": "96b3474b02cc8618cde4f9c661c76828",
+    "semantic_hash": "96b3474b02cc8618cde4f9c661c76828"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\.vs\\MorboLensAI\\v18\\DocumentLayout.json": {
+    "mtime": 1778751909.0974865,
+    "ast_hash": "96b3474b02cc8618cde4f9c661c76828",
+    "semantic_hash": "96b3474b02cc8618cde4f9c661c76828"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\.vs\\MorboLensAI.slnx\\v18\\DocumentLayout.backup.json": {
+    "mtime": 1778703168.9805222,
+    "ast_hash": "6595bd20679e0993ab1b9331f0ff712d",
+    "semantic_hash": "6595bd20679e0993ab1b9331f0ff712d"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\.vs\\MorboLensAI.slnx\\v18\\DocumentLayout.json": {
+    "mtime": 1778734589.4097867,
+    "ast_hash": "6595bd20679e0993ab1b9331f0ff712d",
+    "semantic_hash": "6595bd20679e0993ab1b9331f0ff712d"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\.vscode\\launch.json": {
+    "mtime": 1776246950.0042315,
+    "ast_hash": "0a446e29624ba976a3375b5c02a3e5f4",
+    "semantic_hash": "0a446e29624ba976a3375b5c02a3e5f4"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\.vscode\\tasks.json": {
+    "mtime": 1776246877.8747103,
+    "ast_hash": "e30c836ab0b99cf4bedba17294f81c20",
+    "semantic_hash": "e30c836ab0b99cf4bedba17294f81c20"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\bin\\Debug\\net10.0\\appsettings.Development.json": {
+    "mtime": 1776236932.4196365,
+    "ast_hash": "804b473502a4c415cf75db61c56c32aa",
+    "semantic_hash": "804b473502a4c415cf75db61c56c32aa"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\bin\\Debug\\net10.0\\appsettings.json": {
+    "mtime": 1778735194.0118904,
+    "ast_hash": "9b35035d5567b1d4284b2e304ec4e138",
+    "semantic_hash": "9b35035d5567b1d4284b2e304ec4e138"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\bin\\Debug\\net10.0\\MorboLensAI.deps.json": {
+    "mtime": 1778745923.8491833,
+    "ast_hash": "480c5012f144517dbd96487a83f653de",
+    "semantic_hash": "480c5012f144517dbd96487a83f653de"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\bin\\Debug\\net10.0\\MorboLensAI.runtimeconfig.json": {
+    "mtime": 1778745923.9020543,
+    "ast_hash": "37595336dae30b037bd95e5047b95825",
+    "semantic_hash": "37595336dae30b037bd95e5047b95825"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\bin\\Debug\\net10.0\\MorboLensAI.staticwebassets.endpoints.json": {
+    "mtime": 1778734971.1904426,
+    "ast_hash": "f44ca44dd881261586b84442f2201257",
+    "semantic_hash": "f44ca44dd881261586b84442f2201257"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\bin\\Debug\\net10.0\\BuildHost-netcore\\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.deps.json": {
+    "mtime": 1763421306.0,
+    "ast_hash": "6a002d69baf7b85bfe11c404487f1905",
+    "semantic_hash": "6a002d69baf7b85bfe11c404487f1905"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\bin\\Debug\\net10.0\\BuildHost-netcore\\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.runtimeconfig.json": {
+    "mtime": 1763421306.0,
+    "ast_hash": "4a59cbd5a00293f28ad2649fdda570f9",
+    "semantic_hash": "4a59cbd5a00293f28ad2649fdda570f9"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\Endpoints\\AuthEndpoints.cs": {
+    "mtime": 1778734620.1006453,
+    "ast_hash": "cbc84297af17756a679aa61879d2f34b",
+    "semantic_hash": "cbc84297af17756a679aa61879d2f34b"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\Endpoints\\ChildEndpoints.cs": {
+    "mtime": 1778734620.1006453,
+    "ast_hash": "40dbea4c39583e2b7a531db162f64d69",
+    "semantic_hash": "40dbea4c39583e2b7a531db162f64d69"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\Endpoints\\LocationLogEndpoints.cs": {
+    "mtime": 1778744818.2807162,
+    "ast_hash": "4d36d49a7f08792f4fb7d342b41b2f33",
+    "semantic_hash": "4d36d49a7f08792f4fb7d342b41b2f33"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\Endpoints\\MeaslesScanEndpoints.cs": {
+    "mtime": 1778734620.1042423,
+    "ast_hash": "1652af9ac9770e9a3dba6071a4d82c31",
+    "semantic_hash": "1652af9ac9770e9a3dba6071a4d82c31"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\Endpoints\\TodoEndpoints.cs": {
+    "mtime": 1776280237.5531704,
+    "ast_hash": "447164a895d0e6282f080d2a5afbb249",
+    "semantic_hash": "447164a895d0e6282f080d2a5afbb249"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\Endpoints\\UserEndpoints.cs": {
+    "mtime": 1778734620.1052516,
+    "ast_hash": "cbfdfda7a0b6165dfabca4d8b62cb52a",
+    "semantic_hash": "cbfdfda7a0b6165dfabca4d8b62cb52a"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\Migrations\\20260514050935_init.cs": {
+    "mtime": 1778735376.043983,
+    "ast_hash": "94a5e9caf481d9f1e8daeea0547cace7",
+    "semantic_hash": "94a5e9caf481d9f1e8daeea0547cace7"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\Migrations\\20260514050935_init.Designer.cs": {
+    "mtime": 1778735376.0451207,
+    "ast_hash": "e7c7a3a4f4e1f031f8a5ebc3a921b824",
+    "semantic_hash": "e7c7a3a4f4e1f031f8a5ebc3a921b824"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\Migrations\\AppDbContextModelSnapshot.cs": {
+    "mtime": 1778735376.0465877,
+    "ast_hash": "e86d048c0c894538d81bc1a62c81a8c3",
+    "semantic_hash": "e86d048c0c894538d81bc1a62c81a8c3"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\Models\\AuthModels.cs": {
+    "mtime": 1778734620.10648,
+    "ast_hash": "25c15d418b990b9b3eb513b4d3f117c8",
+    "semantic_hash": "25c15d418b990b9b3eb513b4d3f117c8"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\Models\\Child.cs": {
+    "mtime": 1778734620.1085587,
+    "ast_hash": "2383ba4a7c1615e7dec792bd1f6b3944",
+    "semantic_hash": "2383ba4a7c1615e7dec792bd1f6b3944"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\Models\\Common.cs": {
+    "mtime": 1778734620.1095738,
+    "ast_hash": "6061305f1ce9aa3730b31efd275de5aa",
+    "semantic_hash": "6061305f1ce9aa3730b31efd275de5aa"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\Models\\LocationLog.cs": {
+    "mtime": 1778744788.5632737,
+    "ast_hash": "e76a329c00055e4e18888bb12111af98",
+    "semantic_hash": "e76a329c00055e4e18888bb12111af98"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\Models\\MeaslesScan.cs": {
+    "mtime": 1778734620.112676,
+    "ast_hash": "62925c9118643183ce6b6af467e78423",
+    "semantic_hash": "62925c9118643183ce6b6af467e78423"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\Models\\ScanPhoto.cs": {
+    "mtime": 1778734620.1141737,
+    "ast_hash": "a149db8e0b2b3661394051872af64293",
+    "semantic_hash": "a149db8e0b2b3661394051872af64293"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\Models\\Todo.cs": {
+    "mtime": 1776446781.0391257,
+    "ast_hash": "40c2255b05d49e3a4806f93b20d7a0be",
+    "semantic_hash": "40c2255b05d49e3a4806f93b20d7a0be"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\Models\\User.cs": {
+    "mtime": 1778734620.1169682,
+    "ast_hash": "870a950772e69871d5e8070fc4b1b8dd",
+    "semantic_hash": "870a950772e69871d5e8070fc4b1b8dd"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\obj\\MorboLensAI.csproj.nuget.dgspec.json": {
+    "mtime": 1778899822.2289515,
+    "ast_hash": "5d1ebbccb3796385f56af0cd2907c23a",
+    "semantic_hash": "5d1ebbccb3796385f56af0cd2907c23a"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\obj\\project.assets.json": {
+    "mtime": 1778899822.1734638,
+    "ast_hash": "568b84c9190afae4e9d43d734d16430f",
+    "semantic_hash": "568b84c9190afae4e9d43d734d16430f"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\obj\\project.packagespec.json": {
+    "mtime": 1778772240.6810634,
+    "ast_hash": "eb14c2c0206bbb255b420dc522638c1a",
+    "semantic_hash": "eb14c2c0206bbb255b420dc522638c1a"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\obj\\Debug\\net10.0\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs": {
+    "mtime": 1778703015.4474583,
+    "ast_hash": "8479efdf06e2d26e053d27ffa6964185",
+    "semantic_hash": "8479efdf06e2d26e053d27ffa6964185"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\obj\\Debug\\net10.0\\ApiEndpoints.json": {
+    "mtime": 1778745929.8578305,
+    "ast_hash": "9154a2ec90c85cd6056c5be1efd6e7de",
+    "semantic_hash": "9154a2ec90c85cd6056c5be1efd6e7de"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\obj\\Debug\\net10.0\\MorboLensAI.AssemblyInfo.cs": {
+    "mtime": 1778739104.8799202,
+    "ast_hash": "aeb96864b33dcc51721adaa584941cd3",
+    "semantic_hash": "aeb96864b33dcc51721adaa584941cd3"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\obj\\Debug\\net10.0\\MorboLensAI.GlobalUsings.g.cs": {
+    "mtime": 1776237021.48402,
+    "ast_hash": "5b3fdaae7b59d230d7d136eab049a98a",
+    "semantic_hash": "5b3fdaae7b59d230d7d136eab049a98a"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\obj\\Debug\\net10.0\\MorboLensAI.sourcelink.json": {
+    "mtime": 1778745917.4256215,
+    "ast_hash": "9a3227abc18922e2bc98f6674c051521",
+    "semantic_hash": "9a3227abc18922e2bc98f6674c051521"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\obj\\Debug\\net10.0\\project.razor.json": {
+    "mtime": 1778899795.3105583,
+    "ast_hash": "af0e724fbbeb73e4e6e2ddfaf6b0a426",
+    "semantic_hash": "af0e724fbbeb73e4e6e2ddfaf6b0a426"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\obj\\Debug\\net10.0\\rjsmcshtml.dswa.cache.json": {
+    "mtime": 1778745923.2331288,
+    "ast_hash": "1f62cd8aa0900b6564a168535abfd0b8",
+    "semantic_hash": "1f62cd8aa0900b6564a168535abfd0b8"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\obj\\Debug\\net10.0\\rjsmrazor.dswa.cache.json": {
+    "mtime": 1778745923.228814,
+    "ast_hash": "9d855f2778eacb6d8fd3db07d5db49d8",
+    "semantic_hash": "9d855f2778eacb6d8fd3db07d5db49d8"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\obj\\Debug\\net10.0\\rpswa.dswa.cache.json": {
+    "mtime": 1778735211.55069,
+    "ast_hash": "4022077fae91cec962178ca753305e0a",
+    "semantic_hash": "4022077fae91cec962178ca753305e0a"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\obj\\Debug\\net10.0\\staticwebassets.build.endpoints.json": {
+    "mtime": 1778734971.1904426,
+    "ast_hash": "f44ca44dd881261586b84442f2201257",
+    "semantic_hash": "f44ca44dd881261586b84442f2201257"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\obj\\Debug\\net10.0\\staticwebassets.build.json": {
+    "mtime": 1778734971.175623,
+    "ast_hash": "37aadeed1b12a833fca12f1d46e5c738",
+    "semantic_hash": "37aadeed1b12a833fca12f1d46e5c738"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\obj\\Release\\net10.0\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs": {
+    "mtime": 1778703016.202817,
+    "ast_hash": "8479efdf06e2d26e053d27ffa6964185",
+    "semantic_hash": "8479efdf06e2d26e053d27ffa6964185"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\obj\\Release\\net10.0\\MorboLensAI.AssemblyInfo.cs": {
+    "mtime": 1778703016.2261002,
+    "ast_hash": "69d45b2593c5212429ad9512aab679cd",
+    "semantic_hash": "69d45b2593c5212429ad9512aab679cd"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\obj\\Release\\net10.0\\MorboLensAI.GlobalUsings.g.cs": {
+    "mtime": 1776238875.9812763,
+    "ast_hash": "5b3fdaae7b59d230d7d136eab049a98a",
+    "semantic_hash": "5b3fdaae7b59d230d7d136eab049a98a"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\Properties\\launchSettings.json": {
+    "mtime": 1778735043.4434907,
+    "ast_hash": "de68355b9ac2f8139694cab3d3968090",
+    "semantic_hash": "de68355b9ac2f8139694cab3d3968090"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\Services\\TokenService.cs": {
+    "mtime": 1776447002.8059201,
+    "ast_hash": "913a13ea7b02cefb9ed8e98d7c3298f5",
+    "semantic_hash": "913a13ea7b02cefb9ed8e98d7c3298f5"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\AGENTS.md": {
+    "mtime": 1777485221.4412599,
+    "ast_hash": "ad006d3b61a44ea7809b65b7720de794",
+    "semantic_hash": "ad006d3b61a44ea7809b65b7720de794"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\CLAUDE.md": {
+    "mtime": 1778900590.8312373,
+    "ast_hash": "9d96c1fcf750c5a337fe154e453fbcdf",
+    "semantic_hash": "9d96c1fcf750c5a337fe154e453fbcdf"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\README.md": {
+    "mtime": 1778734620.1190276,
+    "ast_hash": "c18cad9718adaec4e73722da3bb31cdc",
+    "semantic_hash": "c18cad9718adaec4e73722da3bb31cdc"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\obj\\Debug\\net10.0\\MorboLensAI.csproj.FileListAbsolute.txt": {
+    "mtime": 1778734971.8141582,
+    "ast_hash": "436477a6a87be4010223a021e7731337",
+    "semantic_hash": "436477a6a87be4010223a021e7731337"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\obj\\Debug\\net10.0\\staticwebassets.references.upToDateCheck.txt": {
+    "mtime": 1776254371.956045,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MorboLensAI\\obj\\Debug\\net10.0\\staticwebassets.removed.txt": {
+    "mtime": 1776237380.1338654,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  }
+}
