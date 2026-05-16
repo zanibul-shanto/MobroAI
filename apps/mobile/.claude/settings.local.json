@@ -4,7 +4,11 @@
       "Bash(not exist *)",
       "PowerShell(Get-ChildItem graphify-out -Force | Select-Object Name, @{N='Size';E={if\\($_.PSIsContainer\\){'<dir>'}else{\"{0:N0} KB\" -f \\($_.Length/1KB\\)}}} | Format-Table -AutoSize)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\zanib\\\\source\\\\repos\\\\MobroAI_Mobile\" -Force)",
+      "Bash(Select-Object Name, PSIsContainer)",
+      "Bash(Format-Table -AutoSize)",
+      "Bash(npx tsc *)"
     ]
   }
 }

@@ -56,12 +56,13 @@ export default function DashboardScreen() {
         <View style={styles.section}>
           <Text style={[styles.sectionTitle, { color: colors.text }]}>Quick Actions</Text>
           <View style={styles.actionGrid}>
-            <ActionItem 
-              icon="scan" 
-              label="New Scan" 
-              color="#1E88E5" 
-              bgColor="#E3F2FD" 
-              colors={colors} 
+            <ActionItem
+              icon="scan"
+              label="New Scan"
+              color="#1E88E5"
+              bgColor="#E3F2FD"
+              colors={colors}
+              onPress={() => router.push('/(tabs)/scan' as any)}
             />
             <ActionItem 
               icon="medical" 
