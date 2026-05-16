@@ -11,10 +11,10 @@ public static class LocationLogEndpoints
         var group = app.MapGroup("/locations").RequireAuthorization();
 
         // --- Write Operations ---
-        group.MapPost("/", Create);
+        group.MapPost("", Create);
 
         // --- Read Operations ---
-        group.MapGet("/", GetAll);
+        group.MapGet("", GetAll);
         group.MapGet("/user/{userId}", GetByUserId);
     }
 
