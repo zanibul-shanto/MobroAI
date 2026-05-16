@@ -1,0 +1,5457 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "android_icon_system",
+        "label": "Android Adaptive Icon System (Background + Foreground + Monochrome)",
+        "nodes": [
+          "img_android_bg",
+          "img_android_fg",
+          "img_android_mono"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.95,
+        "source_file": "assets/images"
+      },
+      {
+        "id": "core_tech_stack",
+        "label": "Core Technology Stack (React Native + Expo + expo-router)",
+        "nodes": [
+          "expo_framework",
+          "expo_router",
+          "react_native",
+          "react",
+          "typescript"
+        ],
+        "relation": "implement",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "AGENTS.md"
+      },
+      {
+        "id": "experimental_features",
+        "label": "Experimental Performance Features (New Architecture + React Compiler)",
+        "nodes": [
+          "new_architecture",
+          "react_compiler",
+          "react"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.95,
+        "source_file": "AGENTS.md"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "app.json",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L1",
+      "id": "app_json",
+      "community": 1,
+      "norm_label": "app.json"
+    },
+    {
+      "label": "expo",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L2",
+      "id": "mobroai_mobile_app_expo",
+      "community": 1,
+      "norm_label": "expo"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L3",
+      "id": "mobroai_mobile_app_expo_name",
+      "community": 1,
+      "norm_label": "name"
+    },
+    {
+      "label": "slug",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L4",
+      "id": "mobroai_mobile_app_expo_slug",
+      "community": 1,
+      "norm_label": "slug"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L5",
+      "id": "mobroai_mobile_app_expo_version",
+      "community": 1,
+      "norm_label": "version"
+    },
+    {
+      "label": "orientation",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L6",
+      "id": "mobroai_mobile_app_expo_orientation",
+      "community": 1,
+      "norm_label": "orientation"
+    },
+    {
+      "label": "icon",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L7",
+      "id": "mobroai_mobile_app_expo_icon",
+      "community": 1,
+      "norm_label": "icon"
+    },
+    {
+      "label": "scheme",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L8",
+      "id": "mobroai_mobile_app_expo_scheme",
+      "community": 1,
+      "norm_label": "scheme"
+    },
+    {
+      "label": "userInterfaceStyle",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L9",
+      "id": "mobroai_mobile_app_expo_userinterfacestyle",
+      "community": 1,
+      "norm_label": "userinterfacestyle"
+    },
+    {
+      "label": "newArchEnabled",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L10",
+      "id": "mobroai_mobile_app_expo_newarchenabled",
+      "community": 1,
+      "norm_label": "newarchenabled"
+    },
+    {
+      "label": "ios",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L11",
+      "id": "mobroai_mobile_app_expo_ios",
+      "community": 1,
+      "norm_label": "ios"
+    },
+    {
+      "label": "supportsTablet",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L12",
+      "id": "mobroai_mobile_app_ios_supportstablet",
+      "community": 1,
+      "norm_label": "supportstablet"
+    },
+    {
+      "label": "android",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L14",
+      "id": "mobroai_mobile_app_expo_android",
+      "community": 1,
+      "norm_label": "android"
+    },
+    {
+      "label": "adaptiveIcon",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L15",
+      "id": "mobroai_mobile_app_android_adaptiveicon",
+      "community": 1,
+      "norm_label": "adaptiveicon"
+    },
+    {
+      "label": "backgroundColor",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L16",
+      "id": "mobroai_mobile_app_adaptiveicon_backgroundcolor",
+      "community": 1,
+      "norm_label": "backgroundcolor"
+    },
+    {
+      "label": "foregroundImage",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L17",
+      "id": "mobroai_mobile_app_adaptiveicon_foregroundimage",
+      "community": 1,
+      "norm_label": "foregroundimage"
+    },
+    {
+      "label": "backgroundImage",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L18",
+      "id": "mobroai_mobile_app_adaptiveicon_backgroundimage",
+      "community": 1,
+      "norm_label": "backgroundimage"
+    },
+    {
+      "label": "monochromeImage",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L19",
+      "id": "mobroai_mobile_app_adaptiveicon_monochromeimage",
+      "community": 1,
+      "norm_label": "monochromeimage"
+    },
+    {
+      "label": "edgeToEdgeEnabled",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L21",
+      "id": "mobroai_mobile_app_android_edgetoedgeenabled",
+      "community": 1,
+      "norm_label": "edgetoedgeenabled"
+    },
+    {
+      "label": "predictiveBackGestureEnabled",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L22",
+      "id": "mobroai_mobile_app_android_predictivebackgestureenabled",
+      "community": 1,
+      "norm_label": "predictivebackgestureenabled"
+    },
+    {
+      "label": "permissions",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L23",
+      "id": "mobroai_mobile_app_android_permissions",
+      "community": 1,
+      "norm_label": "permissions"
+    },
+    {
+      "label": "web",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L31",
+      "id": "mobroai_mobile_app_expo_web",
+      "community": 1,
+      "norm_label": "web"
+    },
+    {
+      "label": "output",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L32",
+      "id": "mobroai_mobile_app_web_output",
+      "community": 1,
+      "norm_label": "output"
+    },
+    {
+      "label": "favicon",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L33",
+      "id": "mobroai_mobile_app_web_favicon",
+      "community": 1,
+      "norm_label": "favicon"
+    },
+    {
+      "label": "plugins",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L35",
+      "id": "mobroai_mobile_app_expo_plugins",
+      "community": 1,
+      "norm_label": "plugins"
+    },
+    {
+      "label": "experiments",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L58",
+      "id": "mobroai_mobile_app_expo_experiments",
+      "community": 1,
+      "norm_label": "experiments"
+    },
+    {
+      "label": "typedRoutes",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L59",
+      "id": "mobroai_mobile_app_experiments_typedroutes",
+      "community": 1,
+      "norm_label": "typedroutes"
+    },
+    {
+      "label": "reactCompiler",
+      "file_type": "code",
+      "source_file": "app.json",
+      "source_location": "L60",
+      "id": "mobroai_mobile_app_experiments_reactcompiler",
+      "community": 1,
+      "norm_label": "reactcompiler"
+    },
+    {
+      "label": "eslint.config.js",
+      "file_type": "code",
+      "source_file": "eslint.config.js",
+      "source_location": "L1",
+      "id": "eslint_config_js",
+      "community": 13,
+      "norm_label": "eslint.config.js"
+    },
+    {
+      "label": "{ defineConfig }",
+      "file_type": "code",
+      "source_file": "eslint.config.js",
+      "source_location": "L2",
+      "id": "mobroai_mobile_eslint_config_defineconfig",
+      "community": 13,
+      "norm_label": "{ defineconfig }"
+    },
+    {
+      "label": "expoConfig",
+      "file_type": "code",
+      "source_file": "eslint.config.js",
+      "source_location": "L3",
+      "id": "mobroai_mobile_eslint_config_expoconfig",
+      "community": 13,
+      "norm_label": "expoconfig"
+    },
+    {
+      "label": "expo-env.d.ts",
+      "file_type": "code",
+      "source_file": "expo-env.d.ts",
+      "source_location": "L1",
+      "id": "expo_env_d_ts",
+      "community": 17,
+      "norm_label": "expo-env.d.ts"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "id": "package_json",
+      "community": 3,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "id": "mobroai_mobile_package_name",
+      "community": 3,
+      "norm_label": "name"
+    },
+    {
+      "label": "main",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "id": "mobroai_mobile_package_main",
+      "community": 3,
+      "norm_label": "main"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "id": "mobroai_mobile_package_version",
+      "community": 3,
+      "norm_label": "version"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "id": "mobroai_mobile_package_scripts",
+      "community": 3,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "start",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "id": "mobroai_mobile_package_scripts_start",
+      "community": 3,
+      "norm_label": "start"
+    },
+    {
+      "label": "reset-project",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "id": "mobroai_mobile_package_scripts_reset_project",
+      "community": 3,
+      "norm_label": "reset-project"
+    },
+    {
+      "label": "android",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "id": "mobroai_mobile_package_scripts_android",
+      "community": 3,
+      "norm_label": "android"
+    },
+    {
+      "label": "ios",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "id": "mobroai_mobile_package_scripts_ios",
+      "community": 3,
+      "norm_label": "ios"
+    },
+    {
+      "label": "web",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "id": "mobroai_mobile_package_scripts_web",
+      "community": 3,
+      "norm_label": "web"
+    },
+    {
+      "label": "lint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "id": "mobroai_mobile_package_scripts_lint",
+      "community": 3,
+      "norm_label": "lint"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "id": "mobroai_mobile_package_dependencies",
+      "community": 2,
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "@expo/vector-icons",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "id": "mobroai_mobile_package_dependencies_expo_vector_icons",
+      "community": 2,
+      "norm_label": "@expo/vector-icons"
+    },
+    {
+      "label": "@hookform/resolvers",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "id": "mobroai_mobile_package_dependencies_hookform_resolvers",
+      "community": 2,
+      "norm_label": "@hookform/resolvers"
+    },
+    {
+      "label": "@react-navigation/bottom-tabs",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "id": "mobroai_mobile_package_dependencies_react_navigation_bottom_tabs",
+      "community": 2,
+      "norm_label": "@react-navigation/bottom-tabs"
+    },
+    {
+      "label": "@react-navigation/elements",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "id": "mobroai_mobile_package_dependencies_react_navigation_elements",
+      "community": 2,
+      "norm_label": "@react-navigation/elements"
+    },
+    {
+      "label": "@react-navigation/native",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "id": "mobroai_mobile_package_dependencies_react_navigation_native",
+      "community": 2,
+      "norm_label": "@react-navigation/native"
+    },
+    {
+      "label": "axios",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "id": "mobroai_mobile_package_dependencies_axios",
+      "community": 2,
+      "norm_label": "axios"
+    },
+    {
+      "label": "expo",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "id": "mobroai_mobile_package_dependencies_expo",
+      "community": 2,
+      "norm_label": "expo"
+    },
+    {
+      "label": "expo-constants",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "id": "mobroai_mobile_package_dependencies_expo_constants",
+      "community": 2,
+      "norm_label": "expo-constants"
+    },
+    {
+      "label": "expo-font",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "id": "mobroai_mobile_package_dependencies_expo_font",
+      "community": 2,
+      "norm_label": "expo-font"
+    },
+    {
+      "label": "expo-haptics",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "id": "mobroai_mobile_package_dependencies_expo_haptics",
+      "community": 2,
+      "norm_label": "expo-haptics"
+    },
+    {
+      "label": "expo-linking",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "id": "mobroai_mobile_package_dependencies_expo_linking",
+      "community": 2,
+      "norm_label": "expo-linking"
+    },
+    {
+      "label": "expo-location",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "id": "mobroai_mobile_package_dependencies_expo_location",
+      "community": 2,
+      "norm_label": "expo-location"
+    },
+    {
+      "label": "expo-router",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "id": "mobroai_mobile_package_dependencies_expo_router",
+      "community": 6,
+      "norm_label": "expo-router"
+    },
+    {
+      "label": "expo-secure-store",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "id": "mobroai_mobile_package_dependencies_expo_secure_store",
+      "community": 2,
+      "norm_label": "expo-secure-store"
+    },
+    {
+      "label": "expo-splash-screen",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "id": "mobroai_mobile_package_dependencies_expo_splash_screen",
+      "community": 2,
+      "norm_label": "expo-splash-screen"
+    },
+    {
+      "label": "expo-status-bar",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "id": "mobroai_mobile_package_dependencies_expo_status_bar",
+      "community": 2,
+      "norm_label": "expo-status-bar"
+    },
+    {
+      "label": "expo-symbols",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "id": "mobroai_mobile_package_dependencies_expo_symbols",
+      "community": 2,
+      "norm_label": "expo-symbols"
+    },
+    {
+      "label": "expo-system-ui",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L31",
+      "id": "mobroai_mobile_package_dependencies_expo_system_ui",
+      "community": 2,
+      "norm_label": "expo-system-ui"
+    },
+    {
+      "label": "expo-task-manager",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L32",
+      "id": "mobroai_mobile_package_dependencies_expo_task_manager",
+      "community": 2,
+      "norm_label": "expo-task-manager"
+    },
+    {
+      "label": "lucide-react-native",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L33",
+      "id": "mobroai_mobile_package_dependencies_lucide_react_native",
+      "community": 2,
+      "norm_label": "lucide-react-native"
+    },
+    {
+      "label": "react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L34",
+      "id": "mobroai_mobile_package_dependencies_react",
+      "community": 7,
+      "norm_label": "react"
+    },
+    {
+      "label": "react-dom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L35",
+      "id": "mobroai_mobile_package_dependencies_react_dom",
+      "community": 2,
+      "norm_label": "react-dom"
+    },
+    {
+      "label": "react-hook-form",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L36",
+      "id": "mobroai_mobile_package_dependencies_react_hook_form",
+      "community": 2,
+      "norm_label": "react-hook-form"
+    },
+    {
+      "label": "react-native",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L37",
+      "id": "mobroai_mobile_package_dependencies_react_native",
+      "community": 0,
+      "norm_label": "react-native"
+    },
+    {
+      "label": "react-native-gesture-handler",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L38",
+      "id": "mobroai_mobile_package_dependencies_react_native_gesture_handler",
+      "community": 2,
+      "norm_label": "react-native-gesture-handler"
+    },
+    {
+      "label": "react-native-safe-area-context",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L39",
+      "id": "mobroai_mobile_package_dependencies_react_native_safe_area_context",
+      "community": 2,
+      "norm_label": "react-native-safe-area-context"
+    },
+    {
+      "label": "react-native-screens",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L40",
+      "id": "mobroai_mobile_package_dependencies_react_native_screens",
+      "community": 2,
+      "norm_label": "react-native-screens"
+    },
+    {
+      "label": "react-native-web",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L41",
+      "id": "mobroai_mobile_package_dependencies_react_native_web",
+      "community": 2,
+      "norm_label": "react-native-web"
+    },
+    {
+      "label": "zod",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L42",
+      "id": "mobroai_mobile_package_dependencies_zod",
+      "community": 2,
+      "norm_label": "zod"
+    },
+    {
+      "label": "zustand",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L43",
+      "id": "mobroai_mobile_package_dependencies_zustand",
+      "community": 2,
+      "norm_label": "zustand"
+    },
+    {
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L45",
+      "id": "mobroai_mobile_package_devdependencies",
+      "community": 3,
+      "norm_label": "devdependencies"
+    },
+    {
+      "label": "@types/react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L46",
+      "id": "mobroai_mobile_package_devdependencies_types_react",
+      "community": 3,
+      "norm_label": "@types/react"
+    },
+    {
+      "label": "eslint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L47",
+      "id": "mobroai_mobile_package_devdependencies_eslint",
+      "community": 3,
+      "norm_label": "eslint"
+    },
+    {
+      "label": "eslint-config-expo",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L48",
+      "id": "mobroai_mobile_package_devdependencies_eslint_config_expo",
+      "community": 3,
+      "norm_label": "eslint-config-expo"
+    },
+    {
+      "label": "typescript",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L49",
+      "id": "mobroai_mobile_package_devdependencies_typescript",
+      "community": 3,
+      "norm_label": "typescript"
+    },
+    {
+      "label": "private",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L51",
+      "id": "mobroai_mobile_package_private",
+      "community": 3,
+      "norm_label": "private"
+    },
+    {
+      "label": "tsconfig.json",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L1",
+      "id": "tsconfig_json",
+      "community": 11,
+      "norm_label": "tsconfig.json"
+    },
+    {
+      "label": "extends",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L2",
+      "id": "mobroai_mobile_tsconfig_extends",
+      "community": 11,
+      "norm_label": "extends"
+    },
+    {
+      "label": "compilerOptions",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L3",
+      "id": "mobroai_mobile_tsconfig_compileroptions",
+      "community": 11,
+      "norm_label": "compileroptions"
+    },
+    {
+      "label": "strict",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L4",
+      "id": "mobroai_mobile_tsconfig_compileroptions_strict",
+      "community": 11,
+      "norm_label": "strict"
+    },
+    {
+      "label": "paths",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L5",
+      "id": "mobroai_mobile_tsconfig_compileroptions_paths",
+      "community": 11,
+      "norm_label": "paths"
+    },
+    {
+      "label": "@/*",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L6",
+      "id": "mobroai_mobile_tsconfig_paths",
+      "community": 11,
+      "norm_label": "@/*"
+    },
+    {
+      "label": "include",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L11",
+      "id": "mobroai_mobile_tsconfig_include",
+      "community": 11,
+      "norm_label": "include"
+    },
+    {
+      "label": "devices.json",
+      "file_type": "code",
+      "source_file": ".expo/devices.json",
+      "source_location": "L1",
+      "id": "expo_devices_json",
+      "community": 14,
+      "norm_label": "devices.json"
+    },
+    {
+      "label": "devices",
+      "file_type": "code",
+      "source_file": ".expo/devices.json",
+      "source_location": "L2",
+      "id": "expo_devices_devices",
+      "community": 14,
+      "norm_label": "devices"
+    },
+    {
+      "label": "settings.json",
+      "file_type": "code",
+      "source_file": ".expo/settings.json",
+      "source_location": "L1",
+      "id": "expo_settings_json",
+      "community": 15,
+      "norm_label": "settings.json"
+    },
+    {
+      "label": "urlRandomness",
+      "file_type": "code",
+      "source_file": ".expo/settings.json",
+      "source_location": "L2",
+      "id": "expo_settings_urlrandomness",
+      "community": 15,
+      "norm_label": "urlrandomness"
+    },
+    {
+      "label": "router.d.ts",
+      "file_type": "code",
+      "source_file": ".expo/types/router.d.ts",
+      "source_location": "L1",
+      "id": "expo_types_router_d_ts",
+      "community": 6,
+      "norm_label": "router.d.ts"
+    },
+    {
+      "label": "__routes",
+      "file_type": "code",
+      "source_file": ".expo/types/router.d.ts",
+      "source_location": "L8",
+      "id": "types_router_d_routes",
+      "community": 6,
+      "norm_label": "__routes"
+    },
+    {
+      "label": "extensions.json",
+      "file_type": "code",
+      "source_file": ".vscode/extensions.json",
+      "source_location": "L1",
+      "id": "vscode_extensions_json",
+      "community": 16,
+      "norm_label": "extensions.json"
+    },
+    {
+      "label": "recommendations",
+      "file_type": "code",
+      "source_file": ".vscode/extensions.json",
+      "source_location": "L1",
+      "id": "vscode_extensions_recommendations",
+      "community": 16,
+      "norm_label": "recommendations"
+    },
+    {
+      "label": "settings.json",
+      "file_type": "code",
+      "source_file": ".vscode/settings.json",
+      "source_location": "L1",
+      "id": "vscode_settings_json",
+      "community": 12,
+      "norm_label": "settings.json"
+    },
+    {
+      "label": "editor.codeActionsOnSave",
+      "file_type": "code",
+      "source_file": ".vscode/settings.json",
+      "source_location": "L2",
+      "id": "vscode_settings_editor_codeactionsonsave",
+      "community": 12,
+      "norm_label": "editor.codeactionsonsave"
+    },
+    {
+      "label": "source.fixAll",
+      "file_type": "code",
+      "source_file": ".vscode/settings.json",
+      "source_location": "L3",
+      "id": "vscode_settings_editor_codeactionsonsave_source_fixall",
+      "community": 12,
+      "norm_label": "source.fixall"
+    },
+    {
+      "label": "source.organizeImports",
+      "file_type": "code",
+      "source_file": ".vscode/settings.json",
+      "source_location": "L4",
+      "id": "vscode_settings_editor_codeactionsonsave_source_organizeimports",
+      "community": 12,
+      "norm_label": "source.organizeimports"
+    },
+    {
+      "label": "source.sortMembers",
+      "file_type": "code",
+      "source_file": ".vscode/settings.json",
+      "source_location": "L5",
+      "id": "vscode_settings_editor_codeactionsonsave_source_sortmembers",
+      "community": 12,
+      "norm_label": "source.sortmembers"
+    },
+    {
+      "label": "api.ts",
+      "file_type": "code",
+      "source_file": "api/api.ts",
+      "source_location": "L1",
+      "id": "api_api_ts",
+      "community": 0,
+      "norm_label": "api.ts"
+    },
+    {
+      "label": "api",
+      "file_type": "code",
+      "source_file": "api/api.ts",
+      "source_location": "L6",
+      "id": "api_api_api",
+      "community": 0,
+      "norm_label": "api"
+    },
+    {
+      "label": "location.ts",
+      "file_type": "code",
+      "source_file": "api/location.ts",
+      "source_location": "L1",
+      "id": "api_location_ts",
+      "community": 4,
+      "norm_label": "location.ts"
+    },
+    {
+      "label": "LocationData",
+      "file_type": "code",
+      "source_file": "api/location.ts",
+      "source_location": "L3",
+      "id": "api_location_locationdata",
+      "community": 4,
+      "norm_label": "locationdata"
+    },
+    {
+      "label": "saveLocation()",
+      "file_type": "code",
+      "source_file": "api/location.ts",
+      "source_location": "L14",
+      "id": "api_location_savelocation",
+      "community": 4,
+      "norm_label": "savelocation()"
+    },
+    {
+      "label": "_layout.tsx",
+      "file_type": "code",
+      "source_file": "app/_layout.tsx",
+      "source_location": "L1",
+      "id": "app_layout_tsx",
+      "community": 4,
+      "norm_label": "_layout.tsx"
+    },
+    {
+      "label": "unstable_settings",
+      "file_type": "code",
+      "source_file": "app/_layout.tsx",
+      "source_location": "L12",
+      "id": "app_layout_unstable_settings",
+      "community": 4,
+      "norm_label": "unstable_settings"
+    },
+    {
+      "label": "InitialLayout()",
+      "file_type": "code",
+      "source_file": "app/_layout.tsx",
+      "source_location": "L16",
+      "id": "app_layout_initiallayout",
+      "community": 4,
+      "norm_label": "initiallayout()"
+    },
+    {
+      "label": "RootLayout()",
+      "file_type": "code",
+      "source_file": "app/_layout.tsx",
+      "source_location": "L55",
+      "id": "app_layout_rootlayout",
+      "community": 4,
+      "norm_label": "rootlayout()"
+    },
+    {
+      "label": "login.tsx",
+      "file_type": "code",
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L1",
+      "id": "app_auth_login_tsx",
+      "community": 0,
+      "norm_label": "login.tsx"
+    },
+    {
+      "label": "loginSchema",
+      "file_type": "code",
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L23",
+      "id": "auth_login_loginschema",
+      "community": 0,
+      "norm_label": "loginschema"
+    },
+    {
+      "label": "LoginForm",
+      "file_type": "code",
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L28",
+      "id": "auth_login_loginform",
+      "community": 0,
+      "norm_label": "loginform"
+    },
+    {
+      "label": "LoginScreen()",
+      "file_type": "code",
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L30",
+      "id": "auth_login_loginscreen",
+      "community": 5,
+      "norm_label": "loginscreen()"
+    },
+    {
+      "label": "styles",
+      "file_type": "code",
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L137",
+      "id": "auth_login_styles",
+      "community": 0,
+      "norm_label": "styles"
+    },
+    {
+      "label": "register.tsx",
+      "file_type": "code",
+      "source_file": "app/(auth)/register.tsx",
+      "source_location": "L1",
+      "id": "app_auth_register_tsx",
+      "community": 0,
+      "norm_label": "register.tsx"
+    },
+    {
+      "label": "registerSchema",
+      "file_type": "code",
+      "source_file": "app/(auth)/register.tsx",
+      "source_location": "L22",
+      "id": "auth_register_registerschema",
+      "community": 0,
+      "norm_label": "registerschema"
+    },
+    {
+      "label": "RegisterForm",
+      "file_type": "code",
+      "source_file": "app/(auth)/register.tsx",
+      "source_location": "L30",
+      "id": "auth_register_registerform",
+      "community": 0,
+      "norm_label": "registerform"
+    },
+    {
+      "label": "ROLES",
+      "file_type": "code",
+      "source_file": "app/(auth)/register.tsx",
+      "source_location": "L32",
+      "id": "auth_register_roles",
+      "community": 0,
+      "norm_label": "roles"
+    },
+    {
+      "label": "RegisterScreen()",
+      "file_type": "code",
+      "source_file": "app/(auth)/register.tsx",
+      "source_location": "L37",
+      "id": "auth_register_registerscreen",
+      "community": 0,
+      "norm_label": "registerscreen()"
+    },
+    {
+      "label": "styles",
+      "file_type": "code",
+      "source_file": "app/(auth)/register.tsx",
+      "source_location": "L193",
+      "id": "auth_register_styles",
+      "community": 0,
+      "norm_label": "styles"
+    },
+    {
+      "label": "_layout.tsx",
+      "file_type": "code",
+      "source_file": "app/(auth)/_layout.tsx",
+      "source_location": "L1",
+      "id": "app_auth_layout_tsx",
+      "community": 6,
+      "norm_label": "_layout.tsx"
+    },
+    {
+      "label": "AuthLayout()",
+      "file_type": "code",
+      "source_file": "app/(auth)/_layout.tsx",
+      "source_location": "L3",
+      "id": "auth_layout_authlayout",
+      "community": 6,
+      "norm_label": "authlayout()"
+    },
+    {
+      "label": "children.tsx",
+      "file_type": "code",
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L1",
+      "id": "app_tabs_children_tsx",
+      "community": 0,
+      "norm_label": "children.tsx"
+    },
+    {
+      "label": "childSchema",
+      "file_type": "code",
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L28",
+      "id": "tabs_children_childschema",
+      "community": 0,
+      "norm_label": "childschema"
+    },
+    {
+      "label": "ChildForm",
+      "file_type": "code",
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L34",
+      "id": "tabs_children_childform",
+      "community": 0,
+      "norm_label": "childform"
+    },
+    {
+      "label": "ChildrenScreen()",
+      "file_type": "code",
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L36",
+      "id": "tabs_children_childrenscreen",
+      "community": 5,
+      "norm_label": "childrenscreen()"
+    },
+    {
+      "label": "styles",
+      "file_type": "code",
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L329",
+      "id": "tabs_children_styles",
+      "community": 0,
+      "norm_label": "styles"
+    },
+    {
+      "label": "index.tsx",
+      "file_type": "code",
+      "source_file": "app/(tabs)/index.tsx",
+      "source_location": "L1",
+      "id": "app_tabs_index_tsx",
+      "community": 5,
+      "norm_label": "index.tsx"
+    },
+    {
+      "label": "DashboardScreen()",
+      "file_type": "code",
+      "source_file": "app/(tabs)/index.tsx",
+      "source_location": "L17",
+      "id": "tabs_index_dashboardscreen",
+      "community": 5,
+      "norm_label": "dashboardscreen()"
+    },
+    {
+      "label": "ActionItem()",
+      "file_type": "code",
+      "source_file": "app/(tabs)/index.tsx",
+      "source_location": "L111",
+      "id": "tabs_index_actionitem",
+      "community": 5,
+      "norm_label": "actionitem()"
+    },
+    {
+      "label": "styles",
+      "file_type": "code",
+      "source_file": "app/(tabs)/index.tsx",
+      "source_location": "L125",
+      "id": "tabs_index_styles",
+      "community": 5,
+      "norm_label": "styles"
+    },
+    {
+      "label": "profile.tsx",
+      "file_type": "code",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L1",
+      "id": "app_tabs_profile_tsx",
+      "community": 0,
+      "norm_label": "profile.tsx"
+    },
+    {
+      "label": "changePasswordSchema",
+      "file_type": "code",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L25",
+      "id": "tabs_profile_changepasswordschema",
+      "community": 0,
+      "norm_label": "changepasswordschema"
+    },
+    {
+      "label": "editProfileSchema",
+      "file_type": "code",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L33",
+      "id": "tabs_profile_editprofileschema",
+      "community": 0,
+      "norm_label": "editprofileschema"
+    },
+    {
+      "label": "ChangePasswordForm",
+      "file_type": "code",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L40",
+      "id": "tabs_profile_changepasswordform",
+      "community": 0,
+      "norm_label": "changepasswordform"
+    },
+    {
+      "label": "EditProfileForm",
+      "file_type": "code",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L41",
+      "id": "tabs_profile_editprofileform",
+      "community": 0,
+      "norm_label": "editprofileform"
+    },
+    {
+      "label": "ProfileScreen()",
+      "file_type": "code",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L43",
+      "id": "tabs_profile_profilescreen",
+      "community": 5,
+      "norm_label": "profilescreen()"
+    },
+    {
+      "label": "InfoRow()",
+      "file_type": "code",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L331",
+      "id": "tabs_profile_inforow",
+      "community": 0,
+      "norm_label": "inforow()"
+    },
+    {
+      "label": "ActionRow()",
+      "file_type": "code",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L345",
+      "id": "tabs_profile_actionrow",
+      "community": 0,
+      "norm_label": "actionrow()"
+    },
+    {
+      "label": "styles",
+      "file_type": "code",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L357",
+      "id": "tabs_profile_styles",
+      "community": 0,
+      "norm_label": "styles"
+    },
+    {
+      "label": "_layout.tsx",
+      "file_type": "code",
+      "source_file": "app/(tabs)/_layout.tsx",
+      "source_location": "L1",
+      "id": "app_tabs_layout_tsx",
+      "community": 7,
+      "norm_label": "_layout.tsx"
+    },
+    {
+      "label": "TabLayout()",
+      "file_type": "code",
+      "source_file": "app/(tabs)/_layout.tsx",
+      "source_location": "L11",
+      "id": "tabs_layout_tablayout",
+      "community": 7,
+      "norm_label": "tablayout()"
+    },
+    {
+      "label": "haptic-tab.tsx",
+      "file_type": "code",
+      "source_file": "components/haptic-tab.tsx",
+      "source_location": "L1",
+      "id": "components_haptic_tab_tsx",
+      "community": 7,
+      "norm_label": "haptic-tab.tsx"
+    },
+    {
+      "label": "HapticTab()",
+      "file_type": "code",
+      "source_file": "components/haptic-tab.tsx",
+      "source_location": "L5",
+      "id": "components_haptic_tab_haptictab",
+      "community": 7,
+      "norm_label": "haptictab()"
+    },
+    {
+      "label": "Button.tsx",
+      "file_type": "code",
+      "source_file": "components/ui/Button.tsx",
+      "source_location": "L1",
+      "id": "components_ui_button_tsx",
+      "community": 0,
+      "norm_label": "button.tsx"
+    },
+    {
+      "label": "ButtonProps",
+      "file_type": "code",
+      "source_file": "components/ui/Button.tsx",
+      "source_location": "L13",
+      "id": "ui_button_buttonprops",
+      "community": 0,
+      "norm_label": "buttonprops"
+    },
+    {
+      "label": "Button()",
+      "file_type": "code",
+      "source_file": "components/ui/Button.tsx",
+      "source_location": "L23",
+      "id": "ui_button_button",
+      "community": 0,
+      "norm_label": "button()"
+    },
+    {
+      "label": "styles",
+      "file_type": "code",
+      "source_file": "components/ui/Button.tsx",
+      "source_location": "L83",
+      "id": "ui_button_styles",
+      "community": 0,
+      "norm_label": "styles"
+    },
+    {
+      "label": "icon-symbol.ios.tsx",
+      "file_type": "code",
+      "source_file": "components/ui/icon-symbol.ios.tsx",
+      "source_location": "L1",
+      "id": "components_ui_icon_symbol_ios_tsx",
+      "community": 0,
+      "norm_label": "icon-symbol.ios.tsx"
+    },
+    {
+      "label": "IconSymbol()",
+      "file_type": "code",
+      "source_file": "components/ui/icon-symbol.ios.tsx",
+      "source_location": "L4",
+      "id": "ui_icon_symbol_ios_iconsymbol",
+      "community": 0,
+      "norm_label": "iconsymbol()"
+    },
+    {
+      "label": "icon-symbol.tsx",
+      "file_type": "code",
+      "source_file": "components/ui/icon-symbol.tsx",
+      "source_location": "L1",
+      "id": "components_ui_icon_symbol_tsx",
+      "community": 7,
+      "norm_label": "icon-symbol.tsx"
+    },
+    {
+      "label": "IconMapping",
+      "file_type": "code",
+      "source_file": "components/ui/icon-symbol.tsx",
+      "source_location": "L8",
+      "id": "ui_icon_symbol_iconmapping",
+      "community": 7,
+      "norm_label": "iconmapping"
+    },
+    {
+      "label": "IconSymbolName",
+      "file_type": "code",
+      "source_file": "components/ui/icon-symbol.tsx",
+      "source_location": "L9",
+      "id": "ui_icon_symbol_iconsymbolname",
+      "community": 7,
+      "norm_label": "iconsymbolname"
+    },
+    {
+      "label": "MAPPING",
+      "file_type": "code",
+      "source_file": "components/ui/icon-symbol.tsx",
+      "source_location": "L16",
+      "id": "ui_icon_symbol_mapping",
+      "community": 7,
+      "norm_label": "mapping"
+    },
+    {
+      "label": "IconSymbol()",
+      "file_type": "code",
+      "source_file": "components/ui/icon-symbol.tsx",
+      "source_location": "L28",
+      "id": "ui_icon_symbol_iconsymbol",
+      "community": 7,
+      "norm_label": "iconsymbol()"
+    },
+    {
+      "label": "Input.tsx",
+      "file_type": "code",
+      "source_file": "components/ui/Input.tsx",
+      "source_location": "L1",
+      "id": "components_ui_input_tsx",
+      "community": 0,
+      "norm_label": "input.tsx"
+    },
+    {
+      "label": "InputProps",
+      "file_type": "code",
+      "source_file": "components/ui/Input.tsx",
+      "source_location": "L15",
+      "id": "ui_input_inputprops",
+      "community": 0,
+      "norm_label": "inputprops"
+    },
+    {
+      "label": "Input()",
+      "file_type": "code",
+      "source_file": "components/ui/Input.tsx",
+      "source_location": "L22",
+      "id": "ui_input_input",
+      "community": 0,
+      "norm_label": "input()"
+    },
+    {
+      "label": "styles",
+      "file_type": "code",
+      "source_file": "components/ui/Input.tsx",
+      "source_location": "L70",
+      "id": "ui_input_styles",
+      "community": 0,
+      "norm_label": "styles"
+    },
+    {
+      "label": "Config.ts",
+      "file_type": "code",
+      "source_file": "constants/Config.ts",
+      "source_location": "L1",
+      "id": "constants_config_ts",
+      "community": 4,
+      "norm_label": "config.ts"
+    },
+    {
+      "label": "Config",
+      "file_type": "code",
+      "source_file": "constants/Config.ts",
+      "source_location": "L6",
+      "id": "constants_config_config",
+      "community": 4,
+      "norm_label": "config"
+    },
+    {
+      "label": "styles.ts",
+      "file_type": "code",
+      "source_file": "constants/styles.ts",
+      "source_location": "L1",
+      "id": "constants_styles_ts",
+      "community": 0,
+      "norm_label": "styles.ts"
+    },
+    {
+      "label": "commonStyles",
+      "file_type": "code",
+      "source_file": "constants/styles.ts",
+      "source_location": "L3",
+      "id": "constants_styles_commonstyles",
+      "community": 0,
+      "norm_label": "commonstyles"
+    },
+    {
+      "label": "theme.ts",
+      "file_type": "code",
+      "source_file": "constants/theme.ts",
+      "source_location": "L1",
+      "id": "constants_theme_ts",
+      "community": 0,
+      "norm_label": "theme.ts"
+    },
+    {
+      "label": "Colors",
+      "file_type": "code",
+      "source_file": "constants/theme.ts",
+      "source_location": "L11",
+      "id": "constants_theme_colors",
+      "community": 0,
+      "norm_label": "colors"
+    },
+    {
+      "label": "Fonts",
+      "file_type": "code",
+      "source_file": "constants/theme.ts",
+      "source_location": "L48",
+      "id": "constants_theme_fonts",
+      "community": 0,
+      "norm_label": "fonts"
+    },
+    {
+      "label": "translations.ts",
+      "file_type": "code",
+      "source_file": "constants/translations.ts",
+      "source_location": "L1",
+      "id": "constants_translations_ts",
+      "community": 8,
+      "norm_label": "translations.ts"
+    },
+    {
+      "label": "translations",
+      "file_type": "code",
+      "source_file": "constants/translations.ts",
+      "source_location": "L1",
+      "id": "constants_translations_translations",
+      "community": 8,
+      "norm_label": "translations"
+    },
+    {
+      "label": "Language",
+      "file_type": "code",
+      "source_file": "constants/translations.ts",
+      "source_location": "L52",
+      "id": "constants_translations_language",
+      "community": 8,
+      "norm_label": "language"
+    },
+    {
+      "label": "TranslationKeys",
+      "file_type": "code",
+      "source_file": "constants/translations.ts",
+      "source_location": "L53",
+      "id": "constants_translations_translationkeys",
+      "community": 8,
+      "norm_label": "translationkeys"
+    },
+    {
+      "label": "LanguageContext.tsx",
+      "file_type": "code",
+      "source_file": "context/LanguageContext.tsx",
+      "source_location": "L1",
+      "id": "context_languagecontext_tsx",
+      "community": 8,
+      "norm_label": "languagecontext.tsx"
+    },
+    {
+      "label": "LanguageContextType",
+      "file_type": "code",
+      "source_file": "context/LanguageContext.tsx",
+      "source_location": "L4",
+      "id": "context_languagecontext_languagecontexttype",
+      "community": 8,
+      "norm_label": "languagecontexttype"
+    },
+    {
+      "label": "LanguageContext",
+      "file_type": "code",
+      "source_file": "context/LanguageContext.tsx",
+      "source_location": "L10",
+      "id": "context_languagecontext_languagecontext",
+      "community": 8,
+      "norm_label": "languagecontext"
+    },
+    {
+      "label": "LanguageProvider()",
+      "file_type": "code",
+      "source_file": "context/LanguageContext.tsx",
+      "source_location": "L12",
+      "id": "context_languagecontext_languageprovider",
+      "community": 8,
+      "norm_label": "languageprovider()"
+    },
+    {
+      "label": "useLanguage()",
+      "file_type": "code",
+      "source_file": "context/LanguageContext.tsx",
+      "source_location": "L26",
+      "id": "context_languagecontext_uselanguage",
+      "community": 8,
+      "norm_label": "uselanguage()"
+    },
+    {
+      "label": "use-color-scheme.ts",
+      "file_type": "code",
+      "source_file": "hooks/use-color-scheme.ts",
+      "source_location": "L1",
+      "id": "hooks_use_color_scheme_ts",
+      "community": 4,
+      "norm_label": "use-color-scheme.ts"
+    },
+    {
+      "label": "use-theme-color.ts",
+      "file_type": "code",
+      "source_file": "hooks/use-theme-color.ts",
+      "source_location": "L1",
+      "id": "hooks_use_theme_color_ts",
+      "community": 0,
+      "norm_label": "use-theme-color.ts"
+    },
+    {
+      "label": "useThemeColor()",
+      "file_type": "code",
+      "source_file": "hooks/use-theme-color.ts",
+      "source_location": "L9",
+      "id": "hooks_use_theme_color_usethemecolor",
+      "community": 0,
+      "norm_label": "usethemecolor()"
+    },
+    {
+      "label": "useLocationTracking.ts",
+      "file_type": "code",
+      "source_file": "hooks/useLocationTracking.ts",
+      "source_location": "L1",
+      "id": "hooks_uselocationtracking_ts",
+      "community": 4,
+      "norm_label": "uselocationtracking.ts"
+    },
+    {
+      "label": "useLocationTracking()",
+      "file_type": "code",
+      "source_file": "hooks/useLocationTracking.ts",
+      "source_location": "L7",
+      "id": "hooks_uselocationtracking_uselocationtracking",
+      "community": 4,
+      "norm_label": "uselocationtracking()"
+    },
+    {
+      "label": "reset-project.js",
+      "file_type": "code",
+      "source_file": "scripts/reset-project.js",
+      "source_location": "L1",
+      "id": "scripts_reset_project_js",
+      "community": 9,
+      "norm_label": "reset-project.js"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "scripts/reset-project.js",
+      "source_location": "L9",
+      "id": "scripts_reset_project_fs",
+      "community": 9,
+      "norm_label": "fs"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "scripts/reset-project.js",
+      "source_location": "L10",
+      "id": "scripts_reset_project_path",
+      "community": 9,
+      "norm_label": "path"
+    },
+    {
+      "label": "readline",
+      "file_type": "code",
+      "source_file": "scripts/reset-project.js",
+      "source_location": "L11",
+      "id": "scripts_reset_project_readline",
+      "community": 9,
+      "norm_label": "readline"
+    },
+    {
+      "label": "root",
+      "file_type": "code",
+      "source_file": "scripts/reset-project.js",
+      "source_location": "L13",
+      "id": "scripts_reset_project_root",
+      "community": 9,
+      "norm_label": "root"
+    },
+    {
+      "label": "oldDirs",
+      "file_type": "code",
+      "source_file": "scripts/reset-project.js",
+      "source_location": "L14",
+      "id": "scripts_reset_project_olddirs",
+      "community": 9,
+      "norm_label": "olddirs"
+    },
+    {
+      "label": "exampleDirPath",
+      "file_type": "code",
+      "source_file": "scripts/reset-project.js",
+      "source_location": "L17",
+      "id": "scripts_reset_project_exampledirpath",
+      "community": 9,
+      "norm_label": "exampledirpath"
+    },
+    {
+      "label": "rl",
+      "file_type": "code",
+      "source_file": "scripts/reset-project.js",
+      "source_location": "L43",
+      "id": "scripts_reset_project_rl",
+      "community": 9,
+      "norm_label": "rl"
+    },
+    {
+      "label": "moveDirectories()",
+      "file_type": "code",
+      "source_file": "scripts/reset-project.js",
+      "source_location": "L48",
+      "id": "scripts_reset_project_movedirectories",
+      "community": 9,
+      "norm_label": "movedirectories()"
+    },
+    {
+      "label": "locationService.ts",
+      "file_type": "code",
+      "source_file": "services/locationService.ts",
+      "source_location": "L1",
+      "id": "services_locationservice_ts",
+      "community": 4,
+      "norm_label": "locationservice.ts"
+    },
+    {
+      "label": "{ locations }",
+      "file_type": "code",
+      "source_file": "services/locationService.ts",
+      "source_location": "L20",
+      "id": "services_locationservice_locations",
+      "community": 4,
+      "norm_label": "{ locations }"
+    },
+    {
+      "label": "now",
+      "file_type": "code",
+      "source_file": "services/locationService.ts",
+      "source_location": "L23",
+      "id": "services_locationservice_now",
+      "community": 4,
+      "norm_label": "now"
+    },
+    {
+      "label": "remaining",
+      "file_type": "code",
+      "source_file": "services/locationService.ts",
+      "source_location": "L50",
+      "id": "services_locationservice_remaining",
+      "community": 4,
+      "norm_label": "remaining"
+    },
+    {
+      "label": "authStore.ts",
+      "file_type": "code",
+      "source_file": "store/authStore.ts",
+      "source_location": "L1",
+      "id": "store_authstore_ts",
+      "community": 5,
+      "norm_label": "authstore.ts"
+    },
+    {
+      "label": "useAuthStore",
+      "file_type": "code",
+      "source_file": "store/authStore.ts",
+      "source_location": "L8",
+      "id": "store_authstore_useauthstore",
+      "community": 5,
+      "norm_label": "useauthstore"
+    },
+    {
+      "label": "saveAuthData()",
+      "file_type": "code",
+      "source_file": "store/authStore.ts",
+      "source_location": "L51",
+      "id": "store_authstore_saveauthdata",
+      "community": 5,
+      "norm_label": "saveauthdata()"
+    },
+    {
+      "label": "auth.ts",
+      "file_type": "code",
+      "source_file": "types/auth.ts",
+      "source_location": "L1",
+      "id": "types_auth_ts",
+      "community": 5,
+      "norm_label": "auth.ts"
+    },
+    {
+      "label": "User",
+      "file_type": "code",
+      "source_file": "types/auth.ts",
+      "source_location": "L1",
+      "id": "types_auth_user",
+      "community": 5,
+      "norm_label": "user"
+    },
+    {
+      "label": "AuthState",
+      "file_type": "code",
+      "source_file": "types/auth.ts",
+      "source_location": "L9",
+      "id": "types_auth_authstate",
+      "community": 5,
+      "norm_label": "authstate"
+    },
+    {
+      "label": "child.ts",
+      "file_type": "code",
+      "source_file": "types/child.ts",
+      "source_location": "L1",
+      "id": "types_child_ts",
+      "community": 0,
+      "norm_label": "child.ts"
+    },
+    {
+      "label": "Child",
+      "file_type": "code",
+      "source_file": "types/child.ts",
+      "source_location": "L1",
+      "id": "types_child_child",
+      "community": 0,
+      "norm_label": "child"
+    },
+    {
+      "label": "AGENTS.md - Project Stack & Structure Guide",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "agents_md",
+      "community": 6,
+      "norm_label": "agents.md - project stack & structure guide"
+    },
+    {
+      "label": "README.md - Expo App Getting Started Guide",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_md",
+      "community": 6,
+      "norm_label": "readme.md - expo app getting started guide"
+    },
+    {
+      "label": ".expo/README.md - Expo Local Folder Explanation",
+      "file_type": "document",
+      "source_file": ".expo/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "expo_readme",
+      "community": 18,
+      "norm_label": ".expo/readme.md - expo local folder explanation"
+    },
+    {
+      "label": "Expo (~54.0.33)",
+      "file_type": "rationale",
+      "source_file": "AGENTS.md",
+      "source_location": "line 4",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "expo_framework",
+      "community": 6,
+      "norm_label": "expo (~54.0.33)"
+    },
+    {
+      "label": "expo-router (~6.0.23) - File-Based Routing",
+      "file_type": "rationale",
+      "source_file": "AGENTS.md",
+      "source_location": "line 4",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "expo_router",
+      "community": 6,
+      "norm_label": "expo-router (~6.0.23) - file-based routing"
+    },
+    {
+      "label": "React Native 0.81.5",
+      "file_type": "rationale",
+      "source_file": "AGENTS.md",
+      "source_location": "line 5",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "react_native",
+      "community": 0,
+      "norm_label": "react native 0.81.5"
+    },
+    {
+      "label": "React 19.1.0",
+      "file_type": "rationale",
+      "source_file": "AGENTS.md",
+      "source_location": "line 5",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "react",
+      "community": 7,
+      "norm_label": "react 19.1.0"
+    },
+    {
+      "label": "TypeScript (~5.9.2)",
+      "file_type": "rationale",
+      "source_file": "AGENTS.md",
+      "source_location": "line 5",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "typescript",
+      "community": 3,
+      "norm_label": "typescript (~5.9.2)"
+    },
+    {
+      "label": "React Native New Architecture (newArchEnabled)",
+      "file_type": "rationale",
+      "source_file": "AGENTS.md",
+      "source_location": "line 6",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Enables the new React Native architecture for improved performance and concurrency.",
+      "id": "new_architecture",
+      "community": 6,
+      "norm_label": "react native new architecture (newarchenabled)"
+    },
+    {
+      "label": "React Compiler (experiments.reactCompiler)",
+      "file_type": "rationale",
+      "source_file": "AGENTS.md",
+      "source_location": "line 7",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Experimental React compiler enabled to auto-optimize re-renders without manual memoization.",
+      "id": "react_compiler",
+      "community": 6,
+      "norm_label": "react compiler (experiments.reactcompiler)"
+    },
+    {
+      "label": "app/ Directory - File-Based Routes",
+      "file_type": "rationale",
+      "source_file": "AGENTS.md",
+      "source_location": "line 15",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "app_directory",
+      "community": 6,
+      "norm_label": "app/ directory - file-based routes"
+    },
+    {
+      "label": "scripts/reset-project.js - Project Reset Utility",
+      "file_type": "code",
+      "source_file": "AGENTS.md",
+      "source_location": "line 17",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "reset_project_script",
+      "community": 6,
+      "norm_label": "scripts/reset-project.js - project reset utility"
+    },
+    {
+      "label": "Android Icon Background - Light Blue Grid & Circle Guidelines",
+      "file_type": "image",
+      "source_file": "assets/images/android-icon-background.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "img_android_bg",
+      "community": 10,
+      "norm_label": "android icon background - light blue grid & circle guidelines"
+    },
+    {
+      "label": "Android Icon Foreground - Blue Gradient Chevron/Caret Logo",
+      "file_type": "image",
+      "source_file": "assets/images/android-icon-foreground.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "img_android_fg",
+      "community": 10,
+      "norm_label": "android icon foreground - blue gradient chevron/caret logo"
+    },
+    {
+      "label": "Android Icon Monochrome - Grey Chevron/Caret Logo",
+      "file_type": "image",
+      "source_file": "assets/images/android-icon-monochrome.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "img_android_mono",
+      "community": 10,
+      "norm_label": "android icon monochrome - grey chevron/caret logo"
+    },
+    {
+      "label": "Favicon - Small Blue Rounded Square with Chevron Logo",
+      "file_type": "image",
+      "source_file": "assets/images/favicon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "img_favicon",
+      "community": 10,
+      "norm_label": "favicon - small blue rounded square with chevron logo"
+    },
+    {
+      "label": "App Icon - Blue Gradient Chevron on Light Blue Icon Grid",
+      "file_type": "image",
+      "source_file": "assets/images/icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "img_icon",
+      "community": 10,
+      "norm_label": "app icon - blue gradient chevron on light blue icon grid"
+    },
+    {
+      "label": "Splash Icon - Concentric Circles Placeholder/Guidelines",
+      "file_type": "image",
+      "source_file": "assets/images/splash-icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "img_splash",
+      "community": 10,
+      "norm_label": "splash icon - concentric circles placeholder/guidelines"
+    },
+    {
+      "label": "MobroAI Brand Identity - Blue Chevron Logo System",
+      "file_type": "rationale",
+      "source_file": "assets/images/icon.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "The app uses a consistent blue upward-pointing chevron/caret mark across all icon variants (foreground, monochrome, favicon, icon) as the core brand symbol, suggesting navigation, elevation, or AI-driven upward mobility.",
+      "id": "mobro_brand_identity",
+      "community": 10,
+      "norm_label": "mobroai brand identity - blue chevron logo system"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "app_json",
+      "target": "mobroai_mobile_app_expo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_expo",
+      "target": "mobroai_mobile_app_expo_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_expo",
+      "target": "mobroai_mobile_app_expo_slug",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_expo",
+      "target": "mobroai_mobile_app_expo_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_expo",
+      "target": "mobroai_mobile_app_expo_orientation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_expo",
+      "target": "mobroai_mobile_app_expo_icon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_expo",
+      "target": "mobroai_mobile_app_expo_scheme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_expo",
+      "target": "mobroai_mobile_app_expo_userinterfacestyle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_expo",
+      "target": "mobroai_mobile_app_expo_newarchenabled",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_expo",
+      "target": "mobroai_mobile_app_expo_ios",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_expo",
+      "target": "mobroai_mobile_app_expo_android",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_expo",
+      "target": "mobroai_mobile_app_expo_web",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_expo",
+      "target": "mobroai_mobile_app_expo_plugins",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_expo",
+      "target": "mobroai_mobile_app_expo_experiments",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_expo_ios",
+      "target": "mobroai_mobile_app_ios_supportstablet",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_expo_android",
+      "target": "mobroai_mobile_app_android_adaptiveicon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_expo_android",
+      "target": "mobroai_mobile_app_android_edgetoedgeenabled",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_expo_android",
+      "target": "mobroai_mobile_app_android_predictivebackgestureenabled",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_expo_android",
+      "target": "mobroai_mobile_app_android_permissions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_android_adaptiveicon",
+      "target": "mobroai_mobile_app_adaptiveicon_backgroundcolor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_android_adaptiveicon",
+      "target": "mobroai_mobile_app_adaptiveicon_foregroundimage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_android_adaptiveicon",
+      "target": "mobroai_mobile_app_adaptiveicon_backgroundimage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_android_adaptiveicon",
+      "target": "mobroai_mobile_app_adaptiveicon_monochromeimage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_expo_web",
+      "target": "mobroai_mobile_app_web_output",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_expo_web",
+      "target": "mobroai_mobile_app_web_favicon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_expo_experiments",
+      "target": "mobroai_mobile_app_experiments_typedroutes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.json",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "mobroai_mobile_app_expo_experiments",
+      "target": "mobroai_mobile_app_experiments_reactcompiler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "eslint.config.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "eslint_config_js",
+      "target": "mobroai_mobile_eslint_config_defineconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "eslint.config.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "eslint_config_js",
+      "target": "mobroai_mobile_eslint_config_expoconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "mobroai_mobile_package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "mobroai_mobile_package_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "mobroai_mobile_package_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "mobroai_mobile_package_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "mobroai_mobile_package_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "mobroai_mobile_package_devdependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "mobroai_mobile_package_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_scripts",
+      "target": "mobroai_mobile_package_scripts_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_scripts",
+      "target": "mobroai_mobile_package_scripts_reset_project",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_scripts",
+      "target": "mobroai_mobile_package_scripts_android",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_scripts",
+      "target": "mobroai_mobile_package_scripts_ios",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_scripts",
+      "target": "mobroai_mobile_package_scripts_web",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_scripts",
+      "target": "mobroai_mobile_package_scripts_lint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_expo_vector_icons",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_hookform_resolvers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_react_navigation_bottom_tabs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_react_navigation_elements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_react_navigation_native",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_axios",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_expo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_expo_constants",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_expo_font",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_expo_haptics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_expo_linking",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_expo_location",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_expo_router",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_expo_secure_store",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_expo_splash_screen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_expo_status_bar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_expo_symbols",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_expo_system_ui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_expo_task_manager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_lucide_react_native",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_react_dom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_react_hook_form",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_react_native",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_react_native_gesture_handler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_react_native_safe_area_context",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_react_native_screens",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_react_native_web",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_zod",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_dependencies",
+      "target": "mobroai_mobile_package_dependencies_zustand",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "context": "import",
+      "source": "mobroai_mobile_package_dependencies_expo_router",
+      "target": "expo_router",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "context": "import",
+      "source": "mobroai_mobile_package_dependencies_react",
+      "target": "react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L37",
+      "weight": 1.0,
+      "context": "import",
+      "source": "mobroai_mobile_package_dependencies_react_native",
+      "target": "react_native",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_devdependencies",
+      "target": "mobroai_mobile_package_devdependencies_types_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_devdependencies",
+      "target": "mobroai_mobile_package_devdependencies_eslint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_devdependencies",
+      "target": "mobroai_mobile_package_devdependencies_eslint_config_expo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "mobroai_mobile_package_devdependencies",
+      "target": "mobroai_mobile_package_devdependencies_typescript",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L49",
+      "weight": 1.0,
+      "context": "import",
+      "source": "mobroai_mobile_package_devdependencies_typescript",
+      "target": "typescript",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "tsconfig_json",
+      "target": "mobroai_mobile_tsconfig_extends",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "tsconfig_json",
+      "target": "mobroai_mobile_tsconfig_compileroptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "tsconfig_json",
+      "target": "mobroai_mobile_tsconfig_include",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "mobroai_mobile_tsconfig_compileroptions",
+      "target": "mobroai_mobile_tsconfig_compileroptions_strict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "mobroai_mobile_tsconfig_compileroptions",
+      "target": "mobroai_mobile_tsconfig_compileroptions_paths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "mobroai_mobile_tsconfig_compileroptions_paths",
+      "target": "mobroai_mobile_tsconfig_paths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".expo/devices.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "expo_devices_json",
+      "target": "expo_devices_devices",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".expo/settings.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "expo_settings_json",
+      "target": "expo_settings_urlrandomness",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": ".expo/types/router.d.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "expo_types_router_d_ts",
+      "target": "expo_router",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".expo/types/router.d.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "expo_types_router_d_ts",
+      "target": "types_router_d_routes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".vscode/extensions.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "vscode_extensions_json",
+      "target": "vscode_extensions_recommendations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".vscode/settings.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "vscode_settings_json",
+      "target": "vscode_settings_editor_codeactionsonsave",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".vscode/settings.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "vscode_settings_editor_codeactionsonsave",
+      "target": "vscode_settings_editor_codeactionsonsave_source_fixall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".vscode/settings.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "vscode_settings_editor_codeactionsonsave",
+      "target": "vscode_settings_editor_codeactionsonsave_source_organizeimports",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".vscode/settings.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "vscode_settings_editor_codeactionsonsave",
+      "target": "vscode_settings_editor_codeactionsonsave_source_sortmembers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/api.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "api_api_ts",
+      "target": "api_api_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/location.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "api_location_ts",
+      "target": "api_api_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "app_auth_login_tsx",
+      "target": "api_api_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/register.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "app_auth_register_tsx",
+      "target": "api_api_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "app_tabs_children_tsx",
+      "target": "api_api_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "app_tabs_profile_tsx",
+      "target": "api_api_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/location.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "api_location_ts",
+      "target": "api_api_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "app_auth_login_tsx",
+      "target": "api_api_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/register.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "app_auth_register_tsx",
+      "target": "api_api_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "app_tabs_children_tsx",
+      "target": "api_api_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "app_tabs_profile_tsx",
+      "target": "api_api_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/location.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "api_location_ts",
+      "target": "api_location_locationdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/location.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "api_location_ts",
+      "target": "api_location_savelocation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "services/locationService.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "services_locationservice_ts",
+      "target": "api_location_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "services/locationService.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "services_locationservice_ts",
+      "target": "api_location_savelocation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/_layout.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "app_layout_tsx",
+      "target": "react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/_layout.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "app_layout_tsx",
+      "target": "expo_router",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/_layout.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_layout_tsx",
+      "target": "hooks_use_color_scheme_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/_layout.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "app_layout_tsx",
+      "target": "context_languagecontext_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/_layout.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "app_layout_tsx",
+      "target": "context_languagecontext_languageprovider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/_layout.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "app_layout_tsx",
+      "target": "store_authstore_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/_layout.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "app_layout_tsx",
+      "target": "store_authstore_useauthstore",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/_layout.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "app_layout_tsx",
+      "target": "hooks_uselocationtracking_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/_layout.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "app_layout_tsx",
+      "target": "hooks_uselocationtracking_uselocationtracking",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/_layout.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "app_layout_tsx",
+      "target": "services_locationservice_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/_layout.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "app_layout_tsx",
+      "target": "app_layout_unstable_settings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/_layout.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "app_layout_tsx",
+      "target": "app_layout_initiallayout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/_layout.tsx",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "app_layout_tsx",
+      "target": "app_layout_rootlayout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/_layout.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "app_layout_initiallayout",
+      "target": "store_authstore_useauthstore"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/_layout.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "app_layout_initiallayout",
+      "target": "hooks_uselocationtracking_uselocationtracking"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "app_auth_login_tsx",
+      "target": "components_ui_button_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "app_auth_login_tsx",
+      "target": "ui_button_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "app_auth_login_tsx",
+      "target": "components_ui_input_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "app_auth_login_tsx",
+      "target": "ui_input_input",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "app_auth_login_tsx",
+      "target": "constants_theme_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "app_auth_login_tsx",
+      "target": "constants_theme_colors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_auth_login_tsx",
+      "target": "hooks_use_color_scheme_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_auth_login_tsx",
+      "target": "store_authstore_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_auth_login_tsx",
+      "target": "store_authstore_saveauthdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_auth_login_tsx",
+      "target": "store_authstore_useauthstore",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "app_auth_login_tsx",
+      "target": "expo_router",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "app_auth_login_tsx",
+      "target": "react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "app_auth_login_tsx",
+      "target": "react_native",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "app_auth_login_tsx",
+      "target": "auth_login_loginschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "app_auth_login_tsx",
+      "target": "auth_login_loginform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "app_auth_login_tsx",
+      "target": "auth_login_loginscreen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "app_auth_login_tsx",
+      "target": "auth_login_styles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/(auth)/login.tsx",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "auth_login_loginscreen",
+      "target": "store_authstore_useauthstore"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/register.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "app_auth_register_tsx",
+      "target": "components_ui_button_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/register.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "app_auth_register_tsx",
+      "target": "ui_button_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/register.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "app_auth_register_tsx",
+      "target": "components_ui_input_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/register.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "app_auth_register_tsx",
+      "target": "ui_input_input",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/register.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "app_auth_register_tsx",
+      "target": "constants_theme_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/register.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "app_auth_register_tsx",
+      "target": "constants_theme_colors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/register.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_auth_register_tsx",
+      "target": "hooks_use_color_scheme_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/register.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "app_auth_register_tsx",
+      "target": "expo_router",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/register.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "app_auth_register_tsx",
+      "target": "react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/register.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "app_auth_register_tsx",
+      "target": "react_native",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/register.tsx",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "app_auth_register_tsx",
+      "target": "auth_register_registerschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/register.tsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "app_auth_register_tsx",
+      "target": "auth_register_registerform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/register.tsx",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "app_auth_register_tsx",
+      "target": "auth_register_roles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/register.tsx",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "app_auth_register_tsx",
+      "target": "auth_register_registerscreen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/register.tsx",
+      "source_location": "L193",
+      "weight": 1.0,
+      "source": "app_auth_register_tsx",
+      "target": "auth_register_styles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/_layout.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "app_auth_layout_tsx",
+      "target": "expo_router",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(auth)/_layout.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "app_auth_layout_tsx",
+      "target": "auth_layout_authlayout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "app_tabs_children_tsx",
+      "target": "react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "app_tabs_children_tsx",
+      "target": "react_native",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "app_tabs_children_tsx",
+      "target": "store_authstore_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "app_tabs_children_tsx",
+      "target": "store_authstore_useauthstore",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "app_tabs_children_tsx",
+      "target": "constants_theme_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "app_tabs_children_tsx",
+      "target": "constants_theme_colors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "app_tabs_children_tsx",
+      "target": "hooks_use_color_scheme_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "app_tabs_children_tsx",
+      "target": "types_child_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "app_tabs_children_tsx",
+      "target": "types_child_child",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "app_tabs_children_tsx",
+      "target": "components_ui_button_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "app_tabs_children_tsx",
+      "target": "ui_button_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "app_tabs_children_tsx",
+      "target": "components_ui_input_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "app_tabs_children_tsx",
+      "target": "ui_input_input",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "app_tabs_children_tsx",
+      "target": "tabs_children_childschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "app_tabs_children_tsx",
+      "target": "tabs_children_childform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "app_tabs_children_tsx",
+      "target": "tabs_children_childrenscreen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L329",
+      "weight": 1.0,
+      "source": "app_tabs_children_tsx",
+      "target": "tabs_children_styles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/(tabs)/children.tsx",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "tabs_children_childrenscreen",
+      "target": "store_authstore_useauthstore"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/index.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "app_tabs_index_tsx",
+      "target": "react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/index.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "app_tabs_index_tsx",
+      "target": "react_native",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/index.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "app_tabs_index_tsx",
+      "target": "expo_router",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/index.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "app_tabs_index_tsx",
+      "target": "store_authstore_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/index.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "app_tabs_index_tsx",
+      "target": "store_authstore_useauthstore",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/index.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "app_tabs_index_tsx",
+      "target": "constants_theme_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/index.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "app_tabs_index_tsx",
+      "target": "constants_theme_colors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/index.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "app_tabs_index_tsx",
+      "target": "hooks_use_color_scheme_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/index.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "app_tabs_index_tsx",
+      "target": "tabs_index_dashboardscreen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/index.tsx",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "app_tabs_index_tsx",
+      "target": "tabs_index_actionitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/index.tsx",
+      "source_location": "L125",
+      "weight": 1.0,
+      "source": "app_tabs_index_tsx",
+      "target": "tabs_index_styles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/(tabs)/index.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "tabs_index_dashboardscreen",
+      "target": "store_authstore_useauthstore"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "app_tabs_profile_tsx",
+      "target": "react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "app_tabs_profile_tsx",
+      "target": "react_native",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "app_tabs_profile_tsx",
+      "target": "expo_router",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "app_tabs_profile_tsx",
+      "target": "store_authstore_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "app_tabs_profile_tsx",
+      "target": "store_authstore_useauthstore",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "app_tabs_profile_tsx",
+      "target": "constants_theme_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "app_tabs_profile_tsx",
+      "target": "constants_theme_colors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "app_tabs_profile_tsx",
+      "target": "hooks_use_color_scheme_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "app_tabs_profile_tsx",
+      "target": "components_ui_button_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "app_tabs_profile_tsx",
+      "target": "ui_button_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "app_tabs_profile_tsx",
+      "target": "components_ui_input_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "app_tabs_profile_tsx",
+      "target": "ui_input_input",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "app_tabs_profile_tsx",
+      "target": "tabs_profile_changepasswordschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "app_tabs_profile_tsx",
+      "target": "tabs_profile_editprofileschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "app_tabs_profile_tsx",
+      "target": "tabs_profile_changepasswordform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "app_tabs_profile_tsx",
+      "target": "tabs_profile_editprofileform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "app_tabs_profile_tsx",
+      "target": "tabs_profile_profilescreen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L331",
+      "weight": 1.0,
+      "source": "app_tabs_profile_tsx",
+      "target": "tabs_profile_inforow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L345",
+      "weight": 1.0,
+      "source": "app_tabs_profile_tsx",
+      "target": "tabs_profile_actionrow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L357",
+      "weight": 1.0,
+      "source": "app_tabs_profile_tsx",
+      "target": "tabs_profile_styles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/(tabs)/profile.tsx",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "tabs_profile_profilescreen",
+      "target": "store_authstore_useauthstore"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/_layout.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "app_tabs_layout_tsx",
+      "target": "expo_router",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/_layout.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "app_tabs_layout_tsx",
+      "target": "react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/_layout.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "app_tabs_layout_tsx",
+      "target": "components_haptic_tab_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/_layout.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "app_tabs_layout_tsx",
+      "target": "components_haptic_tab_haptictab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/_layout.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_tabs_layout_tsx",
+      "target": "components_ui_icon_symbol_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/_layout.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "app_tabs_layout_tsx",
+      "target": "ui_icon_symbol_iconsymbol",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/_layout.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_tabs_layout_tsx",
+      "target": "constants_theme_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/_layout.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "app_tabs_layout_tsx",
+      "target": "constants_theme_colors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/_layout.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "app_tabs_layout_tsx",
+      "target": "hooks_use_color_scheme_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/(tabs)/_layout.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "app_tabs_layout_tsx",
+      "target": "tabs_layout_tablayout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/haptic-tab.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_haptic_tab_tsx",
+      "target": "components_haptic_tab_haptictab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/Button.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "components_ui_button_tsx",
+      "target": "react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/Button.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "components_ui_button_tsx",
+      "target": "react_native",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/Button.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "components_ui_button_tsx",
+      "target": "constants_theme_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/Button.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "components_ui_button_tsx",
+      "target": "constants_theme_colors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/Button.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "components_ui_button_tsx",
+      "target": "hooks_use_color_scheme_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/Button.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "components_ui_button_tsx",
+      "target": "ui_button_buttonprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/Button.tsx",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "components_ui_button_tsx",
+      "target": "ui_button_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/Button.tsx",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "components_ui_button_tsx",
+      "target": "ui_button_styles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/icon-symbol.ios.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "components_ui_icon_symbol_ios_tsx",
+      "target": "react_native",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/icon-symbol.ios.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "components_ui_icon_symbol_ios_tsx",
+      "target": "ui_icon_symbol_ios_iconsymbol",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/icon-symbol.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_ui_icon_symbol_tsx",
+      "target": "react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/icon-symbol.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_ui_icon_symbol_tsx",
+      "target": "react_native",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/icon-symbol.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "components_ui_icon_symbol_tsx",
+      "target": "ui_icon_symbol_iconmapping",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/icon-symbol.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "components_ui_icon_symbol_tsx",
+      "target": "ui_icon_symbol_iconsymbolname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/icon-symbol.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "components_ui_icon_symbol_tsx",
+      "target": "ui_icon_symbol_mapping",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/icon-symbol.tsx",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "components_ui_icon_symbol_tsx",
+      "target": "ui_icon_symbol_iconsymbol",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/Input.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "components_ui_input_tsx",
+      "target": "react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/Input.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "components_ui_input_tsx",
+      "target": "react_native",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/Input.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "components_ui_input_tsx",
+      "target": "constants_theme_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/Input.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "components_ui_input_tsx",
+      "target": "constants_theme_colors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/Input.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "components_ui_input_tsx",
+      "target": "hooks_use_color_scheme_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/Input.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "components_ui_input_tsx",
+      "target": "ui_input_inputprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/Input.tsx",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "components_ui_input_tsx",
+      "target": "ui_input_input",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/Input.tsx",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "components_ui_input_tsx",
+      "target": "ui_input_styles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "constants/Config.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "constants_config_ts",
+      "target": "constants_config_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "hooks/useLocationTracking.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "hooks_uselocationtracking_ts",
+      "target": "constants_config_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "services/locationService.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "services_locationservice_ts",
+      "target": "constants_config_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "hooks/useLocationTracking.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "hooks_uselocationtracking_ts",
+      "target": "constants_config_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "services/locationService.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "services_locationservice_ts",
+      "target": "constants_config_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "constants/styles.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "constants_styles_ts",
+      "target": "react_native",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "constants/styles.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "constants_styles_ts",
+      "target": "constants_styles_commonstyles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "constants/theme.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "constants_theme_ts",
+      "target": "react_native",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "constants/theme.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "constants_theme_ts",
+      "target": "constants_theme_colors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "constants/theme.ts",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "constants_theme_ts",
+      "target": "constants_theme_fonts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "hooks/use-theme-color.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "hooks_use_theme_color_ts",
+      "target": "constants_theme_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "hooks/use-theme-color.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "hooks_use_theme_color_ts",
+      "target": "constants_theme_colors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "constants/translations.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "constants_translations_ts",
+      "target": "constants_translations_translations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "constants/translations.ts",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "constants_translations_ts",
+      "target": "constants_translations_language",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "constants/translations.ts",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "constants_translations_ts",
+      "target": "constants_translations_translationkeys",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "context/LanguageContext.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "context_languagecontext_tsx",
+      "target": "constants_translations_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "context/LanguageContext.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "context_languagecontext_tsx",
+      "target": "constants_translations_translations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "context/LanguageContext.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "context_languagecontext_tsx",
+      "target": "constants_translations_language",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "context/LanguageContext.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "context_languagecontext_tsx",
+      "target": "react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "context/LanguageContext.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "context_languagecontext_tsx",
+      "target": "context_languagecontext_languagecontexttype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "context/LanguageContext.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "context_languagecontext_tsx",
+      "target": "context_languagecontext_languagecontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "context/LanguageContext.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "context_languagecontext_tsx",
+      "target": "context_languagecontext_languageprovider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "context/LanguageContext.tsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "context_languagecontext_tsx",
+      "target": "context_languagecontext_uselanguage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "hooks/use-theme-color.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "hooks_use_theme_color_ts",
+      "target": "hooks_use_color_scheme_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hooks/use-theme-color.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "hooks_use_theme_color_ts",
+      "target": "hooks_use_theme_color_usethemecolor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "hooks/useLocationTracking.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "hooks_uselocationtracking_ts",
+      "target": "react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "hooks/useLocationTracking.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "hooks_uselocationtracking_ts",
+      "target": "react_native",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "hooks/useLocationTracking.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "hooks_uselocationtracking_ts",
+      "target": "services_locationservice_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hooks/useLocationTracking.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "hooks_uselocationtracking_ts",
+      "target": "hooks_uselocationtracking_uselocationtracking",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reset-project.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "scripts_reset_project_js",
+      "target": "scripts_reset_project_fs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reset-project.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "scripts_reset_project_js",
+      "target": "scripts_reset_project_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reset-project.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "scripts_reset_project_js",
+      "target": "scripts_reset_project_readline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reset-project.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "scripts_reset_project_js",
+      "target": "scripts_reset_project_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reset-project.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "scripts_reset_project_js",
+      "target": "scripts_reset_project_olddirs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reset-project.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "scripts_reset_project_js",
+      "target": "scripts_reset_project_exampledirpath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reset-project.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "scripts_reset_project_js",
+      "target": "scripts_reset_project_rl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reset-project.js",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "scripts_reset_project_js",
+      "target": "scripts_reset_project_movedirectories",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "services/locationService.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "services_locationservice_ts",
+      "target": "services_locationservice_locations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "services/locationService.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "services_locationservice_ts",
+      "target": "services_locationservice_now",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "services/locationService.ts",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "services_locationservice_ts",
+      "target": "services_locationservice_remaining",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "store/authStore.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "store_authstore_ts",
+      "target": "types_auth_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "store/authStore.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "store_authstore_ts",
+      "target": "types_auth_authstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "store/authStore.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "store_authstore_ts",
+      "target": "types_auth_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "store/authStore.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "store_authstore_ts",
+      "target": "store_authstore_useauthstore",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "store/authStore.ts",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "store_authstore_ts",
+      "target": "store_authstore_saveauthdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "types/auth.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "types_auth_ts",
+      "target": "types_auth_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "types/auth.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "types_auth_ts",
+      "target": "types_auth_authstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "types/child.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "types_child_ts",
+      "target": "types_child_child",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "line 4",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "expo_framework"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "line 4",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "expo_router"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "line 5",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "react_native"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "line 5",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "react"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "line 5",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "typescript"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "line 6",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "new_architecture"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "line 7",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "react_compiler"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "line 15",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "app_directory"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "line 17",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "reset_project_script"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 0.8,
+      "source": "agents_md",
+      "target": "readme_md"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "line 1",
+      "weight": 1.0,
+      "source": "readme_md",
+      "target": "expo_framework"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "line 26",
+      "weight": 1.0,
+      "source": "readme_md",
+      "target": "expo_router"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "line 31",
+      "weight": 1.0,
+      "source": "readme_md",
+      "target": "reset_project_script"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "line 15",
+      "weight": 1.0,
+      "source": "expo_router",
+      "target": "app_directory"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 0.75,
+      "source": "new_architecture",
+      "target": "react_compiler"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "assets/images/android-icon-background.png",
+      "source_location": null,
+      "weight": 0.9,
+      "source": "img_android_bg",
+      "target": "img_icon"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "assets/images/splash-icon.png",
+      "source_location": null,
+      "weight": 0.65,
+      "source": "img_splash",
+      "target": "img_android_bg"
+    },
+    {
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "assets/images/android-icon-foreground.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "img_android_fg",
+      "target": "mobro_brand_identity"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "assets/images/android-icon-foreground.png",
+      "source_location": null,
+      "weight": 0.9,
+      "source": "img_android_fg",
+      "target": "img_android_mono"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "assets/images/icon.png",
+      "source_location": null,
+      "weight": 0.85,
+      "source": "img_icon",
+      "target": "img_android_fg"
+    },
+    {
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "assets/images/android-icon-monochrome.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "img_android_mono",
+      "target": "mobro_brand_identity"
+    },
+    {
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "assets/images/favicon.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "img_favicon",
+      "target": "mobro_brand_identity"
+    },
+    {
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "assets/images/icon.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "img_icon",
+      "target": "mobro_brand_identity"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "android_icon_system",
+      "label": "Android Adaptive Icon System (Background + Foreground + Monochrome)",
+      "nodes": [
+        "img_android_bg",
+        "img_android_fg",
+        "img_android_mono"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "assets/images"
+    },
+    {
+      "id": "core_tech_stack",
+      "label": "Core Technology Stack (React Native + Expo + expo-router)",
+      "nodes": [
+        "expo_framework",
+        "expo_router",
+        "react_native",
+        "react",
+        "typescript"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md"
+    },
+    {
+      "id": "experimental_features",
+      "label": "Experimental Performance Features (New Architecture + React Compiler)",
+      "nodes": [
+        "new_architecture",
+        "react_compiler",
+        "react"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "AGENTS.md"
+    }
+  ],
+  "built_at_commit": "b405c6c3bbf808345601fe50ab52c6f0b1d14902"
+}
