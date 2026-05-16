@@ -12,6 +12,7 @@ public static class MeaslesScanEndpoints
 
         // --- Write Operations ---
         group.MapPost("/", Create);
+        group.MapPost("/upload", UploadScan);
         group.MapPut("/{id}/status", UpdateStatus);
         group.MapPost("/{id}/photos", AddPhoto);
 
@@ -50,12 +51,45 @@ public static class MeaslesScanEndpoints
         return Results.NoContent();
     }
 
-    private static async Task<IResult> AddPhoto(Guid id, ScanPhoto photo, AppDbContext db)
+    private static async Task<IResult> UploadScan(
+        IFormFile file,
+        [Microsoft.AspNetCore.Mvc.FromForm] Guid childId,
+        [Microsoft.AspNetCore.Mvc.FromForm] decimal? latitude,
+        [Microsoft.AspNetCore.Mvc.FromForm] decimal? longitude,
+        ClaimsPrincipal userClaims,
+        AppDbContext db)
+    {
+        var userIdString = userClaims.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        if (userIdString is null || !Guid.TryParse(userIdString, out var userId))
+            return Results.Unauthorized();
+
+        var scan = new MeaslesScan
+        {
+            ChildId = childId,
+            UploadedById = userId,
+            Latitude = latitude,
+            Longitude = longitude,
+            Status = ScanStatus.Pending
+        };
+        db.MeaslesScans.Add(scan);
+
+        using var ms = new MemoryStream();
+        await file.CopyToAsync(ms);
+        var photo = new ScanPhoto { ScanId = scan.Id, ImageData = ms.ToArray() };
+        db.ScanPhotos.Add(photo);
+
+        await db.SaveChangesAsync();
+        return Results.Created($"/scans/{scan.Id}", new { scan, photo });
+    }
+
+    private static async Task<IResult> AddPhoto(Guid id, IFormFile file, AppDbContext db)
     {
         var scan = await db.MeaslesScans.FindAsync(id);
         if (scan is null) return Results.NotFound("Scan not found.");
 
-        photo.ScanId = id;
+        using var ms = new MemoryStream();
+        await file.CopyToAsync(ms);
+        var photo = new ScanPhoto { ScanId = id, ImageData = ms.ToArray() };
         db.ScanPhotos.Add(photo);
         await db.SaveChangesAsync();
         return Results.Created($"/scans/{id}/photos/{photo.Id}", photo);
