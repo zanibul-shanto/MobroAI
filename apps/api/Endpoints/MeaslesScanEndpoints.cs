@@ -12,9 +12,9 @@ public static class MeaslesScanEndpoints
 
         // --- Write Operations ---
         group.MapPost("/", Create);
-        group.MapPost("/upload", UploadScan);
+        group.MapPost("/upload", UploadScan).DisableAntiforgery();
         group.MapPut("/{id}/status", UpdateStatus);
-        group.MapPost("/{id}/photos", AddPhoto);
+        group.MapPost("/{id}/photos", AddPhoto).DisableAntiforgery();
 
         // --- Read Operations ---
         group.MapGet("/{id}", GetById);
