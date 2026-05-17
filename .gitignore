@@ -28,6 +28,10 @@ npm-debug.*
 yarn-debug.*
 yarn-error.*
 
+# ── Claude Code ───────────────────────────────────────────────────────────────
+.claude/settings.local.json
+graphify-out/cache/
+
 # ── Secrets ───────────────────────────────────────────────────────────────────
 *.secret.json
 appsettings.Development.json
@@ -49,7 +53,6 @@ bld/
 *.nupkg
 project.lock.json
 .core/
-apps/api/Properties/launchSettings.json
 
 # ── React Native / Mobile ─────────────────────────────────────────────────────
 node_modules/
