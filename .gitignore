@@ -1,18 +1,72 @@
-# OS
+# ── OS ────────────────────────────────────────────────────────────────────────
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 *.swp
+*.*~
 
-# IDE
+# ── IDE ───────────────────────────────────────────────────────────────────────
 .vscode/
 .vs/
+.idea/
 *.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.userprefs
+*.workspace
 
-# Secrets
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+[Ll]og/
+[Ll]ogs/
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# ── Secrets ───────────────────────────────────────────────────────────────────
 *.secret.json
-.env
-.env.local
-.env*.local
+appsettings.Development.json
+appsettings.local.json
 
-# Monorepo tooling artifacts
-packages/*/dist/
+# ── .NET / API ────────────────────────────────────────────────────────────────
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+*.nupkg
+project.lock.json
+.core/
+apps/api/Properties/launchSettings.json
+
+# ── React Native / Mobile ─────────────────────────────────────────────────────
+node_modules/
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.pem
+.metro-health-check*
+*.tsbuildinfo
+app-example
+apps/mobile/ios/
+apps/mobile/android/
