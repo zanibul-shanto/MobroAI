@@ -1,0 +1,392 @@
+{
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\.claude\\settings.local.json": {
+    "mtime": 1779003852.511248,
+    "ast_hash": "6c3a6ec32050373964da49ffa9f71a4e",
+    "semantic_hash": "6c3a6ec32050373964da49ffa9f71a4e"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\AppDbContext.cs": {
+    "mtime": 1779003202.8969393,
+    "ast_hash": "862068330c9490225b71dfdb16a47b81",
+    "semantic_hash": "862068330c9490225b71dfdb16a47b81"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\appsettings.json": {
+    "mtime": 1779003202.9067225,
+    "ast_hash": "719e86aed1dd6bea73d5938a52569078",
+    "semantic_hash": "719e86aed1dd6bea73d5938a52569078"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\Program.cs": {
+    "mtime": 1779003202.9067225,
+    "ast_hash": "a756784eb85ccaa4aa47033c89015bdf",
+    "semantic_hash": "a756784eb85ccaa4aa47033c89015bdf"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\.claude\\settings.local.json": {
+    "mtime": 1779003202.8886974,
+    "ast_hash": "df5ae382e809446ddb3d2fe606dd6aea",
+    "semantic_hash": "df5ae382e809446ddb3d2fe606dd6aea"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\Endpoints\\AuthEndpoints.cs": {
+    "mtime": 1779003202.8969393,
+    "ast_hash": "746bab5f9a0529f06f0b63671b4a4f71",
+    "semantic_hash": "746bab5f9a0529f06f0b63671b4a4f71"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\Endpoints\\ChildEndpoints.cs": {
+    "mtime": 1779003202.8969393,
+    "ast_hash": "06f707bcbd7f0e8daf60cf17bd15aa26",
+    "semantic_hash": "06f707bcbd7f0e8daf60cf17bd15aa26"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\Endpoints\\LocationLogEndpoints.cs": {
+    "mtime": 1779003202.8969393,
+    "ast_hash": "fa44e8eb89b057821b4a9753d6d201fc",
+    "semantic_hash": "fa44e8eb89b057821b4a9753d6d201fc"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\Endpoints\\MeaslesScanEndpoints.cs": {
+    "mtime": 1779003202.8969393,
+    "ast_hash": "decacd887f4619dc4bcd5803faedf1b9",
+    "semantic_hash": "decacd887f4619dc4bcd5803faedf1b9"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\Endpoints\\TodoEndpoints.cs": {
+    "mtime": 1779003202.8969393,
+    "ast_hash": "15944f20352609c4fcb9d27a545d97a2",
+    "semantic_hash": "15944f20352609c4fcb9d27a545d97a2"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\Endpoints\\UserEndpoints.cs": {
+    "mtime": 1779003202.8969393,
+    "ast_hash": "443aeefae712dd758bbca7a0fd00bb79",
+    "semantic_hash": "443aeefae712dd758bbca7a0fd00bb79"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\Models\\AuthModels.cs": {
+    "mtime": 1779003202.8969393,
+    "ast_hash": "9973c3047c8a1e8a82d22392eb982c75",
+    "semantic_hash": "9973c3047c8a1e8a82d22392eb982c75"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\Models\\Child.cs": {
+    "mtime": 1779003202.8969393,
+    "ast_hash": "732178b72d03bdab323330689b0c3220",
+    "semantic_hash": "732178b72d03bdab323330689b0c3220"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\Models\\Common.cs": {
+    "mtime": 1779003202.8969393,
+    "ast_hash": "62e11b38226a1315eeb02df9456c3ef0",
+    "semantic_hash": "62e11b38226a1315eeb02df9456c3ef0"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\Models\\LocationLog.cs": {
+    "mtime": 1779003202.8969393,
+    "ast_hash": "fd23b176c0186e69adcdddcc91290d1e",
+    "semantic_hash": "fd23b176c0186e69adcdddcc91290d1e"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\Models\\MeaslesScan.cs": {
+    "mtime": 1779003202.8969393,
+    "ast_hash": "8bd127b920bd4b09003fbc4f240cfc13",
+    "semantic_hash": "8bd127b920bd4b09003fbc4f240cfc13"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\Models\\ScanPhoto.cs": {
+    "mtime": 1779003202.8969393,
+    "ast_hash": "1f59df470442a7298aee23f6982258e6",
+    "semantic_hash": "1f59df470442a7298aee23f6982258e6"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\Models\\Todo.cs": {
+    "mtime": 1779003202.8969393,
+    "ast_hash": "1d396c40417fe1424dc964ffb1e57af7",
+    "semantic_hash": "1d396c40417fe1424dc964ffb1e57af7"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\Models\\User.cs": {
+    "mtime": 1779003202.8969393,
+    "ast_hash": "d04ace1a9724d55d724c3f3b2de18268",
+    "semantic_hash": "d04ace1a9724d55d724c3f3b2de18268"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\Properties\\launchSettings.json": {
+    "mtime": 1779003202.9067225,
+    "ast_hash": "de68355b9ac2f8139694cab3d3968090",
+    "semantic_hash": "de68355b9ac2f8139694cab3d3968090"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\Services\\TokenService.cs": {
+    "mtime": 1779003202.9067225,
+    "ast_hash": "4213475f3ab0a8894871c04574634c67",
+    "semantic_hash": "4213475f3ab0a8894871c04574634c67"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\app.json": {
+    "mtime": 1779003193.308676,
+    "ast_hash": "48ab3c00dd3f0b8f97148733765d9853",
+    "semantic_hash": "48ab3c00dd3f0b8f97148733765d9853"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\eslint.config.js": {
+    "mtime": 1779003193.329608,
+    "ast_hash": "863383b08e7ec37e0b09ebacf6c03216",
+    "semantic_hash": "863383b08e7ec37e0b09ebacf6c03216"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\package.json": {
+    "mtime": 1779003193.3317697,
+    "ast_hash": "91203b1a4c3468f096d21372c845fbe7",
+    "semantic_hash": "91203b1a4c3468f096d21372c845fbe7"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\tsconfig.json": {
+    "mtime": 1779003193.3355682,
+    "ast_hash": "adaaaa688f7831aff81ec39d16eeca1d",
+    "semantic_hash": "adaaaa688f7831aff81ec39d16eeca1d"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\.claude\\settings.local.json": {
+    "mtime": 1779003193.302334,
+    "ast_hash": "7ecf9f7f52d280333bcc12f1dd85a073",
+    "semantic_hash": "7ecf9f7f52d280333bcc12f1dd85a073"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\.vscode\\extensions.json": {
+    "mtime": 1779003193.3043394,
+    "ast_hash": "6cbfc878ae3854f2fc8f9f35813fde5b",
+    "semantic_hash": "6cbfc878ae3854f2fc8f9f35813fde5b"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\.vscode\\settings.json": {
+    "mtime": 1779003193.3043394,
+    "ast_hash": "5812a780e2bb6913d6200435c8860dae",
+    "semantic_hash": "5812a780e2bb6913d6200435c8860dae"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\api\\api.ts": {
+    "mtime": 1779003345.9451754,
+    "ast_hash": "f3184465a8a046789b3d755503e9ce1d",
+    "semantic_hash": "f3184465a8a046789b3d755503e9ce1d"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\api\\location.ts": {
+    "mtime": 1779003193.308676,
+    "ast_hash": "f1e904bc062e05796c397e88bca19b91",
+    "semantic_hash": "f1e904bc062e05796c397e88bca19b91"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\api\\scans.ts": {
+    "mtime": 1779003193.308676,
+    "ast_hash": "1168cf37300fc7918584ce13d2b463bf",
+    "semantic_hash": "1168cf37300fc7918584ce13d2b463bf"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\app\\_layout.tsx": {
+    "mtime": 1779003193.3160849,
+    "ast_hash": "8609445ad805ea99a1b2009773d27c21",
+    "semantic_hash": "8609445ad805ea99a1b2009773d27c21"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\app\\(auth)\\login.tsx": {
+    "mtime": 1779003193.310317,
+    "ast_hash": "785929fbcfebeb835b5ab4633858ba9e",
+    "semantic_hash": "785929fbcfebeb835b5ab4633858ba9e"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\app\\(auth)\\register.tsx": {
+    "mtime": 1779003193.3123252,
+    "ast_hash": "e87ef13e81e8e01f1b0ddf9981b168c9",
+    "semantic_hash": "e87ef13e81e8e01f1b0ddf9981b168c9"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\app\\(auth)\\_layout.tsx": {
+    "mtime": 1779003193.310317,
+    "ast_hash": "5015f0d2f1184b0bb3cd8459d8fe54d7",
+    "semantic_hash": "5015f0d2f1184b0bb3cd8459d8fe54d7"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\app\\(tabs)\\children.tsx": {
+    "mtime": 1779003193.3143342,
+    "ast_hash": "2b93a2bb5bb11a40e68af3d294c9296a",
+    "semantic_hash": "2b93a2bb5bb11a40e68af3d294c9296a"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\app\\(tabs)\\index.tsx": {
+    "mtime": 1779003193.3143342,
+    "ast_hash": "179825a129df310713afb1738836a071",
+    "semantic_hash": "179825a129df310713afb1738836a071"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\app\\(tabs)\\profile.tsx": {
+    "mtime": 1779003193.3143342,
+    "ast_hash": "d32cd55b5b78ec2cb0dca24afab088a5",
+    "semantic_hash": "d32cd55b5b78ec2cb0dca24afab088a5"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\app\\(tabs)\\scan.tsx": {
+    "mtime": 1779003193.3160849,
+    "ast_hash": "0aadfc7a5b5d1553512ef44eadbd6c5e",
+    "semantic_hash": "0aadfc7a5b5d1553512ef44eadbd6c5e"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\app\\(tabs)\\_layout.tsx": {
+    "mtime": 1779003193.3123252,
+    "ast_hash": "995cb74e8b8d703bec2327a60c0f9dbb",
+    "semantic_hash": "995cb74e8b8d703bec2327a60c0f9dbb"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\components\\haptic-tab.tsx": {
+    "mtime": 1779003193.3201005,
+    "ast_hash": "0794528a2e4a1d38e4b561471776013a",
+    "semantic_hash": "0794528a2e4a1d38e4b561471776013a"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\components\\ui\\Button.tsx": {
+    "mtime": 1779003193.3201005,
+    "ast_hash": "49cb110c9a2e757afe87fada57965db8",
+    "semantic_hash": "49cb110c9a2e757afe87fada57965db8"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\components\\ui\\icon-symbol.ios.tsx": {
+    "mtime": 1779003193.3201005,
+    "ast_hash": "089d11181cc7542fa42b05fade85fe36",
+    "semantic_hash": "089d11181cc7542fa42b05fade85fe36"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\components\\ui\\icon-symbol.tsx": {
+    "mtime": 1779003193.3201005,
+    "ast_hash": "a6877730a934d347343a08a439c42604",
+    "semantic_hash": "a6877730a934d347343a08a439c42604"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\components\\ui\\Input.tsx": {
+    "mtime": 1779003193.3201005,
+    "ast_hash": "0d1a0e37a53c85d572b0487c6b9e3fe6",
+    "semantic_hash": "0d1a0e37a53c85d572b0487c6b9e3fe6"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\constants\\Config.ts": {
+    "mtime": 1779003193.3201005,
+    "ast_hash": "065974690fcfe70a42c4f7e690f978eb",
+    "semantic_hash": "065974690fcfe70a42c4f7e690f978eb"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\constants\\styles.ts": {
+    "mtime": 1779003193.3201005,
+    "ast_hash": "771e5462158279b8b863bf5e3c872c73",
+    "semantic_hash": "771e5462158279b8b863bf5e3c872c73"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\constants\\theme.ts": {
+    "mtime": 1779003193.3201005,
+    "ast_hash": "f232095d97de158639b77aeaa2cd50fe",
+    "semantic_hash": "f232095d97de158639b77aeaa2cd50fe"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\constants\\translations.ts": {
+    "mtime": 1779003193.3201005,
+    "ast_hash": "c21f80ce216cd2ca9ae5352894fadf12",
+    "semantic_hash": "c21f80ce216cd2ca9ae5352894fadf12"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\context\\LanguageContext.tsx": {
+    "mtime": 1779003193.329608,
+    "ast_hash": "423d492cfb5f6d259acb062acdc2433e",
+    "semantic_hash": "423d492cfb5f6d259acb062acdc2433e"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\hooks\\use-color-scheme.ts": {
+    "mtime": 1779003193.329608,
+    "ast_hash": "5e75b3d5ace0289cfc1bab951ca625bb",
+    "semantic_hash": "5e75b3d5ace0289cfc1bab951ca625bb"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\hooks\\use-theme-color.ts": {
+    "mtime": 1779003193.3317697,
+    "ast_hash": "1c4852743a2fe0529f96ab4ef1f61026",
+    "semantic_hash": "1c4852743a2fe0529f96ab4ef1f61026"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\hooks\\useLocationTracking.ts": {
+    "mtime": 1779003193.3317697,
+    "ast_hash": "213e3cc80a2b9a6f03174cd6909c0a2c",
+    "semantic_hash": "213e3cc80a2b9a6f03174cd6909c0a2c"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\scripts\\reset-project.js": {
+    "mtime": 1779003193.3355682,
+    "ast_hash": "45037f1403194ff08819938578939b58",
+    "semantic_hash": "45037f1403194ff08819938578939b58"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\services\\locationService.ts": {
+    "mtime": 1779003193.3355682,
+    "ast_hash": "09d8b746dd74a11ca8ccb31d2edc18f7",
+    "semantic_hash": "09d8b746dd74a11ca8ccb31d2edc18f7"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\store\\authStore.ts": {
+    "mtime": 1779003193.3355682,
+    "ast_hash": "eaf7b751859454eef180ba990fe0877b",
+    "semantic_hash": "eaf7b751859454eef180ba990fe0877b"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\types\\auth.ts": {
+    "mtime": 1779003193.3355682,
+    "ast_hash": "8e302013f2901d1f6f7584e2c970a8c6",
+    "semantic_hash": "8e302013f2901d1f6f7584e2c970a8c6"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\types\\child.ts": {
+    "mtime": 1779003193.3355682,
+    "ast_hash": "d61e5c7a7e311102c91251eecce811bc",
+    "semantic_hash": "d61e5c7a7e311102c91251eecce811bc"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\types\\scan.ts": {
+    "mtime": 1779003193.3355682,
+    "ast_hash": "d58694bdeee414b67a678ea76eb7b7eb",
+    "semantic_hash": "d58694bdeee414b67a678ea76eb7b7eb"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\CLAUDE.md": {
+    "mtime": 1779003226.243353,
+    "ast_hash": "28e47f0962bd0dc8ce99df16842f77bb",
+    "semantic_hash": "28e47f0962bd0dc8ce99df16842f77bb"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\README.md": {
+    "mtime": 1779003216.9961982,
+    "ast_hash": "9d35948b2764eb6414f37e33c64ef695",
+    "semantic_hash": "9d35948b2764eb6414f37e33c64ef695"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\.github\\workflows\\api-ci.yml": {
+    "mtime": 1779003300.670928,
+    "ast_hash": "f2714703b1b2b48a91dfac7a5fbe6b49",
+    "semantic_hash": "f2714703b1b2b48a91dfac7a5fbe6b49"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\.github\\workflows\\mobile-ci.yml": {
+    "mtime": 1779003294.9574902,
+    "ast_hash": "ebe6b4ec8c13815753d631c3c5a071c8",
+    "semantic_hash": "ebe6b4ec8c13815753d631c3c5a071c8"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\AGENTS.md": {
+    "mtime": 1779003202.8969393,
+    "ast_hash": "556352512833419487459fe3f58044bb",
+    "semantic_hash": "556352512833419487459fe3f58044bb"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\CLAUDE.md": {
+    "mtime": 1779003202.8969393,
+    "ast_hash": "5dcba120a25f66e944c6eb17924b1970",
+    "semantic_hash": "5dcba120a25f66e944c6eb17924b1970"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\README.md": {
+    "mtime": 1779003202.9067225,
+    "ast_hash": "a44c712fbc0df5a89acce7eeceb9f155",
+    "semantic_hash": "a44c712fbc0df5a89acce7eeceb9f155"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\AGENTS.md": {
+    "mtime": 1779003193.3043394,
+    "ast_hash": "b29f6c8f6db4198714f10c25f3408787",
+    "semantic_hash": "b29f6c8f6db4198714f10c25f3408787"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\CLAUDE.md": {
+    "mtime": 1779003193.3066702,
+    "ast_hash": "5f0370061a099cdf7a4327207e2442d7",
+    "semantic_hash": "5f0370061a099cdf7a4327207e2442d7"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\README.md": {
+    "mtime": 1779003193.3066702,
+    "ast_hash": "ef694ace196975f18ed08e17cdda1e54",
+    "semantic_hash": "ef694ace196975f18ed08e17cdda1e54"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\docs\\api-reference.md": {
+    "mtime": 1779003261.9687886,
+    "ast_hash": "e79bb3070d7fd7e256c43e2eed58fbf1",
+    "semantic_hash": "e79bb3070d7fd7e256c43e2eed58fbf1"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\docs\\architecture.md": {
+    "mtime": 1779003241.4924521,
+    "ast_hash": "acd748333118480affe2e023c332963d",
+    "semantic_hash": "acd748333118480affe2e023c332963d"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\docs\\setup.md": {
+    "mtime": 1779003252.5279074,
+    "ast_hash": "3f182ffe179b1873410036b4b44f588c",
+    "semantic_hash": "3f182ffe179b1873410036b4b44f588c"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\assets\\images\\android-icon-background.png": {
+    "mtime": 1779003193.3180928,
+    "ast_hash": "2d65569cc0e2afdcea0af9f9902d4173",
+    "semantic_hash": "2d65569cc0e2afdcea0af9f9902d4173"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\assets\\images\\android-icon-foreground.png": {
+    "mtime": 1779003193.3180928,
+    "ast_hash": "72e71a9c846c6aa4ae32476641a00e18",
+    "semantic_hash": "72e71a9c846c6aa4ae32476641a00e18"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\assets\\images\\android-icon-monochrome.png": {
+    "mtime": 1779003193.3201005,
+    "ast_hash": "1e097dab989759fc0b69440092ca22cd",
+    "semantic_hash": "1e097dab989759fc0b69440092ca22cd"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\assets\\images\\favicon.png": {
+    "mtime": 1779003193.3201005,
+    "ast_hash": "d9f444efbdfbe7931aa93beada07318a",
+    "semantic_hash": "d9f444efbdfbe7931aa93beada07318a"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\assets\\images\\icon.png": {
+    "mtime": 1779003193.3201005,
+    "ast_hash": "cb975bba2216ce10a60e6c0ffe9941a2",
+    "semantic_hash": "cb975bba2216ce10a60e6c0ffe9941a2"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\mobile\\assets\\images\\splash-icon.png": {
+    "mtime": 1779003193.3201005,
+    "ast_hash": "97dae5a0e62ad8551d8a31897b425e63",
+    "semantic_hash": "97dae5a0e62ad8551d8a31897b425e63"
+  }
+}
