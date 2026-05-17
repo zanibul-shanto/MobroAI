@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MorboLensAI.Models;
+namespace MobroLens.Models;
 
 public class MeaslesScan : BaseEntity
 {

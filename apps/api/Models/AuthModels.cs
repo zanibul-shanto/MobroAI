@@ -1,4 +1,4 @@
-namespace MorboLensAI.Models;
+namespace MobroLens.Models;
 
 public record LoginRequest(string Identifier, string Password);
 public record RegisterRequest(string Email, string Password, string FullName, string? PhoneNumber, Role Role);

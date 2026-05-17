@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using MorboLensAI.Models;
+using MobroLens.Models;
 
-namespace MorboLensAI.Endpoints;
+namespace MobroLens.Endpoints;
 
 public static class ChildEndpoints
 {

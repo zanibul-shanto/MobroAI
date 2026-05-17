@@ -1,7 +1,7 @@
-# MorboLensAI AGENTS.md
+# MobroLens AGENTS.md
 
 ## Project Overview
-Single .NET 10 Minimal API project (MorboLensAI.csproj) for AI-powered measles triage. No mobile project exists despite README mentions.
+Single .NET 10 Minimal API project (MobroLens.csproj) for AI-powered measles triage. No mobile project exists despite README mentions.
 
 ## Developer Commands
 - `dotnet run` - Runs on HTTP port 5009 (see `Properties/launchSettings.json`)

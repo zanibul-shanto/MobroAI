@@ -1,4 +1,4 @@
-namespace MorboLensAI.Models;
+namespace MobroLens.Models;
 
 public class Todo : BaseEntity
 {

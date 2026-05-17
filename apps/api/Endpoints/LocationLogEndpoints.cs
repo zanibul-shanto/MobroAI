@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using MorboLensAI.Models;
+using MobroLens.Models;
 using System.Security.Claims;
 
-namespace MorboLensAI.Endpoints;
+namespace MobroLens.Endpoints;
 
 public static class LocationLogEndpoints
 {

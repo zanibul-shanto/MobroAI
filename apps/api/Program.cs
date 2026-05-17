@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using MorboLensAI;
-using MorboLensAI.Endpoints;
-using MorboLensAI.Services;
+using MobroLens;
+using MobroLens.Endpoints;
+using MobroLens.Services;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -1,10 +1,10 @@
 using Microsoft.IdentityModel.Tokens;
-using MorboLensAI.Models;
+using MobroLens.Models;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace MorboLensAI.Services;
+namespace MobroLens.Services;
 
 public interface ITokenService
 {

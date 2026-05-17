@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using MorboLensAI.Models;
+using MobroLens.Models;
 
-namespace MorboLensAI;
+namespace MobroLens;
 
 public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
 {

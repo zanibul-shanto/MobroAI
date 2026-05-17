@@ -5,7 +5,13 @@
       "Bash(Select-Object Name, PSIsContainer)",
       "Bash(grep -v \"\\\\\\\\.git\")",
       "Bash(grep -v \"\\\\\\\\.vs\")",
-      "Bash(dotnet build *)"
+      "Bash(dotnet build *)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\zanib\\\\source\\\\repos\\\\MorboLensAI\" -Recurse -File)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\zanib\\\\source\\\\repos\\\\MorboLensAI\" -Recurse -File -Filter \"*.csproj\")",
+      "Bash(Select-Object FullName)",
+      "PowerShell(head *)",
+      "PowerShell(Remove-Item *)"
     ]
   }
 }

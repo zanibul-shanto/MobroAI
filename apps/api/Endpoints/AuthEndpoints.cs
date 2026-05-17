@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using MorboLensAI.Models;
-using MorboLensAI.Services;
+using MobroLens.Models;
+using MobroLens.Services;
 
-namespace MorboLensAI.Endpoints;
+namespace MobroLens.Endpoints;
 
 public static class AuthEndpoints
 {
