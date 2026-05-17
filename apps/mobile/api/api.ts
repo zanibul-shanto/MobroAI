@@ -1,13 +1,12 @@
 import axios from 'axios';
 import * as SecureStore from 'expo-secure-store';
 
-export const API_BASE_URL = 'https://3q7k5wt5-7206.asse.devtunnels.ms';
+export const API_BASE_URL = process.env.EXPO_PUBLIC_API_URL ?? 'http://localhost:5009';
 
 export const api = axios.create({
   baseURL: API_BASE_URL,
   headers: {
     'Content-Type': 'application/json',
-    'X-Tunnel-Skip-AntiPhishing-Page': 'true',
   },
 });
 
