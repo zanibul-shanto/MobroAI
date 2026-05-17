@@ -1,4 +1,9 @@
 {
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\.claude\\settings.json": {
+    "mtime": 1779005420.7539055,
+    "ast_hash": "e99d00f34528b94fcaaa41a2ab1c1654",
+    "semantic_hash": "e99d00f34528b94fcaaa41a2ab1c1654"
+  },
   "C:\\Users\\zanib\\source\\repos\\MobroAI\\.claude\\settings.local.json": {
     "mtime": 1779003852.511248,
     "ast_hash": "6c3a6ec32050373964da49ffa9f71a4e",
@@ -93,6 +98,31 @@
     "mtime": 1779003202.8969393,
     "ast_hash": "d04ace1a9724d55d724c3f3b2de18268",
     "semantic_hash": "d04ace1a9724d55d724c3f3b2de18268"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\obj\\MobroLens.csproj.nuget.dgspec.json": {
+    "mtime": 1779005133.7663648,
+    "ast_hash": "510d3aceea0624e2b7fd72dc03b85d20",
+    "semantic_hash": "510d3aceea0624e2b7fd72dc03b85d20"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\obj\\project.assets.json": {
+    "mtime": 1779005133.7099435,
+    "ast_hash": "663d67d25b8e4dc1e05494922d72aa59",
+    "semantic_hash": "663d67d25b8e4dc1e05494922d72aa59"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\obj\\Debug\\net10.0\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs": {
+    "mtime": 1779005128.910602,
+    "ast_hash": "8479efdf06e2d26e053d27ffa6964185",
+    "semantic_hash": "8479efdf06e2d26e053d27ffa6964185"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\obj\\Debug\\net10.0\\MobroLens.AssemblyInfo.cs": {
+    "mtime": 1779005129.0089629,
+    "ast_hash": "61edbc6c4467ed0c64d1a9aae292ed3b",
+    "semantic_hash": "61edbc6c4467ed0c64d1a9aae292ed3b"
+  },
+  "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\obj\\Debug\\net10.0\\MobroLens.GlobalUsings.g.cs": {
+    "mtime": 1779005128.7889602,
+    "ast_hash": "5b3fdaae7b59d230d7d136eab049a98a",
+    "semantic_hash": "5b3fdaae7b59d230d7d136eab049a98a"
   },
   "C:\\Users\\zanib\\source\\repos\\MobroAI\\apps\\api\\Properties\\launchSettings.json": {
     "mtime": 1779003202.9067225,
@@ -295,9 +325,9 @@
     "semantic_hash": "d58694bdeee414b67a678ea76eb7b7eb"
   },
   "C:\\Users\\zanib\\source\\repos\\MobroAI\\CLAUDE.md": {
-    "mtime": 1779003226.243353,
-    "ast_hash": "28e47f0962bd0dc8ce99df16842f77bb",
-    "semantic_hash": "28e47f0962bd0dc8ce99df16842f77bb"
+    "mtime": 1779005420.7526822,
+    "ast_hash": "2627e8201900ae371decd35ca100a768",
+    "semantic_hash": "2627e8201900ae371decd35ca100a768"
   },
   "C:\\Users\\zanib\\source\\repos\\MobroAI\\README.md": {
     "mtime": 1779003216.9961982,
