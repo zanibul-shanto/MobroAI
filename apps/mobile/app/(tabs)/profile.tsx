@@ -15,6 +15,8 @@ import { useRouter } from 'expo-router';
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
+import { fullNameField, emailField, phoneField, passwordField } from '@/validation/schemas';
+import { ROLE_LABELS } from '@/constants/enums';
 import { useAuthStore } from '@/store/authStore';
 import { Colors } from '@/constants/theme';
 import { Button } from '@/components/ui/Button';
@@ -23,17 +25,17 @@ import { api } from '@/api/api';
 import { User as UserIcon, LogOut, Lock, Mail, Phone, Shield, Edit3, ChevronRight } from 'lucide-react-native';
 
 const changePasswordSchema = z.object({
-  newPassword: z.string().min(6, 'New password must be at least 6 characters'),
-  confirmPassword: z.string().min(6, 'Confirm password must be at least 6 characters'),
+  newPassword: passwordField,
+  confirmPassword: passwordField,
 }).refine((data) => data.newPassword === data.confirmPassword, {
   message: "Passwords don't match",
   path: ["confirmPassword"],
 });
 
 const editProfileSchema = z.object({
-  fullName: z.string().min(2, 'Name is too short'),
-  email: z.string().email('Invalid email address'),
-  phoneNumber: z.string().min(10, 'Invalid phone number'),
+  fullName: fullNameField,
+  email: emailField,
+  phoneNumber: phoneField,
   role: z.number(),
 });
 
@@ -124,15 +126,6 @@ export default function ProfileScreen() {
     );
   };
 
-  const getRoleLabel = (role: number) => {
-    switch (role) {
-      case 0: return 'Admin';
-      case 1: return 'Health Care Officer';
-      case 2: return 'Parent';
-      default: return 'User';
-    }
-  };
-
   if (!user) return null;
 
   return (
@@ -147,7 +140,7 @@ export default function ProfileScreen() {
           <Text style={[styles.userName, { color: colors.text }]}>{user.fullName}</Text>
           <View style={[styles.roleBadge, { backgroundColor: colors.primary + '15' }]}>
             <Shield size={14} color={colors.primary} />
-            <Text style={[styles.roleText, { color: colors.primary }]}>{getRoleLabel(user.role)}</Text>
+            <Text style={[styles.roleText, { color: colors.primary }]}>{ROLE_LABELS[user.role] ?? 'User'}</Text>
           </View>
         </View>
 

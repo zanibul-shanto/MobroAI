@@ -18,12 +18,13 @@ import {
   useColorScheme
 } from 'react-native';
 import * as z from 'zod';
+import { fullNameField, emailField, phoneField, passwordField } from '@/validation/schemas';
 
 const registerSchema = z.object({
-  fullName: z.string().min(2, 'Full Name is required'),
-  email: z.string().email('Invalid email address'),
-  phoneNumber: z.string().min(10, 'Phone number must be at least 10 digits'),
-  password: z.string().min(6, 'Password must be at least 6 characters'),
+  fullName: fullNameField,
+  email: emailField,
+  phoneNumber: phoneField,
+  password: passwordField,
   role: z.union([z.literal(1), z.literal(2)]),
 });
 

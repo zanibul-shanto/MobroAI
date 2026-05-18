@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
   View,
   Text,
@@ -25,9 +25,12 @@ import { Plus, Edit2, Trash2, Baby, Calendar, ChevronRight } from 'lucide-react-
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
+import { fullNameField } from '@/validation/schemas';
+import { GENDER_COLORS } from '@/constants/enums';
+import { useFetchData } from '@/hooks/useFetchData';
 
 const childSchema = z.object({
-  fullName: z.string().min(2, 'Name is too short'),
+  fullName: fullNameField,
   dateOfBirth: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Use YYYY-MM-DD format'),
   gender: z.number().min(0).max(2),
 });
@@ -39,9 +42,15 @@ export default function ChildrenScreen() {
   const colors = Colors[colorScheme];
   const { user } = useAuthStore();
   const router = useRouter();
-  const [children, setChildren] = useState<Child[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [refreshing, setRefreshing] = useState(false);
+  const { data: children, loading, refreshing, onRefresh, refetch: fetchChildren } = useFetchData(
+    async () => {
+      if (!user) return [] as Child[];
+      const response = await api.get(`/children/parent/${user.id}`);
+      return Array.isArray(response.data) ? response.data as Child[] : [] as Child[];
+    },
+    [] as Child[],
+    [user]
+  );
   const [modalVisible, setModalVisible] = useState(false);
   const [editingChild, setEditingChild] = useState<Child | null>(null);
   const [actionLoading, setActionLoading] = useState(false);
@@ -54,29 +63,6 @@ export default function ChildrenScreen() {
       gender: 0,
     }
   });
-
-  const fetchChildren = async () => {
-    if (!user) return;
-    try {
-      const response = await api.get(`/children/parent/${user.id}`);
-      setChildren(Array.isArray(response.data) ? response.data : []);
-    } catch (error) {
-      console.error('Failed to fetch children:', error);
-      Alert.alert('Error', 'Failed to load children list');
-    } finally {
-      setLoading(false);
-      setRefreshing(false);
-    }
-  };
-
-  useEffect(() => {
-    fetchChildren();
-  }, [user]);
-
-  const onRefresh = () => {
-    setRefreshing(true);
-    fetchChildren();
-  };
 
   const onSubmit = async (data: ChildForm) => {
     if (!user) return;
@@ -165,8 +151,8 @@ export default function ChildrenScreen() {
         onPress={() => router.push({ pathname: '/child/[id]', params: { id: item.id, name: item.fullName } })}
         activeOpacity={0.7}
       >
-        <View style={[styles.avatarContainer, { backgroundColor: item.gender === 0 ? '#E3F2FD' : (item.gender === 1 ? '#FCE4EC' : '#F5F5F5') }]}>
-          <Baby size={24} color={item.gender === 0 ? '#1E88E5' : (item.gender === 1 ? '#D81B60' : '#757575')} />
+        <View style={[styles.avatarContainer, { backgroundColor: (GENDER_COLORS[item.gender] ?? GENDER_COLORS[2]).bg }]}>
+          <Baby size={24} color={(GENDER_COLORS[item.gender] ?? GENDER_COLORS[2]).icon} />
         </View>
         <View style={styles.childInfo}>
           <Text style={[styles.childName, { color: colors.text }]}>{item.fullName}</Text>

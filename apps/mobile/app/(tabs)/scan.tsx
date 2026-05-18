@@ -23,6 +23,7 @@ import { api } from '@/api/api';
 import { uploadScan } from '@/api/scans';
 import { Child } from '@/types/child';
 import { Button } from '@/components/ui/Button';
+import { GENDER_COLORS } from '@/constants/enums';
 import { Camera, ImageIcon, ChevronDown, CheckCircle, Baby, MapPin } from 'lucide-react-native';
 
 const SCAN_STATUS_LABELS = ['Pending', 'AI Confirmed', 'Officer Verified', 'Cleared'] as const;
@@ -276,9 +277,9 @@ export default function ScanScreen() {
                   >
                     <View style={[
                       styles.miniAvatar,
-                      { backgroundColor: item.gender === 0 ? '#E3F2FD' : (item.gender === 1 ? '#FCE4EC' : '#F5F5F5') }
+                      { backgroundColor: (GENDER_COLORS[item.gender] ?? GENDER_COLORS[2]).bg }
                     ]}>
-                      <Baby size={16} color={item.gender === 0 ? '#1E88E5' : (item.gender === 1 ? '#D81B60' : '#757575')} />
+                      <Baby size={16} color={(GENDER_COLORS[item.gender] ?? GENDER_COLORS[2]).icon} />
                     </View>
                     <Text style={[styles.childOptionName, { color: colors.text }]}>{item.fullName}</Text>
                     {selectedChild?.id === item.id && (

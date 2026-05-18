@@ -14,13 +14,14 @@ import { useRouter } from 'expo-router';
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
+import { emailField } from '@/validation/schemas';
 import { Input } from '@/components/ui/Input';
 import { Button } from '@/components/ui/Button';
 import { Colors } from '@/constants/theme';
 import { Ionicons } from '@expo/vector-icons';
 
 const forgotPasswordSchema = z.object({
-  email: z.string().email('Invalid email address'),
+  email: emailField,
 });
 
 type ForgotPasswordForm = z.infer<typeof forgotPasswordSchema>;

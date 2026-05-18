@@ -19,10 +19,11 @@ import {
   useColorScheme
 } from 'react-native';
 import * as z from 'zod';
+import { passwordField } from '@/validation/schemas';
 
 const loginSchema = z.object({
   identifier: z.string().min(1, 'Email or Phone Number is required'),
-  password: z.string().min(6, 'Password must be at least 6 characters'),
+  password: passwordField,
 });
 
 type LoginForm = z.infer<typeof loginSchema>;

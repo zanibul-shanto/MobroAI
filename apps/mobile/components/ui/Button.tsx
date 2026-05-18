@@ -14,7 +14,7 @@ interface ButtonProps {
   onPress: () => void;
   title: string;
   loading?: boolean;
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
+  variant?: 'primary' | 'secondary' | 'outline';
   style?: ViewStyle;
   textStyle?: TextStyle;
   disabled?: boolean;
@@ -32,32 +32,11 @@ export const Button: React.FC<ButtonProps> = ({
   const colorScheme = useColorScheme() ?? 'light';
   const colors = Colors[colorScheme];
 
-  const getVariantStyles = () => {
-    switch (variant) {
-      case 'secondary':
-        return { 
-          container: { backgroundColor: colors.surface }, 
-          text: { color: colors.text } 
-        };
-      case 'outline':
-        return { 
-          container: { backgroundColor: 'transparent', borderWidth: 1, borderColor: colors.border }, 
-          text: { color: colors.text } 
-        };
-      case 'ghost':
-        return { 
-          container: { backgroundColor: 'transparent' }, 
-          text: { color: colors.primary } 
-        };
-      default:
-        return { 
-          container: { backgroundColor: colors.primary }, 
-          text: { color: '#FFFFFF' } 
-        };
-    }
-  };
-
-  const variantStyles = getVariantStyles();
+  const variantStyles = {
+    primary:   { container: { backgroundColor: colors.primary }, text: { color: '#FFFFFF' } },
+    secondary: { container: { backgroundColor: colors.surface }, text: { color: colors.text } },
+    outline:   { container: { backgroundColor: 'transparent', borderWidth: 1, borderColor: colors.border }, text: { color: colors.text } },
+  }[variant] ?? { container: { backgroundColor: colors.primary }, text: { color: '#FFFFFF' } };
 
   return (
     <TouchableOpacity

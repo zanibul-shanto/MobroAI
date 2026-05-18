@@ -12,7 +12,4 @@ export const Config = {
   // 0 means updates are based on time only (if supported by OS).
   LOCATION_DISTANCE_INTERVAL_METERS: 0,
 
-  // Accuracy level for location tracking.
-  // Balanced is usually sufficient for background tracking and saves battery.
-  LOCATION_ACCURACY: 'balanced',
 };
