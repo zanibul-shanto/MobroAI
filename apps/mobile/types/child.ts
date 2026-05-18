@@ -7,3 +7,19 @@ export interface Child {
   createdAt?: string;
   updatedAt?: string;
 }
+
+export interface VaccineDate {
+  id: string;
+  childId: string;
+  date: string;
+  note?: string;
+  createdAt?: string;
+  updatedAt?: string;
+}
+
+export interface UpcomingVaccine {
+  childId: string;
+  fullName: string;
+  date: string;
+  note?: string;
+}

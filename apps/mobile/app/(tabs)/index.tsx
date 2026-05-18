@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   View,
   Text,
@@ -13,12 +13,22 @@ import { useRouter } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { useAuthStore } from '@/store/authStore';
 import { Colors } from '@/constants/theme';
+import { getUpcomingVaccines } from '@/api/vaccines';
+import { UpcomingVaccine } from '@/types/child';
 
 export default function DashboardScreen() {
   const router = useRouter();
   const colorScheme = useColorScheme() ?? 'light';
   const colors = Colors[colorScheme];
   const { user, logout } = useAuthStore();
+  const [upcomingVaccines, setUpcomingVaccines] = useState<UpcomingVaccine[]>([]);
+
+  useEffect(() => {
+    if (!user) return;
+    getUpcomingVaccines(user.id, 3)
+      .then((res) => setUpcomingVaccines(res.data))
+      .catch(() => {});
+  }, [user]);
 
   return (
     <SafeAreaView style={[styles.container, { backgroundColor: colors.background }]}>
@@ -90,19 +100,38 @@ export default function DashboardScreen() {
         </View>
 
         <View style={styles.section}>
-          <Text style={[styles.sectionTitle, { color: colors.text }]}>Recent Activity</Text>
-          {[1, 2, 3].map((i) => (
-            <TouchableOpacity key={i} style={[styles.activityItem, { backgroundColor: colors.surface }]}>
-              <View style={[styles.activityIcon, { backgroundColor: '#4CAF5015' }]}>
-                <Ionicons name="checkmark-circle" size={20} color="#4CAF50" />
+          <Text style={[styles.sectionTitle, { color: colors.text }]}>Upcoming Vaccines</Text>
+          {upcomingVaccines.length === 0 ? (
+            <View style={[styles.activityItem, { backgroundColor: colors.surface }]}>
+              <View style={[styles.activityIcon, { backgroundColor: '#E3F2FD' }]}>
+                <Ionicons name="medkit-outline" size={20} color="#1E88E5" />
               </View>
               <View style={styles.activityInfo}>
-                <Text style={[styles.activityTitle, { color: colors.text }]}>Scan Completed</Text>
-                <Text style={[styles.activityTime, { color: colors.textSecondary }]}>{i * 2} hours ago</Text>
+                <Text style={[styles.activityTitle, { color: colors.text }]}>No upcoming vaccines</Text>
+                <Text style={[styles.activityTime, { color: colors.textSecondary }]}>Add dates from the Children tab</Text>
               </View>
-              <Ionicons name="chevron-forward" size={18} color={colors.textSecondary} />
-            </TouchableOpacity>
-          ))}
+            </View>
+          ) : (
+            upcomingVaccines.map((v, i) => (
+              <TouchableOpacity
+                key={i}
+                style={[styles.activityItem, { backgroundColor: colors.surface }]}
+                onPress={() => router.push({ pathname: '/child/[id]', params: { id: v.childId, name: v.fullName } })}
+              >
+                <View style={[styles.activityIcon, { backgroundColor: '#E8F5E9' }]}>
+                  <Ionicons name="medkit" size={20} color="#43A047" />
+                </View>
+                <View style={styles.activityInfo}>
+                  <Text style={[styles.activityTitle, { color: colors.text }]}>{v.fullName}</Text>
+                  <Text style={[styles.activityTime, { color: colors.textSecondary }]}>
+                    {new Date(v.date).toLocaleDateString(undefined, { month: 'long', day: 'numeric', year: 'numeric' })}
+                    {v.note ? `  ·  ${v.note}` : ''}
+                  </Text>
+                </View>
+                <Ionicons name="chevron-forward" size={18} color={colors.textSecondary} />
+              </TouchableOpacity>
+            ))
+          )}
         </View>
       </ScrollView>
     </SafeAreaView>

@@ -48,6 +48,7 @@ function InitialLayout() {
     <Stack screenOptions={{ animation: 'none' }}>
       <Stack.Screen name="(auth)" options={{ headerShown: false }} />
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      <Stack.Screen name="child/[id]" options={{ headerShown: false }} />
     </Stack>
   );
 }

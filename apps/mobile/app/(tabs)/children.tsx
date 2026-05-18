@@ -14,13 +14,14 @@ import {
   useColorScheme
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { useRouter } from 'expo-router';
 import { useAuthStore } from '@/store/authStore';
 import { Colors } from '@/constants/theme';
 import { api } from '@/api/api';
 import { Child } from '@/types/child';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
-import { Plus, Edit2, Trash2, Baby, Calendar } from 'lucide-react-native';
+import { Plus, Edit2, Trash2, Baby, Calendar, ChevronRight } from 'lucide-react-native';
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
@@ -37,6 +38,7 @@ export default function ChildrenScreen() {
   const colorScheme = useColorScheme() ?? 'light';
   const colors = Colors[colorScheme];
   const { user } = useAuthStore();
+  const router = useRouter();
   const [children, setChildren] = useState<Child[]>([]);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
@@ -156,22 +158,27 @@ export default function ChildrenScreen() {
     }
   };
 
-  const renderChildItem = ({ item, index }: { item: Child, index: number }) => (
-    <View 
-      style={[styles.childCard, { backgroundColor: colors.surface }]}
-    >
-      <View style={[styles.avatarContainer, { backgroundColor: item.gender === 0 ? '#E3F2FD' : (item.gender === 1 ? '#FCE4EC' : '#F5F5F5') }]}>
-        <Baby size={24} color={item.gender === 0 ? '#1E88E5' : (item.gender === 1 ? '#D81B60' : '#757575')} />
-      </View>
-      <View style={styles.childInfo}>
-        <Text style={[styles.childName, { color: colors.text }]}>{item.fullName}</Text>
-        <View style={styles.childMeta}>
-          <Calendar size={12} color={colors.textSecondary} />
-          <Text style={[styles.childMetaText, { color: colors.textSecondary }]}>
-            {formatDate(item.dateOfBirth)}
-          </Text>
+  const renderChildItem = ({ item }: { item: Child }) => (
+    <View style={[styles.childCard, { backgroundColor: colors.surface }]}>
+      <TouchableOpacity
+        style={styles.childTappable}
+        onPress={() => router.push({ pathname: '/child/[id]', params: { id: item.id, name: item.fullName } })}
+        activeOpacity={0.7}
+      >
+        <View style={[styles.avatarContainer, { backgroundColor: item.gender === 0 ? '#E3F2FD' : (item.gender === 1 ? '#FCE4EC' : '#F5F5F5') }]}>
+          <Baby size={24} color={item.gender === 0 ? '#1E88E5' : (item.gender === 1 ? '#D81B60' : '#757575')} />
         </View>
-      </View>
+        <View style={styles.childInfo}>
+          <Text style={[styles.childName, { color: colors.text }]}>{item.fullName}</Text>
+          <View style={styles.childMeta}>
+            <Calendar size={12} color={colors.textSecondary} />
+            <Text style={[styles.childMetaText, { color: colors.textSecondary }]}>
+              {formatDate(item.dateOfBirth)}
+            </Text>
+          </View>
+        </View>
+        <ChevronRight size={16} color={colors.textSecondary} style={{ marginRight: 4 }} />
+      </TouchableOpacity>
       <View style={styles.actionButtons}>
         <TouchableOpacity onPress={() => handleEdit(item)} style={styles.iconButton}>
           <Edit2 size={18} color={colors.primary} />
@@ -365,9 +372,9 @@ const styles = StyleSheet.create({
   childCard: {
     flexDirection: 'row',
     alignItems: 'center',
-    padding: 16,
     borderRadius: 24,
     marginBottom: 16,
+    overflow: 'hidden',
     ...Platform.select({
       ios: {
         shadowColor: '#000',
@@ -379,6 +386,12 @@ const styles = StyleSheet.create({
         elevation: 2,
       },
     }),
+  },
+  childTappable: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 16,
   },
   avatarContainer: {
     width: 52,
@@ -415,6 +428,7 @@ const styles = StyleSheet.create({
   actionButtons: {
     flexDirection: 'row',
     gap: 8,
+    paddingRight: 12,
   },
   iconButton: {
     padding: 8,
