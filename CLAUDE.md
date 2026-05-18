@@ -16,6 +16,7 @@ Always `cd` into the app directory before running commands:
 ```sh
 # Mobile
 cd apps/mobile && npx expo start
+npx expo start --lan --clear
 
 # API
 cd apps/api && dotnet run
