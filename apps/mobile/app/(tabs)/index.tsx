@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import {
   View,
   Text,
@@ -9,7 +9,7 @@ import {
   Platform,
   useColorScheme
 } from 'react-native';
-import { useRouter } from 'expo-router';
+import { useRouter, useFocusEffect } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { useAuthStore } from '@/store/authStore';
 import { Colors } from '@/constants/theme';
@@ -22,13 +22,17 @@ export default function DashboardScreen() {
   const colors = Colors[colorScheme];
   const { user, logout } = useAuthStore();
   const [upcomingVaccines, setUpcomingVaccines] = useState<UpcomingVaccine[]>([]);
+  const [vaccineError, setVaccineError] = useState(false);
 
-  useEffect(() => {
-    if (!user) return;
-    getUpcomingVaccines(user.id, 3)
-      .then((res) => setUpcomingVaccines(res.data))
-      .catch(() => {});
-  }, [user]);
+  useFocusEffect(
+    useCallback(() => {
+      if (!user) return;
+      setVaccineError(false);
+      getUpcomingVaccines(user.id, 3)
+        .then((res) => setUpcomingVaccines(res.data))
+        .catch(() => { setVaccineError(true); setUpcomingVaccines([]); });
+    }, [user])
+  );
 
   return (
     <SafeAreaView style={[styles.container, { backgroundColor: colors.background }]}>
@@ -101,7 +105,17 @@ export default function DashboardScreen() {
 
         <View style={styles.section}>
           <Text style={[styles.sectionTitle, { color: colors.text }]}>Upcoming Vaccines</Text>
-          {upcomingVaccines.length === 0 ? (
+          {vaccineError ? (
+            <View style={[styles.activityItem, { backgroundColor: colors.surface }]}>
+              <View style={[styles.activityIcon, { backgroundColor: '#FFEBEE' }]}>
+                <Ionicons name="warning-outline" size={20} color="#E53935" />
+              </View>
+              <View style={styles.activityInfo}>
+                <Text style={[styles.activityTitle, { color: colors.text }]}>Could not load vaccine schedule</Text>
+                <Text style={[styles.activityTime, { color: colors.textSecondary }]}>Check your connection and try again</Text>
+              </View>
+            </View>
+          ) : upcomingVaccines.length === 0 ? (
             <View style={[styles.activityItem, { backgroundColor: colors.surface }]}>
               <View style={[styles.activityIcon, { backgroundColor: '#E3F2FD' }]}>
                 <Ionicons name="medkit-outline" size={20} color="#1E88E5" />
