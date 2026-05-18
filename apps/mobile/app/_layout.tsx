@@ -3,7 +3,7 @@ import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native
 import { Stack, useRouter, useSegments } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 
-import { useColorScheme } from '@/hooks/use-color-scheme';
+import { useColorScheme } from 'react-native';
 import { LanguageProvider } from '@/context/LanguageContext';
 import { useAuthStore } from '@/store/authStore';
 import { useLocationTracking } from '@/hooks/useLocationTracking';

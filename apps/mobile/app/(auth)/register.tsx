@@ -2,7 +2,6 @@ import { api } from '@/api/api';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { Colors } from '@/constants/theme';
-import { useColorScheme } from '@/hooks/use-color-scheme';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Link, useRouter } from 'expo-router';
 import React, { useState } from 'react';
@@ -15,7 +14,8 @@ import {
   StyleSheet,
   Text,
   TouchableOpacity,
-  View
+  View,
+  useColorScheme
 } from 'react-native';
 import * as z from 'zod';
 

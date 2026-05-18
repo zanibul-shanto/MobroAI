@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { 
-  View, 
-  TextInput, 
-  Text, 
-  StyleSheet, 
-  TouchableOpacity, 
-  ViewStyle, 
-  TextInputProps 
+import {
+  View,
+  TextInput,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  ViewStyle,
+  TextInputProps,
+  useColorScheme
 } from 'react-native';
 import { Colors } from '@/constants/theme';
-import { useColorScheme } from '@/hooks/use-color-scheme';
 import { Eye, EyeOff } from 'lucide-react-native';
 
 interface InputProps extends TextInputProps {

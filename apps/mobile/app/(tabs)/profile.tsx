@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
-import { 
-  View, 
-  Text, 
-  StyleSheet, 
-  ScrollView, 
-  Alert, 
+import {
+  View,
+  Text,
+  StyleSheet,
+  ScrollView,
+  Alert,
   Modal,
   TouchableOpacity,
   SafeAreaView,
-  Platform
+  Platform,
+  useColorScheme
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useForm, Controller } from 'react-hook-form';
@@ -16,7 +17,6 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { useAuthStore } from '@/store/authStore';
 import { Colors } from '@/constants/theme';
-import { useColorScheme } from '@/hooks/use-color-scheme';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { api } from '@/api/api';

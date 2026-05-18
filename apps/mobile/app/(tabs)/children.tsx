@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  View, 
-  Text, 
-  StyleSheet, 
-  FlatList, 
-  Alert, 
-  Modal, 
-  TouchableOpacity, 
+import {
+  View,
+  Text,
+  StyleSheet,
+  FlatList,
+  Alert,
+  Modal,
+  TouchableOpacity,
   ActivityIndicator,
   Platform,
   RefreshControl,
-  ScrollView
+  ScrollView,
+  useColorScheme
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useAuthStore } from '@/store/authStore';
 import { Colors } from '@/constants/theme';
-import { useColorScheme } from '@/hooks/use-color-scheme';
 import { api } from '@/api/api';
 import { Child } from '@/types/child';
 import { Button } from '@/components/ui/Button';

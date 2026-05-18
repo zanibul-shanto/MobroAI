@@ -11,6 +11,7 @@ import {
   Modal,
   FlatList,
   Platform,
+  useColorScheme,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useFocusEffect } from 'expo-router';
@@ -18,7 +19,6 @@ import * as ImagePicker from 'expo-image-picker';
 import * as Location from 'expo-location';
 import { useAuthStore } from '@/store/authStore';
 import { Colors } from '@/constants/theme';
-import { useColorScheme } from '@/hooks/use-color-scheme';
 import { api } from '@/api/api';
 import { uploadScan } from '@/api/scans';
 import { Child } from '@/types/child';
