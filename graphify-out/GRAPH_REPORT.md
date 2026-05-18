@@ -1,62 +1,56 @@
-# Graph Report - MobroAI  (2026-05-19)
+# Graph Report - .  (2026-05-19)
 
 ## Corpus Check
-- 64 files · ~32,483 words
-- Verdict: corpus is large enough that graph structure adds value.
+- Corpus is ~35,309 words - fits in a single context window. You may not need a graph.
 
 ## Summary
 - 481 nodes · 573 edges · 48 communities (29 shown, 19 thin omitted)
 - Extraction: 95% EXTRACTED · 5% INFERRED · 0% AMBIGUOUS · INFERRED: 26 edges (avg confidence: 0.9)
-- Token cost: 0 input · 0 output
-
-## Graph Freshness
-- Built from commit: `eed5fee0`
-- Run `git rev-parse HEAD` and compare to check if the graph is stale.
-- Run `graphify update .` after code changes (no API cost).
+- Token cost: 166,415 input · 0 output
 
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_Community 0|Community 0]]
-- [[_COMMUNITY_Community 1|Community 1]]
-- [[_COMMUNITY_Community 2|Community 2]]
-- [[_COMMUNITY_Community 3|Community 3]]
-- [[_COMMUNITY_Community 4|Community 4]]
-- [[_COMMUNITY_Community 5|Community 5]]
-- [[_COMMUNITY_Community 6|Community 6]]
-- [[_COMMUNITY_Community 7|Community 7]]
-- [[_COMMUNITY_Community 8|Community 8]]
-- [[_COMMUNITY_Community 9|Community 9]]
-- [[_COMMUNITY_Community 10|Community 10]]
-- [[_COMMUNITY_Community 11|Community 11]]
-- [[_COMMUNITY_Community 12|Community 12]]
-- [[_COMMUNITY_Community 13|Community 13]]
-- [[_COMMUNITY_Community 14|Community 14]]
-- [[_COMMUNITY_Community 15|Community 15]]
-- [[_COMMUNITY_Community 16|Community 16]]
-- [[_COMMUNITY_Community 17|Community 17]]
-- [[_COMMUNITY_Community 18|Community 18]]
-- [[_COMMUNITY_Community 19|Community 19]]
-- [[_COMMUNITY_Community 20|Community 20]]
-- [[_COMMUNITY_Community 21|Community 21]]
-- [[_COMMUNITY_Community 22|Community 22]]
-- [[_COMMUNITY_Community 23|Community 23]]
-- [[_COMMUNITY_Community 24|Community 24]]
-- [[_COMMUNITY_Community 25|Community 25]]
-- [[_COMMUNITY_Community 26|Community 26]]
-- [[_COMMUNITY_Community 27|Community 27]]
-- [[_COMMUNITY_Community 28|Community 28]]
+- [[_COMMUNITY_Mobile App & API Layer|Mobile App & API Layer]]
+- [[_COMMUNITY_AI Features & Docs|AI Features & Docs]]
+- [[_COMMUNITY_Mobile Dependencies|Mobile Dependencies]]
+- [[_COMMUNITY_API Architecture Docs|API Architecture Docs]]
+- [[_COMMUNITY_API Reference Docs|API Reference Docs]]
+- [[_COMMUNITY_Mobile App Config|Mobile App Config]]
+- [[_COMMUNITY_Project README|Project README]]
+- [[_COMMUNITY_Location & Layout|Location & Layout]]
+- [[_COMMUNITY_API Launch Config|API Launch Config]]
+- [[_COMMUNITY_API Settings & JWT|API Settings & JWT]]
+- [[_COMMUNITY_Core Domain Models|Core Domain Models]]
+- [[_COMMUNITY_Measles Scan Endpoints|Measles Scan Endpoints]]
+- [[_COMMUNITY_Mobile Scripts|Mobile Scripts]]
+- [[_COMMUNITY_Tab Navigation|Tab Navigation]]
+- [[_COMMUNITY_Child Endpoints|Child Endpoints]]
+- [[_COMMUNITY_Todo Endpoints|Todo Endpoints]]
+- [[_COMMUNITY_User Endpoints|User Endpoints]]
+- [[_COMMUNITY_Monorepo Claude Config|Monorepo Claude Config]]
+- [[_COMMUNITY_Mobile Build Scripts|Mobile Build Scripts]]
+- [[_COMMUNITY_Auth Endpoints|Auth Endpoints]]
+- [[_COMMUNITY_Mobile TypeScript Config|Mobile TypeScript Config]]
+- [[_COMMUNITY_Scan Types & API|Scan Types & API]]
+- [[_COMMUNITY_Location Log Endpoints|Location Log Endpoints]]
+- [[_COMMUNITY_VS IDE Layout|VS IDE Layout]]
+- [[_COMMUNITY_Mobile Package Meta|Mobile Package Meta]]
+- [[_COMMUNITY_Mobile Dev Dependencies|Mobile Dev Dependencies]]
+- [[_COMMUNITY_Claude Local Settings|Claude Local Settings]]
+- [[_COMMUNITY_JWT Token Service|JWT Token Service]]
+- [[_COMMUNITY_VS IDE Backup Layout|VS IDE Backup Layout]]
+- [[_COMMUNITY_VS Code Settings|VS Code Settings]]
+- [[_COMMUNITY_Community 30|Community 30]]
 - [[_COMMUNITY_Community 31|Community 31]]
 - [[_COMMUNITY_Community 32|Community 32]]
-- [[_COMMUNITY_Community 35|Community 35]]
-- [[_COMMUNITY_Community 36|Community 36]]
+- [[_COMMUNITY_Community 33|Community 33]]
+- [[_COMMUNITY_Community 34|Community 34]]
 - [[_COMMUNITY_Community 37|Community 37]]
 - [[_COMMUNITY_Community 38|Community 38]]
 - [[_COMMUNITY_Community 39|Community 39]]
 - [[_COMMUNITY_Community 40|Community 40]]
 - [[_COMMUNITY_Community 41|Community 41]]
-- [[_COMMUNITY_Community 42|Community 42]]
-- [[_COMMUNITY_Community 43|Community 43]]
-- [[_COMMUNITY_Community 44|Community 44]]
-- [[_COMMUNITY_Community 45|Community 45]]
+- [[_COMMUNITY_Community 46|Community 46]]
+- [[_COMMUNITY_Community 47|Community 47]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `dependencies` - 33 edges
@@ -89,95 +83,95 @@
 
 ## Communities (48 total, 19 thin omitted)
 
-### Community 0 - "Community 0"
+### Community 0 - "Mobile App & API Layer"
 Cohesion: 0.08
 Nodes (37): api, LoginForm, loginSchema, LoginScreen(), styles, RegisterForm, registerSchema, ROLES (+29 more)
 
-### Community 1 - "Community 1"
+### Community 1 - "AI Features & Docs"
 Cohesion: 0.09
 Nodes (39): MobroLens API AGENTS.md, MobroLens API Claude Guide, MorboLens API README, MobroAI Monorepo Claude Guide, AI-Powered Measles Triage, Zustand Auth Store (expo-secure-store backed), Axios Request Interceptor (auto-JWT injection), Background Location Tracking Service (+31 more)
 
-### Community 2 - "Community 2"
+### Community 2 - "Mobile Dependencies"
 Cohesion: 0.06
 Nodes (33): dependencies, axios, expo, expo-constants, expo-font, expo-haptics, expo-image-picker, expo-linking (+25 more)
 
-### Community 3 - "Community 3"
-Cohesion: 0.09
-Nodes (30): API (ASP.NET Core 10), AppDbContext, Auth Endpoints (/auth), Axios, BCrypt, CHILD Entity, Children Endpoints (/children), EF Core (+22 more)
-
-### Community 4 - "Community 4"
-Cohesion: 0.07
-Nodes (27): backgroundColor, backgroundImage, foregroundImage, monochromeImage, adaptiveIcon, edgeToEdgeEnabled, permissions, predictiveBackGestureEnabled (+19 more)
-
-### Community 5 - "Community 5"
-Cohesion: 0.12
-Nodes (15): LocationData, saveLocation(), InitialLayout(), unstable_settings, Config, Language, TranslationKeys, translations (+7 more)
-
-### Community 6 - "Community 6"
-Cohesion: 0.29
-Nodes (7): scripts, android, ios, lint, reset-project, start, web
-
-### Community 7 - "Community 7"
-Cohesion: 0.13
-Nodes (15): ASPNETCORE_ENVIRONMENT, applicationUrl, commandName, dotnetRunMessages, environmentVariables, launchBrowser, applicationUrl, commandName (+7 more)
-
-### Community 8 - "Community 8"
-Cohesion: 0.15
-Nodes (12): AllowedHosts, ConnectionStrings, DefaultConnection, Jwt, AccessTokenExpirationMinutes, Audience, Issuer, Key (+4 more)
-
-### Community 9 - "Community 9"
-Cohesion: 0.15
-Nodes (7): BaseEntity, Child, LocationLog, MeaslesScan, ScanPhoto, Todo, User
-
-### Community 10 - "Community 10"
+### Community 3 - "API Architecture Docs"
 Cohesion: 0.08
 Nodes (26): Architecture, Auth, code:bash (dotnet run          # HTTP on port 5009), Coding Conventions, Commands, Gotchas, API App (ASP.NET Core 10), Mobile App (React Native / Expo) (+18 more)
 
-### Community 12 - "Community 12"
-Cohesion: 0.28
-Nodes (5): HapticTab(), IconMapping, IconSymbol(), IconSymbolName, MAPPING
+### Community 4 - "API Reference Docs"
+Cohesion: 0.09
+Nodes (30): API (ASP.NET Core 10), AppDbContext, Auth Endpoints (/auth), Axios, BCrypt, CHILD Entity, Children Endpoints (/children), EF Core (+22 more)
 
-### Community 16 - "Community 16"
-Cohesion: 0.22
-Nodes (7): exampleDirPath, fs, oldDirs, path, readline, rl, root
+### Community 5 - "Mobile App Config"
+Cohesion: 0.07
+Nodes (27): backgroundColor, backgroundImage, foregroundImage, monochromeImage, adaptiveIcon, edgeToEdgeEnabled, permissions, predictiveBackGestureEnabled (+19 more)
 
-### Community 17 - "Community 17"
-Cohesion: 0.33
-Nodes (5): uploadScan(), Scan, ScanPhoto, ScanStatus, UploadScanResponse
-
-### Community 19 - "Community 19"
-Cohesion: 0.29
-Nodes (6): compilerOptions, paths, strict, extends, include, @/*
-
-### Community 21 - "Community 21"
-Cohesion: 0.53
-Nodes (4): DocumentGroupContainers, Documents, Version, WorkspaceRootPath
-
-### Community 24 - "Community 24"
-Cohesion: 0.4
-Nodes (4): editor.codeActionsOnSave, source.fixAll, source.organizeImports, source.sortMembers
-
-### Community 37 - "Community 37"
+### Community 6 - "Project README"
 Cohesion: 0.08
 Nodes (24): 1. API, 2. Mobile, API Reference, Architecture, Auth — `/auth` (no token required), Children — `/children` (all require auth), code:block1 (MobroAI/), code:block2 (┌──────────────────────┐      HTTPS / JWT      ┌────────────) (+16 more)
 
-### Community 38 - "Community 38"
+### Community 7 - "Location & Layout"
+Cohesion: 0.12
+Nodes (15): LocationData, saveLocation(), InitialLayout(), unstable_settings, Config, Language, TranslationKeys, translations (+7 more)
+
+### Community 8 - "API Launch Config"
+Cohesion: 0.13
+Nodes (15): ASPNETCORE_ENVIRONMENT, applicationUrl, commandName, dotnetRunMessages, environmentVariables, launchBrowser, applicationUrl, commandName (+7 more)
+
+### Community 9 - "API Settings & JWT"
+Cohesion: 0.15
+Nodes (12): AllowedHosts, ConnectionStrings, DefaultConnection, Jwt, AccessTokenExpirationMinutes, Audience, Issuer, Key (+4 more)
+
+### Community 10 - "Core Domain Models"
+Cohesion: 0.15
+Nodes (7): BaseEntity, Child, LocationLog, MeaslesScan, ScanPhoto, Todo, User
+
+### Community 12 - "Mobile Scripts"
+Cohesion: 0.22
+Nodes (7): exampleDirPath, fs, oldDirs, path, readline, rl, root
+
+### Community 13 - "Tab Navigation"
+Cohesion: 0.28
+Nodes (5): HapticTab(), IconMapping, IconSymbol(), IconSymbolName, MAPPING
+
+### Community 17 - "Monorepo Claude Config"
 Cohesion: 0.22
 Nodes (8): code:block1 (apps/mobile/   React Native (Expo) — see apps/mobile/CLAUDE.), code:sh (# Mobile), graphify, Key decisions, Layout, MobroAI Monorepo — Claude Code Guide, Refer to app-level guides, Working in each app
 
-### Community 39 - "Community 39"
-Cohesion: 0.4
+### Community 18 - "Mobile Build Scripts"
+Cohesion: 0.29
+Nodes (7): scripts, android, ios, lint, reset-project, start, web
+
+### Community 20 - "Mobile TypeScript Config"
+Cohesion: 0.29
+Nodes (6): compilerOptions, paths, strict, extends, include, @/*
+
+### Community 21 - "Scan Types & API"
+Cohesion: 0.33
+Nodes (5): uploadScan(), Scan, ScanPhoto, ScanStatus, UploadScanResponse
+
+### Community 23 - "VS IDE Layout"
+Cohesion: 0.53
 Nodes (4): DocumentGroupContainers, Documents, Version, WorkspaceRootPath
 
-### Community 40 - "Community 40"
+### Community 24 - "Mobile Package Meta"
 Cohesion: 0.4
 Nodes (4): main, name, private, version
 
-### Community 41 - "Community 41"
+### Community 25 - "Mobile Dev Dependencies"
 Cohesion: 0.4
 Nodes (5): devDependencies, eslint, eslint-config-expo, @types/react, typescript
 
-### Community 42 - "Community 42"
+### Community 28 - "VS IDE Backup Layout"
+Cohesion: 0.4
+Nodes (4): DocumentGroupContainers, Documents, Version, WorkspaceRootPath
+
+### Community 29 - "VS Code Settings"
+Cohesion: 0.4
+Nodes (4): editor.codeActionsOnSave, source.fixAll, source.organizeImports, source.sortMembers
+
+### Community 32 - "Community 32"
 Cohesion: 0.5
 Nodes (3): ExpandedNodes, PreviewInSolutionExplorer, SelectedNode
 
@@ -189,11 +183,11 @@ Nodes (3): ExpandedNodes, PreviewInSolutionExplorer, SelectedNode
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `dependencies` connect `Community 2` to `Community 40`?**
+- **Why does `dependencies` connect `Mobile Dependencies` to `Mobile Package Meta`?**
   _High betweenness centrality (0.009) - this node is a cross-community bridge._
-- **Why does `useAuthStore` connect `Community 0` to `Community 5`?**
+- **Why does `useAuthStore` connect `Mobile App & API Layer` to `Location & Layout`?**
   _High betweenness centrality (0.005) - this node is a cross-community bridge._
-- **Why does `Colors` connect `Community 0` to `Community 12`?**
+- **Why does `Colors` connect `Mobile App & API Layer` to `Tab Navigation`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **Are the 4 inferred relationships involving `MobroLens API Claude Guide` (e.g. with `API CI Workflow` and `MobroLens API AGENTS.md`) actually correct?**
   _`MobroLens API Claude Guide` has 4 INFERRED edges - model-reasoned connections that need verification._
@@ -201,5 +195,5 @@ _Questions this graph is uniquely positioned to answer:_
   _`Mobile App Claude Guide` has 3 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `PreToolUse`, `allow`, `ExpandedNodes` to the rest of the system?**
   _209 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Community 0` be split into smaller, more focused modules?**
+- **Should `Mobile App & API Layer` be split into smaller, more focused modules?**
   _Cohesion score 0.08 - nodes in this community are weakly interconnected._

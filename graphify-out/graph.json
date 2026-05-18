@@ -56,3355 +56,3355 @@
       "file_type": "code",
       "source_file": ".claude/settings.json",
       "source_location": "L1",
-      "id": "claude_settings_json",
-      "community": 27,
-      "norm_label": "settings.json"
+      "community": 31,
+      "norm_label": "settings.json",
+      "id": "claude_settings_json"
     },
     {
       "label": "hooks",
       "file_type": "code",
       "source_file": ".claude/settings.json",
       "source_location": "L2",
-      "id": "claude_settings_hooks",
-      "community": 27,
-      "norm_label": "hooks"
+      "community": 31,
+      "norm_label": "hooks",
+      "id": "claude_settings_hooks"
     },
     {
       "label": "PreToolUse",
       "file_type": "code",
       "source_file": ".claude/settings.json",
       "source_location": "L3",
-      "id": "claude_settings_hooks_pretooluse",
-      "community": 27,
-      "norm_label": "pretooluse"
+      "community": 31,
+      "norm_label": "pretooluse",
+      "id": "claude_settings_hooks_pretooluse"
     },
     {
       "label": "settings.local.json",
       "file_type": "code",
       "source_file": ".claude/settings.local.json",
       "source_location": "L1",
-      "id": "claude_settings_local_json",
-      "community": 22,
-      "norm_label": "settings.local.json"
+      "community": 26,
+      "norm_label": "settings.local.json",
+      "id": "claude_settings_local_json"
     },
     {
       "label": "permissions",
       "file_type": "code",
       "source_file": ".claude/settings.local.json",
       "source_location": "L2",
-      "id": "claude_settings_local_permissions",
-      "community": 22,
-      "norm_label": "permissions"
+      "community": 26,
+      "norm_label": "permissions",
+      "id": "claude_settings_local_permissions"
     },
     {
       "label": "allow",
       "file_type": "code",
       "source_file": ".claude/settings.local.json",
       "source_location": "L3",
-      "id": "claude_settings_local_permissions_allow",
-      "community": 22,
-      "norm_label": "allow"
+      "community": 26,
+      "norm_label": "allow",
+      "id": "claude_settings_local_permissions_allow"
     },
     {
       "label": "VSWorkspaceState.json",
       "file_type": "code",
       "source_file": ".vs/VSWorkspaceState.json",
       "source_location": "L1",
-      "id": "vs_vsworkspacestate_json",
-      "community": 42,
-      "norm_label": "vsworkspacestate.json"
+      "community": 32,
+      "norm_label": "vsworkspacestate.json",
+      "id": "vs_vsworkspacestate_json"
     },
     {
       "label": "ExpandedNodes",
       "file_type": "code",
       "source_file": ".vs/VSWorkspaceState.json",
       "source_location": "L2",
-      "id": "vs_vsworkspacestate_expandednodes",
-      "community": 42,
-      "norm_label": "expandednodes"
+      "community": 32,
+      "norm_label": "expandednodes",
+      "id": "vs_vsworkspacestate_expandednodes"
     },
     {
       "label": "SelectedNode",
       "file_type": "code",
       "source_file": ".vs/VSWorkspaceState.json",
       "source_location": "L7",
-      "id": "vs_vsworkspacestate_selectednode",
-      "community": 42,
-      "norm_label": "selectednode"
+      "community": 32,
+      "norm_label": "selectednode",
+      "id": "vs_vsworkspacestate_selectednode"
     },
     {
       "label": "PreviewInSolutionExplorer",
       "file_type": "code",
       "source_file": ".vs/VSWorkspaceState.json",
       "source_location": "L8",
-      "id": "vs_vsworkspacestate_previewinsolutionexplorer",
-      "community": 42,
-      "norm_label": "previewinsolutionexplorer"
+      "community": 32,
+      "norm_label": "previewinsolutionexplorer",
+      "id": "vs_vsworkspacestate_previewinsolutionexplorer"
     },
     {
       "label": "DocumentLayout.json",
       "file_type": "code",
       "source_file": ".vs/MobroAI.slnx/v18/DocumentLayout.json",
       "source_location": "L1",
-      "id": "vs_mobroai_slnx_v18_documentlayout_json",
-      "community": 21,
-      "norm_label": "documentlayout.json"
+      "community": 23,
+      "norm_label": "documentlayout.json",
+      "id": "vs_mobroai_slnx_v18_documentlayout_json"
     },
     {
       "label": "Version",
       "file_type": "code",
       "source_file": "apps/api/.vs/MobroLens/v18/DocumentLayout.json",
       "source_location": "L2",
-      "id": "v18_documentlayout_version",
-      "community": 21,
-      "norm_label": "version"
+      "community": 23,
+      "norm_label": "version",
+      "id": "v18_documentlayout_version"
     },
     {
       "label": "WorkspaceRootPath",
       "file_type": "code",
       "source_file": "apps/api/.vs/MobroLens/v18/DocumentLayout.json",
       "source_location": "L3",
-      "id": "v18_documentlayout_workspacerootpath",
-      "community": 21,
-      "norm_label": "workspacerootpath"
+      "community": 23,
+      "norm_label": "workspacerootpath",
+      "id": "v18_documentlayout_workspacerootpath"
     },
     {
       "label": "Documents",
       "file_type": "code",
       "source_file": "apps/api/.vs/MobroLens/v18/DocumentLayout.json",
       "source_location": "L4",
-      "id": "v18_documentlayout_documents",
-      "community": 21,
-      "norm_label": "documents"
+      "community": 23,
+      "norm_label": "documents",
+      "id": "v18_documentlayout_documents"
     },
     {
       "label": "DocumentGroupContainers",
       "file_type": "code",
       "source_file": "apps/api/.vs/MobroLens/v18/DocumentLayout.json",
       "source_location": "L10",
-      "id": "v18_documentlayout_documentgroupcontainers",
-      "community": 21,
-      "norm_label": "documentgroupcontainers"
+      "community": 23,
+      "norm_label": "documentgroupcontainers",
+      "id": "v18_documentlayout_documentgroupcontainers"
     },
     {
       "label": "AppDbContext.cs",
       "file_type": "code",
       "source_file": "apps/api/AppDbContext.cs",
       "source_location": "L1",
-      "id": "apps_api_appdbcontext_cs",
-      "community": 25,
-      "norm_label": "appdbcontext.cs"
+      "community": 30,
+      "norm_label": "appdbcontext.cs",
+      "id": "apps_api_appdbcontext_cs"
     },
     {
       "label": "AppDbContext",
       "file_type": "code",
       "source_file": "apps/api/AppDbContext.cs",
       "source_location": "L6",
-      "id": "api_appdbcontext_appdbcontext",
-      "community": 25,
-      "norm_label": "appdbcontext"
+      "community": 30,
+      "norm_label": "appdbcontext",
+      "id": "api_appdbcontext_appdbcontext"
     },
     {
       "label": "DbContext",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
-      "id": "dbcontext",
-      "community": 25,
-      "norm_label": "dbcontext"
+      "community": 30,
+      "norm_label": "dbcontext",
+      "id": "dbcontext"
     },
     {
       "label": ".OnModelCreating()",
       "file_type": "code",
       "source_file": "apps/api/AppDbContext.cs",
       "source_location": "L15",
-      "id": "api_appdbcontext_appdbcontext_onmodelcreating",
-      "community": 25,
-      "norm_label": ".onmodelcreating()"
+      "community": 30,
+      "norm_label": ".onmodelcreating()",
+      "id": "api_appdbcontext_appdbcontext_onmodelcreating"
     },
     {
       "label": "appsettings.json",
       "file_type": "code",
       "source_file": "apps/api/appsettings.json",
       "source_location": "L1",
-      "id": "apps_api_appsettings_json",
-      "community": 8,
-      "norm_label": "appsettings.json"
+      "community": 9,
+      "norm_label": "appsettings.json",
+      "id": "apps_api_appsettings_json"
     },
     {
       "label": "Logging",
       "file_type": "code",
       "source_file": "apps/api/appsettings.json",
       "source_location": "L2",
-      "id": "api_appsettings_logging",
-      "community": 8,
-      "norm_label": "logging"
+      "community": 9,
+      "norm_label": "logging",
+      "id": "api_appsettings_logging"
     },
     {
       "label": "LogLevel",
       "file_type": "code",
       "source_file": "apps/api/appsettings.json",
       "source_location": "L3",
-      "id": "api_appsettings_logging_loglevel",
-      "community": 8,
-      "norm_label": "loglevel"
+      "community": 9,
+      "norm_label": "loglevel",
+      "id": "api_appsettings_logging_loglevel"
     },
     {
       "label": "Default",
       "file_type": "code",
       "source_file": "apps/api/appsettings.json",
       "source_location": "L4",
-      "id": "api_appsettings_loglevel_default",
-      "community": 8,
-      "norm_label": "default"
+      "community": 9,
+      "norm_label": "default",
+      "id": "api_appsettings_loglevel_default"
     },
     {
       "label": "Microsoft.AspNetCore",
       "file_type": "code",
       "source_file": "apps/api/appsettings.json",
       "source_location": "L5",
-      "id": "api_appsettings_loglevel_microsoft_aspnetcore",
-      "community": 8,
-      "norm_label": "microsoft.aspnetcore"
+      "community": 9,
+      "norm_label": "microsoft.aspnetcore",
+      "id": "api_appsettings_loglevel_microsoft_aspnetcore"
     },
     {
       "label": "AllowedHosts",
       "file_type": "code",
       "source_file": "apps/api/appsettings.json",
       "source_location": "L8",
-      "id": "api_appsettings_allowedhosts",
-      "community": 8,
-      "norm_label": "allowedhosts"
+      "community": 9,
+      "norm_label": "allowedhosts",
+      "id": "api_appsettings_allowedhosts"
     },
     {
       "label": "ConnectionStrings",
       "file_type": "code",
       "source_file": "apps/api/appsettings.json",
       "source_location": "L9",
-      "id": "api_appsettings_connectionstrings",
-      "community": 8,
-      "norm_label": "connectionstrings"
+      "community": 9,
+      "norm_label": "connectionstrings",
+      "id": "api_appsettings_connectionstrings"
     },
     {
       "label": "DefaultConnection",
       "file_type": "code",
       "source_file": "apps/api/appsettings.json",
       "source_location": "L10",
-      "id": "api_appsettings_connectionstrings_defaultconnection",
-      "community": 8,
-      "norm_label": "defaultconnection"
+      "community": 9,
+      "norm_label": "defaultconnection",
+      "id": "api_appsettings_connectionstrings_defaultconnection"
     },
     {
       "label": "Jwt",
       "file_type": "code",
       "source_file": "apps/api/appsettings.json",
       "source_location": "L13",
-      "id": "api_appsettings_jwt",
-      "community": 8,
-      "norm_label": "jwt"
+      "community": 9,
+      "norm_label": "jwt",
+      "id": "api_appsettings_jwt"
     },
     {
       "label": "Key",
       "file_type": "code",
       "source_file": "apps/api/appsettings.json",
       "source_location": "L14",
-      "id": "api_appsettings_jwt_key",
-      "community": 8,
-      "norm_label": "key"
+      "community": 9,
+      "norm_label": "key",
+      "id": "api_appsettings_jwt_key"
     },
     {
       "label": "Issuer",
       "file_type": "code",
       "source_file": "apps/api/appsettings.json",
       "source_location": "L15",
-      "id": "api_appsettings_jwt_issuer",
-      "community": 8,
-      "norm_label": "issuer"
+      "community": 9,
+      "norm_label": "issuer",
+      "id": "api_appsettings_jwt_issuer"
     },
     {
       "label": "Audience",
       "file_type": "code",
       "source_file": "apps/api/appsettings.json",
       "source_location": "L16",
-      "id": "api_appsettings_jwt_audience",
-      "community": 8,
-      "norm_label": "audience"
+      "community": 9,
+      "norm_label": "audience",
+      "id": "api_appsettings_jwt_audience"
     },
     {
       "label": "AccessTokenExpirationMinutes",
       "file_type": "code",
       "source_file": "apps/api/appsettings.json",
       "source_location": "L17",
-      "id": "api_appsettings_jwt_accesstokenexpirationminutes",
-      "community": 8,
-      "norm_label": "accesstokenexpirationminutes"
+      "community": 9,
+      "norm_label": "accesstokenexpirationminutes",
+      "id": "api_appsettings_jwt_accesstokenexpirationminutes"
     },
     {
       "label": "Program.cs",
       "file_type": "code",
       "source_file": "apps/api/Program.cs",
       "source_location": "L1",
-      "id": "apps_api_program_cs",
-      "community": 33,
-      "norm_label": "program.cs"
+      "community": 42,
+      "norm_label": "program.cs",
+      "id": "apps_api_program_cs"
     },
     {
       "label": "DocumentLayout.backup.json",
       "file_type": "code",
       "source_file": "apps/api/.vs/MobroLens/v18/DocumentLayout.backup.json",
       "source_location": "L1",
-      "id": "apps_api_vs_mobrolens_v18_documentlayout_backup_json",
-      "community": 39,
-      "norm_label": "documentlayout.backup.json"
+      "community": 28,
+      "norm_label": "documentlayout.backup.json",
+      "id": "apps_api_vs_mobrolens_v18_documentlayout_backup_json"
     },
     {
       "label": "Version",
       "file_type": "code",
       "source_file": "apps/api/.vs/MobroLens/v18/DocumentLayout.backup.json",
       "source_location": "L2",
-      "id": "v18_documentlayout_backup_version",
-      "community": 39,
-      "norm_label": "version"
+      "community": 28,
+      "norm_label": "version",
+      "id": "v18_documentlayout_backup_version"
     },
     {
       "label": "WorkspaceRootPath",
       "file_type": "code",
       "source_file": "apps/api/.vs/MobroLens/v18/DocumentLayout.backup.json",
       "source_location": "L3",
-      "id": "v18_documentlayout_backup_workspacerootpath",
-      "community": 39,
-      "norm_label": "workspacerootpath"
+      "community": 28,
+      "norm_label": "workspacerootpath",
+      "id": "v18_documentlayout_backup_workspacerootpath"
     },
     {
       "label": "Documents",
       "file_type": "code",
       "source_file": "apps/api/.vs/MobroLens/v18/DocumentLayout.backup.json",
       "source_location": "L4",
-      "id": "v18_documentlayout_backup_documents",
-      "community": 39,
-      "norm_label": "documents"
+      "community": 28,
+      "norm_label": "documents",
+      "id": "v18_documentlayout_backup_documents"
     },
     {
       "label": "DocumentGroupContainers",
       "file_type": "code",
       "source_file": "apps/api/.vs/MobroLens/v18/DocumentLayout.backup.json",
       "source_location": "L10",
-      "id": "v18_documentlayout_backup_documentgroupcontainers",
-      "community": 39,
-      "norm_label": "documentgroupcontainers"
+      "community": 28,
+      "norm_label": "documentgroupcontainers",
+      "id": "v18_documentlayout_backup_documentgroupcontainers"
     },
     {
       "label": "DocumentLayout.json",
       "file_type": "code",
       "source_file": "apps/api/.vs/MobroLens/v18/DocumentLayout.json",
       "source_location": "L1",
-      "id": "apps_api_vs_mobrolens_v18_documentlayout_json",
-      "community": 21,
-      "norm_label": "documentlayout.json"
+      "community": 23,
+      "norm_label": "documentlayout.json",
+      "id": "apps_api_vs_mobrolens_v18_documentlayout_json"
     },
     {
       "label": "AuthEndpoints.cs",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/AuthEndpoints.cs",
       "source_location": "L1",
-      "id": "apps_api_endpoints_authendpoints_cs",
-      "community": 18,
-      "norm_label": "authendpoints.cs"
+      "community": 19,
+      "norm_label": "authendpoints.cs",
+      "id": "apps_api_endpoints_authendpoints_cs"
     },
     {
       "label": "AuthEndpoints",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/AuthEndpoints.cs",
       "source_location": "L7",
-      "id": "endpoints_authendpoints_authendpoints",
-      "community": 18,
-      "norm_label": "authendpoints"
+      "community": 19,
+      "norm_label": "authendpoints",
+      "id": "endpoints_authendpoints_authendpoints"
     },
     {
       "label": ".MapAuthEndpoints()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/AuthEndpoints.cs",
       "source_location": "L9",
-      "id": "endpoints_authendpoints_authendpoints_mapauthendpoints",
-      "community": 18,
-      "norm_label": ".mapauthendpoints()"
+      "community": 19,
+      "norm_label": ".mapauthendpoints()",
+      "id": "endpoints_authendpoints_authendpoints_mapauthendpoints"
     },
     {
       "label": ".Register()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/AuthEndpoints.cs",
       "source_location": "L19",
-      "id": "endpoints_authendpoints_authendpoints_register",
-      "community": 18,
-      "norm_label": ".register()"
+      "community": 19,
+      "norm_label": ".register()",
+      "id": "endpoints_authendpoints_authendpoints_register"
     },
     {
       "label": ".Login()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/AuthEndpoints.cs",
       "source_location": "L46",
-      "id": "endpoints_authendpoints_authendpoints_login",
-      "community": 18,
-      "norm_label": ".login()"
+      "community": 19,
+      "norm_label": ".login()",
+      "id": "endpoints_authendpoints_authendpoints_login"
     },
     {
       "label": ".ForgotPassword()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/AuthEndpoints.cs",
       "source_location": "L61",
-      "id": "endpoints_authendpoints_authendpoints_forgotpassword",
-      "community": 18,
-      "norm_label": ".forgotpassword()"
+      "community": 19,
+      "norm_label": ".forgotpassword()",
+      "id": "endpoints_authendpoints_authendpoints_forgotpassword"
     },
     {
       "label": ".ResetPassword()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/AuthEndpoints.cs",
       "source_location": "L74",
-      "id": "endpoints_authendpoints_authendpoints_resetpassword",
-      "community": 18,
-      "norm_label": ".resetpassword()"
+      "community": 19,
+      "norm_label": ".resetpassword()",
+      "id": "endpoints_authendpoints_authendpoints_resetpassword"
     },
     {
       "label": "ChildEndpoints.cs",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/ChildEndpoints.cs",
       "source_location": "L1",
-      "id": "apps_api_endpoints_childendpoints_cs",
-      "community": 13,
-      "norm_label": "childendpoints.cs"
+      "community": 14,
+      "norm_label": "childendpoints.cs",
+      "id": "apps_api_endpoints_childendpoints_cs"
     },
     {
       "label": "ChildEndpoints",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/ChildEndpoints.cs",
       "source_location": "L6",
-      "id": "endpoints_childendpoints_childendpoints",
-      "community": 13,
-      "norm_label": "childendpoints"
+      "community": 14,
+      "norm_label": "childendpoints",
+      "id": "endpoints_childendpoints_childendpoints"
     },
     {
       "label": ".MapChildEndpoints()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/ChildEndpoints.cs",
       "source_location": "L8",
-      "id": "endpoints_childendpoints_childendpoints_mapchildendpoints",
-      "community": 13,
-      "norm_label": ".mapchildendpoints()"
+      "community": 14,
+      "norm_label": ".mapchildendpoints()",
+      "id": "endpoints_childendpoints_childendpoints_mapchildendpoints"
     },
     {
       "label": ".Create()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/ChildEndpoints.cs",
       "source_location": "L25",
-      "id": "endpoints_childendpoints_childendpoints_create",
-      "community": 13,
-      "norm_label": ".create()"
+      "community": 14,
+      "norm_label": ".create()",
+      "id": "endpoints_childendpoints_childendpoints_create"
     },
     {
       "label": ".Update()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/ChildEndpoints.cs",
       "source_location": "L32",
-      "id": "endpoints_childendpoints_childendpoints_update",
-      "community": 13,
-      "norm_label": ".update()"
+      "community": 14,
+      "norm_label": ".update()",
+      "id": "endpoints_childendpoints_childendpoints_update"
     },
     {
       "label": ".Delete()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/ChildEndpoints.cs",
       "source_location": "L49",
-      "id": "endpoints_childendpoints_childendpoints_delete",
-      "community": 13,
-      "norm_label": ".delete()"
+      "community": 14,
+      "norm_label": ".delete()",
+      "id": "endpoints_childendpoints_childendpoints_delete"
     },
     {
       "label": ".GetById()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/ChildEndpoints.cs",
       "source_location": "L61",
-      "id": "endpoints_childendpoints_childendpoints_getbyid",
-      "community": 13,
-      "norm_label": ".getbyid()"
+      "community": 14,
+      "norm_label": ".getbyid()",
+      "id": "endpoints_childendpoints_childendpoints_getbyid"
     },
     {
       "label": ".GetAll()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/ChildEndpoints.cs",
       "source_location": "L67",
-      "id": "endpoints_childendpoints_childendpoints_getall",
-      "community": 13,
-      "norm_label": ".getall()"
+      "community": 14,
+      "norm_label": ".getall()",
+      "id": "endpoints_childendpoints_childendpoints_getall"
     },
     {
       "label": ".GetByParent()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/ChildEndpoints.cs",
       "source_location": "L72",
-      "id": "endpoints_childendpoints_childendpoints_getbyparent",
-      "community": 13,
-      "norm_label": ".getbyparent()"
+      "community": 14,
+      "norm_label": ".getbyparent()",
+      "id": "endpoints_childendpoints_childendpoints_getbyparent"
     },
     {
       "label": "LocationLogEndpoints.cs",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/LocationLogEndpoints.cs",
       "source_location": "L1",
-      "id": "apps_api_endpoints_locationlogendpoints_cs",
-      "community": 20,
-      "norm_label": "locationlogendpoints.cs"
+      "community": 22,
+      "norm_label": "locationlogendpoints.cs",
+      "id": "apps_api_endpoints_locationlogendpoints_cs"
     },
     {
       "label": "LocationLogEndpoints",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/LocationLogEndpoints.cs",
       "source_location": "L7",
-      "id": "endpoints_locationlogendpoints_locationlogendpoints",
-      "community": 20,
-      "norm_label": "locationlogendpoints"
+      "community": 22,
+      "norm_label": "locationlogendpoints",
+      "id": "endpoints_locationlogendpoints_locationlogendpoints"
     },
     {
       "label": ".MapLocationLogEndpoints()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/LocationLogEndpoints.cs",
       "source_location": "L9",
-      "id": "endpoints_locationlogendpoints_locationlogendpoints_maplocationlogendpoints",
-      "community": 20,
-      "norm_label": ".maplocationlogendpoints()"
+      "community": 22,
+      "norm_label": ".maplocationlogendpoints()",
+      "id": "endpoints_locationlogendpoints_locationlogendpoints_maplocationlogendpoints"
     },
     {
       "label": ".Create()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/LocationLogEndpoints.cs",
       "source_location": "L23",
-      "id": "endpoints_locationlogendpoints_locationlogendpoints_create",
-      "community": 20,
-      "norm_label": ".create()"
+      "community": 22,
+      "norm_label": ".create()",
+      "id": "endpoints_locationlogendpoints_locationlogendpoints_create"
     },
     {
       "label": ".GetAll()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/LocationLogEndpoints.cs",
       "source_location": "L36",
-      "id": "endpoints_locationlogendpoints_locationlogendpoints_getall",
-      "community": 20,
-      "norm_label": ".getall()"
+      "community": 22,
+      "norm_label": ".getall()",
+      "id": "endpoints_locationlogendpoints_locationlogendpoints_getall"
     },
     {
       "label": ".GetByUserId()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/LocationLogEndpoints.cs",
       "source_location": "L41",
-      "id": "endpoints_locationlogendpoints_locationlogendpoints_getbyuserid",
-      "community": 20,
-      "norm_label": ".getbyuserid()"
+      "community": 22,
+      "norm_label": ".getbyuserid()",
+      "id": "endpoints_locationlogendpoints_locationlogendpoints_getbyuserid"
     },
     {
       "label": "MeaslesScanEndpoints.cs",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/MeaslesScanEndpoints.cs",
       "source_location": "L1",
-      "id": "apps_api_endpoints_measlesscanendpoints_cs",
       "community": 11,
-      "norm_label": "measlesscanendpoints.cs"
+      "norm_label": "measlesscanendpoints.cs",
+      "id": "apps_api_endpoints_measlesscanendpoints_cs"
     },
     {
       "label": "MeaslesScanEndpoints",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/MeaslesScanEndpoints.cs",
       "source_location": "L7",
-      "id": "endpoints_measlesscanendpoints_measlesscanendpoints",
       "community": 11,
-      "norm_label": "measlesscanendpoints"
+      "norm_label": "measlesscanendpoints",
+      "id": "endpoints_measlesscanendpoints_measlesscanendpoints"
     },
     {
       "label": ".MapMeaslesScanEndpoints()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/MeaslesScanEndpoints.cs",
       "source_location": "L9",
-      "id": "endpoints_measlesscanendpoints_measlesscanendpoints_mapmeaslesscanendpoints",
       "community": 11,
-      "norm_label": ".mapmeaslesscanendpoints()"
+      "norm_label": ".mapmeaslesscanendpoints()",
+      "id": "endpoints_measlesscanendpoints_measlesscanendpoints_mapmeaslesscanendpoints"
     },
     {
       "label": ".Create()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/MeaslesScanEndpoints.cs",
       "source_location": "L29",
-      "id": "endpoints_measlesscanendpoints_measlesscanendpoints_create",
       "community": 11,
-      "norm_label": ".create()"
+      "norm_label": ".create()",
+      "id": "endpoints_measlesscanendpoints_measlesscanendpoints_create"
     },
     {
       "label": ".UpdateStatus()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/MeaslesScanEndpoints.cs",
       "source_location": "L42",
-      "id": "endpoints_measlesscanendpoints_measlesscanendpoints_updatestatus",
       "community": 11,
-      "norm_label": ".updatestatus()"
+      "norm_label": ".updatestatus()",
+      "id": "endpoints_measlesscanendpoints_measlesscanendpoints_updatestatus"
     },
     {
       "label": ".UploadScan()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/MeaslesScanEndpoints.cs",
       "source_location": "L54",
-      "id": "endpoints_measlesscanendpoints_measlesscanendpoints_uploadscan",
       "community": 11,
-      "norm_label": ".uploadscan()"
+      "norm_label": ".uploadscan()",
+      "id": "endpoints_measlesscanendpoints_measlesscanendpoints_uploadscan"
     },
     {
       "label": ".AddPhoto()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/MeaslesScanEndpoints.cs",
       "source_location": "L85",
-      "id": "endpoints_measlesscanendpoints_measlesscanendpoints_addphoto",
       "community": 11,
-      "norm_label": ".addphoto()"
+      "norm_label": ".addphoto()",
+      "id": "endpoints_measlesscanendpoints_measlesscanendpoints_addphoto"
     },
     {
       "label": ".GetById()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/MeaslesScanEndpoints.cs",
       "source_location": "L98",
-      "id": "endpoints_measlesscanendpoints_measlesscanendpoints_getbyid",
       "community": 11,
-      "norm_label": ".getbyid()"
+      "norm_label": ".getbyid()",
+      "id": "endpoints_measlesscanendpoints_measlesscanendpoints_getbyid"
     },
     {
       "label": ".GetAll()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/MeaslesScanEndpoints.cs",
       "source_location": "L104",
-      "id": "endpoints_measlesscanendpoints_measlesscanendpoints_getall",
       "community": 11,
-      "norm_label": ".getall()"
+      "norm_label": ".getall()",
+      "id": "endpoints_measlesscanendpoints_measlesscanendpoints_getall"
     },
     {
       "label": ".GetByChild()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/MeaslesScanEndpoints.cs",
       "source_location": "L109",
-      "id": "endpoints_measlesscanendpoints_measlesscanendpoints_getbychild",
       "community": 11,
-      "norm_label": ".getbychild()"
+      "norm_label": ".getbychild()",
+      "id": "endpoints_measlesscanendpoints_measlesscanendpoints_getbychild"
     },
     {
       "label": ".GetByUser()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/MeaslesScanEndpoints.cs",
       "source_location": "L118",
-      "id": "endpoints_measlesscanendpoints_measlesscanendpoints_getbyuser",
       "community": 11,
-      "norm_label": ".getbyuser()"
+      "norm_label": ".getbyuser()",
+      "id": "endpoints_measlesscanendpoints_measlesscanendpoints_getbyuser"
     },
     {
       "label": ".GetPhotos()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/MeaslesScanEndpoints.cs",
       "source_location": "L127",
-      "id": "endpoints_measlesscanendpoints_measlesscanendpoints_getphotos",
       "community": 11,
-      "norm_label": ".getphotos()"
+      "norm_label": ".getphotos()",
+      "id": "endpoints_measlesscanendpoints_measlesscanendpoints_getphotos"
     },
     {
       "label": "TodoEndpoints.cs",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/TodoEndpoints.cs",
       "source_location": "L1",
-      "id": "apps_api_endpoints_todoendpoints_cs",
-      "community": 14,
-      "norm_label": "todoendpoints.cs"
+      "community": 15,
+      "norm_label": "todoendpoints.cs",
+      "id": "apps_api_endpoints_todoendpoints_cs"
     },
     {
       "label": "TodoEndpoints",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/TodoEndpoints.cs",
       "source_location": "L6",
-      "id": "endpoints_todoendpoints_todoendpoints",
-      "community": 14,
-      "norm_label": "todoendpoints"
+      "community": 15,
+      "norm_label": "todoendpoints",
+      "id": "endpoints_todoendpoints_todoendpoints"
     },
     {
       "label": ".MapTodoEndpoints()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/TodoEndpoints.cs",
       "source_location": "L8",
-      "id": "endpoints_todoendpoints_todoendpoints_maptodoendpoints",
-      "community": 14,
-      "norm_label": ".maptodoendpoints()"
+      "community": 15,
+      "norm_label": ".maptodoendpoints()",
+      "id": "endpoints_todoendpoints_todoendpoints_maptodoendpoints"
     },
     {
       "label": ".Create()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/TodoEndpoints.cs",
       "source_location": "L27",
-      "id": "endpoints_todoendpoints_todoendpoints_create",
-      "community": 14,
-      "norm_label": ".create()"
+      "community": 15,
+      "norm_label": ".create()",
+      "id": "endpoints_todoendpoints_todoendpoints_create"
     },
     {
       "label": ".Update()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/TodoEndpoints.cs",
       "source_location": "L34",
-      "id": "endpoints_todoendpoints_todoendpoints_update",
-      "community": 14,
-      "norm_label": ".update()"
+      "community": 15,
+      "norm_label": ".update()",
+      "id": "endpoints_todoendpoints_todoendpoints_update"
     },
     {
       "label": ".Delete()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/TodoEndpoints.cs",
       "source_location": "L48",
-      "id": "endpoints_todoendpoints_todoendpoints_delete",
-      "community": 14,
-      "norm_label": ".delete()"
+      "community": 15,
+      "norm_label": ".delete()",
+      "id": "endpoints_todoendpoints_todoendpoints_delete"
     },
     {
       "label": ".GetById()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/TodoEndpoints.cs",
       "source_location": "L60",
-      "id": "endpoints_todoendpoints_todoendpoints_getbyid",
-      "community": 14,
-      "norm_label": ".getbyid()"
+      "community": 15,
+      "norm_label": ".getbyid()",
+      "id": "endpoints_todoendpoints_todoendpoints_getbyid"
     },
     {
       "label": ".GetAll()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/TodoEndpoints.cs",
       "source_location": "L66",
-      "id": "endpoints_todoendpoints_todoendpoints_getall",
-      "community": 14,
-      "norm_label": ".getall()"
+      "community": 15,
+      "norm_label": ".getall()",
+      "id": "endpoints_todoendpoints_todoendpoints_getall"
     },
     {
       "label": ".GetComplete()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/TodoEndpoints.cs",
       "source_location": "L72",
-      "id": "endpoints_todoendpoints_todoendpoints_getcomplete",
-      "community": 14,
-      "norm_label": ".getcomplete()"
+      "community": 15,
+      "norm_label": ".getcomplete()",
+      "id": "endpoints_todoendpoints_todoendpoints_getcomplete"
     },
     {
       "label": "UserEndpoints.cs",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/UserEndpoints.cs",
       "source_location": "L1",
-      "id": "apps_api_endpoints_userendpoints_cs",
-      "community": 15,
-      "norm_label": "userendpoints.cs"
+      "community": 16,
+      "norm_label": "userendpoints.cs",
+      "id": "apps_api_endpoints_userendpoints_cs"
     },
     {
       "label": "UserEndpoints",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/UserEndpoints.cs",
       "source_location": "L7",
-      "id": "endpoints_userendpoints_userendpoints",
-      "community": 15,
-      "norm_label": "userendpoints"
+      "community": 16,
+      "norm_label": "userendpoints",
+      "id": "endpoints_userendpoints_userendpoints"
     },
     {
       "label": ".MapUserEndpoints()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/UserEndpoints.cs",
       "source_location": "L9",
-      "id": "endpoints_userendpoints_userendpoints_mapuserendpoints",
-      "community": 15,
-      "norm_label": ".mapuserendpoints()"
+      "community": 16,
+      "norm_label": ".mapuserendpoints()",
+      "id": "endpoints_userendpoints_userendpoints_mapuserendpoints"
     },
     {
       "label": ".Create()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/UserEndpoints.cs",
       "source_location": "L26",
-      "id": "endpoints_userendpoints_userendpoints_create",
-      "community": 15,
-      "norm_label": ".create()"
+      "community": 16,
+      "norm_label": ".create()",
+      "id": "endpoints_userendpoints_userendpoints_create"
     },
     {
       "label": ".Update()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/UserEndpoints.cs",
       "source_location": "L37",
-      "id": "endpoints_userendpoints_userendpoints_update",
-      "community": 15,
-      "norm_label": ".update()"
+      "community": 16,
+      "norm_label": ".update()",
+      "id": "endpoints_userendpoints_userendpoints_update"
     },
     {
       "label": ".Delete()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/UserEndpoints.cs",
       "source_location": "L53",
-      "id": "endpoints_userendpoints_userendpoints_delete",
-      "community": 15,
-      "norm_label": ".delete()"
+      "community": 16,
+      "norm_label": ".delete()",
+      "id": "endpoints_userendpoints_userendpoints_delete"
     },
     {
       "label": ".GetById()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/UserEndpoints.cs",
       "source_location": "L64",
-      "id": "endpoints_userendpoints_userendpoints_getbyid",
-      "community": 15,
-      "norm_label": ".getbyid()"
+      "community": 16,
+      "norm_label": ".getbyid()",
+      "id": "endpoints_userendpoints_userendpoints_getbyid"
     },
     {
       "label": ".GetAll()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/UserEndpoints.cs",
       "source_location": "L73",
-      "id": "endpoints_userendpoints_userendpoints_getall",
-      "community": 15,
-      "norm_label": ".getall()"
+      "community": 16,
+      "norm_label": ".getall()",
+      "id": "endpoints_userendpoints_userendpoints_getall"
     },
     {
       "label": ".ChangePassword()",
       "file_type": "code",
       "source_file": "apps/api/Endpoints/UserEndpoints.cs",
       "source_location": "L81",
-      "id": "endpoints_userendpoints_userendpoints_changepassword",
-      "community": 15,
-      "norm_label": ".changepassword()"
+      "community": 16,
+      "norm_label": ".changepassword()",
+      "id": "endpoints_userendpoints_userendpoints_changepassword"
     },
     {
       "label": "AuthModels.cs",
       "file_type": "code",
       "source_file": "apps/api/Models/AuthModels.cs",
       "source_location": "L1",
-      "id": "apps_api_models_authmodels_cs",
-      "community": 34,
-      "norm_label": "authmodels.cs"
+      "community": 43,
+      "norm_label": "authmodels.cs",
+      "id": "apps_api_models_authmodels_cs"
     },
     {
       "label": "Child.cs",
       "file_type": "code",
       "source_file": "apps/api/Models/Child.cs",
       "source_location": "L1",
-      "id": "apps_api_models_child_cs",
-      "community": 9,
-      "norm_label": "child.cs"
+      "community": 10,
+      "norm_label": "child.cs",
+      "id": "apps_api_models_child_cs"
     },
     {
       "label": "Child",
       "file_type": "code",
       "source_file": "apps/api/Models/Child.cs",
       "source_location": "L5",
-      "id": "models_child_child",
-      "community": 9,
-      "norm_label": "child"
+      "community": 10,
+      "norm_label": "child",
+      "id": "models_child_child"
     },
     {
       "label": "BaseEntity",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
-      "id": "baseentity",
-      "community": 9,
-      "norm_label": "baseentity"
+      "community": 10,
+      "norm_label": "baseentity",
+      "id": "baseentity"
     },
     {
       "label": "Common.cs",
       "file_type": "code",
       "source_file": "apps/api/Models/Common.cs",
       "source_location": "L1",
-      "id": "apps_api_models_common_cs",
-      "community": 28,
-      "norm_label": "common.cs"
+      "community": 34,
+      "norm_label": "common.cs",
+      "id": "apps_api_models_common_cs"
     },
     {
       "label": "BaseEntity",
       "file_type": "code",
       "source_file": "apps/api/Models/Common.cs",
       "source_location": "L3",
-      "id": "models_common_baseentity",
-      "community": 28,
-      "norm_label": "baseentity"
+      "community": 34,
+      "norm_label": "baseentity",
+      "id": "models_common_baseentity"
     },
     {
       "label": "LocationLog.cs",
       "file_type": "code",
       "source_file": "apps/api/Models/LocationLog.cs",
       "source_location": "L1",
-      "id": "apps_api_models_locationlog_cs",
-      "community": 9,
-      "norm_label": "locationlog.cs"
+      "community": 10,
+      "norm_label": "locationlog.cs",
+      "id": "apps_api_models_locationlog_cs"
     },
     {
       "label": "LocationLog",
       "file_type": "code",
       "source_file": "apps/api/Models/LocationLog.cs",
       "source_location": "L6",
-      "id": "models_locationlog_locationlog",
-      "community": 9,
-      "norm_label": "locationlog"
+      "community": 10,
+      "norm_label": "locationlog",
+      "id": "models_locationlog_locationlog"
     },
     {
       "label": "MeaslesScan.cs",
       "file_type": "code",
       "source_file": "apps/api/Models/MeaslesScan.cs",
       "source_location": "L1",
-      "id": "apps_api_models_measlesscan_cs",
-      "community": 9,
-      "norm_label": "measlesscan.cs"
+      "community": 10,
+      "norm_label": "measlesscan.cs",
+      "id": "apps_api_models_measlesscan_cs"
     },
     {
       "label": "MeaslesScan",
       "file_type": "code",
       "source_file": "apps/api/Models/MeaslesScan.cs",
       "source_location": "L6",
-      "id": "models_measlesscan_measlesscan",
-      "community": 9,
-      "norm_label": "measlesscan"
+      "community": 10,
+      "norm_label": "measlesscan",
+      "id": "models_measlesscan_measlesscan"
     },
     {
       "label": "ScanPhoto.cs",
       "file_type": "code",
       "source_file": "apps/api/Models/ScanPhoto.cs",
       "source_location": "L1",
-      "id": "apps_api_models_scanphoto_cs",
-      "community": 9,
-      "norm_label": "scanphoto.cs"
+      "community": 10,
+      "norm_label": "scanphoto.cs",
+      "id": "apps_api_models_scanphoto_cs"
     },
     {
       "label": "ScanPhoto",
       "file_type": "code",
       "source_file": "apps/api/Models/ScanPhoto.cs",
       "source_location": "L5",
-      "id": "models_scanphoto_scanphoto",
-      "community": 9,
-      "norm_label": "scanphoto"
+      "community": 10,
+      "norm_label": "scanphoto",
+      "id": "models_scanphoto_scanphoto"
     },
     {
       "label": "Todo.cs",
       "file_type": "code",
       "source_file": "apps/api/Models/Todo.cs",
       "source_location": "L1",
-      "id": "apps_api_models_todo_cs",
-      "community": 9,
-      "norm_label": "todo.cs"
+      "community": 10,
+      "norm_label": "todo.cs",
+      "id": "apps_api_models_todo_cs"
     },
     {
       "label": "Todo",
       "file_type": "code",
       "source_file": "apps/api/Models/Todo.cs",
       "source_location": "L3",
-      "id": "models_todo_todo",
-      "community": 9,
-      "norm_label": "todo"
+      "community": 10,
+      "norm_label": "todo",
+      "id": "models_todo_todo"
     },
     {
       "label": "User.cs",
       "file_type": "code",
       "source_file": "apps/api/Models/User.cs",
       "source_location": "L1",
-      "id": "apps_api_models_user_cs",
-      "community": 9,
-      "norm_label": "user.cs"
+      "community": 10,
+      "norm_label": "user.cs",
+      "id": "apps_api_models_user_cs"
     },
     {
       "label": "User",
       "file_type": "code",
       "source_file": "apps/api/Models/User.cs",
       "source_location": "L5",
-      "id": "models_user_user",
-      "community": 9,
-      "norm_label": "user"
+      "community": 10,
+      "norm_label": "user",
+      "id": "models_user_user"
     },
     {
       "label": "launchSettings.json",
       "file_type": "code",
       "source_file": "apps/api/Properties/launchSettings.json",
       "source_location": "L1",
-      "id": "apps_api_properties_launchsettings_json",
-      "community": 7,
-      "norm_label": "launchsettings.json"
+      "community": 8,
+      "norm_label": "launchsettings.json",
+      "id": "apps_api_properties_launchsettings_json"
     },
     {
       "label": "$schema",
       "file_type": "code",
       "source_file": "apps/api/Properties/launchSettings.json",
       "source_location": "L2",
-      "id": "properties_launchsettings_schema",
-      "community": 7,
-      "norm_label": "$schema"
+      "community": 8,
+      "norm_label": "$schema",
+      "id": "properties_launchsettings_schema"
     },
     {
       "label": "profiles",
       "file_type": "code",
       "source_file": "apps/api/Properties/launchSettings.json",
       "source_location": "L3",
-      "id": "properties_launchsettings_profiles",
-      "community": 7,
-      "norm_label": "profiles"
+      "community": 8,
+      "norm_label": "profiles",
+      "id": "properties_launchsettings_profiles"
     },
     {
       "label": "http",
       "file_type": "code",
       "source_file": "apps/api/Properties/launchSettings.json",
       "source_location": "L4",
-      "id": "properties_launchsettings_profiles_http",
-      "community": 7,
-      "norm_label": "http"
+      "community": 8,
+      "norm_label": "http",
+      "id": "properties_launchsettings_profiles_http"
     },
     {
       "label": "commandName",
       "file_type": "code",
       "source_file": "apps/api/Properties/launchSettings.json",
       "source_location": "L5",
-      "id": "properties_launchsettings_http_commandname",
-      "community": 7,
-      "norm_label": "commandname"
+      "community": 8,
+      "norm_label": "commandname",
+      "id": "properties_launchsettings_http_commandname"
     },
     {
       "label": "dotnetRunMessages",
       "file_type": "code",
       "source_file": "apps/api/Properties/launchSettings.json",
       "source_location": "L6",
-      "id": "properties_launchsettings_http_dotnetrunmessages",
-      "community": 7,
-      "norm_label": "dotnetrunmessages"
+      "community": 8,
+      "norm_label": "dotnetrunmessages",
+      "id": "properties_launchsettings_http_dotnetrunmessages"
     },
     {
       "label": "launchBrowser",
       "file_type": "code",
       "source_file": "apps/api/Properties/launchSettings.json",
       "source_location": "L7",
-      "id": "properties_launchsettings_http_launchbrowser",
-      "community": 7,
-      "norm_label": "launchbrowser"
+      "community": 8,
+      "norm_label": "launchbrowser",
+      "id": "properties_launchsettings_http_launchbrowser"
     },
     {
       "label": "applicationUrl",
       "file_type": "code",
       "source_file": "apps/api/Properties/launchSettings.json",
       "source_location": "L8",
-      "id": "properties_launchsettings_http_applicationurl",
-      "community": 7,
-      "norm_label": "applicationurl"
+      "community": 8,
+      "norm_label": "applicationurl",
+      "id": "properties_launchsettings_http_applicationurl"
     },
     {
       "label": "environmentVariables",
       "file_type": "code",
       "source_file": "apps/api/Properties/launchSettings.json",
       "source_location": "L9",
-      "id": "properties_launchsettings_http_environmentvariables",
-      "community": 7,
-      "norm_label": "environmentvariables"
+      "community": 8,
+      "norm_label": "environmentvariables",
+      "id": "properties_launchsettings_http_environmentvariables"
     },
     {
       "label": "ASPNETCORE_ENVIRONMENT",
       "file_type": "code",
       "source_file": "apps/api/Properties/launchSettings.json",
       "source_location": "L10",
-      "id": "properties_launchsettings_environmentvariables_aspnetcore_environment",
-      "community": 7,
-      "norm_label": "aspnetcore_environment"
+      "community": 8,
+      "norm_label": "aspnetcore_environment",
+      "id": "properties_launchsettings_environmentvariables_aspnetcore_environment"
     },
     {
       "label": "https",
       "file_type": "code",
       "source_file": "apps/api/Properties/launchSettings.json",
       "source_location": "L13",
-      "id": "properties_launchsettings_profiles_https",
-      "community": 7,
-      "norm_label": "https"
+      "community": 8,
+      "norm_label": "https",
+      "id": "properties_launchsettings_profiles_https"
     },
     {
       "label": "commandName",
       "file_type": "code",
       "source_file": "apps/api/Properties/launchSettings.json",
       "source_location": "L14",
-      "id": "properties_launchsettings_https_commandname",
-      "community": 7,
-      "norm_label": "commandname"
+      "community": 8,
+      "norm_label": "commandname",
+      "id": "properties_launchsettings_https_commandname"
     },
     {
       "label": "dotnetRunMessages",
       "file_type": "code",
       "source_file": "apps/api/Properties/launchSettings.json",
       "source_location": "L15",
-      "id": "properties_launchsettings_https_dotnetrunmessages",
-      "community": 7,
-      "norm_label": "dotnetrunmessages"
+      "community": 8,
+      "norm_label": "dotnetrunmessages",
+      "id": "properties_launchsettings_https_dotnetrunmessages"
     },
     {
       "label": "launchBrowser",
       "file_type": "code",
       "source_file": "apps/api/Properties/launchSettings.json",
       "source_location": "L16",
-      "id": "properties_launchsettings_https_launchbrowser",
-      "community": 7,
-      "norm_label": "launchbrowser"
+      "community": 8,
+      "norm_label": "launchbrowser",
+      "id": "properties_launchsettings_https_launchbrowser"
     },
     {
       "label": "applicationUrl",
       "file_type": "code",
       "source_file": "apps/api/Properties/launchSettings.json",
       "source_location": "L17",
-      "id": "properties_launchsettings_https_applicationurl",
-      "community": 7,
-      "norm_label": "applicationurl"
+      "community": 8,
+      "norm_label": "applicationurl",
+      "id": "properties_launchsettings_https_applicationurl"
     },
     {
       "label": "environmentVariables",
       "file_type": "code",
       "source_file": "apps/api/Properties/launchSettings.json",
       "source_location": "L18",
-      "id": "properties_launchsettings_https_environmentvariables",
-      "community": 7,
-      "norm_label": "environmentvariables"
+      "community": 8,
+      "norm_label": "environmentvariables",
+      "id": "properties_launchsettings_https_environmentvariables"
     },
     {
       "label": "TokenService.cs",
       "file_type": "code",
       "source_file": "apps/api/Services/TokenService.cs",
       "source_location": "L1",
-      "id": "apps_api_services_tokenservice_cs",
-      "community": 23,
-      "norm_label": "tokenservice.cs"
+      "community": 27,
+      "norm_label": "tokenservice.cs",
+      "id": "apps_api_services_tokenservice_cs"
     },
     {
       "label": "ITokenService",
       "file_type": "code",
       "source_file": "apps/api/Services/TokenService.cs",
       "source_location": "L9",
-      "id": "services_tokenservice_itokenservice",
-      "community": 23,
-      "norm_label": "itokenservice"
+      "community": 27,
+      "norm_label": "itokenservice",
+      "id": "services_tokenservice_itokenservice"
     },
     {
       "label": ".GenerateAccessToken()",
       "file_type": "code",
       "source_file": "apps/api/Services/TokenService.cs",
       "source_location": "L11",
-      "id": "services_tokenservice_itokenservice_generateaccesstoken",
-      "community": 23,
-      "norm_label": ".generateaccesstoken()"
+      "community": 27,
+      "norm_label": ".generateaccesstoken()",
+      "id": "services_tokenservice_itokenservice_generateaccesstoken"
     },
     {
       "label": "TokenService",
       "file_type": "code",
       "source_file": "apps/api/Services/TokenService.cs",
       "source_location": "L14",
-      "id": "services_tokenservice_tokenservice",
-      "community": 23,
-      "norm_label": "tokenservice"
+      "community": 27,
+      "norm_label": "tokenservice",
+      "id": "services_tokenservice_tokenservice"
     },
     {
       "label": ".GenerateAccessToken()",
       "file_type": "code",
       "source_file": "apps/api/Services/TokenService.cs",
       "source_location": "L16",
-      "id": "services_tokenservice_tokenservice_generateaccesstoken",
-      "community": 23,
-      "norm_label": ".generateaccesstoken()"
+      "community": 27,
+      "norm_label": ".generateaccesstoken()",
+      "id": "services_tokenservice_tokenservice_generateaccesstoken"
     },
     {
       "label": "app.json",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L1",
-      "id": "apps_mobile_app_json",
-      "community": 4,
-      "norm_label": "app.json"
+      "community": 5,
+      "norm_label": "app.json",
+      "id": "apps_mobile_app_json"
     },
     {
       "label": "expo",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L2",
-      "id": "mobile_app_expo",
-      "community": 4,
-      "norm_label": "expo"
+      "community": 5,
+      "norm_label": "expo",
+      "id": "mobile_app_expo"
     },
     {
       "label": "name",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L3",
-      "id": "mobile_app_expo_name",
-      "community": 4,
-      "norm_label": "name"
+      "community": 5,
+      "norm_label": "name",
+      "id": "mobile_app_expo_name"
     },
     {
       "label": "slug",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L4",
-      "id": "mobile_app_expo_slug",
-      "community": 4,
-      "norm_label": "slug"
+      "community": 5,
+      "norm_label": "slug",
+      "id": "mobile_app_expo_slug"
     },
     {
       "label": "version",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L5",
-      "id": "mobile_app_expo_version",
-      "community": 4,
-      "norm_label": "version"
+      "community": 5,
+      "norm_label": "version",
+      "id": "mobile_app_expo_version"
     },
     {
       "label": "orientation",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L6",
-      "id": "mobile_app_expo_orientation",
-      "community": 4,
-      "norm_label": "orientation"
+      "community": 5,
+      "norm_label": "orientation",
+      "id": "mobile_app_expo_orientation"
     },
     {
       "label": "icon",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L7",
-      "id": "mobile_app_expo_icon",
-      "community": 4,
-      "norm_label": "icon"
+      "community": 5,
+      "norm_label": "icon",
+      "id": "mobile_app_expo_icon"
     },
     {
       "label": "scheme",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L8",
-      "id": "mobile_app_expo_scheme",
-      "community": 4,
-      "norm_label": "scheme"
+      "community": 5,
+      "norm_label": "scheme",
+      "id": "mobile_app_expo_scheme"
     },
     {
       "label": "userInterfaceStyle",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L9",
-      "id": "mobile_app_expo_userinterfacestyle",
-      "community": 4,
-      "norm_label": "userinterfacestyle"
+      "community": 5,
+      "norm_label": "userinterfacestyle",
+      "id": "mobile_app_expo_userinterfacestyle"
     },
     {
       "label": "newArchEnabled",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L10",
-      "id": "mobile_app_expo_newarchenabled",
-      "community": 4,
-      "norm_label": "newarchenabled"
+      "community": 5,
+      "norm_label": "newarchenabled",
+      "id": "mobile_app_expo_newarchenabled"
     },
     {
       "label": "android",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L11",
-      "id": "mobile_app_expo_android",
-      "community": 4,
-      "norm_label": "android"
+      "community": 5,
+      "norm_label": "android",
+      "id": "mobile_app_expo_android"
     },
     {
       "label": "adaptiveIcon",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L12",
-      "id": "mobile_app_android_adaptiveicon",
-      "community": 4,
-      "norm_label": "adaptiveicon"
+      "community": 5,
+      "norm_label": "adaptiveicon",
+      "id": "mobile_app_android_adaptiveicon"
     },
     {
       "label": "backgroundColor",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L13",
-      "id": "mobile_app_adaptiveicon_backgroundcolor",
-      "community": 4,
-      "norm_label": "backgroundcolor"
+      "community": 5,
+      "norm_label": "backgroundcolor",
+      "id": "mobile_app_adaptiveicon_backgroundcolor"
     },
     {
       "label": "foregroundImage",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L14",
-      "id": "mobile_app_adaptiveicon_foregroundimage",
-      "community": 4,
-      "norm_label": "foregroundimage"
+      "community": 5,
+      "norm_label": "foregroundimage",
+      "id": "mobile_app_adaptiveicon_foregroundimage"
     },
     {
       "label": "backgroundImage",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L15",
-      "id": "mobile_app_adaptiveicon_backgroundimage",
-      "community": 4,
-      "norm_label": "backgroundimage"
+      "community": 5,
+      "norm_label": "backgroundimage",
+      "id": "mobile_app_adaptiveicon_backgroundimage"
     },
     {
       "label": "monochromeImage",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L16",
-      "id": "mobile_app_adaptiveicon_monochromeimage",
-      "community": 4,
-      "norm_label": "monochromeimage"
+      "community": 5,
+      "norm_label": "monochromeimage",
+      "id": "mobile_app_adaptiveicon_monochromeimage"
     },
     {
       "label": "edgeToEdgeEnabled",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L18",
-      "id": "mobile_app_android_edgetoedgeenabled",
-      "community": 4,
-      "norm_label": "edgetoedgeenabled"
+      "community": 5,
+      "norm_label": "edgetoedgeenabled",
+      "id": "mobile_app_android_edgetoedgeenabled"
     },
     {
       "label": "predictiveBackGestureEnabled",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L19",
-      "id": "mobile_app_android_predictivebackgestureenabled",
-      "community": 4,
-      "norm_label": "predictivebackgestureenabled"
+      "community": 5,
+      "norm_label": "predictivebackgestureenabled",
+      "id": "mobile_app_android_predictivebackgestureenabled"
     },
     {
       "label": "permissions",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L20",
-      "id": "mobile_app_android_permissions",
-      "community": 4,
-      "norm_label": "permissions"
+      "community": 5,
+      "norm_label": "permissions",
+      "id": "mobile_app_android_permissions"
     },
     {
       "label": "web",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L28",
-      "id": "mobile_app_expo_web",
-      "community": 4,
-      "norm_label": "web"
+      "community": 5,
+      "norm_label": "web",
+      "id": "mobile_app_expo_web"
     },
     {
       "label": "output",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L29",
-      "id": "mobile_app_web_output",
-      "community": 4,
-      "norm_label": "output"
+      "community": 5,
+      "norm_label": "output",
+      "id": "mobile_app_web_output"
     },
     {
       "label": "favicon",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L30",
-      "id": "mobile_app_web_favicon",
-      "community": 4,
-      "norm_label": "favicon"
+      "community": 5,
+      "norm_label": "favicon",
+      "id": "mobile_app_web_favicon"
     },
     {
       "label": "plugins",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L32",
-      "id": "mobile_app_expo_plugins",
-      "community": 4,
-      "norm_label": "plugins"
+      "community": 5,
+      "norm_label": "plugins",
+      "id": "mobile_app_expo_plugins"
     },
     {
       "label": "experiments",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L55",
-      "id": "mobile_app_expo_experiments",
-      "community": 4,
-      "norm_label": "experiments"
+      "community": 5,
+      "norm_label": "experiments",
+      "id": "mobile_app_expo_experiments"
     },
     {
       "label": "typedRoutes",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L56",
-      "id": "mobile_app_experiments_typedroutes",
-      "community": 4,
-      "norm_label": "typedroutes"
+      "community": 5,
+      "norm_label": "typedroutes",
+      "id": "mobile_app_experiments_typedroutes"
     },
     {
       "label": "reactCompiler",
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L57",
-      "id": "mobile_app_experiments_reactcompiler",
-      "community": 4,
-      "norm_label": "reactcompiler"
+      "community": 5,
+      "norm_label": "reactcompiler",
+      "id": "mobile_app_experiments_reactcompiler"
     },
     {
       "label": "eslint.config.js",
       "file_type": "code",
       "source_file": "apps/mobile/eslint.config.js",
       "source_location": "L1",
-      "id": "apps_mobile_eslint_config_js",
-      "community": 26,
-      "norm_label": "eslint.config.js"
+      "community": 33,
+      "norm_label": "eslint.config.js",
+      "id": "apps_mobile_eslint_config_js"
     },
     {
       "label": "{ defineConfig }",
       "file_type": "code",
       "source_file": "apps/mobile/eslint.config.js",
       "source_location": "L2",
-      "id": "mobile_eslint_config_defineconfig",
-      "community": 26,
-      "norm_label": "{ defineconfig }"
+      "community": 33,
+      "norm_label": "{ defineconfig }",
+      "id": "mobile_eslint_config_defineconfig"
     },
     {
       "label": "expoConfig",
       "file_type": "code",
       "source_file": "apps/mobile/eslint.config.js",
       "source_location": "L3",
-      "id": "mobile_eslint_config_expoconfig",
-      "community": 26,
-      "norm_label": "expoconfig"
+      "community": 33,
+      "norm_label": "expoconfig",
+      "id": "mobile_eslint_config_expoconfig"
     },
     {
       "label": "expo-env.d.ts",
       "file_type": "code",
       "source_file": "apps/mobile/expo-env.d.ts",
       "source_location": "L1",
-      "id": "apps_mobile_expo_env_d_ts",
-      "community": 46,
-      "norm_label": "expo-env.d.ts"
+      "community": 44,
+      "norm_label": "expo-env.d.ts",
+      "id": "apps_mobile_expo_env_d_ts"
     },
     {
       "label": "package.json",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L1",
-      "id": "apps_mobile_package_json",
-      "community": 40,
-      "norm_label": "package.json"
+      "community": 24,
+      "norm_label": "package.json",
+      "id": "apps_mobile_package_json"
     },
     {
       "label": "name",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L2",
-      "id": "mobile_package_name",
-      "community": 40,
-      "norm_label": "name"
+      "community": 24,
+      "norm_label": "name",
+      "id": "mobile_package_name"
     },
     {
       "label": "main",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L3",
-      "id": "mobile_package_main",
-      "community": 40,
-      "norm_label": "main"
+      "community": 24,
+      "norm_label": "main",
+      "id": "mobile_package_main"
     },
     {
       "label": "version",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L4",
-      "id": "mobile_package_version",
-      "community": 40,
-      "norm_label": "version"
+      "community": 24,
+      "norm_label": "version",
+      "id": "mobile_package_version"
     },
     {
       "label": "scripts",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L5",
-      "id": "mobile_package_scripts",
-      "community": 6,
-      "norm_label": "scripts"
+      "community": 18,
+      "norm_label": "scripts",
+      "id": "mobile_package_scripts"
     },
     {
       "label": "start",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L6",
-      "id": "mobile_package_scripts_start",
-      "community": 6,
-      "norm_label": "start"
+      "community": 18,
+      "norm_label": "start",
+      "id": "mobile_package_scripts_start"
     },
     {
       "label": "reset-project",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L7",
-      "id": "mobile_package_scripts_reset_project",
-      "community": 6,
-      "norm_label": "reset-project"
+      "community": 18,
+      "norm_label": "reset-project",
+      "id": "mobile_package_scripts_reset_project"
     },
     {
       "label": "android",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L8",
-      "id": "mobile_package_scripts_android",
-      "community": 6,
-      "norm_label": "android"
+      "community": 18,
+      "norm_label": "android",
+      "id": "mobile_package_scripts_android"
     },
     {
       "label": "ios",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L9",
-      "id": "mobile_package_scripts_ios",
-      "community": 6,
-      "norm_label": "ios"
+      "community": 18,
+      "norm_label": "ios",
+      "id": "mobile_package_scripts_ios"
     },
     {
       "label": "web",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L10",
-      "id": "mobile_package_scripts_web",
-      "community": 6,
-      "norm_label": "web"
+      "community": 18,
+      "norm_label": "web",
+      "id": "mobile_package_scripts_web"
     },
     {
       "label": "lint",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L11",
-      "id": "mobile_package_scripts_lint",
-      "community": 6,
-      "norm_label": "lint"
+      "community": 18,
+      "norm_label": "lint",
+      "id": "mobile_package_scripts_lint"
     },
     {
       "label": "dependencies",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L13",
-      "id": "mobile_package_dependencies",
       "community": 2,
-      "norm_label": "dependencies"
+      "norm_label": "dependencies",
+      "id": "mobile_package_dependencies"
     },
     {
       "label": "@expo/ngrok",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L14",
-      "id": "mobile_package_dependencies_expo_ngrok",
       "community": 2,
-      "norm_label": "@expo/ngrok"
+      "norm_label": "@expo/ngrok",
+      "id": "mobile_package_dependencies_expo_ngrok"
     },
     {
       "label": "@expo/vector-icons",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L15",
-      "id": "mobile_package_dependencies_expo_vector_icons",
       "community": 2,
-      "norm_label": "@expo/vector-icons"
+      "norm_label": "@expo/vector-icons",
+      "id": "mobile_package_dependencies_expo_vector_icons"
     },
     {
       "label": "@hookform/resolvers",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L16",
-      "id": "mobile_package_dependencies_hookform_resolvers",
       "community": 2,
-      "norm_label": "@hookform/resolvers"
+      "norm_label": "@hookform/resolvers",
+      "id": "mobile_package_dependencies_hookform_resolvers"
     },
     {
       "label": "@react-navigation/bottom-tabs",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L17",
-      "id": "mobile_package_dependencies_react_navigation_bottom_tabs",
       "community": 2,
-      "norm_label": "@react-navigation/bottom-tabs"
+      "norm_label": "@react-navigation/bottom-tabs",
+      "id": "mobile_package_dependencies_react_navigation_bottom_tabs"
     },
     {
       "label": "@react-navigation/elements",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L18",
-      "id": "mobile_package_dependencies_react_navigation_elements",
       "community": 2,
-      "norm_label": "@react-navigation/elements"
+      "norm_label": "@react-navigation/elements",
+      "id": "mobile_package_dependencies_react_navigation_elements"
     },
     {
       "label": "@react-navigation/native",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L19",
-      "id": "mobile_package_dependencies_react_navigation_native",
       "community": 2,
-      "norm_label": "@react-navigation/native"
+      "norm_label": "@react-navigation/native",
+      "id": "mobile_package_dependencies_react_navigation_native"
     },
     {
       "label": "axios",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L20",
-      "id": "mobile_package_dependencies_axios",
       "community": 2,
-      "norm_label": "axios"
+      "norm_label": "axios",
+      "id": "mobile_package_dependencies_axios"
     },
     {
       "label": "expo",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L21",
-      "id": "mobile_package_dependencies_expo",
       "community": 2,
-      "norm_label": "expo"
+      "norm_label": "expo",
+      "id": "mobile_package_dependencies_expo"
     },
     {
       "label": "expo-constants",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L22",
-      "id": "mobile_package_dependencies_expo_constants",
       "community": 2,
-      "norm_label": "expo-constants"
+      "norm_label": "expo-constants",
+      "id": "mobile_package_dependencies_expo_constants"
     },
     {
       "label": "expo-font",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L23",
-      "id": "mobile_package_dependencies_expo_font",
       "community": 2,
-      "norm_label": "expo-font"
+      "norm_label": "expo-font",
+      "id": "mobile_package_dependencies_expo_font"
     },
     {
       "label": "expo-haptics",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L24",
-      "id": "mobile_package_dependencies_expo_haptics",
       "community": 2,
-      "norm_label": "expo-haptics"
+      "norm_label": "expo-haptics",
+      "id": "mobile_package_dependencies_expo_haptics"
     },
     {
       "label": "expo-image-picker",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L25",
-      "id": "mobile_package_dependencies_expo_image_picker",
       "community": 2,
-      "norm_label": "expo-image-picker"
+      "norm_label": "expo-image-picker",
+      "id": "mobile_package_dependencies_expo_image_picker"
     },
     {
       "label": "expo-linking",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L26",
-      "id": "mobile_package_dependencies_expo_linking",
       "community": 2,
-      "norm_label": "expo-linking"
+      "norm_label": "expo-linking",
+      "id": "mobile_package_dependencies_expo_linking"
     },
     {
       "label": "expo-location",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L27",
-      "id": "mobile_package_dependencies_expo_location",
       "community": 2,
-      "norm_label": "expo-location"
+      "norm_label": "expo-location",
+      "id": "mobile_package_dependencies_expo_location"
     },
     {
       "label": "expo-router",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L28",
-      "id": "mobile_package_dependencies_expo_router",
       "community": 2,
-      "norm_label": "expo-router"
+      "norm_label": "expo-router",
+      "id": "mobile_package_dependencies_expo_router"
     },
     {
       "label": "expo-secure-store",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L29",
-      "id": "mobile_package_dependencies_expo_secure_store",
       "community": 2,
-      "norm_label": "expo-secure-store"
+      "norm_label": "expo-secure-store",
+      "id": "mobile_package_dependencies_expo_secure_store"
     },
     {
       "label": "expo-splash-screen",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L30",
-      "id": "mobile_package_dependencies_expo_splash_screen",
       "community": 2,
-      "norm_label": "expo-splash-screen"
+      "norm_label": "expo-splash-screen",
+      "id": "mobile_package_dependencies_expo_splash_screen"
     },
     {
       "label": "expo-status-bar",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L31",
-      "id": "mobile_package_dependencies_expo_status_bar",
       "community": 2,
-      "norm_label": "expo-status-bar"
+      "norm_label": "expo-status-bar",
+      "id": "mobile_package_dependencies_expo_status_bar"
     },
     {
       "label": "expo-symbols",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L32",
-      "id": "mobile_package_dependencies_expo_symbols",
       "community": 2,
-      "norm_label": "expo-symbols"
+      "norm_label": "expo-symbols",
+      "id": "mobile_package_dependencies_expo_symbols"
     },
     {
       "label": "expo-system-ui",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L33",
-      "id": "mobile_package_dependencies_expo_system_ui",
       "community": 2,
-      "norm_label": "expo-system-ui"
+      "norm_label": "expo-system-ui",
+      "id": "mobile_package_dependencies_expo_system_ui"
     },
     {
       "label": "expo-task-manager",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L34",
-      "id": "mobile_package_dependencies_expo_task_manager",
       "community": 2,
-      "norm_label": "expo-task-manager"
+      "norm_label": "expo-task-manager",
+      "id": "mobile_package_dependencies_expo_task_manager"
     },
     {
       "label": "lucide-react-native",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L35",
-      "id": "mobile_package_dependencies_lucide_react_native",
       "community": 2,
-      "norm_label": "lucide-react-native"
+      "norm_label": "lucide-react-native",
+      "id": "mobile_package_dependencies_lucide_react_native"
     },
     {
       "label": "react",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L36",
-      "id": "mobile_package_dependencies_react",
       "community": 2,
-      "norm_label": "react"
+      "norm_label": "react",
+      "id": "mobile_package_dependencies_react"
     },
     {
       "label": "react-dom",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L37",
-      "id": "mobile_package_dependencies_react_dom",
       "community": 2,
-      "norm_label": "react-dom"
+      "norm_label": "react-dom",
+      "id": "mobile_package_dependencies_react_dom"
     },
     {
       "label": "react-hook-form",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L38",
-      "id": "mobile_package_dependencies_react_hook_form",
       "community": 2,
-      "norm_label": "react-hook-form"
+      "norm_label": "react-hook-form",
+      "id": "mobile_package_dependencies_react_hook_form"
     },
     {
       "label": "react-native",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L39",
-      "id": "mobile_package_dependencies_react_native",
       "community": 2,
-      "norm_label": "react-native"
+      "norm_label": "react-native",
+      "id": "mobile_package_dependencies_react_native"
     },
     {
       "label": "react-native-gesture-handler",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L40",
-      "id": "mobile_package_dependencies_react_native_gesture_handler",
       "community": 2,
-      "norm_label": "react-native-gesture-handler"
+      "norm_label": "react-native-gesture-handler",
+      "id": "mobile_package_dependencies_react_native_gesture_handler"
     },
     {
       "label": "react-native-safe-area-context",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L41",
-      "id": "mobile_package_dependencies_react_native_safe_area_context",
       "community": 2,
-      "norm_label": "react-native-safe-area-context"
+      "norm_label": "react-native-safe-area-context",
+      "id": "mobile_package_dependencies_react_native_safe_area_context"
     },
     {
       "label": "react-native-screens",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L42",
-      "id": "mobile_package_dependencies_react_native_screens",
       "community": 2,
-      "norm_label": "react-native-screens"
+      "norm_label": "react-native-screens",
+      "id": "mobile_package_dependencies_react_native_screens"
     },
     {
       "label": "react-native-web",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L43",
-      "id": "mobile_package_dependencies_react_native_web",
       "community": 2,
-      "norm_label": "react-native-web"
+      "norm_label": "react-native-web",
+      "id": "mobile_package_dependencies_react_native_web"
     },
     {
       "label": "zod",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L44",
-      "id": "mobile_package_dependencies_zod",
       "community": 2,
-      "norm_label": "zod"
+      "norm_label": "zod",
+      "id": "mobile_package_dependencies_zod"
     },
     {
       "label": "zustand",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L45",
-      "id": "mobile_package_dependencies_zustand",
       "community": 2,
-      "norm_label": "zustand"
+      "norm_label": "zustand",
+      "id": "mobile_package_dependencies_zustand"
     },
     {
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L47",
-      "id": "mobile_package_devdependencies",
-      "community": 41,
-      "norm_label": "devdependencies"
+      "community": 25,
+      "norm_label": "devdependencies",
+      "id": "mobile_package_devdependencies"
     },
     {
       "label": "@types/react",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L48",
-      "id": "mobile_package_devdependencies_types_react",
-      "community": 41,
-      "norm_label": "@types/react"
+      "community": 25,
+      "norm_label": "@types/react",
+      "id": "mobile_package_devdependencies_types_react"
     },
     {
       "label": "eslint",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L49",
-      "id": "mobile_package_devdependencies_eslint",
-      "community": 41,
-      "norm_label": "eslint"
+      "community": 25,
+      "norm_label": "eslint",
+      "id": "mobile_package_devdependencies_eslint"
     },
     {
       "label": "eslint-config-expo",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L50",
-      "id": "mobile_package_devdependencies_eslint_config_expo",
-      "community": 41,
-      "norm_label": "eslint-config-expo"
+      "community": 25,
+      "norm_label": "eslint-config-expo",
+      "id": "mobile_package_devdependencies_eslint_config_expo"
     },
     {
       "label": "typescript",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L51",
-      "id": "mobile_package_devdependencies_typescript",
-      "community": 41,
-      "norm_label": "typescript"
+      "community": 25,
+      "norm_label": "typescript",
+      "id": "mobile_package_devdependencies_typescript"
     },
     {
       "label": "private",
       "file_type": "code",
       "source_file": "apps/mobile/package.json",
       "source_location": "L53",
-      "id": "mobile_package_private",
-      "community": 40,
-      "norm_label": "private"
+      "community": 24,
+      "norm_label": "private",
+      "id": "mobile_package_private"
     },
     {
       "label": "tsconfig.json",
       "file_type": "code",
       "source_file": "apps/mobile/tsconfig.json",
       "source_location": "L1",
-      "id": "apps_mobile_tsconfig_json",
-      "community": 19,
-      "norm_label": "tsconfig.json"
+      "community": 20,
+      "norm_label": "tsconfig.json",
+      "id": "apps_mobile_tsconfig_json"
     },
     {
       "label": "extends",
       "file_type": "code",
       "source_file": "apps/mobile/tsconfig.json",
       "source_location": "L2",
-      "id": "mobile_tsconfig_extends",
-      "community": 19,
-      "norm_label": "extends"
+      "community": 20,
+      "norm_label": "extends",
+      "id": "mobile_tsconfig_extends"
     },
     {
       "label": "compilerOptions",
       "file_type": "code",
       "source_file": "apps/mobile/tsconfig.json",
       "source_location": "L3",
-      "id": "mobile_tsconfig_compileroptions",
-      "community": 19,
-      "norm_label": "compileroptions"
+      "community": 20,
+      "norm_label": "compileroptions",
+      "id": "mobile_tsconfig_compileroptions"
     },
     {
       "label": "strict",
       "file_type": "code",
       "source_file": "apps/mobile/tsconfig.json",
       "source_location": "L4",
-      "id": "mobile_tsconfig_compileroptions_strict",
-      "community": 19,
-      "norm_label": "strict"
+      "community": 20,
+      "norm_label": "strict",
+      "id": "mobile_tsconfig_compileroptions_strict"
     },
     {
       "label": "paths",
       "file_type": "code",
       "source_file": "apps/mobile/tsconfig.json",
       "source_location": "L5",
-      "id": "mobile_tsconfig_compileroptions_paths",
-      "community": 19,
-      "norm_label": "paths"
+      "community": 20,
+      "norm_label": "paths",
+      "id": "mobile_tsconfig_compileroptions_paths"
     },
     {
       "label": "@/*",
       "file_type": "code",
       "source_file": "apps/mobile/tsconfig.json",
       "source_location": "L6",
-      "id": "mobile_tsconfig_paths",
-      "community": 19,
-      "norm_label": "@/*"
+      "community": 20,
+      "norm_label": "@/*",
+      "id": "mobile_tsconfig_paths"
     },
     {
       "label": "include",
       "file_type": "code",
       "source_file": "apps/mobile/tsconfig.json",
       "source_location": "L11",
-      "id": "mobile_tsconfig_include",
-      "community": 19,
-      "norm_label": "include"
+      "community": 20,
+      "norm_label": "include",
+      "id": "mobile_tsconfig_include"
     },
     {
       "label": "devices.json",
       "file_type": "code",
       "source_file": "apps/mobile/.expo/devices.json",
       "source_location": "L1",
-      "id": "apps_mobile_expo_devices_json",
-      "community": 43,
-      "norm_label": "devices.json"
+      "community": 39,
+      "norm_label": "devices.json",
+      "id": "apps_mobile_expo_devices_json"
     },
     {
       "label": "devices",
       "file_type": "code",
       "source_file": "apps/mobile/.expo/devices.json",
       "source_location": "L2",
-      "id": "expo_devices_devices",
-      "community": 43,
-      "norm_label": "devices"
+      "community": 39,
+      "norm_label": "devices",
+      "id": "expo_devices_devices"
     },
     {
       "label": "settings.json",
       "file_type": "code",
       "source_file": "apps/mobile/.expo/settings.json",
       "source_location": "L1",
-      "id": "apps_mobile_expo_settings_json",
-      "community": 44,
-      "norm_label": "settings.json"
+      "community": 37,
+      "norm_label": "settings.json",
+      "id": "apps_mobile_expo_settings_json"
     },
     {
       "label": "urlRandomness",
       "file_type": "code",
       "source_file": "apps/mobile/.expo/settings.json",
       "source_location": "L2",
-      "id": "expo_settings_urlrandomness",
-      "community": 44,
-      "norm_label": "urlrandomness"
+      "community": 37,
+      "norm_label": "urlrandomness",
+      "id": "expo_settings_urlrandomness"
     },
     {
       "label": "router.d.ts",
       "file_type": "code",
       "source_file": "apps/mobile/.expo/types/router.d.ts",
       "source_location": "L1",
-      "id": "apps_mobile_expo_types_router_d_ts",
-      "community": 45,
-      "norm_label": "router.d.ts"
+      "community": 40,
+      "norm_label": "router.d.ts",
+      "id": "apps_mobile_expo_types_router_d_ts"
     },
     {
       "label": "__routes",
       "file_type": "code",
       "source_file": "apps/mobile/.expo/types/router.d.ts",
       "source_location": "L8",
-      "id": "types_router_d_routes",
-      "community": 45,
-      "norm_label": "__routes"
+      "community": 40,
+      "norm_label": "__routes",
+      "id": "types_router_d_routes"
     },
     {
       "label": "extensions.json",
       "file_type": "code",
       "source_file": "apps/mobile/.vscode/extensions.json",
       "source_location": "L1",
-      "id": "apps_mobile_vscode_extensions_json",
-      "community": 31,
-      "norm_label": "extensions.json"
+      "community": 41,
+      "norm_label": "extensions.json",
+      "id": "apps_mobile_vscode_extensions_json"
     },
     {
       "label": "recommendations",
       "file_type": "code",
       "source_file": "apps/mobile/.vscode/extensions.json",
       "source_location": "L1",
-      "id": "vscode_extensions_recommendations",
-      "community": 31,
-      "norm_label": "recommendations"
+      "community": 41,
+      "norm_label": "recommendations",
+      "id": "vscode_extensions_recommendations"
     },
     {
       "label": "settings.json",
       "file_type": "code",
       "source_file": "apps/mobile/.vscode/settings.json",
       "source_location": "L1",
-      "id": "apps_mobile_vscode_settings_json",
-      "community": 24,
-      "norm_label": "settings.json"
+      "community": 29,
+      "norm_label": "settings.json",
+      "id": "apps_mobile_vscode_settings_json"
     },
     {
       "label": "editor.codeActionsOnSave",
       "file_type": "code",
       "source_file": "apps/mobile/.vscode/settings.json",
       "source_location": "L2",
-      "id": "vscode_settings_editor_codeactionsonsave",
-      "community": 24,
-      "norm_label": "editor.codeactionsonsave"
+      "community": 29,
+      "norm_label": "editor.codeactionsonsave",
+      "id": "vscode_settings_editor_codeactionsonsave"
     },
     {
       "label": "source.fixAll",
       "file_type": "code",
       "source_file": "apps/mobile/.vscode/settings.json",
       "source_location": "L3",
-      "id": "vscode_settings_editor_codeactionsonsave_source_fixall",
-      "community": 24,
-      "norm_label": "source.fixall"
+      "community": 29,
+      "norm_label": "source.fixall",
+      "id": "vscode_settings_editor_codeactionsonsave_source_fixall"
     },
     {
       "label": "source.organizeImports",
       "file_type": "code",
       "source_file": "apps/mobile/.vscode/settings.json",
       "source_location": "L4",
-      "id": "vscode_settings_editor_codeactionsonsave_source_organizeimports",
-      "community": 24,
-      "norm_label": "source.organizeimports"
+      "community": 29,
+      "norm_label": "source.organizeimports",
+      "id": "vscode_settings_editor_codeactionsonsave_source_organizeimports"
     },
     {
       "label": "source.sortMembers",
       "file_type": "code",
       "source_file": "apps/mobile/.vscode/settings.json",
       "source_location": "L5",
-      "id": "vscode_settings_editor_codeactionsonsave_source_sortmembers",
-      "community": 24,
-      "norm_label": "source.sortmembers"
+      "community": 29,
+      "norm_label": "source.sortmembers",
+      "id": "vscode_settings_editor_codeactionsonsave_source_sortmembers"
     },
     {
       "label": "api.ts",
       "file_type": "code",
       "source_file": "apps/mobile/api/api.ts",
       "source_location": "L1",
-      "id": "apps_mobile_api_api_ts",
       "community": 0,
-      "norm_label": "api.ts"
+      "norm_label": "api.ts",
+      "id": "apps_mobile_api_api_ts"
     },
     {
       "label": "api",
       "file_type": "code",
       "source_file": "apps/mobile/api/api.ts",
       "source_location": "L6",
-      "id": "api_api_api",
       "community": 0,
-      "norm_label": "api"
+      "norm_label": "api",
+      "id": "api_api_api"
     },
     {
       "label": "location.ts",
       "file_type": "code",
       "source_file": "apps/mobile/api/location.ts",
       "source_location": "L1",
-      "id": "apps_mobile_api_location_ts",
-      "community": 5,
-      "norm_label": "location.ts"
+      "community": 7,
+      "norm_label": "location.ts",
+      "id": "apps_mobile_api_location_ts"
     },
     {
       "label": "LocationData",
       "file_type": "code",
       "source_file": "apps/mobile/api/location.ts",
       "source_location": "L3",
-      "id": "api_location_locationdata",
-      "community": 5,
-      "norm_label": "locationdata"
+      "community": 7,
+      "norm_label": "locationdata",
+      "id": "api_location_locationdata"
     },
     {
       "label": "saveLocation()",
       "file_type": "code",
       "source_file": "apps/mobile/api/location.ts",
       "source_location": "L14",
-      "id": "api_location_savelocation",
-      "community": 5,
-      "norm_label": "savelocation()"
+      "community": 7,
+      "norm_label": "savelocation()",
+      "id": "api_location_savelocation"
     },
     {
       "label": "scans.ts",
       "file_type": "code",
       "source_file": "apps/mobile/api/scans.ts",
       "source_location": "L1",
-      "id": "apps_mobile_api_scans_ts",
-      "community": 17,
-      "norm_label": "scans.ts"
+      "community": 21,
+      "norm_label": "scans.ts",
+      "id": "apps_mobile_api_scans_ts"
     },
     {
       "label": "uploadScan()",
       "file_type": "code",
       "source_file": "apps/mobile/api/scans.ts",
       "source_location": "L5",
-      "id": "api_scans_uploadscan",
-      "community": 17,
-      "norm_label": "uploadscan()"
+      "community": 21,
+      "norm_label": "uploadscan()",
+      "id": "api_scans_uploadscan"
     },
     {
       "label": "_layout.tsx",
       "file_type": "code",
       "source_file": "apps/mobile/app/_layout.tsx",
       "source_location": "L1",
-      "id": "apps_mobile_app_layout_tsx",
-      "community": 5,
-      "norm_label": "_layout.tsx"
+      "community": 7,
+      "norm_label": "_layout.tsx",
+      "id": "apps_mobile_app_layout_tsx"
     },
     {
       "label": "unstable_settings",
       "file_type": "code",
       "source_file": "apps/mobile/app/_layout.tsx",
       "source_location": "L12",
-      "id": "app_layout_unstable_settings",
-      "community": 5,
-      "norm_label": "unstable_settings"
+      "community": 7,
+      "norm_label": "unstable_settings",
+      "id": "app_layout_unstable_settings"
     },
     {
       "label": "InitialLayout()",
       "file_type": "code",
       "source_file": "apps/mobile/app/_layout.tsx",
       "source_location": "L16",
-      "id": "app_layout_initiallayout",
-      "community": 5,
-      "norm_label": "initiallayout()"
+      "community": 7,
+      "norm_label": "initiallayout()",
+      "id": "app_layout_initiallayout"
     },
     {
       "label": "RootLayout()",
       "file_type": "code",
       "source_file": "apps/mobile/app/_layout.tsx",
       "source_location": "L55",
-      "id": "app_layout_rootlayout",
-      "community": 5,
-      "norm_label": "rootlayout()"
+      "community": 7,
+      "norm_label": "rootlayout()",
+      "id": "app_layout_rootlayout"
     },
     {
       "label": "login.tsx",
       "file_type": "code",
       "source_file": "apps/mobile/app/(auth)/login.tsx",
       "source_location": "L1",
-      "id": "apps_mobile_app_auth_login_tsx",
       "community": 0,
-      "norm_label": "login.tsx"
+      "norm_label": "login.tsx",
+      "id": "apps_mobile_app_auth_login_tsx"
     },
     {
       "label": "loginSchema",
       "file_type": "code",
       "source_file": "apps/mobile/app/(auth)/login.tsx",
       "source_location": "L23",
-      "id": "auth_login_loginschema",
       "community": 0,
-      "norm_label": "loginschema"
+      "norm_label": "loginschema",
+      "id": "auth_login_loginschema"
     },
     {
       "label": "LoginForm",
       "file_type": "code",
       "source_file": "apps/mobile/app/(auth)/login.tsx",
       "source_location": "L28",
-      "id": "auth_login_loginform",
       "community": 0,
-      "norm_label": "loginform"
+      "norm_label": "loginform",
+      "id": "auth_login_loginform"
     },
     {
       "label": "LoginScreen()",
       "file_type": "code",
       "source_file": "apps/mobile/app/(auth)/login.tsx",
       "source_location": "L30",
-      "id": "auth_login_loginscreen",
       "community": 0,
-      "norm_label": "loginscreen()"
+      "norm_label": "loginscreen()",
+      "id": "auth_login_loginscreen"
     },
     {
       "label": "styles",
       "file_type": "code",
       "source_file": "apps/mobile/app/(auth)/login.tsx",
       "source_location": "L137",
-      "id": "auth_login_styles",
       "community": 0,
-      "norm_label": "styles"
+      "norm_label": "styles",
+      "id": "auth_login_styles"
     },
     {
       "label": "register.tsx",
       "file_type": "code",
       "source_file": "apps/mobile/app/(auth)/register.tsx",
       "source_location": "L1",
-      "id": "apps_mobile_app_auth_register_tsx",
       "community": 0,
-      "norm_label": "register.tsx"
+      "norm_label": "register.tsx",
+      "id": "apps_mobile_app_auth_register_tsx"
     },
     {
       "label": "registerSchema",
       "file_type": "code",
       "source_file": "apps/mobile/app/(auth)/register.tsx",
       "source_location": "L22",
-      "id": "auth_register_registerschema",
       "community": 0,
-      "norm_label": "registerschema"
+      "norm_label": "registerschema",
+      "id": "auth_register_registerschema"
     },
     {
       "label": "RegisterForm",
       "file_type": "code",
       "source_file": "apps/mobile/app/(auth)/register.tsx",
       "source_location": "L30",
-      "id": "auth_register_registerform",
       "community": 0,
-      "norm_label": "registerform"
+      "norm_label": "registerform",
+      "id": "auth_register_registerform"
     },
     {
       "label": "ROLES",
       "file_type": "code",
       "source_file": "apps/mobile/app/(auth)/register.tsx",
       "source_location": "L32",
-      "id": "auth_register_roles",
       "community": 0,
-      "norm_label": "roles"
+      "norm_label": "roles",
+      "id": "auth_register_roles"
     },
     {
       "label": "RegisterScreen()",
       "file_type": "code",
       "source_file": "apps/mobile/app/(auth)/register.tsx",
       "source_location": "L37",
-      "id": "auth_register_registerscreen",
       "community": 0,
-      "norm_label": "registerscreen()"
+      "norm_label": "registerscreen()",
+      "id": "auth_register_registerscreen"
     },
     {
       "label": "styles",
       "file_type": "code",
       "source_file": "apps/mobile/app/(auth)/register.tsx",
       "source_location": "L193",
-      "id": "auth_register_styles",
       "community": 0,
-      "norm_label": "styles"
+      "norm_label": "styles",
+      "id": "auth_register_styles"
     },
     {
       "label": "_layout.tsx",
       "file_type": "code",
       "source_file": "apps/mobile/app/(auth)/_layout.tsx",
       "source_location": "L1",
-      "id": "apps_mobile_app_auth_layout_tsx",
-      "community": 29,
-      "norm_label": "_layout.tsx"
+      "community": 35,
+      "norm_label": "_layout.tsx",
+      "id": "apps_mobile_app_auth_layout_tsx"
     },
     {
       "label": "AuthLayout()",
       "file_type": "code",
       "source_file": "apps/mobile/app/(auth)/_layout.tsx",
       "source_location": "L3",
-      "id": "auth_layout_authlayout",
-      "community": 29,
-      "norm_label": "authlayout()"
+      "community": 35,
+      "norm_label": "authlayout()",
+      "id": "auth_layout_authlayout"
     },
     {
       "label": "children.tsx",
       "file_type": "code",
       "source_file": "apps/mobile/app/(tabs)/children.tsx",
       "source_location": "L1",
-      "id": "apps_mobile_app_tabs_children_tsx",
       "community": 0,
-      "norm_label": "children.tsx"
+      "norm_label": "children.tsx",
+      "id": "apps_mobile_app_tabs_children_tsx"
     },
     {
       "label": "childSchema",
       "file_type": "code",
       "source_file": "apps/mobile/app/(tabs)/children.tsx",
       "source_location": "L28",
-      "id": "tabs_children_childschema",
       "community": 0,
-      "norm_label": "childschema"
+      "norm_label": "childschema",
+      "id": "tabs_children_childschema"
     },
     {
       "label": "ChildForm",
       "file_type": "code",
       "source_file": "apps/mobile/app/(tabs)/children.tsx",
       "source_location": "L34",
-      "id": "tabs_children_childform",
       "community": 0,
-      "norm_label": "childform"
+      "norm_label": "childform",
+      "id": "tabs_children_childform"
     },
     {
       "label": "ChildrenScreen()",
       "file_type": "code",
       "source_file": "apps/mobile/app/(tabs)/children.tsx",
       "source_location": "L36",
-      "id": "tabs_children_childrenscreen",
       "community": 0,
-      "norm_label": "childrenscreen()"
+      "norm_label": "childrenscreen()",
+      "id": "tabs_children_childrenscreen"
     },
     {
       "label": "styles",
       "file_type": "code",
       "source_file": "apps/mobile/app/(tabs)/children.tsx",
       "source_location": "L329",
-      "id": "tabs_children_styles",
       "community": 0,
-      "norm_label": "styles"
+      "norm_label": "styles",
+      "id": "tabs_children_styles"
     },
     {
       "label": "index.tsx",
       "file_type": "code",
       "source_file": "apps/mobile/app/(tabs)/index.tsx",
       "source_location": "L1",
-      "id": "apps_mobile_app_tabs_index_tsx",
       "community": 0,
-      "norm_label": "index.tsx"
+      "norm_label": "index.tsx",
+      "id": "apps_mobile_app_tabs_index_tsx"
     },
     {
       "label": "DashboardScreen()",
       "file_type": "code",
       "source_file": "apps/mobile/app/(tabs)/index.tsx",
       "source_location": "L17",
-      "id": "tabs_index_dashboardscreen",
       "community": 0,
-      "norm_label": "dashboardscreen()"
+      "norm_label": "dashboardscreen()",
+      "id": "tabs_index_dashboardscreen"
     },
     {
       "label": "ActionItem()",
       "file_type": "code",
       "source_file": "apps/mobile/app/(tabs)/index.tsx",
       "source_location": "L112",
-      "id": "tabs_index_actionitem",
       "community": 0,
-      "norm_label": "actionitem()"
+      "norm_label": "actionitem()",
+      "id": "tabs_index_actionitem"
     },
     {
       "label": "styles",
       "file_type": "code",
       "source_file": "apps/mobile/app/(tabs)/index.tsx",
       "source_location": "L126",
-      "id": "tabs_index_styles",
       "community": 0,
-      "norm_label": "styles"
+      "norm_label": "styles",
+      "id": "tabs_index_styles"
     },
     {
       "label": "profile.tsx",
       "file_type": "code",
       "source_file": "apps/mobile/app/(tabs)/profile.tsx",
       "source_location": "L1",
-      "id": "apps_mobile_app_tabs_profile_tsx",
       "community": 0,
-      "norm_label": "profile.tsx"
+      "norm_label": "profile.tsx",
+      "id": "apps_mobile_app_tabs_profile_tsx"
     },
     {
       "label": "changePasswordSchema",
       "file_type": "code",
       "source_file": "apps/mobile/app/(tabs)/profile.tsx",
       "source_location": "L25",
-      "id": "tabs_profile_changepasswordschema",
       "community": 0,
-      "norm_label": "changepasswordschema"
+      "norm_label": "changepasswordschema",
+      "id": "tabs_profile_changepasswordschema"
     },
     {
       "label": "editProfileSchema",
       "file_type": "code",
       "source_file": "apps/mobile/app/(tabs)/profile.tsx",
       "source_location": "L33",
-      "id": "tabs_profile_editprofileschema",
       "community": 0,
-      "norm_label": "editprofileschema"
+      "norm_label": "editprofileschema",
+      "id": "tabs_profile_editprofileschema"
     },
     {
       "label": "ChangePasswordForm",
       "file_type": "code",
       "source_file": "apps/mobile/app/(tabs)/profile.tsx",
       "source_location": "L40",
-      "id": "tabs_profile_changepasswordform",
       "community": 0,
-      "norm_label": "changepasswordform"
+      "norm_label": "changepasswordform",
+      "id": "tabs_profile_changepasswordform"
     },
     {
       "label": "EditProfileForm",
       "file_type": "code",
       "source_file": "apps/mobile/app/(tabs)/profile.tsx",
       "source_location": "L41",
-      "id": "tabs_profile_editprofileform",
       "community": 0,
-      "norm_label": "editprofileform"
+      "norm_label": "editprofileform",
+      "id": "tabs_profile_editprofileform"
     },
     {
       "label": "ProfileScreen()",
       "file_type": "code",
       "source_file": "apps/mobile/app/(tabs)/profile.tsx",
       "source_location": "L43",
-      "id": "tabs_profile_profilescreen",
       "community": 0,
-      "norm_label": "profilescreen()"
+      "norm_label": "profilescreen()",
+      "id": "tabs_profile_profilescreen"
     },
     {
       "label": "InfoRow()",
       "file_type": "code",
       "source_file": "apps/mobile/app/(tabs)/profile.tsx",
       "source_location": "L331",
-      "id": "tabs_profile_inforow",
       "community": 0,
-      "norm_label": "inforow()"
+      "norm_label": "inforow()",
+      "id": "tabs_profile_inforow"
     },
     {
       "label": "ActionRow()",
       "file_type": "code",
       "source_file": "apps/mobile/app/(tabs)/profile.tsx",
       "source_location": "L345",
-      "id": "tabs_profile_actionrow",
       "community": 0,
-      "norm_label": "actionrow()"
+      "norm_label": "actionrow()",
+      "id": "tabs_profile_actionrow"
     },
     {
       "label": "styles",
       "file_type": "code",
       "source_file": "apps/mobile/app/(tabs)/profile.tsx",
       "source_location": "L357",
-      "id": "tabs_profile_styles",
       "community": 0,
-      "norm_label": "styles"
+      "norm_label": "styles",
+      "id": "tabs_profile_styles"
     },
     {
       "label": "scan.tsx",
       "file_type": "code",
       "source_file": "apps/mobile/app/(tabs)/scan.tsx",
       "source_location": "L1",
-      "id": "apps_mobile_app_tabs_scan_tsx",
       "community": 0,
-      "norm_label": "scan.tsx"
+      "norm_label": "scan.tsx",
+      "id": "apps_mobile_app_tabs_scan_tsx"
     },
     {
       "label": "SCAN_STATUS_LABELS",
       "file_type": "code",
       "source_file": "apps/mobile/app/(tabs)/scan.tsx",
       "source_location": "L28",
-      "id": "tabs_scan_scan_status_labels",
       "community": 0,
-      "norm_label": "scan_status_labels"
+      "norm_label": "scan_status_labels",
+      "id": "tabs_scan_scan_status_labels"
     },
     {
       "label": "ScanScreen()",
       "file_type": "code",
       "source_file": "apps/mobile/app/(tabs)/scan.tsx",
       "source_location": "L30",
-      "id": "tabs_scan_scanscreen",
       "community": 0,
-      "norm_label": "scanscreen()"
+      "norm_label": "scanscreen()",
+      "id": "tabs_scan_scanscreen"
     },
     {
       "label": "styles",
       "file_type": "code",
       "source_file": "apps/mobile/app/(tabs)/scan.tsx",
       "source_location": "L298",
-      "id": "tabs_scan_styles",
       "community": 0,
-      "norm_label": "styles"
+      "norm_label": "styles",
+      "id": "tabs_scan_styles"
     },
     {
       "label": "_layout.tsx",
       "file_type": "code",
       "source_file": "apps/mobile/app/(tabs)/_layout.tsx",
       "source_location": "L1",
-      "id": "apps_mobile_app_tabs_layout_tsx",
-      "community": 12,
-      "norm_label": "_layout.tsx"
+      "community": 13,
+      "norm_label": "_layout.tsx",
+      "id": "apps_mobile_app_tabs_layout_tsx"
     },
     {
       "label": "TabLayout()",
       "file_type": "code",
       "source_file": "apps/mobile/app/(tabs)/_layout.tsx",
       "source_location": "L9",
-      "id": "tabs_layout_tablayout",
-      "community": 12,
-      "norm_label": "tablayout()"
+      "community": 13,
+      "norm_label": "tablayout()",
+      "id": "tabs_layout_tablayout"
     },
     {
       "label": "Button.tsx",
       "file_type": "code",
       "source_file": "apps/mobile/components/ui/Button.tsx",
       "source_location": "L1",
-      "id": "apps_mobile_components_ui_button_tsx",
       "community": 0,
-      "norm_label": "button.tsx"
+      "norm_label": "button.tsx",
+      "id": "apps_mobile_components_ui_button_tsx"
     },
     {
       "label": "ButtonProps",
       "file_type": "code",
       "source_file": "apps/mobile/components/ui/Button.tsx",
       "source_location": "L13",
-      "id": "ui_button_buttonprops",
       "community": 0,
-      "norm_label": "buttonprops"
+      "norm_label": "buttonprops",
+      "id": "ui_button_buttonprops"
     },
     {
       "label": "Button()",
       "file_type": "code",
       "source_file": "apps/mobile/components/ui/Button.tsx",
       "source_location": "L23",
-      "id": "ui_button_button",
       "community": 0,
-      "norm_label": "button()"
+      "norm_label": "button()",
+      "id": "ui_button_button"
     },
     {
       "label": "styles",
       "file_type": "code",
       "source_file": "apps/mobile/components/ui/Button.tsx",
       "source_location": "L83",
-      "id": "ui_button_styles",
       "community": 0,
-      "norm_label": "styles"
+      "norm_label": "styles",
+      "id": "ui_button_styles"
     },
     {
       "label": "Input.tsx",
       "file_type": "code",
       "source_file": "apps/mobile/components/ui/Input.tsx",
       "source_location": "L1",
-      "id": "apps_mobile_components_ui_input_tsx",
       "community": 0,
-      "norm_label": "input.tsx"
+      "norm_label": "input.tsx",
+      "id": "apps_mobile_components_ui_input_tsx"
     },
     {
       "label": "InputProps",
       "file_type": "code",
       "source_file": "apps/mobile/components/ui/Input.tsx",
       "source_location": "L15",
-      "id": "ui_input_inputprops",
       "community": 0,
-      "norm_label": "inputprops"
+      "norm_label": "inputprops",
+      "id": "ui_input_inputprops"
     },
     {
       "label": "Input()",
       "file_type": "code",
       "source_file": "apps/mobile/components/ui/Input.tsx",
       "source_location": "L22",
-      "id": "ui_input_input",
       "community": 0,
-      "norm_label": "input()"
+      "norm_label": "input()",
+      "id": "ui_input_input"
     },
     {
       "label": "styles",
       "file_type": "code",
       "source_file": "apps/mobile/components/ui/Input.tsx",
       "source_location": "L70",
-      "id": "ui_input_styles",
       "community": 0,
-      "norm_label": "styles"
+      "norm_label": "styles",
+      "id": "ui_input_styles"
     },
     {
       "label": "Config.ts",
       "file_type": "code",
       "source_file": "apps/mobile/constants/Config.ts",
       "source_location": "L1",
-      "id": "apps_mobile_constants_config_ts",
-      "community": 5,
-      "norm_label": "config.ts"
+      "community": 7,
+      "norm_label": "config.ts",
+      "id": "apps_mobile_constants_config_ts"
     },
     {
       "label": "Config",
       "file_type": "code",
       "source_file": "apps/mobile/constants/Config.ts",
       "source_location": "L6",
-      "id": "constants_config_config",
-      "community": 5,
-      "norm_label": "config"
+      "community": 7,
+      "norm_label": "config",
+      "id": "constants_config_config"
     },
     {
       "label": "theme.ts",
       "file_type": "code",
       "source_file": "apps/mobile/constants/theme.ts",
       "source_location": "L1",
-      "id": "apps_mobile_constants_theme_ts",
       "community": 0,
-      "norm_label": "theme.ts"
+      "norm_label": "theme.ts",
+      "id": "apps_mobile_constants_theme_ts"
     },
     {
       "label": "Colors",
       "file_type": "code",
       "source_file": "apps/mobile/constants/theme.ts",
       "source_location": "L9",
-      "id": "constants_theme_colors",
       "community": 0,
-      "norm_label": "colors"
+      "norm_label": "colors",
+      "id": "constants_theme_colors"
     },
     {
       "label": "Fonts",
       "file_type": "code",
       "source_file": "apps/mobile/constants/theme.ts",
       "source_location": "L46",
-      "id": "constants_theme_fonts",
       "community": 0,
-      "norm_label": "fonts"
+      "norm_label": "fonts",
+      "id": "constants_theme_fonts"
     },
     {
       "label": "translations.ts",
       "file_type": "code",
       "source_file": "apps/mobile/constants/translations.ts",
       "source_location": "L1",
-      "id": "apps_mobile_constants_translations_ts",
-      "community": 5,
-      "norm_label": "translations.ts"
+      "community": 7,
+      "norm_label": "translations.ts",
+      "id": "apps_mobile_constants_translations_ts"
     },
     {
       "label": "translations",
       "file_type": "code",
       "source_file": "apps/mobile/constants/translations.ts",
       "source_location": "L1",
-      "id": "constants_translations_translations",
-      "community": 5,
-      "norm_label": "translations"
+      "community": 7,
+      "norm_label": "translations",
+      "id": "constants_translations_translations"
     },
     {
       "label": "Language",
       "file_type": "code",
       "source_file": "apps/mobile/constants/translations.ts",
       "source_location": "L52",
-      "id": "constants_translations_language",
-      "community": 5,
-      "norm_label": "language"
+      "community": 7,
+      "norm_label": "language",
+      "id": "constants_translations_language"
     },
     {
       "label": "TranslationKeys",
       "file_type": "code",
       "source_file": "apps/mobile/constants/translations.ts",
       "source_location": "L53",
-      "id": "constants_translations_translationkeys",
-      "community": 5,
-      "norm_label": "translationkeys"
+      "community": 7,
+      "norm_label": "translationkeys",
+      "id": "constants_translations_translationkeys"
     },
     {
       "label": "LanguageContext.tsx",
       "file_type": "code",
       "source_file": "apps/mobile/context/LanguageContext.tsx",
       "source_location": "L1",
-      "id": "apps_mobile_context_languagecontext_tsx",
-      "community": 5,
-      "norm_label": "languagecontext.tsx"
+      "community": 7,
+      "norm_label": "languagecontext.tsx",
+      "id": "apps_mobile_context_languagecontext_tsx"
     },
     {
       "label": "LanguageContextType",
       "file_type": "code",
       "source_file": "apps/mobile/context/LanguageContext.tsx",
       "source_location": "L4",
-      "id": "context_languagecontext_languagecontexttype",
-      "community": 5,
-      "norm_label": "languagecontexttype"
+      "community": 7,
+      "norm_label": "languagecontexttype",
+      "id": "context_languagecontext_languagecontexttype"
     },
     {
       "label": "LanguageContext",
       "file_type": "code",
       "source_file": "apps/mobile/context/LanguageContext.tsx",
       "source_location": "L10",
-      "id": "context_languagecontext_languagecontext",
-      "community": 5,
-      "norm_label": "languagecontext"
+      "community": 7,
+      "norm_label": "languagecontext",
+      "id": "context_languagecontext_languagecontext"
     },
     {
       "label": "LanguageProvider()",
       "file_type": "code",
       "source_file": "apps/mobile/context/LanguageContext.tsx",
       "source_location": "L12",
-      "id": "context_languagecontext_languageprovider",
-      "community": 5,
-      "norm_label": "languageprovider()"
+      "community": 7,
+      "norm_label": "languageprovider()",
+      "id": "context_languagecontext_languageprovider"
     },
     {
       "label": "useLanguage()",
       "file_type": "code",
       "source_file": "apps/mobile/context/LanguageContext.tsx",
       "source_location": "L26",
-      "id": "context_languagecontext_uselanguage",
-      "community": 5,
-      "norm_label": "uselanguage()"
+      "community": 7,
+      "norm_label": "uselanguage()",
+      "id": "context_languagecontext_uselanguage"
     },
     {
       "label": "useLocationTracking.ts",
       "file_type": "code",
       "source_file": "apps/mobile/hooks/useLocationTracking.ts",
       "source_location": "L1",
-      "id": "apps_mobile_hooks_uselocationtracking_ts",
-      "community": 5,
-      "norm_label": "uselocationtracking.ts"
+      "community": 7,
+      "norm_label": "uselocationtracking.ts",
+      "id": "apps_mobile_hooks_uselocationtracking_ts"
     },
     {
       "label": "useLocationTracking()",
       "file_type": "code",
       "source_file": "apps/mobile/hooks/useLocationTracking.ts",
       "source_location": "L7",
-      "id": "hooks_uselocationtracking_uselocationtracking",
-      "community": 5,
-      "norm_label": "uselocationtracking()"
+      "community": 7,
+      "norm_label": "uselocationtracking()",
+      "id": "hooks_uselocationtracking_uselocationtracking"
     },
     {
       "label": "locationService.ts",
       "file_type": "code",
       "source_file": "apps/mobile/services/locationService.ts",
       "source_location": "L1",
-      "id": "apps_mobile_services_locationservice_ts",
-      "community": 5,
-      "norm_label": "locationservice.ts"
+      "community": 7,
+      "norm_label": "locationservice.ts",
+      "id": "apps_mobile_services_locationservice_ts"
     },
     {
       "label": "{ locations }",
       "file_type": "code",
       "source_file": "apps/mobile/services/locationService.ts",
       "source_location": "L20",
-      "id": "services_locationservice_locations",
-      "community": 5,
-      "norm_label": "{ locations }"
+      "community": 7,
+      "norm_label": "{ locations }",
+      "id": "services_locationservice_locations"
     },
     {
       "label": "now",
       "file_type": "code",
       "source_file": "apps/mobile/services/locationService.ts",
       "source_location": "L23",
-      "id": "services_locationservice_now",
-      "community": 5,
-      "norm_label": "now"
+      "community": 7,
+      "norm_label": "now",
+      "id": "services_locationservice_now"
     },
     {
       "label": "remaining",
       "file_type": "code",
       "source_file": "apps/mobile/services/locationService.ts",
       "source_location": "L50",
-      "id": "services_locationservice_remaining",
-      "community": 5,
-      "norm_label": "remaining"
+      "community": 7,
+      "norm_label": "remaining",
+      "id": "services_locationservice_remaining"
     },
     {
       "label": "authStore.ts",
       "file_type": "code",
       "source_file": "apps/mobile/store/authStore.ts",
       "source_location": "L1",
-      "id": "apps_mobile_store_authstore_ts",
       "community": 0,
-      "norm_label": "authstore.ts"
+      "norm_label": "authstore.ts",
+      "id": "apps_mobile_store_authstore_ts"
     },
     {
       "label": "useAuthStore",
       "file_type": "code",
       "source_file": "apps/mobile/store/authStore.ts",
       "source_location": "L8",
-      "id": "store_authstore_useauthstore",
       "community": 0,
-      "norm_label": "useauthstore"
+      "norm_label": "useauthstore",
+      "id": "store_authstore_useauthstore"
     },
     {
       "label": "saveAuthData()",
       "file_type": "code",
       "source_file": "apps/mobile/store/authStore.ts",
       "source_location": "L51",
-      "id": "store_authstore_saveauthdata",
       "community": 0,
-      "norm_label": "saveauthdata()"
+      "norm_label": "saveauthdata()",
+      "id": "store_authstore_saveauthdata"
     },
     {
       "label": "auth.ts",
       "file_type": "code",
       "source_file": "apps/mobile/types/auth.ts",
       "source_location": "L1",
-      "id": "apps_mobile_types_auth_ts",
       "community": 0,
-      "norm_label": "auth.ts"
+      "norm_label": "auth.ts",
+      "id": "apps_mobile_types_auth_ts"
     },
     {
       "label": "User",
       "file_type": "code",
       "source_file": "apps/mobile/types/auth.ts",
       "source_location": "L1",
-      "id": "types_auth_user",
       "community": 0,
-      "norm_label": "user"
+      "norm_label": "user",
+      "id": "types_auth_user"
     },
     {
       "label": "AuthState",
       "file_type": "code",
       "source_file": "apps/mobile/types/auth.ts",
       "source_location": "L9",
-      "id": "types_auth_authstate",
       "community": 0,
-      "norm_label": "authstate"
+      "norm_label": "authstate",
+      "id": "types_auth_authstate"
     },
     {
       "label": "child.ts",
       "file_type": "code",
       "source_file": "apps/mobile/types/child.ts",
       "source_location": "L1",
-      "id": "apps_mobile_types_child_ts",
       "community": 0,
-      "norm_label": "child.ts"
+      "norm_label": "child.ts",
+      "id": "apps_mobile_types_child_ts"
     },
     {
       "label": "Child",
       "file_type": "code",
       "source_file": "apps/mobile/types/child.ts",
       "source_location": "L1",
-      "id": "types_child_child",
       "community": 0,
-      "norm_label": "child"
+      "norm_label": "child",
+      "id": "types_child_child"
     },
     {
       "label": "scan.ts",
       "file_type": "code",
       "source_file": "apps/mobile/types/scan.ts",
       "source_location": "L1",
-      "id": "apps_mobile_types_scan_ts",
-      "community": 17,
-      "norm_label": "scan.ts"
+      "community": 21,
+      "norm_label": "scan.ts",
+      "id": "apps_mobile_types_scan_ts"
     },
     {
       "label": "ScanPhoto",
       "file_type": "code",
       "source_file": "apps/mobile/types/scan.ts",
       "source_location": "L1",
-      "id": "types_scan_scanphoto",
-      "community": 17,
-      "norm_label": "scanphoto"
+      "community": 21,
+      "norm_label": "scanphoto",
+      "id": "types_scan_scanphoto"
     },
     {
       "label": "ScanStatus",
       "file_type": "code",
       "source_file": "apps/mobile/types/scan.ts",
       "source_location": "L9",
-      "id": "types_scan_scanstatus",
-      "community": 17,
-      "norm_label": "scanstatus"
+      "community": 21,
+      "norm_label": "scanstatus",
+      "id": "types_scan_scanstatus"
     },
     {
       "label": "Scan",
       "file_type": "code",
       "source_file": "apps/mobile/types/scan.ts",
       "source_location": "L11",
-      "id": "types_scan_scan",
-      "community": 17,
-      "norm_label": "scan"
+      "community": 21,
+      "norm_label": "scan",
+      "id": "types_scan_scan"
     },
     {
       "label": "UploadScanResponse",
       "file_type": "code",
       "source_file": "apps/mobile/types/scan.ts",
       "source_location": "L24",
-      "id": "types_scan_uploadscanresponse",
-      "community": 17,
-      "norm_label": "uploadscanresponse"
+      "community": 21,
+      "norm_label": "uploadscanresponse",
+      "id": "types_scan_uploadscanresponse"
     },
     {
       "label": "CLAUDE.md",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L1",
-      "id": "claude_md",
-      "community": 38,
-      "norm_label": "claude.md"
+      "community": 17,
+      "norm_label": "claude.md",
+      "id": "claude_md"
     },
     {
       "label": "MobroAI Monorepo \u2014 Claude Code Guide",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L1",
-      "id": "mobroai_claude_mobroai_monorepo_claude_code_guide",
-      "community": 38,
-      "norm_label": "mobroai monorepo \u2014 claude code guide"
+      "community": 17,
+      "norm_label": "mobroai monorepo \u2014 claude code guide",
+      "id": "mobroai_claude_mobroai_monorepo_claude_code_guide"
     },
     {
       "label": "Layout",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L3",
-      "id": "mobroai_claude_layout",
-      "community": 38,
-      "norm_label": "layout"
+      "community": 17,
+      "norm_label": "layout",
+      "id": "mobroai_claude_layout"
     },
     {
       "label": "code:block1 (apps/mobile/   React Native (Expo) \u2014 see apps/mobile/CLAUDE.)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L5",
-      "id": "mobroai_claude_codeblock_1",
-      "community": 38,
-      "norm_label": "code:block1 (apps/mobile/   react native (expo) \u2014 see apps/mobile/claude.)"
+      "community": 17,
+      "norm_label": "code:block1 (apps/mobile/   react native (expo) \u2014 see apps/mobile/claude.)",
+      "id": "mobroai_claude_codeblock_1"
     },
     {
       "label": "Working in each app",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L12",
-      "id": "mobroai_claude_working_in_each_app",
-      "community": 38,
-      "norm_label": "working in each app"
+      "community": 17,
+      "norm_label": "working in each app",
+      "id": "mobroai_claude_working_in_each_app"
     },
     {
       "label": "code:sh (# Mobile)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L16",
-      "id": "mobroai_claude_codeblock_2",
-      "community": 38,
-      "norm_label": "code:sh (# mobile)"
+      "community": 17,
+      "norm_label": "code:sh (# mobile)",
+      "id": "mobroai_claude_codeblock_2"
     },
     {
       "label": "Key decisions",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L25",
-      "id": "mobroai_claude_key_decisions",
-      "community": 38,
-      "norm_label": "key decisions"
+      "community": 17,
+      "norm_label": "key decisions",
+      "id": "mobroai_claude_key_decisions"
     },
     {
       "label": "Refer to app-level guides",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L32",
-      "id": "mobroai_claude_refer_to_app_level_guides",
-      "community": 38,
-      "norm_label": "refer to app-level guides"
+      "community": 17,
+      "norm_label": "refer to app-level guides",
+      "id": "mobroai_claude_refer_to_app_level_guides"
     },
     {
       "label": "graphify",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L37",
-      "id": "mobroai_claude_graphify",
-      "community": 38,
-      "norm_label": "graphify"
+      "community": 17,
+      "norm_label": "graphify",
+      "id": "mobroai_claude_graphify"
     },
     {
       "label": "README.md",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L1",
-      "id": "readme_md",
-      "community": 37,
-      "norm_label": "readme.md"
+      "community": 6,
+      "norm_label": "readme.md",
+      "id": "readme_md"
     },
     {
       "label": "MobroAI",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L1",
-      "id": "mobroai_readme_mobroai",
-      "community": 37,
-      "norm_label": "mobroai"
+      "community": 6,
+      "norm_label": "mobroai",
+      "id": "mobroai_readme_mobroai"
     },
     {
       "label": "Stack",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L5",
-      "id": "mobroai_readme_stack",
-      "community": 37,
-      "norm_label": "stack"
+      "community": 6,
+      "norm_label": "stack",
+      "id": "mobroai_readme_stack"
     },
     {
       "label": "Repo Layout",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L13",
-      "id": "mobroai_readme_repo_layout",
-      "community": 37,
-      "norm_label": "repo layout"
+      "community": 6,
+      "norm_label": "repo layout",
+      "id": "mobroai_readme_repo_layout"
     },
     {
       "label": "code:block1 (MobroAI/)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L15",
-      "id": "mobroai_readme_codeblock_1",
-      "community": 37,
-      "norm_label": "code:block1 (mobroai/)"
+      "community": 6,
+      "norm_label": "code:block1 (mobroai/)",
+      "id": "mobroai_readme_codeblock_1"
     },
     {
       "label": "Architecture",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L21",
-      "id": "mobroai_readme_architecture",
-      "community": 37,
-      "norm_label": "architecture"
+      "community": 6,
+      "norm_label": "architecture",
+      "id": "mobroai_readme_architecture"
     },
     {
       "label": "code:block2 (\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510      HTTPS / JWT      \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L23",
-      "id": "mobroai_readme_codeblock_2",
-      "community": 37,
-      "norm_label": "code:block2 (\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510      https / jwt      \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500)"
+      "community": 6,
+      "norm_label": "code:block2 (\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510      https / jwt      \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500)",
+      "id": "mobroai_readme_codeblock_2"
     },
     {
       "label": "code:block3 (Program.cs  \u2192  Endpoints/*.cs (MapGroup)  \u2192  AppDbContext (E)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L34",
-      "id": "mobroai_readme_codeblock_3",
-      "community": 37,
-      "norm_label": "code:block3 (program.cs  \u2192  endpoints/*.cs (mapgroup)  \u2192  appdbcontext (e)"
+      "community": 6,
+      "norm_label": "code:block3 (program.cs  \u2192  endpoints/*.cs (mapgroup)  \u2192  appdbcontext (e)",
+      "id": "mobroai_readme_codeblock_3"
     },
     {
       "label": "Quick Start",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L40",
-      "id": "mobroai_readme_quick_start",
-      "community": 37,
-      "norm_label": "quick start"
+      "community": 6,
+      "norm_label": "quick start",
+      "id": "mobroai_readme_quick_start"
     },
     {
       "label": "1. API",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L42",
-      "id": "mobroai_readme_1_api",
-      "community": 37,
-      "norm_label": "1. api"
+      "community": 6,
+      "norm_label": "1. api",
+      "id": "mobroai_readme_1_api"
     },
     {
       "label": "code:json ({)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L46",
-      "id": "mobroai_readme_codeblock_4",
-      "community": 37,
-      "norm_label": "code:json ({)"
+      "community": 6,
+      "norm_label": "code:json ({)",
+      "id": "mobroai_readme_codeblock_4"
     },
     {
       "label": "code:sh (cd apps/api)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L59",
-      "id": "mobroai_readme_codeblock_5",
-      "community": 37,
-      "norm_label": "code:sh (cd apps/api)"
+      "community": 6,
+      "norm_label": "code:sh (cd apps/api)",
+      "id": "mobroai_readme_codeblock_5"
     },
     {
       "label": "2. Mobile",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L65",
-      "id": "mobroai_readme_2_mobile",
-      "community": 37,
-      "norm_label": "2. mobile"
+      "community": 6,
+      "norm_label": "2. mobile",
+      "id": "mobroai_readme_2_mobile"
     },
     {
       "label": "code:sh (cd apps/mobile)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L67",
-      "id": "mobroai_readme_codeblock_6",
-      "community": 37,
-      "norm_label": "code:sh (cd apps/mobile)"
+      "community": 6,
+      "norm_label": "code:sh (cd apps/mobile)",
+      "id": "mobroai_readme_codeblock_6"
     },
     {
       "label": "Database Schema",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L77",
-      "id": "mobroai_readme_database_schema",
-      "community": 37,
-      "norm_label": "database schema"
+      "community": 6,
+      "norm_label": "database schema",
+      "id": "mobroai_readme_database_schema"
     },
     {
       "label": "code:mermaid (erDiagram)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L79",
-      "id": "mobroai_readme_codeblock_7",
-      "community": 37,
-      "norm_label": "code:mermaid (erdiagram)"
+      "community": 6,
+      "norm_label": "code:mermaid (erdiagram)",
+      "id": "mobroai_readme_codeblock_7"
     },
     {
       "label": "API Reference",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L138",
-      "id": "mobroai_readme_api_reference",
-      "community": 37,
-      "norm_label": "api reference"
+      "community": 6,
+      "norm_label": "api reference",
+      "id": "mobroai_readme_api_reference"
     },
     {
       "label": "Auth \u2014 `/auth` (no token required)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L142",
-      "id": "mobroai_readme_auth_auth_no_token_required",
-      "community": 37,
-      "norm_label": "auth \u2014 `/auth` (no token required)"
+      "community": 6,
+      "norm_label": "auth \u2014 `/auth` (no token required)",
+      "id": "mobroai_readme_auth_auth_no_token_required"
     },
     {
       "label": "Users \u2014 `/users`",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L153",
-      "id": "mobroai_readme_users_users",
-      "community": 37,
-      "norm_label": "users \u2014 `/users`"
+      "community": 6,
+      "norm_label": "users \u2014 `/users`",
+      "id": "mobroai_readme_users_users"
     },
     {
       "label": "Children \u2014 `/children` (all require auth)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L164",
-      "id": "mobroai_readme_children_children_all_require_auth",
-      "community": 37,
-      "norm_label": "children \u2014 `/children` (all require auth)"
+      "community": 6,
+      "norm_label": "children \u2014 `/children` (all require auth)",
+      "id": "mobroai_readme_children_children_all_require_auth"
     },
     {
       "label": "Measles Scans \u2014 `/scans` (all require auth)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L175",
-      "id": "mobroai_readme_measles_scans_scans_all_require_auth",
-      "community": 37,
-      "norm_label": "measles scans \u2014 `/scans` (all require auth)"
+      "community": 6,
+      "norm_label": "measles scans \u2014 `/scans` (all require auth)",
+      "id": "mobroai_readme_measles_scans_scans_all_require_auth"
     },
     {
       "label": "code:js (const form = new FormData();)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L192",
-      "id": "mobroai_readme_codeblock_8",
-      "community": 37,
-      "norm_label": "code:js (const form = new formdata();)"
+      "community": 6,
+      "norm_label": "code:js (const form = new formdata();)",
+      "id": "mobroai_readme_codeblock_8"
     },
     {
       "label": "Location Logs \u2014 `/locations` (all require auth)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L206",
-      "id": "mobroai_readme_location_logs_locations_all_require_auth",
-      "community": 37,
-      "norm_label": "location logs \u2014 `/locations` (all require auth)"
+      "community": 6,
+      "norm_label": "location logs \u2014 `/locations` (all require auth)",
+      "id": "mobroai_readme_location_logs_locations_all_require_auth"
     },
     {
       "label": "Enums",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L218",
-      "id": "mobroai_readme_enums",
-      "community": 37,
-      "norm_label": "enums"
+      "community": 6,
+      "norm_label": "enums",
+      "id": "mobroai_readme_enums"
     },
     {
       "label": "Notes",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L228",
-      "id": "mobroai_readme_notes",
-      "community": 37,
-      "norm_label": "notes"
+      "community": 6,
+      "norm_label": "notes",
+      "id": "mobroai_readme_notes"
     },
     {
       "label": "CLAUDE.md",
       "file_type": "document",
       "source_file": "apps/api/CLAUDE.md",
       "source_location": "L1",
-      "id": "apps_api_claude_md",
-      "community": 10,
-      "norm_label": "claude.md"
+      "community": 3,
+      "norm_label": "claude.md",
+      "id": "apps_api_claude_md"
     },
     {
       "label": "CLAUDE.md",
       "file_type": "document",
       "source_file": "apps/api/CLAUDE.md",
       "source_location": "L1",
-      "id": "api_claude_claude_md",
-      "community": 10,
-      "norm_label": "claude.md"
+      "community": 3,
+      "norm_label": "claude.md",
+      "id": "api_claude_claude_md"
     },
     {
       "label": "Commands",
       "file_type": "document",
       "source_file": "apps/api/CLAUDE.md",
       "source_location": "L5",
-      "id": "api_claude_commands",
-      "community": 10,
-      "norm_label": "commands"
+      "community": 3,
+      "norm_label": "commands",
+      "id": "api_claude_commands"
     },
     {
       "label": "code:bash (dotnet run          # HTTP on port 5009)",
       "file_type": "document",
       "source_file": "apps/api/CLAUDE.md",
       "source_location": "L7",
-      "id": "api_claude_codeblock_1",
-      "community": 10,
-      "norm_label": "code:bash (dotnet run          # http on port 5009)"
+      "community": 3,
+      "norm_label": "code:bash (dotnet run          # http on port 5009)",
+      "id": "api_claude_codeblock_1"
     },
     {
       "label": "Architecture",
       "file_type": "document",
       "source_file": "apps/api/CLAUDE.md",
       "source_location": "L16",
-      "id": "api_claude_architecture",
-      "community": 10,
-      "norm_label": "architecture"
+      "community": 3,
+      "norm_label": "architecture",
+      "id": "api_claude_architecture"
     },
     {
       "label": "Auth",
       "file_type": "document",
       "source_file": "apps/api/CLAUDE.md",
       "source_location": "L32",
-      "id": "api_claude_auth",
-      "community": 10,
-      "norm_label": "auth"
+      "community": 3,
+      "norm_label": "auth",
+      "id": "api_claude_auth"
     },
     {
       "label": "Coding Conventions",
       "file_type": "document",
       "source_file": "apps/api/CLAUDE.md",
       "source_location": "L36",
-      "id": "api_claude_coding_conventions",
-      "community": 10,
-      "norm_label": "coding conventions"
+      "community": 3,
+      "norm_label": "coding conventions",
+      "id": "api_claude_coding_conventions"
     },
     {
       "label": "Gotchas",
       "file_type": "document",
       "source_file": "apps/api/CLAUDE.md",
       "source_location": "L43",
-      "id": "api_claude_gotchas",
-      "community": 10,
-      "norm_label": "gotchas"
+      "community": 3,
+      "norm_label": "gotchas",
+      "id": "api_claude_gotchas"
     },
     {
       "label": "CLAUDE.md",
       "file_type": "document",
       "source_file": "apps/mobile/CLAUDE.md",
       "source_location": "L1",
-      "id": "apps_mobile_claude_md",
-      "community": 10,
-      "norm_label": "claude.md"
+      "community": 3,
+      "norm_label": "claude.md",
+      "id": "apps_mobile_claude_md"
     },
     {
       "label": "CLAUDE.md",
       "file_type": "document",
       "source_file": "apps/mobile/CLAUDE.md",
       "source_location": "L1",
-      "id": "mobile_claude_claude_md",
-      "community": 10,
-      "norm_label": "claude.md"
+      "community": 3,
+      "norm_label": "claude.md",
+      "id": "mobile_claude_claude_md"
     },
     {
       "label": "Commands",
       "file_type": "document",
       "source_file": "apps/mobile/CLAUDE.md",
       "source_location": "L5",
-      "id": "mobile_claude_commands",
-      "community": 10,
-      "norm_label": "commands"
+      "community": 3,
+      "norm_label": "commands",
+      "id": "mobile_claude_commands"
     },
     {
       "label": "code:bash (npx expo start          # dev server (scan QR with Expo Go o)",
       "file_type": "document",
       "source_file": "apps/mobile/CLAUDE.md",
       "source_location": "L7",
-      "id": "mobile_claude_codeblock_1",
-      "community": 10,
-      "norm_label": "code:bash (npx expo start          # dev server (scan qr with expo go o)"
+      "community": 3,
+      "norm_label": "code:bash (npx expo start          # dev server (scan qr with expo go o)",
+      "id": "mobile_claude_codeblock_1"
     },
     {
       "label": "Architecture",
       "file_type": "document",
       "source_file": "apps/mobile/CLAUDE.md",
       "source_location": "L17",
-      "id": "mobile_claude_architecture",
-      "community": 10,
-      "norm_label": "architecture"
+      "community": 3,
+      "norm_label": "architecture",
+      "id": "mobile_claude_architecture"
     },
     {
       "label": "Routing",
       "file_type": "document",
       "source_file": "apps/mobile/CLAUDE.md",
       "source_location": "L19",
-      "id": "mobile_claude_routing",
-      "community": 10,
-      "norm_label": "routing"
+      "community": 3,
+      "norm_label": "routing",
+      "id": "mobile_claude_routing"
     },
     {
       "label": "Auth",
       "file_type": "document",
       "source_file": "apps/mobile/CLAUDE.md",
       "source_location": "L26",
-      "id": "mobile_claude_auth",
-      "community": 10,
-      "norm_label": "auth"
+      "community": 3,
+      "norm_label": "auth",
+      "id": "mobile_claude_auth"
     },
     {
       "label": "API Client",
       "file_type": "document",
       "source_file": "apps/mobile/CLAUDE.md",
       "source_location": "L29",
-      "id": "mobile_claude_api_client",
-      "community": 10,
-      "norm_label": "api client"
+      "community": 3,
+      "norm_label": "api client",
+      "id": "mobile_claude_api_client"
     },
     {
       "label": "Background Location",
       "file_type": "document",
       "source_file": "apps/mobile/CLAUDE.md",
       "source_location": "L32",
-      "id": "mobile_claude_background_location",
-      "community": 10,
-      "norm_label": "background location"
+      "community": 3,
+      "norm_label": "background location",
+      "id": "mobile_claude_background_location"
     },
     {
       "label": "Internationalization",
       "file_type": "document",
       "source_file": "apps/mobile/CLAUDE.md",
       "source_location": "L35",
-      "id": "mobile_claude_internationalization",
-      "community": 10,
-      "norm_label": "internationalization"
+      "community": 3,
+      "norm_label": "internationalization",
+      "id": "mobile_claude_internationalization"
     },
     {
       "label": "Path Alias",
       "file_type": "document",
       "source_file": "apps/mobile/CLAUDE.md",
       "source_location": "L38",
-      "id": "mobile_claude_path_alias",
-      "community": 10,
-      "norm_label": "path alias"
+      "community": 3,
+      "norm_label": "path alias",
+      "id": "mobile_claude_path_alias"
     },
     {
       "label": "Key Constraints",
       "file_type": "document",
       "source_file": "apps/mobile/CLAUDE.md",
       "source_location": "L41",
-      "id": "mobile_claude_key_constraints",
-      "community": 10,
-      "norm_label": "key constraints"
+      "community": 3,
+      "norm_label": "key constraints",
+      "id": "mobile_claude_key_constraints"
     },
     {
       "label": "README.md",
       "file_type": "document",
       "source_file": "apps/mobile/.expo/README.md",
       "source_location": "L1",
-      "id": "apps_mobile_expo_readme_md",
-      "community": 47,
-      "norm_label": "readme.md"
+      "community": 45,
+      "norm_label": "readme.md",
+      "id": "apps_mobile_expo_readme_md"
     },
     {
       "label": "settings.local.json",
       "file_type": "code",
       "source_file": "apps/api/.claude/settings.local.json",
       "source_location": "L1",
-      "community": 22,
+      "community": 26,
       "norm_label": "settings.local.json",
       "id": "apps_api_claude_settings_local_json"
     },
@@ -3413,7 +3413,7 @@
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L11",
-      "community": 4,
+      "community": 5,
       "norm_label": "ios",
       "id": "mobile_app_expo_ios"
     },
@@ -3422,7 +3422,7 @@
       "file_type": "code",
       "source_file": "apps/mobile/app.json",
       "source_location": "L12",
-      "community": 4,
+      "community": 5,
       "norm_label": "supportstablet",
       "id": "mobile_app_ios_supportstablet"
     },
@@ -3431,7 +3431,7 @@
       "file_type": "code",
       "source_file": "apps/mobile/.claude/settings.local.json",
       "source_location": "L1",
-      "community": 22,
+      "community": 26,
       "norm_label": "settings.local.json",
       "id": "apps_mobile_claude_settings_local_json"
     },
@@ -3440,7 +3440,7 @@
       "file_type": "code",
       "source_file": "apps/mobile/components/haptic-tab.tsx",
       "source_location": "L1",
-      "community": 12,
+      "community": 13,
       "norm_label": "haptic-tab.tsx",
       "id": "apps_mobile_components_haptic_tab_tsx"
     },
@@ -3449,7 +3449,7 @@
       "file_type": "code",
       "source_file": "apps/mobile/components/haptic-tab.tsx",
       "source_location": "L5",
-      "community": 12,
+      "community": 13,
       "norm_label": "haptictab()",
       "id": "components_haptic_tab_haptictab"
     },
@@ -3458,7 +3458,7 @@
       "file_type": "code",
       "source_file": "apps/mobile/components/ui/icon-symbol.ios.tsx",
       "source_location": "L1",
-      "community": 30,
+      "community": 36,
       "norm_label": "icon-symbol.ios.tsx",
       "id": "apps_mobile_components_ui_icon_symbol_ios_tsx"
     },
@@ -3467,7 +3467,7 @@
       "file_type": "code",
       "source_file": "apps/mobile/components/ui/icon-symbol.ios.tsx",
       "source_location": "L4",
-      "community": 30,
+      "community": 36,
       "norm_label": "iconsymbol()",
       "id": "ui_icon_symbol_ios_iconsymbol"
     },
@@ -3476,7 +3476,7 @@
       "file_type": "code",
       "source_file": "apps/mobile/components/ui/icon-symbol.tsx",
       "source_location": "L1",
-      "community": 12,
+      "community": 13,
       "norm_label": "icon-symbol.tsx",
       "id": "apps_mobile_components_ui_icon_symbol_tsx"
     },
@@ -3485,7 +3485,7 @@
       "file_type": "code",
       "source_file": "apps/mobile/components/ui/icon-symbol.tsx",
       "source_location": "L8",
-      "community": 12,
+      "community": 13,
       "norm_label": "iconmapping",
       "id": "ui_icon_symbol_iconmapping"
     },
@@ -3494,7 +3494,7 @@
       "file_type": "code",
       "source_file": "apps/mobile/components/ui/icon-symbol.tsx",
       "source_location": "L9",
-      "community": 12,
+      "community": 13,
       "norm_label": "iconsymbolname",
       "id": "ui_icon_symbol_iconsymbolname"
     },
@@ -3503,7 +3503,7 @@
       "file_type": "code",
       "source_file": "apps/mobile/components/ui/icon-symbol.tsx",
       "source_location": "L16",
-      "community": 12,
+      "community": 13,
       "norm_label": "mapping",
       "id": "ui_icon_symbol_mapping"
     },
@@ -3512,7 +3512,7 @@
       "file_type": "code",
       "source_file": "apps/mobile/components/ui/icon-symbol.tsx",
       "source_location": "L28",
-      "community": 12,
+      "community": 13,
       "norm_label": "iconsymbol()",
       "id": "ui_icon_symbol_iconsymbol"
     },
@@ -3521,7 +3521,7 @@
       "file_type": "code",
       "source_file": "apps/mobile/constants/styles.ts",
       "source_location": "L1",
-      "community": 32,
+      "community": 38,
       "norm_label": "styles.ts",
       "id": "apps_mobile_constants_styles_ts"
     },
@@ -3530,7 +3530,7 @@
       "file_type": "code",
       "source_file": "apps/mobile/constants/styles.ts",
       "source_location": "L3",
-      "community": 32,
+      "community": 38,
       "norm_label": "commonstyles",
       "id": "constants_styles_commonstyles"
     },
@@ -3566,7 +3566,7 @@
       "file_type": "code",
       "source_file": "apps/mobile/scripts/reset-project.js",
       "source_location": "L1",
-      "community": 16,
+      "community": 12,
       "norm_label": "reset-project.js",
       "id": "apps_mobile_scripts_reset_project_js"
     },
@@ -3575,7 +3575,7 @@
       "file_type": "code",
       "source_file": "apps/mobile/scripts/reset-project.js",
       "source_location": "L9",
-      "community": 16,
+      "community": 12,
       "norm_label": "fs",
       "id": "scripts_reset_project_fs"
     },
@@ -3584,7 +3584,7 @@
       "file_type": "code",
       "source_file": "apps/mobile/scripts/reset-project.js",
       "source_location": "L10",
-      "community": 16,
+      "community": 12,
       "norm_label": "path",
       "id": "scripts_reset_project_path"
     },
@@ -3593,7 +3593,7 @@
       "file_type": "code",
       "source_file": "apps/mobile/scripts/reset-project.js",
       "source_location": "L11",
-      "community": 16,
+      "community": 12,
       "norm_label": "readline",
       "id": "scripts_reset_project_readline"
     },
@@ -3602,7 +3602,7 @@
       "file_type": "code",
       "source_file": "apps/mobile/scripts/reset-project.js",
       "source_location": "L13",
-      "community": 16,
+      "community": 12,
       "norm_label": "root",
       "id": "scripts_reset_project_root"
     },
@@ -3611,7 +3611,7 @@
       "file_type": "code",
       "source_file": "apps/mobile/scripts/reset-project.js",
       "source_location": "L14",
-      "community": 16,
+      "community": 12,
       "norm_label": "olddirs",
       "id": "scripts_reset_project_olddirs"
     },
@@ -3620,7 +3620,7 @@
       "file_type": "code",
       "source_file": "apps/mobile/scripts/reset-project.js",
       "source_location": "L17",
-      "community": 16,
+      "community": 12,
       "norm_label": "exampledirpath",
       "id": "scripts_reset_project_exampledirpath"
     },
@@ -3629,7 +3629,7 @@
       "file_type": "code",
       "source_file": "apps/mobile/scripts/reset-project.js",
       "source_location": "L43",
-      "community": 16,
+      "community": 12,
       "norm_label": "rl",
       "id": "scripts_reset_project_rl"
     },
@@ -3638,7 +3638,7 @@
       "file_type": "code",
       "source_file": "apps/mobile/scripts/reset-project.js",
       "source_location": "L48",
-      "community": 16,
+      "community": 12,
       "norm_label": "movedirectories()",
       "id": "scripts_reset_project_movedirectories"
     },
@@ -3768,7 +3768,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 35,
+      "community": 46,
       "norm_label": "mobile app readme",
       "id": "mobile_readme"
     },
@@ -3833,7 +3833,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 36,
+      "community": 47,
       "norm_label": "splash screen icon (concentric circles placeholder/grid template)",
       "id": "image_splash"
     },
@@ -4180,7 +4180,7 @@
       "file_type": "code",
       "source_file": "settings.json",
       "source_location": "L1",
-      "community": 27,
+      "community": 31,
       "norm_label": "settings.json",
       "id": "settings_json"
     },
@@ -4193,7 +4193,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 3,
       "norm_label": "mobroai monorepo claude code guide",
       "id": "claude_md_mobroai_monorepo"
     },
@@ -4206,7 +4206,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 3,
       "norm_label": "mobile app (react native / expo)",
       "id": "apps_mobile"
     },
@@ -4219,7 +4219,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 3,
       "norm_label": "api app (asp.net core 10)",
       "id": "apps_api"
     },
@@ -4232,7 +4232,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 3,
       "norm_label": "shared packages (ts/c#)",
       "id": "packages"
     },
@@ -4245,7 +4245,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 3,
       "norm_label": "docs directory",
       "id": "docs"
     },
@@ -4259,7 +4259,7 @@
       "author": null,
       "contributor": null,
       "rationale": "CI is path-filtered so that pushing to apps/mobile/** only triggers mobile-ci, keeping builds isolated per app.",
-      "community": 10,
+      "community": 3,
       "norm_label": "path-filtered ci strategy",
       "id": "ci_path_filtered"
     },
@@ -4273,7 +4273,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Each app keeps its own .gitignore; the root .gitignore covers only OS/IDE/secrets to keep concerns separated.",
-      "community": 10,
+      "community": 3,
       "norm_label": "per-app .gitignore strategy",
       "id": "gitignore_strategy"
     },
@@ -4286,7 +4286,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 3,
       "norm_label": "appsettings.development.json (gitignored)",
       "id": "appsettings_development_json"
     },
@@ -4299,7 +4299,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 3,
       "norm_label": ".env.local mobile (gitignored)",
       "id": "env_local_mobile"
     },
@@ -4312,7 +4312,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 3,
       "norm_label": "graphify-out knowledge graph",
       "id": "graphify_out"
     },
@@ -4325,7 +4325,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "mobroai",
       "id": "readme_mobroai"
     },
@@ -4338,7 +4338,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "mobile app (react native expo)",
       "id": "readme_mobile_app"
     },
@@ -4351,7 +4351,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "api (asp.net core 10)",
       "id": "readme_api"
     },
@@ -4364,7 +4364,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "expo router",
       "id": "readme_expo_router"
     },
@@ -4377,7 +4377,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "zustand (auth state)",
       "id": "readme_zustand"
     },
@@ -4390,7 +4390,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "axios",
       "id": "readme_axios"
     },
@@ -4403,7 +4403,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "expo-location",
       "id": "readme_expo_location"
     },
@@ -4416,7 +4416,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "ef core",
       "id": "readme_ef_core"
     },
@@ -4429,7 +4429,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "sql server",
       "id": "readme_sql_server"
     },
@@ -4442,7 +4442,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "jwt bearer auth",
       "id": "readme_jwt_auth"
     },
@@ -4455,7 +4455,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "bcrypt",
       "id": "readme_bcrypt"
     },
@@ -4468,7 +4468,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "program.cs",
       "id": "readme_program_cs"
     },
@@ -4481,7 +4481,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "endpoints/*.cs",
       "id": "readme_endpoints"
     },
@@ -4494,7 +4494,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "appdbcontext",
       "id": "readme_appdbcontext"
     },
@@ -4507,7 +4507,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "user entity",
       "id": "readme_user_entity"
     },
@@ -4520,7 +4520,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "child entity",
       "id": "readme_child_entity"
     },
@@ -4533,7 +4533,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "measles_scan entity",
       "id": "readme_measles_scan_entity"
     },
@@ -4546,7 +4546,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "scan_photo entity",
       "id": "readme_scan_photo_entity"
     },
@@ -4559,7 +4559,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "location_log entity",
       "id": "readme_location_log_entity"
     },
@@ -4572,7 +4572,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "auth endpoints (/auth)",
       "id": "readme_auth_endpoints"
     },
@@ -4585,7 +4585,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "users endpoints (/users)",
       "id": "readme_users_endpoints"
     },
@@ -4598,7 +4598,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "children endpoints (/children)",
       "id": "readme_children_endpoints"
     },
@@ -4611,7 +4611,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "measles scans endpoints (/scans)",
       "id": "readme_scans_endpoints"
     },
@@ -4624,7 +4624,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "location logs endpoints (/locations)",
       "id": "readme_locations_endpoints"
     },
@@ -4637,7 +4637,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "role enum",
       "id": "readme_role_enum"
     },
@@ -4650,7 +4650,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "scanstatus enum",
       "id": "readme_scanstatus_enum"
     },
@@ -4663,7 +4663,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "gender enum",
       "id": "readme_gender_enum"
     },
@@ -4676,7 +4676,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "measles triage (ai)",
       "id": "readme_measles_triage"
     },
@@ -4689,7 +4689,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "gps tracking",
       "id": "readme_gps_tracking"
     },
@@ -4702,7 +4702,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "outbreak surveillance",
       "id": "readme_outbreak_surveillance"
     }
@@ -4714,9 +4714,9 @@
       "source_file": ".claude/settings.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_settings_json",
-      "target": "claude_settings_hooks",
-      "confidence_score": 1.0
+      "target": "claude_settings_hooks"
     },
     {
       "relation": "contains",
@@ -4735,8 +4735,8 @@
       "source_location": "L2",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "settings_json",
-      "target": "claude_settings_hooks"
+      "source": "claude_settings_hooks",
+      "target": "settings_json"
     },
     {
       "relation": "contains",
@@ -4784,9 +4784,9 @@
       "source_file": ".vs/VSWorkspaceState.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "vs_vsworkspacestate_json",
-      "target": "vs_vsworkspacestate_expandednodes",
-      "confidence_score": 1.0
+      "target": "vs_vsworkspacestate_expandednodes"
     },
     {
       "relation": "contains",
@@ -4794,9 +4794,9 @@
       "source_file": ".vs/VSWorkspaceState.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "vs_vsworkspacestate_json",
-      "target": "vs_vsworkspacestate_selectednode",
-      "confidence_score": 1.0
+      "target": "vs_vsworkspacestate_selectednode"
     },
     {
       "relation": "contains",
@@ -4804,9 +4804,9 @@
       "source_file": ".vs/VSWorkspaceState.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "vs_vsworkspacestate_json",
-      "target": "vs_vsworkspacestate_previewinsolutionexplorer",
-      "confidence_score": 1.0
+      "target": "vs_vsworkspacestate_previewinsolutionexplorer"
     },
     {
       "relation": "contains",
@@ -4855,8 +4855,8 @@
       "source_location": "L2",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "apps_api_vs_mobrolens_v18_documentlayout_json",
-      "target": "v18_documentlayout_version"
+      "source": "v18_documentlayout_version",
+      "target": "apps_api_vs_mobrolens_v18_documentlayout_json"
     },
     {
       "relation": "contains",
@@ -4865,8 +4865,8 @@
       "source_location": "L3",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "apps_api_vs_mobrolens_v18_documentlayout_json",
-      "target": "v18_documentlayout_workspacerootpath"
+      "source": "v18_documentlayout_workspacerootpath",
+      "target": "apps_api_vs_mobrolens_v18_documentlayout_json"
     },
     {
       "relation": "contains",
@@ -4875,8 +4875,8 @@
       "source_location": "L4",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "apps_api_vs_mobrolens_v18_documentlayout_json",
-      "target": "v18_documentlayout_documents"
+      "source": "v18_documentlayout_documents",
+      "target": "apps_api_vs_mobrolens_v18_documentlayout_json"
     },
     {
       "relation": "contains",
@@ -4885,8 +4885,8 @@
       "source_location": "L10",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "apps_api_vs_mobrolens_v18_documentlayout_json",
-      "target": "v18_documentlayout_documentgroupcontainers"
+      "source": "v18_documentlayout_documentgroupcontainers",
+      "target": "apps_api_vs_mobrolens_v18_documentlayout_json"
     },
     {
       "relation": "contains",
@@ -5044,9 +5044,9 @@
       "source_file": "apps/api/.vs/MobroLens/v18/DocumentLayout.backup.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "apps_api_vs_mobrolens_v18_documentlayout_backup_json",
-      "target": "v18_documentlayout_backup_version",
-      "confidence_score": 1.0
+      "target": "v18_documentlayout_backup_version"
     },
     {
       "relation": "contains",
@@ -5054,9 +5054,9 @@
       "source_file": "apps/api/.vs/MobroLens/v18/DocumentLayout.backup.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "apps_api_vs_mobrolens_v18_documentlayout_backup_json",
-      "target": "v18_documentlayout_backup_workspacerootpath",
-      "confidence_score": 1.0
+      "target": "v18_documentlayout_backup_workspacerootpath"
     },
     {
       "relation": "contains",
@@ -5064,9 +5064,9 @@
       "source_file": "apps/api/.vs/MobroLens/v18/DocumentLayout.backup.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "apps_api_vs_mobrolens_v18_documentlayout_backup_json",
-      "target": "v18_documentlayout_backup_documents",
-      "confidence_score": 1.0
+      "target": "v18_documentlayout_backup_documents"
     },
     {
       "relation": "contains",
@@ -5074,9 +5074,9 @@
       "source_file": "apps/api/.vs/MobroLens/v18/DocumentLayout.backup.json",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "apps_api_vs_mobrolens_v18_documentlayout_backup_json",
-      "target": "v18_documentlayout_backup_documentgroupcontainers",
-      "confidence_score": 1.0
+      "target": "v18_documentlayout_backup_documentgroupcontainers"
     },
     {
       "relation": "contains",
@@ -6294,9 +6294,9 @@
       "source_file": "apps/mobile/package.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobile_package_dependencies",
-      "target": "mobile_package_dependencies_expo_ngrok",
-      "confidence_score": 1.0
+      "target": "mobile_package_dependencies_expo_ngrok"
     },
     {
       "relation": "contains",
@@ -6714,9 +6714,9 @@
       "source_file": "apps/mobile/.expo/devices.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "apps_mobile_expo_devices_json",
-      "target": "expo_devices_devices",
-      "confidence_score": 1.0
+      "target": "expo_devices_devices"
     },
     {
       "relation": "contains",
@@ -6724,9 +6724,9 @@
       "source_file": "apps/mobile/.expo/settings.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "apps_mobile_expo_settings_json",
-      "target": "expo_settings_urlrandomness",
-      "confidence_score": 1.0
+      "target": "expo_settings_urlrandomness"
     },
     {
       "relation": "contains",
@@ -6734,9 +6734,9 @@
       "source_file": "apps/mobile/.expo/types/router.d.ts",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "apps_mobile_expo_types_router_d_ts",
-      "target": "types_router_d_routes",
-      "confidence_score": 1.0
+      "target": "types_router_d_routes"
     },
     {
       "relation": "contains",
@@ -8665,9 +8665,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_md",
-      "target": "mobroai_claude_mobroai_monorepo_claude_code_guide",
-      "confidence_score": 1.0
+      "target": "mobroai_claude_mobroai_monorepo_claude_code_guide"
     },
     {
       "relation": "contains",
@@ -8675,9 +8675,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_claude_mobroai_monorepo_claude_code_guide",
-      "target": "mobroai_claude_layout",
-      "confidence_score": 1.0
+      "target": "mobroai_claude_layout"
     },
     {
       "relation": "contains",
@@ -8685,9 +8685,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_claude_mobroai_monorepo_claude_code_guide",
-      "target": "mobroai_claude_working_in_each_app",
-      "confidence_score": 1.0
+      "target": "mobroai_claude_working_in_each_app"
     },
     {
       "relation": "contains",
@@ -8695,9 +8695,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_claude_mobroai_monorepo_claude_code_guide",
-      "target": "mobroai_claude_key_decisions",
-      "confidence_score": 1.0
+      "target": "mobroai_claude_key_decisions"
     },
     {
       "relation": "contains",
@@ -8705,9 +8705,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_claude_mobroai_monorepo_claude_code_guide",
-      "target": "mobroai_claude_refer_to_app_level_guides",
-      "confidence_score": 1.0
+      "target": "mobroai_claude_refer_to_app_level_guides"
     },
     {
       "relation": "contains",
@@ -8715,9 +8715,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_claude_mobroai_monorepo_claude_code_guide",
-      "target": "mobroai_claude_graphify",
-      "confidence_score": 1.0
+      "target": "mobroai_claude_graphify"
     },
     {
       "relation": "contains",
@@ -8725,9 +8725,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_claude_layout",
-      "target": "mobroai_claude_codeblock_1",
-      "confidence_score": 1.0
+      "target": "mobroai_claude_codeblock_1"
     },
     {
       "relation": "contains",
@@ -8735,9 +8735,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_claude_working_in_each_app",
-      "target": "mobroai_claude_codeblock_2",
-      "confidence_score": 1.0
+      "target": "mobroai_claude_codeblock_2"
     },
     {
       "relation": "contains",
@@ -8745,9 +8745,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_md",
-      "target": "mobroai_readme_mobroai",
-      "confidence_score": 1.0
+      "target": "mobroai_readme_mobroai"
     },
     {
       "relation": "contains",
@@ -8755,9 +8755,9 @@
       "source_file": "README.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_readme_mobroai",
-      "target": "mobroai_readme_stack",
-      "confidence_score": 1.0
+      "target": "mobroai_readme_stack"
     },
     {
       "relation": "contains",
@@ -8765,9 +8765,9 @@
       "source_file": "README.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_readme_mobroai",
-      "target": "mobroai_readme_repo_layout",
-      "confidence_score": 1.0
+      "target": "mobroai_readme_repo_layout"
     },
     {
       "relation": "contains",
@@ -8775,9 +8775,9 @@
       "source_file": "README.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_readme_mobroai",
-      "target": "mobroai_readme_architecture",
-      "confidence_score": 1.0
+      "target": "mobroai_readme_architecture"
     },
     {
       "relation": "contains",
@@ -8785,9 +8785,9 @@
       "source_file": "README.md",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_readme_mobroai",
-      "target": "mobroai_readme_quick_start",
-      "confidence_score": 1.0
+      "target": "mobroai_readme_quick_start"
     },
     {
       "relation": "contains",
@@ -8795,9 +8795,9 @@
       "source_file": "README.md",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_readme_mobroai",
-      "target": "mobroai_readme_database_schema",
-      "confidence_score": 1.0
+      "target": "mobroai_readme_database_schema"
     },
     {
       "relation": "contains",
@@ -8805,9 +8805,9 @@
       "source_file": "README.md",
       "source_location": "L138",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_readme_mobroai",
-      "target": "mobroai_readme_api_reference",
-      "confidence_score": 1.0
+      "target": "mobroai_readme_api_reference"
     },
     {
       "relation": "contains",
@@ -8815,9 +8815,9 @@
       "source_file": "README.md",
       "source_location": "L218",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_readme_mobroai",
-      "target": "mobroai_readme_enums",
-      "confidence_score": 1.0
+      "target": "mobroai_readme_enums"
     },
     {
       "relation": "contains",
@@ -8825,9 +8825,9 @@
       "source_file": "README.md",
       "source_location": "L228",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_readme_mobroai",
-      "target": "mobroai_readme_notes",
-      "confidence_score": 1.0
+      "target": "mobroai_readme_notes"
     },
     {
       "relation": "contains",
@@ -8835,9 +8835,9 @@
       "source_file": "README.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_readme_repo_layout",
-      "target": "mobroai_readme_codeblock_1",
-      "confidence_score": 1.0
+      "target": "mobroai_readme_codeblock_1"
     },
     {
       "relation": "contains",
@@ -8845,9 +8845,9 @@
       "source_file": "README.md",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_readme_architecture",
-      "target": "mobroai_readme_codeblock_2",
-      "confidence_score": 1.0
+      "target": "mobroai_readme_codeblock_2"
     },
     {
       "relation": "contains",
@@ -8855,9 +8855,9 @@
       "source_file": "README.md",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_readme_architecture",
-      "target": "mobroai_readme_codeblock_3",
-      "confidence_score": 1.0
+      "target": "mobroai_readme_codeblock_3"
     },
     {
       "relation": "contains",
@@ -8865,9 +8865,9 @@
       "source_file": "README.md",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_readme_quick_start",
-      "target": "mobroai_readme_1_api",
-      "confidence_score": 1.0
+      "target": "mobroai_readme_1_api"
     },
     {
       "relation": "contains",
@@ -8875,9 +8875,9 @@
       "source_file": "README.md",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_readme_quick_start",
-      "target": "mobroai_readme_2_mobile",
-      "confidence_score": 1.0
+      "target": "mobroai_readme_2_mobile"
     },
     {
       "relation": "contains",
@@ -8885,9 +8885,9 @@
       "source_file": "README.md",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_readme_1_api",
-      "target": "mobroai_readme_codeblock_4",
-      "confidence_score": 1.0
+      "target": "mobroai_readme_codeblock_4"
     },
     {
       "relation": "contains",
@@ -8895,9 +8895,9 @@
       "source_file": "README.md",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_readme_1_api",
-      "target": "mobroai_readme_codeblock_5",
-      "confidence_score": 1.0
+      "target": "mobroai_readme_codeblock_5"
     },
     {
       "relation": "contains",
@@ -8905,9 +8905,9 @@
       "source_file": "README.md",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_readme_2_mobile",
-      "target": "mobroai_readme_codeblock_6",
-      "confidence_score": 1.0
+      "target": "mobroai_readme_codeblock_6"
     },
     {
       "relation": "contains",
@@ -8915,9 +8915,9 @@
       "source_file": "README.md",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_readme_database_schema",
-      "target": "mobroai_readme_codeblock_7",
-      "confidence_score": 1.0
+      "target": "mobroai_readme_codeblock_7"
     },
     {
       "relation": "contains",
@@ -8925,9 +8925,9 @@
       "source_file": "README.md",
       "source_location": "L142",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_readme_api_reference",
-      "target": "mobroai_readme_auth_auth_no_token_required",
-      "confidence_score": 1.0
+      "target": "mobroai_readme_auth_auth_no_token_required"
     },
     {
       "relation": "contains",
@@ -8935,9 +8935,9 @@
       "source_file": "README.md",
       "source_location": "L153",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_readme_api_reference",
-      "target": "mobroai_readme_users_users",
-      "confidence_score": 1.0
+      "target": "mobroai_readme_users_users"
     },
     {
       "relation": "contains",
@@ -8945,9 +8945,9 @@
       "source_file": "README.md",
       "source_location": "L164",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_readme_api_reference",
-      "target": "mobroai_readme_children_children_all_require_auth",
-      "confidence_score": 1.0
+      "target": "mobroai_readme_children_children_all_require_auth"
     },
     {
       "relation": "contains",
@@ -8955,9 +8955,9 @@
       "source_file": "README.md",
       "source_location": "L175",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_readme_api_reference",
-      "target": "mobroai_readme_measles_scans_scans_all_require_auth",
-      "confidence_score": 1.0
+      "target": "mobroai_readme_measles_scans_scans_all_require_auth"
     },
     {
       "relation": "contains",
@@ -8965,9 +8965,9 @@
       "source_file": "README.md",
       "source_location": "L206",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_readme_api_reference",
-      "target": "mobroai_readme_location_logs_locations_all_require_auth",
-      "confidence_score": 1.0
+      "target": "mobroai_readme_location_logs_locations_all_require_auth"
     },
     {
       "relation": "contains",
@@ -8975,9 +8975,9 @@
       "source_file": "README.md",
       "source_location": "L192",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobroai_readme_measles_scans_scans_all_require_auth",
-      "target": "mobroai_readme_codeblock_8",
-      "confidence_score": 1.0
+      "target": "mobroai_readme_codeblock_8"
     },
     {
       "relation": "contains",
@@ -8985,9 +8985,9 @@
       "source_file": "apps/api/CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "apps_api_claude_md",
-      "target": "api_claude_claude_md",
-      "confidence_score": 1.0
+      "target": "api_claude_claude_md"
     },
     {
       "relation": "references",
@@ -8996,8 +8996,8 @@
       "source_file": "CLAUDE.md",
       "source_location": "line 34",
       "weight": 1.0,
-      "source": "claude_md_mobroai_monorepo",
-      "target": "apps_api_claude_md"
+      "source": "apps_api_claude_md",
+      "target": "claude_md_mobroai_monorepo"
     },
     {
       "relation": "references",
@@ -9006,8 +9006,8 @@
       "source_file": "CLAUDE.md",
       "source_location": "line 34",
       "weight": 1.0,
-      "source": "apps_api",
-      "target": "apps_api_claude_md"
+      "source": "apps_api_claude_md",
+      "target": "apps_api"
     },
     {
       "relation": "contains",
@@ -9015,9 +9015,9 @@
       "source_file": "apps/api/CLAUDE.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_claude_claude_md",
-      "target": "api_claude_commands",
-      "confidence_score": 1.0
+      "target": "api_claude_commands"
     },
     {
       "relation": "contains",
@@ -9025,9 +9025,9 @@
       "source_file": "apps/api/CLAUDE.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_claude_claude_md",
-      "target": "api_claude_architecture",
-      "confidence_score": 1.0
+      "target": "api_claude_architecture"
     },
     {
       "relation": "contains",
@@ -9035,9 +9035,9 @@
       "source_file": "apps/api/CLAUDE.md",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_claude_claude_md",
-      "target": "api_claude_auth",
-      "confidence_score": 1.0
+      "target": "api_claude_auth"
     },
     {
       "relation": "contains",
@@ -9045,9 +9045,9 @@
       "source_file": "apps/api/CLAUDE.md",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_claude_claude_md",
-      "target": "api_claude_coding_conventions",
-      "confidence_score": 1.0
+      "target": "api_claude_coding_conventions"
     },
     {
       "relation": "contains",
@@ -9055,9 +9055,9 @@
       "source_file": "apps/api/CLAUDE.md",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_claude_claude_md",
-      "target": "api_claude_gotchas",
-      "confidence_score": 1.0
+      "target": "api_claude_gotchas"
     },
     {
       "relation": "contains",
@@ -9065,9 +9065,9 @@
       "source_file": "apps/api/CLAUDE.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_claude_commands",
-      "target": "api_claude_codeblock_1",
-      "confidence_score": 1.0
+      "target": "api_claude_codeblock_1"
     },
     {
       "relation": "contains",
@@ -9075,9 +9075,9 @@
       "source_file": "apps/mobile/CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "apps_mobile_claude_md",
-      "target": "mobile_claude_claude_md",
-      "confidence_score": 1.0
+      "target": "mobile_claude_claude_md"
     },
     {
       "relation": "references",
@@ -9086,8 +9086,8 @@
       "source_file": "CLAUDE.md",
       "source_location": "line 33",
       "weight": 1.0,
-      "source": "claude_md_mobroai_monorepo",
-      "target": "apps_mobile_claude_md"
+      "source": "apps_mobile_claude_md",
+      "target": "claude_md_mobroai_monorepo"
     },
     {
       "relation": "references",
@@ -9096,8 +9096,8 @@
       "source_file": "CLAUDE.md",
       "source_location": "line 33",
       "weight": 1.0,
-      "source": "apps_mobile",
-      "target": "apps_mobile_claude_md"
+      "source": "apps_mobile_claude_md",
+      "target": "apps_mobile"
     },
     {
       "relation": "contains",
@@ -9105,9 +9105,9 @@
       "source_file": "apps/mobile/CLAUDE.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobile_claude_claude_md",
-      "target": "mobile_claude_commands",
-      "confidence_score": 1.0
+      "target": "mobile_claude_commands"
     },
     {
       "relation": "contains",
@@ -9115,9 +9115,9 @@
       "source_file": "apps/mobile/CLAUDE.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobile_claude_claude_md",
-      "target": "mobile_claude_architecture",
-      "confidence_score": 1.0
+      "target": "mobile_claude_architecture"
     },
     {
       "relation": "contains",
@@ -9125,9 +9125,9 @@
       "source_file": "apps/mobile/CLAUDE.md",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobile_claude_claude_md",
-      "target": "mobile_claude_key_constraints",
-      "confidence_score": 1.0
+      "target": "mobile_claude_key_constraints"
     },
     {
       "relation": "contains",
@@ -9135,9 +9135,9 @@
       "source_file": "apps/mobile/CLAUDE.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobile_claude_commands",
-      "target": "mobile_claude_codeblock_1",
-      "confidence_score": 1.0
+      "target": "mobile_claude_codeblock_1"
     },
     {
       "relation": "contains",
@@ -9145,9 +9145,9 @@
       "source_file": "apps/mobile/CLAUDE.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobile_claude_architecture",
-      "target": "mobile_claude_routing",
-      "confidence_score": 1.0
+      "target": "mobile_claude_routing"
     },
     {
       "relation": "contains",
@@ -9155,9 +9155,9 @@
       "source_file": "apps/mobile/CLAUDE.md",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobile_claude_architecture",
-      "target": "mobile_claude_auth",
-      "confidence_score": 1.0
+      "target": "mobile_claude_auth"
     },
     {
       "relation": "contains",
@@ -9165,9 +9165,9 @@
       "source_file": "apps/mobile/CLAUDE.md",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobile_claude_architecture",
-      "target": "mobile_claude_api_client",
-      "confidence_score": 1.0
+      "target": "mobile_claude_api_client"
     },
     {
       "relation": "contains",
@@ -9175,9 +9175,9 @@
       "source_file": "apps/mobile/CLAUDE.md",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobile_claude_architecture",
-      "target": "mobile_claude_background_location",
-      "confidence_score": 1.0
+      "target": "mobile_claude_background_location"
     },
     {
       "relation": "contains",
@@ -9185,9 +9185,9 @@
       "source_file": "apps/mobile/CLAUDE.md",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobile_claude_architecture",
-      "target": "mobile_claude_internationalization",
-      "confidence_score": 1.0
+      "target": "mobile_claude_internationalization"
     },
     {
       "relation": "contains",
@@ -9195,9 +9195,9 @@
       "source_file": "apps/mobile/CLAUDE.md",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "mobile_claude_architecture",
-      "target": "mobile_claude_path_alias",
-      "confidence_score": 1.0
+      "target": "mobile_claude_path_alias"
     },
     {
       "relation": "contains",
@@ -10357,8 +10357,8 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 0.85,
-      "source": "readme_gps_tracking",
-      "target": "readme_expo_location"
+      "source": "readme_expo_location",
+      "target": "readme_gps_tracking"
     },
     {
       "relation": "references",
@@ -10367,8 +10367,8 @@
       "source_file": "README.md",
       "source_location": "API request flow",
       "weight": 1.0,
-      "source": "readme_appdbcontext",
-      "target": "readme_ef_core"
+      "source": "readme_ef_core",
+      "target": "readme_appdbcontext"
     },
     {
       "relation": "references",
@@ -10377,8 +10377,8 @@
       "source_file": "README.md",
       "source_location": "API Reference",
       "weight": 1.0,
-      "source": "readme_auth_endpoints",
-      "target": "readme_jwt_auth"
+      "source": "readme_jwt_auth",
+      "target": "readme_auth_endpoints"
     },
     {
       "relation": "calls",
@@ -10447,8 +10447,8 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 0.95,
-      "source": "readme_users_endpoints",
-      "target": "readme_user_entity"
+      "source": "readme_user_entity",
+      "target": "readme_users_endpoints"
     },
     {
       "relation": "references",
@@ -10477,8 +10477,8 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 0.95,
-      "source": "readme_children_endpoints",
-      "target": "readme_child_entity"
+      "source": "readme_child_entity",
+      "target": "readme_children_endpoints"
     },
     {
       "relation": "references",
@@ -10507,8 +10507,8 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 0.95,
-      "source": "readme_measles_triage",
-      "target": "readme_measles_scan_entity"
+      "source": "readme_measles_scan_entity",
+      "target": "readme_measles_triage"
     },
     {
       "relation": "conceptually_related_to",
@@ -10517,8 +10517,8 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 0.85,
-      "source": "readme_outbreak_surveillance",
-      "target": "readme_measles_scan_entity"
+      "source": "readme_measles_scan_entity",
+      "target": "readme_outbreak_surveillance"
     },
     {
       "relation": "conceptually_related_to",
@@ -10527,8 +10527,8 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 0.95,
-      "source": "readme_scans_endpoints",
-      "target": "readme_measles_scan_entity"
+      "source": "readme_measles_scan_entity",
+      "target": "readme_scans_endpoints"
     },
     {
       "relation": "conceptually_related_to",
@@ -10537,8 +10537,8 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 0.95,
-      "source": "readme_gps_tracking",
-      "target": "readme_location_log_entity"
+      "source": "readme_location_log_entity",
+      "target": "readme_gps_tracking"
     },
     {
       "relation": "conceptually_related_to",
@@ -10547,8 +10547,8 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 0.95,
-      "source": "readme_locations_endpoints",
-      "target": "readme_location_log_entity"
+      "source": "readme_location_log_entity",
+      "target": "readme_locations_endpoints"
     }
   ],
   "hyperedges": [
@@ -10598,5 +10598,5 @@
       "source_file": "README.md"
     }
   ],
-  "built_at_commit": "eed5fee0ccc709c3964522102df3e5159b131721"
+  "built_at_commit": "ccba66f3d276eb08a1f65bff1a4e8b2284d4d3f6"
 }
