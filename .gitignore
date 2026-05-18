@@ -73,3 +73,4 @@ expo-env.d.ts
 app-example
 apps/mobile/ios/
 apps/mobile/android/
+apps/api/Migrations/
