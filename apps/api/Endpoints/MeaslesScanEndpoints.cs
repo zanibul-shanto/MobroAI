@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using MobroLens.Models;
+using MobroLens.Services;
 using System.Security.Claims;
+using System.Text.Json;
 
 namespace MobroLens.Endpoints;
 
@@ -57,7 +59,8 @@ public static class MeaslesScanEndpoints
         [Microsoft.AspNetCore.Mvc.FromForm] decimal? latitude,
         [Microsoft.AspNetCore.Mvc.FromForm] decimal? longitude,
         ClaimsPrincipal userClaims,
-        AppDbContext db)
+        AppDbContext db,
+        OnnxInferenceService inferenceService)
     {
         var userIdString = userClaims.FindFirst(ClaimTypes.NameIdentifier)?.Value;
         if (userIdString is null || !Guid.TryParse(userIdString, out var userId))
@@ -75,10 +78,19 @@ public static class MeaslesScanEndpoints
 
         using var ms = new MemoryStream();
         await file.CopyToAsync(ms);
-        var photo = new ScanPhoto { ScanId = scan.Id, ImageData = ms.ToArray() };
+        var imageBytes = ms.ToArray();
+        var photo = new ScanPhoto { ScanId = scan.Id, ImageData = imageBytes };
         db.ScanPhotos.Add(photo);
 
         await db.SaveChangesAsync();
+
+        var prediction = inferenceService.Predict(imageBytes);
+        scan.AnalysisResultJson = JsonSerializer.Serialize(prediction.AllScores);
+        scan.ConfidenceScore = prediction.Confidence;
+        scan.Status = ScanStatus.AI_Confirmed;
+        scan.UpdatedAt = DateTime.UtcNow;
+        await db.SaveChangesAsync();
+
         return Results.Created($"/scans/{scan.Id}", new { scan, photo });
     }
 
