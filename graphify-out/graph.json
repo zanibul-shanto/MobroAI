@@ -4,49 +4,46 @@
   "graph": {
     "hyperedges": [
       {
-        "id": "mobroai_platform_stack",
-        "label": "MobroAI Platform Technology Stack",
+        "id": "e2e_request_path",
+        "label": "End-to-End Request Path",
         "nodes": [
-          "readme_mobile_app",
-          "readme_api",
-          "readme_jwt_auth",
-          "readme_ef_core",
-          "readme_sql_server",
-          "readme_expo_router",
-          "readme_zustand"
+          "apps_mobile",
+          "jwt_auth",
+          "apps_api",
+          "morbolens_db"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "CLAUDE.md"
+      },
+      {
+        "id": "measles_scan_pipeline",
+        "label": "Measles Scan Processing Pipeline",
+        "nodes": [
+          "apps_mobile",
+          "apps_api",
+          "scanphoto_imagedata",
+          "ml_model",
+          "scan_status_workflow"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "CLAUDE.md"
+      },
+      {
+        "id": "onnx_conversion_pipeline",
+        "label": "ONNX Model Conversion Pipeline",
+        "nodes": [
+          "model_h5",
+          "convert_to_onnx_py",
+          "monkeynet_lite_onnx"
         ],
         "relation": "implement",
         "confidence": "EXTRACTED",
         "confidence_score": 1.0,
-        "source_file": "README.md"
-      },
-      {
-        "id": "mobroai_db_schema",
-        "label": "MobroAI Database Entities",
-        "nodes": [
-          "readme_user_entity",
-          "readme_child_entity",
-          "readme_measles_scan_entity",
-          "readme_scan_photo_entity",
-          "readme_location_log_entity"
-        ],
-        "relation": "form",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": "README.md"
-      },
-      {
-        "id": "mobroai_api_request_flow",
-        "label": "API Request Flow",
-        "nodes": [
-          "readme_program_cs",
-          "readme_endpoints",
-          "readme_appdbcontext"
-        ],
-        "relation": "implement",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": "README.md"
+        "source_file": "CLAUDE.md"
       }
     ]
   },
@@ -388,7 +385,7 @@
       "label": "DocumentGroupContainers",
       "file_type": "code",
       "source_file": "apps/api/.vs/MobroLens/v18/DocumentLayout.backup.json",
-      "source_location": "L10",
+      "source_location": "L5",
       "community": 28,
       "norm_label": "documentgroupcontainers",
       "id": "v18_documentlayout_backup_documentgroupcontainers"
@@ -2914,12 +2911,12 @@
       "id": "claude_md"
     },
     {
-      "label": "MobroAI Monorepo \u2014 Claude Code Guide",
+      "label": "MobroAI Monorepo — Claude Code Guide",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "community": 17,
-      "norm_label": "mobroai monorepo \u2014 claude code guide",
+      "norm_label": "mobroai monorepo — claude code guide",
       "id": "mobroai_claude_mobroai_monorepo_claude_code_guide"
     },
     {
@@ -2932,12 +2929,12 @@
       "id": "mobroai_claude_layout"
     },
     {
-      "label": "code:block1 (apps/mobile/   React Native (Expo) \u2014 see apps/mobile/CLAUDE.)",
+      "label": "code:block1 (apps/mobile/   React Native (Expo) — see apps/mobile/CLAUDE.)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L5",
       "community": 17,
-      "norm_label": "code:block1 (apps/mobile/   react native (expo) \u2014 see apps/mobile/claude.)",
+      "norm_label": "code:block1 (apps/mobile/   react native (expo) — see apps/mobile/claude.)",
       "id": "mobroai_claude_codeblock_1"
     },
     {
@@ -3040,21 +3037,21 @@
       "id": "mobroai_readme_architecture"
     },
     {
-      "label": "code:block2 (\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510      HTTPS / JWT      \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500)",
+      "label": "code:block2 (┌──────────────────────┐      HTTPS / JWT      ┌────────────)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L23",
       "community": 6,
-      "norm_label": "code:block2 (\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510      https / jwt      \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500)",
+      "norm_label": "code:block2 (┌──────────────────────┐      https / jwt      ┌────────────)",
       "id": "mobroai_readme_codeblock_2"
     },
     {
-      "label": "code:block3 (Program.cs  \u2192  Endpoints/*.cs (MapGroup)  \u2192  AppDbContext (E)",
+      "label": "code:block3 (Program.cs  →  Endpoints/*.cs (MapGroup)  →  AppDbContext (E)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L34",
       "community": 6,
-      "norm_label": "code:block3 (program.cs  \u2192  endpoints/*.cs (mapgroup)  \u2192  appdbcontext (e)",
+      "norm_label": "code:block3 (program.cs  →  endpoints/*.cs (mapgroup)  →  appdbcontext (e)",
       "id": "mobroai_readme_codeblock_3"
     },
     {
@@ -3139,39 +3136,39 @@
       "id": "mobroai_readme_api_reference"
     },
     {
-      "label": "Auth \u2014 `/auth` (no token required)",
+      "label": "Auth — `/auth` (no token required)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L142",
       "community": 6,
-      "norm_label": "auth \u2014 `/auth` (no token required)",
+      "norm_label": "auth — `/auth` (no token required)",
       "id": "mobroai_readme_auth_auth_no_token_required"
     },
     {
-      "label": "Users \u2014 `/users`",
+      "label": "Users — `/users`",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L153",
       "community": 6,
-      "norm_label": "users \u2014 `/users`",
+      "norm_label": "users — `/users`",
       "id": "mobroai_readme_users_users"
     },
     {
-      "label": "Children \u2014 `/children` (all require auth)",
+      "label": "Children — `/children` (all require auth)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L164",
       "community": 6,
-      "norm_label": "children \u2014 `/children` (all require auth)",
+      "norm_label": "children — `/children` (all require auth)",
       "id": "mobroai_readme_children_children_all_require_auth"
     },
     {
-      "label": "Measles Scans \u2014 `/scans` (all require auth)",
+      "label": "Measles Scans — `/scans` (all require auth)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L175",
       "community": 6,
-      "norm_label": "measles scans \u2014 `/scans` (all require auth)",
+      "norm_label": "measles scans — `/scans` (all require auth)",
       "id": "mobroai_readme_measles_scans_scans_all_require_auth"
     },
     {
@@ -3184,12 +3181,12 @@
       "id": "mobroai_readme_codeblock_8"
     },
     {
-      "label": "Location Logs \u2014 `/locations` (all require auth)",
+      "label": "Location Logs — `/locations` (all require auth)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L206",
       "community": 6,
-      "norm_label": "location logs \u2014 `/locations` (all require auth)",
+      "norm_label": "location logs — `/locations` (all require auth)",
       "id": "mobroai_readme_location_logs_locations_all_require_auth"
     },
     {
@@ -3211,12 +3208,16 @@
       "id": "mobroai_readme_notes"
     },
     {
-      "label": "CLAUDE.md",
+      "label": "apps/api/CLAUDE.md",
       "file_type": "document",
-      "source_file": "apps/api/CLAUDE.md",
-      "source_location": "L1",
+      "source_file": "CLAUDE.md",
+      "source_location": "line 58",
       "community": 3,
       "norm_label": "claude.md",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
       "id": "apps_api_claude_md"
     },
     {
@@ -3283,12 +3284,16 @@
       "id": "api_claude_gotchas"
     },
     {
-      "label": "CLAUDE.md",
+      "label": "apps/mobile/CLAUDE.md",
       "file_type": "document",
-      "source_file": "apps/mobile/CLAUDE.md",
-      "source_location": "L1",
+      "source_file": "CLAUDE.md",
+      "source_location": "line 57",
       "community": 3,
       "norm_label": "claude.md",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
       "id": "apps_mobile_claude_md"
     },
     {
@@ -3942,7 +3947,7 @@
       "id": "concept_jwt_auth"
     },
     {
-      "label": "Measles Scan Lifecycle (Pending\u2192AI_Confirmed\u2192Officer_Verified\u2192Cleared)",
+      "label": "Measles Scan Lifecycle (Pending→AI_Confirmed→Officer_Verified→Cleared)",
       "file_type": "rationale",
       "source_file": "apps/api/CLAUDE.md",
       "source_location": null,
@@ -3951,7 +3956,7 @@
       "author": null,
       "contributor": null,
       "community": 1,
-      "norm_label": "measles scan lifecycle (pending\u2192ai_confirmed\u2192officer_verified\u2192cleared)",
+      "norm_label": "measles scan lifecycle (pending→ai_confirmed→officer_verified→cleared)",
       "id": "concept_scan_lifecycle"
     },
     {
@@ -4198,10 +4203,10 @@
       "id": "claude_md_mobroai_monorepo"
     },
     {
-      "label": "Mobile App (React Native / Expo)",
+      "label": "Mobile App (Expo/React Native)",
       "file_type": "code",
       "source_file": "CLAUDE.md",
-      "source_location": "line 6",
+      "source_location": "line 8",
       "source_url": null,
       "captured_at": null,
       "author": null,
@@ -4214,7 +4219,7 @@
       "label": "API App (ASP.NET Core 10)",
       "file_type": "code",
       "source_file": "CLAUDE.md",
-      "source_location": "line 7",
+      "source_location": "line 9",
       "source_url": null,
       "captured_at": null,
       "author": null,
@@ -4705,6 +4710,207 @@
       "community": 4,
       "norm_label": "outbreak surveillance",
       "id": "readme_outbreak_surveillance"
+    },
+    {
+      "label": "convert_to_onnx.py",
+      "file_type": "code",
+      "source_file": "ML_Model/convert_to_onnx.py",
+      "source_location": "L1",
+      "id": "ml_model_convert_to_onnx_py"
+    },
+    {
+      "label": "Convert any Keras .h5 model to ONNX format. Uses Keras 3 built-in export with Py",
+      "file_type": "rationale",
+      "source_file": "ML_Model/convert_to_onnx.py",
+      "source_location": "L1",
+      "id": "ml_model_convert_to_onnx_rationale_1"
+    },
+    {
+      "label": "MobroAI Root CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_md_mobroai"
+    },
+    {
+      "label": "ML Model (Keras/ONNX Measles Detection)",
+      "file_type": "code",
+      "source_file": "CLAUDE.md",
+      "source_location": "line 10",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ml_model"
+    },
+    {
+      "label": "Docs Directory",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "line 11",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "docs_dir"
+    },
+    {
+      "label": "Packages Directory (Shared TS/C#)",
+      "file_type": "code",
+      "source_file": "CLAUDE.md",
+      "source_location": "line 12",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "packages_dir"
+    },
+    {
+      "label": "convert_to_onnx.py",
+      "file_type": "code",
+      "source_file": "CLAUDE.md",
+      "source_location": "line 30",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "convert_to_onnx_py"
+    },
+    {
+      "label": "model.h5 (Keras 3 Source Model)",
+      "file_type": "code",
+      "source_file": "CLAUDE.md",
+      "source_location": "line 30",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "model_h5"
+    },
+    {
+      "label": "monkeynet_lite.onnx (MobileNetV2 Classifier)",
+      "file_type": "code",
+      "source_file": "CLAUDE.md",
+      "source_location": "line 43",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "monkeynet_lite_onnx"
+    },
+    {
+      "label": "ScanPhoto.ImageData (DB Column)",
+      "file_type": "code",
+      "source_file": "CLAUDE.md",
+      "source_location": "line 41",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "scanphoto_imagedata"
+    },
+    {
+      "label": "MorboLens SQL Server Database",
+      "file_type": "code",
+      "source_file": "CLAUDE.md",
+      "source_location": "line 38",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "morbolens_db"
+    },
+    {
+      "label": "api/api.ts (Mobile API Client)",
+      "file_type": "code",
+      "source_file": "CLAUDE.md",
+      "source_location": "line 51",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "api_api_ts"
+    },
+    {
+      "label": "JWT Bearer Authentication",
+      "file_type": "rationale",
+      "source_file": "CLAUDE.md",
+      "source_location": "line 38",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "jwt_auth"
+    },
+    {
+      "label": "Scan Status Workflow (Pending to Cleared)",
+      "file_type": "rationale",
+      "source_file": "CLAUDE.md",
+      "source_location": "line 41",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "scan_status_workflow"
+    },
+    {
+      "label": "MobileNetV2-Based Classifier",
+      "file_type": "rationale",
+      "source_file": "CLAUDE.md",
+      "source_location": "line 43",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "mobilenetv2_classifier"
+    },
+    {
+      "label": "Coding Behavioral Guidelines",
+      "file_type": "rationale",
+      "source_file": "CLAUDE.md",
+      "source_location": "line 60",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "coding_guidelines"
+    },
+    {
+      "label": "CI Path-Filtered Pipelines",
+      "file_type": "rationale",
+      "source_file": "CLAUDE.md",
+      "source_location": "line 47",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ci_path_filter"
+    },
+    {
+      "label": "appsettings.Development.json (Gitignored)",
+      "file_type": "code",
+      "source_file": "CLAUDE.md",
+      "source_location": "line 49",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "appsettings_dev_json"
+    },
+    {
+      "label": ".env.local (Gitignored, EXPO_PUBLIC_API_URL)",
+      "file_type": "code",
+      "source_file": "CLAUDE.md",
+      "source_location": "line 50",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "env_local"
     }
   ],
   "links": [
@@ -4745,6 +4951,8 @@
       "source_location": "L2",
       "weight": 1.0,
       "confidence_score": 1.0,
+      "_src": "claude_settings_local_json",
+      "_tgt": "claude_settings_local_permissions",
       "source": "claude_settings_local_json",
       "target": "claude_settings_local_permissions"
     },
@@ -4755,6 +4963,8 @@
       "source_location": "L3",
       "weight": 1.0,
       "confidence_score": 1.0,
+      "_src": "claude_settings_local_permissions",
+      "_tgt": "claude_settings_local_permissions_allow",
       "source": "claude_settings_local_permissions",
       "target": "claude_settings_local_permissions_allow"
     },
@@ -5045,6 +5255,8 @@
       "source_location": "L2",
       "weight": 1.0,
       "confidence_score": 1.0,
+      "_src": "apps_api_vs_mobrolens_v18_documentlayout_backup_json",
+      "_tgt": "v18_documentlayout_backup_version",
       "source": "apps_api_vs_mobrolens_v18_documentlayout_backup_json",
       "target": "v18_documentlayout_backup_version"
     },
@@ -5055,6 +5267,8 @@
       "source_location": "L3",
       "weight": 1.0,
       "confidence_score": 1.0,
+      "_src": "apps_api_vs_mobrolens_v18_documentlayout_backup_json",
+      "_tgt": "v18_documentlayout_backup_workspacerootpath",
       "source": "apps_api_vs_mobrolens_v18_documentlayout_backup_json",
       "target": "v18_documentlayout_backup_workspacerootpath"
     },
@@ -5065,6 +5279,8 @@
       "source_location": "L4",
       "weight": 1.0,
       "confidence_score": 1.0,
+      "_src": "apps_api_vs_mobrolens_v18_documentlayout_backup_json",
+      "_tgt": "v18_documentlayout_backup_documents",
       "source": "apps_api_vs_mobrolens_v18_documentlayout_backup_json",
       "target": "v18_documentlayout_backup_documents"
     },
@@ -5072,9 +5288,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/.vs/MobroLens/v18/DocumentLayout.backup.json",
-      "source_location": "L10",
+      "source_location": "L5",
       "weight": 1.0,
       "confidence_score": 1.0,
+      "_src": "apps_api_vs_mobrolens_v18_documentlayout_backup_json",
+      "_tgt": "v18_documentlayout_backup_documentgroupcontainers",
       "source": "apps_api_vs_mobrolens_v18_documentlayout_backup_json",
       "target": "v18_documentlayout_backup_documentgroupcontainers"
     },
@@ -9010,6 +9228,18 @@
       "target": "apps_api"
     },
     {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 58",
+      "weight": 1.0,
+      "_src": "claude_md_mobroai",
+      "_tgt": "apps_api_claude_md",
+      "source": "apps_api_claude_md",
+      "target": "claude_md_mobroai"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "apps/api/CLAUDE.md",
@@ -9098,6 +9328,18 @@
       "weight": 1.0,
       "source": "apps_mobile_claude_md",
       "target": "apps_mobile"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 57",
+      "weight": 1.0,
+      "_src": "claude_md_mobroai",
+      "_tgt": "apps_mobile_claude_md",
+      "source": "apps_mobile_claude_md",
+      "target": "claude_md_mobroai"
     },
     {
       "relation": "contains",
@@ -10131,6 +10373,78 @@
       "target": "env_local_mobile"
     },
     {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 8",
+      "weight": 1.0,
+      "_src": "claude_md_mobroai",
+      "_tgt": "apps_mobile",
+      "source": "apps_mobile",
+      "target": "claude_md_mobroai"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 38",
+      "weight": 1.0,
+      "_src": "apps_mobile",
+      "_tgt": "apps_api",
+      "source": "apps_mobile",
+      "target": "apps_api"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 38",
+      "weight": 1.0,
+      "_src": "apps_mobile",
+      "_tgt": "jwt_auth",
+      "source": "apps_mobile",
+      "target": "jwt_auth"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 51",
+      "weight": 1.0,
+      "_src": "api_api_ts",
+      "_tgt": "apps_mobile",
+      "source": "apps_mobile",
+      "target": "api_api_ts"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 50",
+      "weight": 1.0,
+      "_src": "env_local",
+      "_tgt": "apps_mobile",
+      "source": "apps_mobile",
+      "target": "env_local"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 47",
+      "weight": 1.0,
+      "_src": "ci_path_filter",
+      "_tgt": "apps_mobile",
+      "source": "apps_mobile",
+      "target": "ci_path_filter"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -10159,6 +10473,78 @@
       "weight": 1.0,
       "source": "apps_api",
       "target": "appsettings_development_json"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 9",
+      "weight": 1.0,
+      "_src": "claude_md_mobroai",
+      "_tgt": "apps_api",
+      "source": "apps_api",
+      "target": "claude_md_mobroai"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 38",
+      "weight": 1.0,
+      "_src": "apps_api",
+      "_tgt": "morbolens_db",
+      "source": "apps_api",
+      "target": "morbolens_db"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 41",
+      "weight": 1.0,
+      "_src": "apps_api",
+      "_tgt": "scanphoto_imagedata",
+      "source": "apps_api",
+      "target": "scanphoto_imagedata"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 41",
+      "weight": 1.0,
+      "_src": "apps_api",
+      "_tgt": "ml_model",
+      "source": "apps_api",
+      "target": "ml_model"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 49",
+      "weight": 1.0,
+      "_src": "appsettings_dev_json",
+      "_tgt": "apps_api",
+      "source": "apps_api",
+      "target": "appsettings_dev_json"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 47",
+      "weight": 1.0,
+      "_src": "ci_path_filter",
+      "_tgt": "apps_api",
+      "source": "apps_api",
+      "target": "ci_path_filter"
     },
     {
       "relation": "references",
@@ -10549,54 +10935,161 @@
       "weight": 0.95,
       "source": "readme_location_log_entity",
       "target": "readme_locations_endpoints"
-    }
-  ],
-  "hyperedges": [
-    {
-      "id": "mobroai_platform_stack",
-      "label": "MobroAI Platform Technology Stack",
-      "nodes": [
-        "readme_mobile_app",
-        "readme_api",
-        "readme_jwt_auth",
-        "readme_ef_core",
-        "readme_sql_server",
-        "readme_expo_router",
-        "readme_zustand"
-      ],
-      "relation": "implement",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md"
     },
     {
-      "id": "mobroai_db_schema",
-      "label": "MobroAI Database Entities",
-      "nodes": [
-        "readme_user_entity",
-        "readme_child_entity",
-        "readme_measles_scan_entity",
-        "readme_scan_photo_entity",
-        "readme_location_log_entity"
-      ],
-      "relation": "form",
+      "relation": "rationale_for",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md"
+      "source_file": "ML_Model/convert_to_onnx.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "ml_model_convert_to_onnx_rationale_1",
+      "_tgt": "ml_model_convert_to_onnx_py",
+      "source": "ml_model_convert_to_onnx_py",
+      "target": "ml_model_convert_to_onnx_rationale_1"
     },
     {
-      "id": "mobroai_api_request_flow",
-      "label": "API Request Flow",
-      "nodes": [
-        "readme_program_cs",
-        "readme_endpoints",
-        "readme_appdbcontext"
-      ],
-      "relation": "implement",
+      "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "README.md"
+      "source_file": "CLAUDE.md",
+      "source_location": "line 10",
+      "weight": 1.0,
+      "_src": "claude_md_mobroai",
+      "_tgt": "ml_model",
+      "source": "claude_md_mobroai",
+      "target": "ml_model"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 11",
+      "weight": 1.0,
+      "_src": "claude_md_mobroai",
+      "_tgt": "docs_dir",
+      "source": "claude_md_mobroai",
+      "target": "docs_dir"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 12",
+      "weight": 1.0,
+      "_src": "claude_md_mobroai",
+      "_tgt": "packages_dir",
+      "source": "claude_md_mobroai",
+      "target": "packages_dir"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 60",
+      "weight": 1.0,
+      "_src": "coding_guidelines",
+      "_tgt": "claude_md_mobroai",
+      "source": "claude_md_mobroai",
+      "target": "coding_guidelines"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 10",
+      "weight": 1.0,
+      "_src": "ml_model",
+      "_tgt": "convert_to_onnx_py",
+      "source": "ml_model",
+      "target": "convert_to_onnx_py"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 30",
+      "weight": 1.0,
+      "_src": "convert_to_onnx_py",
+      "_tgt": "model_h5",
+      "source": "convert_to_onnx_py",
+      "target": "model_h5"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 31",
+      "weight": 1.0,
+      "_src": "convert_to_onnx_py",
+      "_tgt": "monkeynet_lite_onnx",
+      "source": "convert_to_onnx_py",
+      "target": "monkeynet_lite_onnx"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 43",
+      "weight": 1.0,
+      "_src": "model_h5",
+      "_tgt": "monkeynet_lite_onnx",
+      "source": "model_h5",
+      "target": "monkeynet_lite_onnx"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 43",
+      "weight": 1.0,
+      "_src": "monkeynet_lite_onnx",
+      "_tgt": "mobilenetv2_classifier",
+      "source": "monkeynet_lite_onnx",
+      "target": "mobilenetv2_classifier"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 41",
+      "weight": 1.0,
+      "_src": "scanphoto_imagedata",
+      "_tgt": "morbolens_db",
+      "source": "scanphoto_imagedata",
+      "target": "morbolens_db"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 41",
+      "weight": 1.0,
+      "_src": "scanphoto_imagedata",
+      "_tgt": "scan_status_workflow",
+      "source": "scanphoto_imagedata",
+      "target": "scan_status_workflow"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 51",
+      "weight": 1.0,
+      "_src": "api_api_ts",
+      "_tgt": "jwt_auth",
+      "source": "api_api_ts",
+      "target": "jwt_auth"
     }
-  ],
-  "built_at_commit": "ccba66f3d276eb08a1f65bff1a4e8b2284d4d3f6"
+  ]
 }
