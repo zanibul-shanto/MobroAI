@@ -22,6 +22,7 @@ import { Colors } from '@/constants/theme';
 import { api } from '@/api/api';
 import { uploadScan } from '@/api/scans';
 import { Child } from '@/types/child';
+import { Scan } from '@/types/scan';
 import { Button } from '@/components/ui/Button';
 import { GENDER_COLORS } from '@/constants/enums';
 import { Camera, ImageIcon, ChevronDown, CheckCircle, Baby, MapPin } from 'lucide-react-native';
@@ -38,7 +39,7 @@ export default function ScanScreen() {
   const [imageUri, setImageUri] = useState<string | null>(null);
   const [childPickerVisible, setChildPickerVisible] = useState(false);
   const [uploading, setUploading] = useState(false);
-  const [successScanId, setSuccessScanId] = useState<string | null>(null);
+  const [successScan, setSuccessScan] = useState<Scan | null>(null);
 
   const fetchChildren = useCallback(async () => {
     if (!user) return;
@@ -110,7 +111,7 @@ export default function ScanScreen() {
 
     try {
       const result = await uploadScan(selectedChild.id, imageUri, latitude, longitude);
-      setSuccessScanId(result.scan.id);
+      setSuccessScan(result.scan);
       setImageUri(null);
       setSelectedChild(null);
     } catch (error: any) {
@@ -128,27 +129,48 @@ export default function ScanScreen() {
   }
 
   function resetForm() {
-    setSuccessScanId(null);
+    setSuccessScan(null);
     setImageUri(null);
     setSelectedChild(null);
   }
 
   if (!user) return null;
 
-  if (successScanId) {
+  if (successScan) {
+    const scores: Record<string, number> = successScan.analysisResultJson
+      ? JSON.parse(successScan.analysisResultJson)
+      : {};
+    const predictedClass =
+      Object.entries(scores).sort((a, b) => b[1] - a[1])[0]?.[0] ?? 'Unknown';
+    const confidence = successScan.confidenceScore;
+
+    const badgeColors: Record<string, { bg: string; text: string }> = {
+      Measles:    { bg: '#FFEBEE', text: '#E53935' },
+      Monkeypox:  { bg: '#FFEBEE', text: '#E53935' },
+      Chickenpox: { bg: '#FFF8E1', text: '#F9A825' },
+      Normal:     { bg: '#E8F5E9', text: '#43A047' },
+    };
+    const badge = badgeColors[predictedClass] ?? { bg: '#F5F5F5', text: '#616161' };
+
     return (
       <SafeAreaView style={[styles.container, { backgroundColor: colors.background }]} edges={['top']}>
         <View style={styles.successContainer}>
-          <View style={[styles.successIcon, { backgroundColor: '#E8F5E9' }]}>
-            <CheckCircle size={56} color="#43A047" />
+          <View style={[styles.successIcon, { backgroundColor: badge.bg }]}>
+            <CheckCircle size={56} color={badge.text} />
           </View>
-          <Text style={[styles.successTitle, { color: colors.text }]}>Scan Uploaded</Text>
+          <Text style={[styles.successTitle, { color: colors.text }]}>Analysis Complete</Text>
           <Text style={[styles.successSubtitle, { color: colors.textSecondary }]}>
-            Your scan has been submitted and is pending AI analysis.
+            The AI model has analysed your scan.
           </Text>
+          <View style={[styles.resultBadge, { backgroundColor: badge.bg }]}>
+            <Text style={[styles.resultBadgeLabel, { color: badge.text }]}>{predictedClass}</Text>
+            <Text style={[styles.resultBadgeConfidence, { color: badge.text }]}>
+              {confidence.toFixed(1)}% confidence
+            </Text>
+          </View>
           <View style={[styles.scanIdBox, { backgroundColor: colors.surface }]}>
             <Text style={[styles.scanIdLabel, { color: colors.textSecondary }]}>Scan ID</Text>
-            <Text style={[styles.scanIdValue, { color: colors.text }]} numberOfLines={1}>{successScanId}</Text>
+            <Text style={[styles.scanIdValue, { color: colors.text }]} numberOfLines={1}>{successScan.id}</Text>
           </View>
           <Button title="New Scan" onPress={resetForm} style={{ marginTop: 32, width: '100%' }} />
         </View>
@@ -434,6 +456,23 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     lineHeight: 22,
     marginBottom: 24,
+  },
+  resultBadge: {
+    width: '100%',
+    padding: 20,
+    borderRadius: 20,
+    alignItems: 'center',
+    gap: 6,
+    marginBottom: 16,
+  },
+  resultBadgeLabel: {
+    fontSize: 26,
+    fontWeight: '800',
+    letterSpacing: -0.5,
+  },
+  resultBadgeConfidence: {
+    fontSize: 15,
+    fontWeight: '600',
   },
   scanIdBox: {
     width: '100%',
