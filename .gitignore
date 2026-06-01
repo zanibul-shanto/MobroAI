@@ -35,7 +35,7 @@ graphify-out/cache/
 # ── Secrets ───────────────────────────────────────────────────────────────────
 *.secret.json
 appsettings.Development.json
-appsettings.local.json
+appsettings.json
 
 # ── .NET / API ────────────────────────────────────────────────────────────────
 [Dd]ebug/
@@ -53,6 +53,7 @@ bld/
 *.nupkg
 project.lock.json
 .core/
+apps/api/Migrations/
 
 # ── React Native / Mobile ─────────────────────────────────────────────────────
 node_modules/
@@ -73,4 +74,3 @@ expo-env.d.ts
 app-example
 apps/mobile/ios/
 apps/mobile/android/
-apps/api/Migrations/

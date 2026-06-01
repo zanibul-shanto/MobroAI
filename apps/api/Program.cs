@@ -4,6 +4,7 @@ using Microsoft.IdentityModel.Tokens;
 using MobroLens;
 using MobroLens.Endpoints;
 using MobroLens.Services;
+using Resend;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +15,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddSingleton<OnnxInferenceService>();
+builder.Services.AddSingleton<IResend>(_ =>
+    ResendClient.Create(builder.Configuration["Resend:ApiKey"]!));
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>

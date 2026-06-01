@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using MobroLens.Models;
 using MobroLens.Services;
+using Resend;
 
 namespace MobroLens.Endpoints;
 
@@ -58,34 +59,43 @@ public static class AuthEndpoints
         return Results.Ok(new AuthResponse(token, userDto));
     }
 
-    private static async Task<IResult> ForgotPassword(ForgotPasswordRequest request, AppDbContext db)
+    private static async Task<IResult> ForgotPassword(ForgotPasswordRequest request, AppDbContext db, IResend resend)
     {
         var user = await db.Users.FirstOrDefaultAsync(u => u.Email == request.Identifier || u.PhoneNumber == request.Identifier);
-        
-        if (user == null)
+
+        if (user != null)
         {
-            return Results.NotFound("User not found.");
+            var code = Random.Shared.Next(100000, 999999).ToString();
+            user.PasswordResetCode = code;
+            user.PasswordResetCodeExpiry = DateTime.UtcNow.AddMinutes(15);
+            await db.SaveChangesAsync();
+
+            await resend.EmailSendAsync(new EmailMessage
+            {
+                From = "onboarding@resend.dev",
+                To = user.Email,
+                Subject = "MobroAI — Password Reset Code",
+                HtmlBody = $"<p>Your password reset code is: <strong>{code}</strong></p><p>This code expires in 15 minutes.</p>"
+            });
         }
 
-        // Simulating sending a code 12345
-        return Results.Ok("Verification code sent to your email/mobile.");
+        // Always return the same message to prevent user enumeration
+        return Results.Ok("If an account with that email/phone exists, a verification code has been sent.");
     }
 
     private static async Task<IResult> ResetPassword(ResetPasswordRequest request, AppDbContext db)
     {
-        if (request.Code != "12345")
-        {
-            return Results.BadRequest("Invalid verification code.");
-        }
-
         var user = await db.Users.FirstOrDefaultAsync(u => u.Email == request.Identifier || u.PhoneNumber == request.Identifier);
-        
+
         if (user == null)
-        {
             return Results.NotFound("User not found.");
-        }
+
+        if (user.PasswordResetCode != request.Code || user.PasswordResetCodeExpiry < DateTime.UtcNow)
+            return Results.BadRequest("Invalid or expired verification code.");
 
         user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.NewPassword);
+        user.PasswordResetCode = null;
+        user.PasswordResetCodeExpiry = null;
         user.UpdatedAt = DateTime.UtcNow;
 
         await db.SaveChangesAsync();

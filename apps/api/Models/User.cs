@@ -20,4 +20,7 @@ public class User : BaseEntity
     public string? PhoneNumber { get; set; }
 
     public Role Role { get; set; } = Role.Parent;
+
+    public string? PasswordResetCode { get; set; }
+    public DateTime? PasswordResetCodeExpiry { get; set; }
 }
