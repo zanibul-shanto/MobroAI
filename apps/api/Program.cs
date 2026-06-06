@@ -11,10 +11,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services
 var testDbName = "TestDb_" + Guid.NewGuid();
+var provider = builder.Configuration["DatabaseProvider"] ?? "SqlServer";
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
     if (builder.Environment.IsEnvironment("Testing"))
         options.UseInMemoryDatabase(testDbName);
+    else if (provider == "PostgreSQL")
+        options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
     else
         options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
