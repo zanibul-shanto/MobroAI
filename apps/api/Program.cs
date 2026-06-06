@@ -20,10 +20,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 });
 
 builder.Services.AddScoped<ITokenService, TokenService>();
-builder.Services.AddSingleton<OnnxInferenceService>();
+builder.Services.AddSingleton<IOnnxInferenceService, OnnxInferenceService>();
 builder.Services.AddSingleton<IResend>(_ =>
     ResendClient.Create(builder.Configuration["Resend:ApiKey"]!));
-builder.Services.AddSingleton<IOnnxInferenceService, OnnxInferenceService>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
