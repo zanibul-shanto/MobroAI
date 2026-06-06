@@ -1,7 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using MobroLens.Models;
 using MobroLens.Services;
-using Resend;
 
 namespace MobroLens.Endpoints;
 
@@ -59,7 +58,7 @@ public static class AuthEndpoints
         return Results.Ok(new AuthResponse(token, userDto));
     }
 
-    private static async Task<IResult> ForgotPassword(ForgotPasswordRequest request, AppDbContext db, IResend resend)
+    private static async Task<IResult> ForgotPassword(ForgotPasswordRequest request, AppDbContext db, IEmailService emailService)
     {
         var user = await db.Users.FirstOrDefaultAsync(u => u.Email == request.Identifier || u.PhoneNumber == request.Identifier);
 
@@ -70,16 +69,9 @@ public static class AuthEndpoints
             user.PasswordResetCodeExpiry = DateTime.UtcNow.AddMinutes(15);
             await db.SaveChangesAsync();
 
-            await resend.EmailSendAsync(new EmailMessage
-            {
-                From = "onboarding@resend.dev",
-                To = user.Email,
-                Subject = "MobroAI — Password Reset Code",
-                HtmlBody = $"<p>Your password reset code is: <strong>{code}</strong></p><p>This code expires in 15 minutes.</p>"
-            });
+            await emailService.SendPasswordResetAsync(user.Email, code);
         }
 
-        // Always return the same message to prevent user enumeration
         return Results.Ok("If an account with that email/phone exists, a verification code has been sent.");
     }
 

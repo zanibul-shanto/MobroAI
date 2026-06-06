@@ -15,14 +15,23 @@ public class CustomWebApplicationFactory : WebApplicationFactory<Program>
 
         builder.ConfigureTestServices(services =>
         {
-            // Replace real ONNX service with a fast fake (avoids loading 9.4MB model for unrelated tests)
             var onnxDescriptor = services.SingleOrDefault(
                 d => d.ServiceType == typeof(IOnnxInferenceService));
             if (onnxDescriptor != null) services.Remove(onnxDescriptor);
-
             services.AddSingleton<IOnnxInferenceService>(new FakeOnnxInferenceService());
+
+            // Replace real email service with a no-op fake (no API key needed in tests)
+            var emailDescriptor = services.SingleOrDefault(
+                d => d.ServiceType == typeof(IEmailService));
+            if (emailDescriptor != null) services.Remove(emailDescriptor);
+            services.AddScoped<IEmailService>(_ => new FakeEmailService());
         });
     }
+}
+
+internal class FakeEmailService : IEmailService
+{
+    public Task SendPasswordResetAsync(string toEmail, string code) => Task.CompletedTask;
 }
 
 internal class FakeOnnxInferenceService : IOnnxInferenceService
