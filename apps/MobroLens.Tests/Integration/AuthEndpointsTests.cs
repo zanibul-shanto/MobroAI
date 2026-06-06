@@ -143,30 +143,38 @@ public class AuthEndpointsTests : IClassFixture<CustomWebApplicationFactory>
     }
 
     [Fact]
-    public async Task ForgotPassword_WithNonexistentUser_ReturnsNotFound()
+    public async Task ForgotPassword_WithNonexistentUser_ReturnsOk()
     {
+        // Endpoint uses anti-enumeration: always returns OK regardless of whether user exists
         var request = new ForgotPasswordRequest("nonexistent@example.com");
         var response = await _client.PostAsJsonAsync("/auth/forgot-password", request);
 
-        Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
+        Assert.Equal(HttpStatusCode.OK, response.StatusCode);
     }
 
     [Fact]
     public async Task ResetPassword_WithValidCode_ReturnsOk()
     {
-        // Register a user
-        var email = "reset@test.com";
+        var email = $"reset_{Guid.NewGuid():N}@test.com";
         var registerRequest = new RegisterRequest(email, "OldPass123!", "Test", null, Role.Parent);
         await _client.PostAsJsonAsync("/auth/register", registerRequest);
 
-        var request = new ResetPasswordRequest(email, "12345", "NewPass123!");
-        var response = await _client.PostAsJsonAsync("/auth/reset-password", request);
+        // Trigger forgot-password to generate and store the real code in DB
+        await _client.PostAsJsonAsync("/auth/forgot-password", new ForgotPasswordRequest(email));
+
+        // Read the code directly from DB (email delivery is skipped in tests)
+        using var context = GetDbContext();
+        var user = await context.Users.FirstAsync(u => u.Email == email);
+        var realCode = user.PasswordResetCode!;
+
+        var response = await _client.PostAsJsonAsync("/auth/reset-password",
+            new ResetPasswordRequest(email, realCode, "NewPass123!"));
 
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
 
         // Verify new password works
-        var loginRequest = new LoginRequest(email, "NewPass123!");
-        var loginResponse = await _client.PostAsJsonAsync("/auth/login", loginRequest);
+        var loginResponse = await _client.PostAsJsonAsync("/auth/login",
+            new LoginRequest(email, "NewPass123!"));
         Assert.Equal(HttpStatusCode.OK, loginResponse.StatusCode);
     }
 
