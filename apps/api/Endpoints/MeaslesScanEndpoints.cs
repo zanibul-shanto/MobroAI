@@ -41,7 +41,7 @@ public static class MeaslesScanEndpoints
         return Results.Created($"/scans/{scan.Id}", scan);
     }
 
-    private static async Task<IResult> UpdateStatus(Guid id, ScanStatus status, AppDbContext db)
+    private static async Task<IResult> UpdateStatus(Guid id, [Microsoft.AspNetCore.Mvc.FromBody] ScanStatus status, AppDbContext db)
     {
         var scan = await db.MeaslesScans.FindAsync(id);
         if (scan is null) return Results.NotFound();
@@ -60,7 +60,7 @@ public static class MeaslesScanEndpoints
         [Microsoft.AspNetCore.Mvc.FromForm] decimal? longitude,
         ClaimsPrincipal userClaims,
         AppDbContext db,
-        OnnxInferenceService inferenceService)
+        IOnnxInferenceService inferenceService)
     {
         var userIdString = userClaims.FindFirst(ClaimTypes.NameIdentifier)?.Value;
         if (userIdString is null || !Guid.TryParse(userIdString, out var userId))

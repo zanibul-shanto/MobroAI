@@ -9,11 +9,17 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services
+var testDbName = "TestDb_" + Guid.NewGuid();
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+{
+    if (builder.Environment.IsEnvironment("Testing"))
+        options.UseInMemoryDatabase(testDbName);
+    else
+        options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
 
 builder.Services.AddScoped<ITokenService, TokenService>();
-builder.Services.AddSingleton<OnnxInferenceService>();
+builder.Services.AddSingleton<IOnnxInferenceService, OnnxInferenceService>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
@@ -60,3 +66,5 @@ app.MapMeaslesScanEndpoints();
 
 //Start the project
 app.Run();
+
+public partial class Program { }

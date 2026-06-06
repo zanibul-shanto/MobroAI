@@ -29,6 +29,7 @@ public class TokenService(IConfiguration configuration) : ITokenService
             issuer: configuration["Jwt:Issuer"],
             audience: configuration["Jwt:Audience"],
             claims: claims,
+            notBefore: DateTime.UtcNow,
             expires: DateTime.UtcNow.AddMinutes(double.Parse(configuration["Jwt:AccessTokenExpirationMinutes"]!)),
             signingCredentials: creds
         );

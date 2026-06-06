@@ -2,11 +2,14 @@ name: API CI
 
 on:
   push:
+    branches: [main]
     paths:
       - 'apps/api/**'
+      - 'apps/MobroLens.Tests/**'
   pull_request:
     paths:
       - 'apps/api/**'
+      - 'apps/MobroLens.Tests/**'
 
 jobs:
   build:
@@ -26,3 +29,16 @@ jobs:
 
       - name: Build
         run: dotnet build MobroLens.sln --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test MobroLens.sln --configuration Release --no-build --verbosity normal
+               --logger "trx;LogFileName=test-results.trx"
+               --results-directory ./TestResults
+
+      - name: Publish test results
+        uses: dorny/test-reporter@v1
+        if: always()
+        with:
+          name: .NET Tests
+          path: apps/api/TestResults/*.trx
+          reporter: dotnet-trx

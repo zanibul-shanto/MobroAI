@@ -17,8 +17,8 @@ public static class UserEndpoints
         group.MapPost("/change-password", ChangePassword).RequireAuthorization();
 
         // --- Read Operations ---
-        group.MapGet("/{id}", GetById);
-        group.MapGet("/", GetAll);
+        group.MapGet("/{id}", GetById).RequireAuthorization();
+        group.MapGet("/", GetAll).RequireAuthorization();
     }
 
     // --- Handler Implementations ---

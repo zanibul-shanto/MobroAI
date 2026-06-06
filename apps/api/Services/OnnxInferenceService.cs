@@ -7,7 +7,12 @@ using System.Text.Json;
 
 namespace MobroLens.Services;
 
-public class OnnxInferenceService
+public interface IOnnxInferenceService
+{
+    PredictionResult Predict(byte[] imageBytes);
+}
+
+public class OnnxInferenceService : IOnnxInferenceService
 {
     private static readonly string[] Labels = ["Chickenpox", "Measles", "Monkeypox", "Normal"];
     private readonly InferenceSession _session;
